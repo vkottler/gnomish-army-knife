@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=69f886ee2326e4b204653fa36eb06b13
+    hash=3a99e14a581e54467f1eb57a321a6262
     =====================================
 -->
 
@@ -41,6 +41,12 @@ This package is tested on the following platforms:
 * `windows-latest`
 
 # Introduction
+
+![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)
+
+This project is named after an
+[in-game item](https://www.wowhead.com/item=40772/gnomish-army-knife)
+(real ones will know!).
 
 # Command-line Options
 
