@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=3a99e14a581e54467f1eb57a321a6262
+    hash=91674db7ca9c124b61ad0201d3a17a30
     =====================================
 -->
 
@@ -54,7 +54,7 @@ This project is named after an
 $ ./venv3.11/bin/gak -h
 
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
-           {noop} ...
+           {scan,noop} ...
 
 Software tools for WoW arena analysis.
 
@@ -68,7 +68,8 @@ options:
   -C DIR, --dir DIR  execute from a specific directory
 
 commands:
-  {noop}             set of available commands
+  {scan,noop}        set of available commands
+    scan             scan the 'World of Warcraft' directory for updates
     noop             command stub (does nothing)
 
 ```

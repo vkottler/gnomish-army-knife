@@ -1,0 +1,9 @@
+---
+type: object
+additionalProperties: false
+
+properties:
+  search_paths:
+    type: array
+    items:
+      type: string

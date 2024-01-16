@@ -8,3 +8,12 @@ requirements:
 dev_requirements:
   - setuptools-wrapper
   - types-setuptools
+
+commands:
+  - name: scan
+    description: "scan the 'World of Warcraft' directory for updates"
+
+init_local: |
+  PKG_ABBREV = "gak"
+  DEFAULT_CONFIG = f"{PKG_ABBREV}.yaml"
+  WOW_DIR = "World of Warcraft"
