@@ -16,8 +16,8 @@ from gnomish_army_knife.runtime import GakRuntime
 def scan_cmd(args: _Namespace) -> int:
     """Execute the scan command."""
 
-    runtime = GakRuntime(args)
-    print(runtime)
+    with GakRuntime.create(args) as runtime:
+        runtime.logger.info("Scan command.")
 
     return 0
 

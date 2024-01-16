@@ -2,6 +2,10 @@
 Test the 'commands.scan' module.
 """
 
+# built-in
+from contextlib import ExitStack
+from tempfile import TemporaryDirectory
+
 # third-party
 from vcorelib.paths.context import in_dir
 
@@ -16,6 +20,11 @@ from tests.resources import resource
 def test_entry_basic():
     """Test basic scan invocations."""
 
-    with in_dir(resource(DEFAULT_CONFIG).parent):
-        args = [PKG_NAME, "scan"]
-        assert gnomish_army_knife_main(args) == 0
+    base = [PKG_NAME, "scan"]
+
+    with ExitStack() as stack:
+        stack.enter_context(in_dir(resource(DEFAULT_CONFIG).parent))
+
+        args = ["--state", stack.enter_context(TemporaryDirectory())]
+
+        assert gnomish_army_knife_main(base + args) == 0

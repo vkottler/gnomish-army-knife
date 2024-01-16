@@ -5,7 +5,7 @@ description: Software tools for WoW arena analysis.
 entry: {{entry}}
 
 requirements:
-  - vcorelib
+  - vcorelib>=3.1.1
   - runtimepy
 
 dev_requirements:
