@@ -3,8 +3,11 @@ name: gnomish-army-knife
 version: "{{major}}.{{minor}}.{{patch}}"
 description: Software tools for WoW arena analysis.
 entry: {{entry}}
+
 requirements:
   - vcorelib
+  - runtimepy
+
 dev_requirements:
   - setuptools-wrapper
   - types-setuptools
