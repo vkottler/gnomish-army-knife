@@ -39,8 +39,3 @@ class ArenaMatchDb(LoggerMixin):
     def combat_log_state_path(self) -> Path:
         """Get the path to the combat-log state data."""
         return self.data_path("combat_log_state")
-
-    def process_log(self, path: Path) -> None:
-        """Process a combat log file."""
-
-        self.logger.info("YUP '%s'", path)

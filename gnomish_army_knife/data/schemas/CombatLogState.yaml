@@ -2,4 +2,10 @@
 type: object
 additionalProperties: false
 
-properties: {}
+properties:
+  files:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "^.*$":
+        $ref: package://gnomish_army_knife/schemas/CombatLogFile.yaml

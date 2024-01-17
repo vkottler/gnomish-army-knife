@@ -19,7 +19,7 @@ from vcorelib.logging import LoggerMixin
 from gnomish_army_knife import DEFAULT_CONFIG, PKG_ABBREV
 from gnomish_army_knife.config import get_config
 from gnomish_army_knife.database import ArenaMatchDb
-from gnomish_army_knife.paths import wow_dir
+from gnomish_army_knife.paths import path_is_combat_log, wow_dir
 
 
 class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
@@ -42,7 +42,7 @@ class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
         self.database = ArenaMatchDb(stack, args.state)
         for log in self.combat_logs:
             with self.log_time("processing '%s'", log.name):
-                self.database.process_log(log)
+                self.database.logs.process_log(log)
 
     @property
     def retail(self) -> Path:
@@ -55,7 +55,7 @@ class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
 
         base = self.retail.joinpath("Logs")
         for item in base.iterdir():
-            if item.name.startswith("WoWCombatLog-"):
+            if path_is_combat_log(item):
                 yield item
 
     @staticmethod
