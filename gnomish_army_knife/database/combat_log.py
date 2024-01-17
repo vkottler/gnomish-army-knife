@@ -54,12 +54,14 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
     ) -> None:
         """Process a combat-log event."""
 
-        file_data = self.data["files"][key]  # type: ignore
+        file_data: dict[str, Any] = self.data["files"][key]  # type: ignore
 
         if event in self.handlers:
             self.handlers[event](timestamp, event, data)
+        else:
+            file_data["missing_handlers"].add(event)
 
-        file_data["event_totals"][event] += 1  # type: ignore
+        file_data["event_totals"][event] += 1
 
     def process_line(self, key: str, line: str, log_date: datetime) -> None:
         """Process a line from a combat log file."""
@@ -96,6 +98,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         file_data["datetime"] = str(date)
         file_data["timestamp"] = date.timestamp()
         file_data["event_totals"] = defaultdict(int)
+        file_data["missing_handlers"] = set()
 
         self.logger.info(
             "Processing log '%s' (%s old) from position %d.",
