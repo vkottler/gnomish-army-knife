@@ -47,7 +47,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         self.handlers: dict[str, CombatLogEventHandler] = {
             VERSION_EVENT: self.log_info_handler
         }
-        self.missing_handlers: set[str] = set()
+        self.missing_handlers: dict[str, set[str]] = defaultdict(set)
 
     def log_info_handler(self, event: CombatLogEvent) -> None:
         """Log an event."""
@@ -68,8 +68,8 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         if event.name in self.handlers:
             self.handlers[event.name](event)
-        elif event.name not in self.missing_handlers:
-            self.missing_handlers.add(event.name)
+        elif event.name not in self.missing_handlers[key]:
+            self.missing_handlers[key].add(event.name)
             file_data["missing_handlers"].append(event.name)
 
         file_data["event_totals"][event.name] += 1
@@ -144,4 +144,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
                 # Always update position after a line is processed.
                 file_data["position"] = log.tell()
 
-        self.logger.info("Reached EOF for log '%s': %s.", date, file_data)
+        self.logger.info(
+            "Reached EOF for log '%s' (%d event types weren't handled).",
+            date,
+            len(file_data["missing_handlers"]),
+        )
+        self.logger.debug(file_data)
