@@ -7,6 +7,7 @@ from datetime import datetime
 from typing import Callable, NamedTuple
 
 # third-party
+from runtimepy.net.stream.json.types import JsonMessage
 from vcorelib.logging import LoggerType
 
 CombatLogEventHandler = Callable[["CombatLogEvent"], None]
@@ -18,6 +19,15 @@ class CombatLogEvent(NamedTuple):
     timestamp: datetime
     name: str
     data: list[str]
+
+    def as_json(self) -> JsonMessage:
+        """Create a JSON serializable dictionary from this instance."""
+
+        return {
+            "timestamp": str(self.timestamp),
+            "name": self.name,
+            "data": self.data,
+        }
 
     @staticmethod
     def log_handler(logger: LoggerType) -> CombatLogEventHandler:

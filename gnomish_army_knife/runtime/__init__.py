@@ -7,6 +7,7 @@ from argparse import ArgumentParser as _ArgumentParser
 from argparse import Namespace as _Namespace
 from contextlib import ExitStack, contextmanager
 from pathlib import Path
+from tempfile import TemporaryDirectory
 from typing import Iterator
 
 # third-party
@@ -16,7 +17,7 @@ from vcorelib.logging import LoggerMixin
 
 # internal
 from gnomish_army_knife import DEFAULT_CONFIG, PKG_ABBREV
-from gnomish_army_knife.config import get_config
+from gnomish_army_knife.config import Config
 from gnomish_army_knife.database import ArenaMatchDb
 from gnomish_army_knife.paths import path_is_combat_log, wow_dir
 
@@ -30,14 +31,22 @@ class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
         ChannelEnvironmentMixin.__init__(self)
         LoggerMixin.__init__(self)
 
-        self.config = get_config(args)
+        self.config = Config.decode(args.config, require_success=False)
 
         self.wow_dir = wow_dir(args, self.config)
         self.logger.info(
             "Using '%s' as installation directory.", self.wow_dir.resolve()
         )
 
-        self.database = ArenaMatchDb(stack, args.state)
+        state = (
+            args.state
+            if not args.ephemeral
+            # pylint: disable=consider-using-with
+            else Path(stack.enter_context(TemporaryDirectory()))
+            # pylint: enable=consider-using-with
+        )
+
+        self.database = ArenaMatchDb(stack, state)
 
     @property
     def retail(self) -> Path:
@@ -76,6 +85,12 @@ class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
                 "path to the program's state directory "
                 "(default: '%(default)s')"
             ),
+        )
+        parser.add_argument(
+            "-e",
+            "--ephemeral",
+            action="store_true",
+            help="set to use new, temporary directories when applicable",
         )
 
     @staticmethod

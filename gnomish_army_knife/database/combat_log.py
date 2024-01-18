@@ -6,6 +6,7 @@ A module implementing a combat-log state data structure.
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from queue import Queue
 from time import strptime
 from typing import Any
 
@@ -40,6 +41,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         self.handlers: dict[str, CombatLogEventHandler] = {}
         self.missing_handlers: dict[str, set[str]] = defaultdict(set)
+        self.queues: list[Queue[CombatLogEvent]] = []
 
     @property
     def files(self) -> dict[str, Any]:
@@ -56,6 +58,10 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         elif event.name not in self.missing_handlers[key]:
             self.missing_handlers[key].add(event.name)
             file_data["missing_handlers"].append(event.name)
+
+        # Service queues.
+        for queue in self.queues:
+            queue.put(event)
 
         file_data["event_totals"][event.name] += 1
 
