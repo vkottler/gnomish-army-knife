@@ -10,6 +10,7 @@ from time import strptime
 from typing import Any
 
 # third-party
+from vcorelib import DEFAULT_ENCODING
 from vcorelib.dict.codec import BasicDictCodec as _BasicDictCodec
 from vcorelib.io import JsonObject as _JsonObject
 from vcorelib.logging import LoggerMixin
@@ -104,7 +105,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
             file_data["position"],
         )
 
-        with path.open() as log:
+        with path.open(encoding=DEFAULT_ENCODING) as log:
             # Go back to a possible previous iteration's starting point.
             log.seek(file_data["position"])
 
