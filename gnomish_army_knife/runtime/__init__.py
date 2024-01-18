@@ -38,11 +38,7 @@ class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
             "Using '%s' as installation directory.", self.wow_dir.resolve()
         )
 
-        # Load database.
         self.database = ArenaMatchDb(stack, args.state)
-        for log in self.combat_logs:
-            with self.log_time("processing '%s'", log.name):
-                self.database.logs.process_log(log)
 
     @property
     def retail(self) -> Path:

@@ -17,7 +17,10 @@ def scan_cmd(args: _Namespace) -> int:
     """Execute the scan command."""
 
     with GakRuntime.create(args) as runtime:
-        runtime.logger.info("Scan command.")
+        # Process combat logs.
+        for log in runtime.combat_logs:
+            with runtime.log_time("processing '%s'", log.name):
+                runtime.database.logs.process_log(log)
 
     return 0
 

@@ -7,7 +7,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from time import strptime
-from typing import Any, Callable
+from typing import Any, Callable, NamedTuple
 
 # third-party
 from vcorelib.dict.codec import BasicDictCodec as _BasicDictCodec
@@ -19,7 +19,17 @@ from gnomish_army_knife.paths import combat_log_datetime, combat_log_slug
 from gnomish_army_knife.schemas import GakDictCodec
 
 VERSION_EVENT = "COMBAT_LOG_VERSION"
-CombatLogEventHandler = Callable[[datetime, str, list[str]], None]
+
+
+class CombatLogEvent(NamedTuple):
+    """A simple container for combat log events."""
+
+    timestamp: datetime
+    name: str
+    data: list[str]
+
+
+CombatLogEventHandler = Callable[[CombatLogEvent], None]
 
 
 class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
@@ -39,31 +49,30 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         }
         self.missing_handlers: set[str] = set()
 
-    def log_info_handler(
-        self, timestamp: datetime, event: str, data: list[str]
-    ) -> None:
+    def log_info_handler(self, event: CombatLogEvent) -> None:
         """Log an event."""
-        self.logger.info("(%s) %s: %s.", timestamp, event, data)
+
+        self.logger.info(
+            "(%s) %s: %s.", event.timestamp, event.name, event.data
+        )
 
     @property
     def files(self) -> dict[str, Any]:
         """Get combat log file data."""
         return self.data["files"]  # type: ignore
 
-    def process_event(
-        self, key: str, timestamp: datetime, event: str, data: list[str]
-    ) -> None:
+    def process_event(self, key: str, event: CombatLogEvent) -> None:
         """Process a combat-log event."""
 
         file_data: dict[str, Any] = self.data["files"][key]  # type: ignore
 
-        if event in self.handlers:
-            self.handlers[event](timestamp, event, data)
-        elif event not in self.missing_handlers:
-            self.missing_handlers.add(event)
-            file_data["missing_handlers"].append(event)
+        if event.name in self.handlers:
+            self.handlers[event.name](event)
+        elif event.name not in self.missing_handlers:
+            self.missing_handlers.add(event.name)
+            file_data["missing_handlers"].append(event.name)
 
-        file_data["event_totals"][event] += 1
+        file_data["event_totals"][event.name] += 1
 
     def process_line(self, key: str, line: str, log_date: datetime) -> None:
         """Process a line from a combat log file."""
@@ -80,7 +89,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         # Parse the event data.
         event_items = event_raw.split(",")
-        self.process_event(key, timestamp, event_items[0], event_items[1:])
+        self.process_event(
+            key, CombatLogEvent(timestamp, event_items[0], event_items[1:])
+        )
 
     def process_log(self, path: Path) -> None:
         """Process a combat log file."""
@@ -121,7 +132,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
                     # no timestamp, and only for this event.
                     if line.startswith(VERSION_EVENT):
                         parsed = line.split(",")
-                        self.process_event(key, date, parsed[0], parsed[1:])
+                        self.process_event(
+                            key, CombatLogEvent(date, parsed[0], parsed[1:])
+                        )
                     else:
                         self.process_line(key, line, date)
                 else:
