@@ -37,11 +37,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         LoggerMixin.__init__(self)
 
-        log_handler = CombatLogEvent.log_handler(self.logger)
-
-        self.handlers: dict[str, CombatLogEventHandler] = {
-            VERSION_EVENT: log_handler
-        }
+        self.handlers: dict[str, CombatLogEventHandler] = {}
         self.missing_handlers: dict[str, set[str]] = defaultdict(set)
 
     @property

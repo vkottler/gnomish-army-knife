@@ -9,9 +9,8 @@ from contextlib import ExitStack, contextmanager
 from pathlib import Path
 from typing import Iterator
 
-from rcmpy.xdg import user_state
-
 # third-party
+from rcmpy.xdg import user_state
 from runtimepy.mixins.environment import ChannelEnvironmentMixin
 from vcorelib.logging import LoggerMixin
 
