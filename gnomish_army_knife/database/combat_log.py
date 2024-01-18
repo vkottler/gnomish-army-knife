@@ -7,7 +7,7 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from time import strptime
-from typing import Any, Callable, NamedTuple
+from typing import Any
 
 # third-party
 from vcorelib.dict.codec import BasicDictCodec as _BasicDictCodec
@@ -15,21 +15,14 @@ from vcorelib.io import JsonObject as _JsonObject
 from vcorelib.logging import LoggerMixin
 
 # internal
+from gnomish_army_knife.database.event import (
+    CombatLogEvent,
+    CombatLogEventHandler,
+)
 from gnomish_army_knife.paths import combat_log_datetime, combat_log_slug
 from gnomish_army_knife.schemas import GakDictCodec
 
 VERSION_EVENT = "COMBAT_LOG_VERSION"
-
-
-class CombatLogEvent(NamedTuple):
-    """A simple container for combat log events."""
-
-    timestamp: datetime
-    name: str
-    data: list[str]
-
-
-CombatLogEventHandler = Callable[[CombatLogEvent], None]
 
 
 class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
@@ -44,17 +37,12 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         LoggerMixin.__init__(self)
 
+        log_handler = CombatLogEvent.log_handler(self.logger)
+
         self.handlers: dict[str, CombatLogEventHandler] = {
-            VERSION_EVENT: self.log_info_handler
+            VERSION_EVENT: log_handler
         }
         self.missing_handlers: dict[str, set[str]] = defaultdict(set)
-
-    def log_info_handler(self, event: CombatLogEvent) -> None:
-        """Log an event."""
-
-        self.logger.info(
-            "(%s) %s: %s.", event.timestamp, event.name, event.data
-        )
 
     @property
     def files(self) -> dict[str, Any]:
