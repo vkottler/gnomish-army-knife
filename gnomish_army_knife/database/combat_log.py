@@ -37,6 +37,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         self.handlers: dict[str, CombatLogEventHandler] = {
             VERSION_EVENT: self.log_info_handler
         }
+        self.missing_handlers: set[str] = set()
 
     def log_info_handler(
         self, timestamp: datetime, event: str, data: list[str]
@@ -58,8 +59,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         if event in self.handlers:
             self.handlers[event](timestamp, event, data)
-        else:
-            file_data["missing_handlers"].add(event)
+        elif event not in self.missing_handlers:
+            self.missing_handlers.add(event)
+            file_data["missing_handlers"].append(event)
 
         file_data["event_totals"][event] += 1
 
@@ -98,7 +100,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         file_data["datetime"] = str(date)
         file_data["timestamp"] = date.timestamp()
         file_data["event_totals"] = defaultdict(int)
-        file_data["missing_handlers"] = set()
+        file_data["missing_handlers"] = []
 
         self.logger.info(
             "Processing log '%s' (%s old) from position %d.",
@@ -113,7 +115,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
             reached_eof = False
             while not reached_eof:
-                line = log.readline()
+                line = log.readline().rstrip()
                 if line:
                     # This is some kind of bug in the client? Event lines with
                     # no timestamp, and only for this event.

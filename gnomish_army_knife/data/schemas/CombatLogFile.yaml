@@ -19,6 +19,11 @@ properties:
       "^.*$":
         type: integer
 
+  missing_handlers:
+    type: array
+    items:
+      type: string
+
   state:
     enum:
       - processing
