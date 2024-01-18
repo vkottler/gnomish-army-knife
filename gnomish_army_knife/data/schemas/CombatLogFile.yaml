@@ -1,0 +1,30 @@
+---
+type: object
+additionalProperties: false
+
+properties:
+  position:
+    type: integer
+
+  datetime:
+    type: string
+
+  timestamp:
+    type: number
+
+  event_totals:
+    type: object
+    additionalProperties: false
+    patternProperties:
+      "^.*$":
+        type: integer
+
+  missing_handlers:
+    type: array
+    items:
+      type: string
+
+  state:
+    enum:
+      - processing
+      - reached_eof

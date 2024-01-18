@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=3a99e14a581e54467f1eb57a321a6262
+    hash=3084d43e566cb25537c1adc510f5f88d
     =====================================
 -->
 
-# gnomish-army-knife ([0.1.0](https://pypi.org/project/gnomish-army-knife/))
+# gnomish-army-knife ([0.2.0](https://pypi.org/project/gnomish-army-knife/))
 
 [![python](https://img.shields.io/pypi/pyversions/gnomish-army-knife.svg)](https://pypi.org/project/gnomish-army-knife/)
 ![Build Status](https://github.com/vkottler/gnomish-army-knife/workflows/Python%20Package/badge.svg)
@@ -54,7 +54,7 @@ This project is named after an
 $ ./venv3.11/bin/gak -h
 
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
-           {noop} ...
+           {scan,noop} ...
 
 Software tools for WoW arena analysis.
 
@@ -68,7 +68,8 @@ options:
   -C DIR, --dir DIR  execute from a specific directory
 
 commands:
-  {noop}             set of available commands
+  {scan,noop}        set of available commands
+    scan             scan the 'World of Warcraft' directory for updates
     noop             command stub (does nothing)
 
 ```

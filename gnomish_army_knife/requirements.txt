@@ -1,1 +1,2 @@
-vcorelib
+vcorelib>=3.1.1
+runtimepy

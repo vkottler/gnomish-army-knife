@@ -3,8 +3,20 @@ name: gnomish-army-knife
 version: "{{major}}.{{minor}}.{{patch}}"
 description: Software tools for WoW arena analysis.
 entry: {{entry}}
+
 requirements:
-  - vcorelib
+  - vcorelib>=3.1.1
+  - runtimepy
+
 dev_requirements:
   - setuptools-wrapper
   - types-setuptools
+
+commands:
+  - name: scan
+    description: "scan the 'World of Warcraft' directory for updates"
+
+init_local: |
+  PKG_ABBREV = "gak"
+  DEFAULT_CONFIG = f"{PKG_ABBREV}.yaml"
+  WOW_DIR = "World of Warcraft"
