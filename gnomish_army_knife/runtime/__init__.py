@@ -8,7 +8,7 @@ from argparse import Namespace as _Namespace
 from contextlib import ExitStack, contextmanager
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from typing import Iterator
+from typing import Iterator, Optional
 
 # third-party
 from rcmpy.xdg import user_state
@@ -19,7 +19,11 @@ from vcorelib.logging import LoggerMixin
 from gnomish_army_knife import DEFAULT_CONFIG, PKG_ABBREV
 from gnomish_army_knife.config import Config
 from gnomish_army_knife.database import ArenaMatchDb
-from gnomish_army_knife.paths import path_is_combat_log, wow_dir
+from gnomish_army_knife.paths import (
+    combat_log_datetime,
+    path_is_combat_log,
+    wow_dir,
+)
 
 
 class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
@@ -61,6 +65,23 @@ class GakRuntime(ChannelEnvironmentMixin, LoggerMixin):
         for item in base.iterdir():
             if path_is_combat_log(item):
                 yield item
+
+    def latest_combat_log(self) -> Optional[Path]:
+        """Attempt to get the most recent combat-log file."""
+
+        latest = None
+
+        logs = list(self.combat_logs)
+        if logs:
+            latest = logs[0]
+            latest_time = combat_log_datetime(latest)
+            for log in logs[1:]:
+                curr_time = combat_log_datetime(log)
+                if curr_time > latest_time:
+                    latest = log
+                    latest_time = curr_time
+
+        return latest
 
     @staticmethod
     def cli_args(parser: _ArgumentParser) -> None:

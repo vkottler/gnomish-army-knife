@@ -7,6 +7,7 @@ to a World of Warcraft installation.
 from argparse import Namespace as _Namespace
 from datetime import datetime
 from pathlib import Path
+from typing import Union
 
 # internal
 from gnomish_army_knife import WOW_DIR
@@ -41,8 +42,11 @@ def combat_log_slug(path: Path) -> str:
     return path.with_suffix("").name.replace(COMBAT_LOG_PREFIX, "")
 
 
-def combat_log_datetime(slug: str) -> datetime:
+def combat_log_datetime(slug: Union[Path, str]) -> datetime:
     """Get a datetime instance based on the log slug."""
+
+    if isinstance(slug, Path):
+        slug = combat_log_slug(slug)
     return datetime.strptime(slug, "%m%d%y_%H%M%S")
 
 
