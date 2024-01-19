@@ -23,7 +23,6 @@ class LogServerTask(ArbiterTask):
     """A class implementing a runtime environment for an event log server."""
 
     queue: Queue[CombatLogEvent]
-    clients: list[CombatLogEventConnection]
 
     runtime: GakRuntime
 
@@ -48,6 +47,8 @@ class LogServerTask(ArbiterTask):
         servicing any queue or handler consumers.
         """
 
+        self.logger.info("Combat-log reading thread started.")
+
         while not self.stop_reading_log.is_set():
             # Ensure we don't starve due to no active log file.
             sleep(0.1)
@@ -64,7 +65,6 @@ class LogServerTask(ArbiterTask):
         await super().init(app)
 
         self.queue = Queue()
-        self.clients = list(app.search(kind=CombatLogEventConnection))
         self.stop_reading_log = Event()
 
         # Parse command-line options and create the runtime instance.
@@ -96,6 +96,7 @@ class LogServerTask(ArbiterTask):
         # Signal log-reading thread to stop and wait for it to be stopped.
         self.stop_reading_log.set()
         self.log_file_reader_thread.join()
+        self.logger.info("Combat-log reading thread stopped.")
 
     async def dispatch(self) -> bool:
         """Dispatch an iteration of this task."""
@@ -103,7 +104,7 @@ class LogServerTask(ArbiterTask):
         while not self.queue.empty():
             item = self.queue.get_nowait()
             self.event_count.value += 1
-            for conn in self.clients:
+            for conn in self.app.search(kind=CombatLogEventConnection):
                 conn.forward_handler(item)
 
         return True
