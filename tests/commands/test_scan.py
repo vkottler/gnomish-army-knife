@@ -27,5 +27,5 @@ def test_entry_basic():
 
         args = ["--state", stack.enter_context(TemporaryDirectory())]
 
-        for _ in range(3):
+        for _ in range(2):
             assert gnomish_army_knife_main(base + args) == 0

@@ -6,6 +6,7 @@ A module implementing a combat-log state data structure.
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from threading import Event
 from time import strptime
 from typing import Any
 
@@ -20,6 +21,7 @@ from gnomish_army_knife.database.event import (
     CombatLogEvent,
     CombatLogEventHandler,
 )
+from gnomish_army_knife.database.queue import CombatLogQueueHandler
 from gnomish_army_knife.paths import combat_log_datetime, combat_log_slug
 from gnomish_army_knife.schemas import GakDictCodec
 
@@ -40,6 +42,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         self.handlers: dict[str, CombatLogEventHandler] = {}
         self.missing_handlers: dict[str, set[str]] = defaultdict(set)
+        self.queue = CombatLogQueueHandler()
 
     @property
     def files(self) -> dict[str, Any]:
@@ -56,6 +59,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         elif event.name not in self.missing_handlers[key]:
             self.missing_handlers[key].add(event.name)
             file_data["missing_handlers"].append(event.name)
+
+        # Service queues.
+        self.queue.handle(event)
 
         file_data["event_totals"][event.name] += 1
 
@@ -78,7 +84,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
             key, CombatLogEvent(timestamp, event_items[0], event_items[1:])
         )
 
-    def process_log(self, path: Path) -> None:
+    def process_log(self, path: Path, stop: Event = None) -> None:
         """Process a combat log file."""
 
         key = combat_log_slug(path)
@@ -110,7 +116,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
             log.seek(file_data["position"])
 
             reached_eof = False
-            while not reached_eof:
+            while not reached_eof and (stop is None or not stop.is_set()):
                 line = log.readline().rstrip()
                 if line:
                     # This is some kind of bug in the client? Event lines with
@@ -130,7 +136,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
                 file_data["position"] = log.tell()
 
         self.logger.info(
-            "Reached EOF for log '%s' (%d event types weren't handled).",
+            "Finished processing log '%s' (%d event types weren't handled).",
             date,
             len(file_data["missing_handlers"]),
         )
