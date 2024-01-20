@@ -68,7 +68,7 @@ jobs:
 
       - run: |
           mk python-release owner=vkottler \
-                            repo=gnomish-army-knife version=0.2.0
+                            repo=gnomish-army-knife version=1.0.0
         if: |
           matrix.python-version == '3.11'
           && matrix.system == 'ubuntu-latest'
