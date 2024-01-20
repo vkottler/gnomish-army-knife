@@ -18,6 +18,8 @@ __all__ = [
     "LogServer",
     "TcpCombatLogEvent",
     "WebsocketCombatLogEvent",
+    "WebsocketCombatLogEventConnection",
+    "TcpCombatLogEventConnection",
 ]
 
 

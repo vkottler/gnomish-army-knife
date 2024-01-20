@@ -15,7 +15,5 @@ config:
   # Can specify command-line arguments.
   gak_cli_args: []
 
-# Synchronous task is the main application.
-app: runtimepy.net.apps.wait_for_stop
 tasks:
-  - {name: log_server, factory: log_server, period_s: 0.1}
+  - {name: log_server, factory: log_server, period_s: 0.05}

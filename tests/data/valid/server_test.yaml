@@ -1,0 +1,19 @@
+---
+includes:
+  - package://gnomish_army_knife/server.yaml
+
+# Use an ephemeral state directory.
+config: {gak_cli_args: [-e]}
+
+clients:
+  - factory: tcp_combat_log_event
+    name: tcp_client
+    defer: true
+    kwargs: {host: localhost, port: "$tcp_combat_log"}
+
+  - factory: websocket_combat_log_event
+    name: websocket_client
+    defer: true
+    args: ["ws://localhost:$websocket_combat_log"]
+
+app: tests.net.test_connection.conn_test

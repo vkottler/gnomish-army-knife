@@ -4,6 +4,7 @@ A module implementing a simple event log server task.
 
 # built-in
 import argparse
+import asyncio
 from queue import Queue
 from threading import Event, Thread
 from time import sleep
@@ -106,5 +107,9 @@ class LogServerTask(ArbiterTask):
             self.event_count.value += 1
             for conn in self.app.search(kind=CombatLogEventConnection):
                 conn.forward_handler(item)
+
+            # Ensure other things get to run if the queue is populated at or
+            # greater than the rate of forwarding.
+            await asyncio.sleep(0)
 
         return True
