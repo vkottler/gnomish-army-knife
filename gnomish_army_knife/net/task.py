@@ -104,7 +104,7 @@ class LogServerTask(ArbiterTask):
 
         while not self.queue.empty():
             item = self.queue.get_nowait()
-            self.event_count.value += 1
+            self.event_count.increment()
             for conn in self.app.search(kind=CombatLogEventConnection):
                 conn.forward_handler(item)
 
