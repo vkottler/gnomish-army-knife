@@ -20,9 +20,9 @@ def scan_cmd(args: _Namespace) -> int:
 
     with GakRuntime.create(args) as runtime:
         # Add a simple handler.
-        runtime.database.logs.handlers[
-            VERSION_EVENT
-        ] = CombatLogEvent.log_handler(runtime.database.logs.logger)
+        runtime.database.logs.handlers[VERSION_EVENT] = (
+            CombatLogEvent.log_handler(runtime.database.logs.logger)
+        )
 
         # Process combat logs.
         for log in runtime.combat_logs:

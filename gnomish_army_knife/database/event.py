@@ -7,7 +7,7 @@ from datetime import datetime
 from typing import Callable, NamedTuple
 
 # third-party
-from runtimepy.net.stream.json.types import JsonMessage
+from runtimepy.message import JsonMessage
 from vcorelib.logging import LoggerType
 
 CombatLogEventHandler = Callable[["CombatLogEvent"], None]

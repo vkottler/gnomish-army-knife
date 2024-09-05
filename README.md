@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=29d98ed66773fde70448b7c2ab01b65d
+    hash=e099ae7cbb0fedbb46f0a49d43d3db4f
     =====================================
 -->
 
@@ -51,7 +51,7 @@ This project is named after an
 # Command-line Options
 
 ```
-$ ./venv3.11/bin/gak -h
+$ ./venv3.12/bin/gak -h
 
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
            {scan,noop} ...

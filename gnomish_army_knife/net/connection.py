@@ -6,8 +6,8 @@ A module implementing a network-connection interfaces.
 from datetime import datetime
 
 # third-party
+from runtimepy.message import JsonMessage
 from runtimepy.net.stream.json import JsonMessageConnection
-from runtimepy.net.stream.json.types import JsonMessage
 
 # internal
 from gnomish_army_knife.database.event import CombatLogEvent
