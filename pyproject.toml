@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta:__legacy__"
 
 [project]
 name = "gnomish-army-knife"
-version = "1.0.0"
+version = "1.0.1"
 description = "Software tools for WoW arena analysis."
 readme = "README.md"
 requires-python = ">=3.11"

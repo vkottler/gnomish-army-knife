@@ -2,11 +2,11 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=e099ae7cbb0fedbb46f0a49d43d3db4f
+    hash=7a75f6089dd1198ceabf9e5b1d820c87
     =====================================
 -->
 
-# gnomish-army-knife ([1.0.0](https://pypi.org/project/gnomish-army-knife/))
+# gnomish-army-knife ([1.0.1](https://pypi.org/project/gnomish-army-knife/))
 
 [![python](https://img.shields.io/pypi/pyversions/gnomish-army-knife.svg)](https://pypi.org/project/gnomish-army-knife/)
 ![Build Status](https://github.com/vkottler/gnomish-army-knife/workflows/Python%20Package/badge.svg)

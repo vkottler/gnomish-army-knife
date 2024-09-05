@@ -1,7 +1,7 @@
 # =====================================
 # generator=datazen
 # version=3.1.4
-# hash=c74f06d5af3de9f8470c00210d7fb1fb
+# hash=69b00751eb023a1205649e0bd53a0866
 # =====================================
 
 """
@@ -10,7 +10,7 @@ Useful defaults and other package metadata.
 
 DESCRIPTION = "Software tools for WoW arena analysis."
 PKG_NAME = "gnomish-army-knife"
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 # gnomish-army-knife-specific content.
 PKG_ABBREV = "gak"
