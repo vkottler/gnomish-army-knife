@@ -1,0 +1,142 @@
+---
+###############################################################################
+
+# Bottom quad key.
+a:
+  nomod: "Shadow Word: Pain"
+
+  lb: null
+
+  lb_lt: null
+
+  lt: null
+
+  a:
+    spell: Renew
+    macro: self
+
+###############################################################################
+
+# Left quad key.
+x:
+  nomod: Smite
+
+  lb: null
+
+  lb_lt: null
+
+  lt: null
+
+  a:
+    spell: Flash Heal
+    macro: self
+
+  a_lb: null
+
+###############################################################################
+
+# Top quad key.
+y:
+  nomod: Dispel Magic
+
+  lb: null
+
+  lb_lt: null
+
+  lt: null
+
+  a:
+    spell: Purify
+    macro: self
+
+###############################################################################
+
+# Right quad key.
+b:
+  nomod: Mind Blast
+
+  lb: null
+
+  lb_lt: null
+
+  lt: null
+
+  a: null
+
+  a_lb: null
+
+###############################################################################
+
+# Right button.
+rb:
+  nomod: Penance
+
+  lb: Leap of Faith
+
+  lb_lt: Ultimate Penitence
+
+  lt: Levitate
+
+  a:
+    spell: Penance
+    macro: self
+
+###############################################################################
+
+# Right trigger.
+rt:
+  nomod: Mass Dispel
+
+  lb:
+    spell: Angelic Feather
+    macro: self
+
+  lb_lt: Angelic Feather
+
+  lt: "Power Word: Barrier"
+
+  a:
+    spell: Mass Dispel
+    macro: player
+
+  a_lb:
+    spell: "Power Word: Barrier"
+    macro: player
+
+###############################################################################
+
+# D-pad down.
+dd:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
+
+# D-pad right.
+dr:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
+
+# D-pad up.
+du:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
+
+# D-pad left.
+dl:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
