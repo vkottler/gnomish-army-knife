@@ -1,0 +1,44 @@
+---
+1:
+  - x
+  - lt_x
+  - a
+  - lt_a
+  - y
+  - lt_y
+  - b
+  - lt_b
+  - rb
+  - lt_rb
+  - rt
+  - lt_rt
+
+2:
+  - lb_x
+  - lb_lt_x
+  - lb_a
+  - lb_lt_a
+  - lb_y
+  - lb_lt_y
+  - lb_b
+  - lb_lt_b
+  - lb_rb
+  - lb_lt_rb
+  - lb_rt
+  - lb_lt_rt
+
+3:
+  - a_x
+  - a_lb_x
+  - a_a
+  - a_lb_a
+  - a_y
+  - a_lb_y
+  - a_b
+  - a_lb_b
+  - a_rb
+  - a_lb_rb
+  - a_rt
+  - a_lb_rt
+
+# todo - d-pad bars

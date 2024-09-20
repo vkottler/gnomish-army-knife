@@ -7,6 +7,9 @@
 
 # Generate help/harm macro variants for these abilities, so they can be placed
 # on the main action bar.
+#
+# todo: enforce that these always end up on main bar (bind each macro)
+#
 binal:
   - Penance
   - Ultimate Penitence
@@ -18,11 +21,15 @@ aimed:
   - "Power Word: Barrier"
 
 # harm->help
+#
+# todo: like binals, ensure these all get bound to main bar
+#
 complements:
   "Shadow Word: Pain": Renew
   Smite: Flash Heal
   Dispel Magic: Purify
-  Mind Blast: Power Infusion
+  Mind Blast: "Power Word: Shield"
+  "Shadow Word: Death": "Power Word: Radiance"
 
 # todo: keep track of per-character macro slot usage to handle overflow into
 #       generic macros (30 max, 6 columns 5 rows)

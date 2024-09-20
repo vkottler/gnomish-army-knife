@@ -4,12 +4,11 @@
 # Bottom quad key.
 a:
   nomod: "Shadow Word: Pain"
+  lt: Fade
 
-  lb: null
+  lb: Leap of Faith
 
-  lb_lt: null
-
-  lt: null
+  lb_lt: Desperate Prayer
 
   a:
     spell: Renew
@@ -20,30 +19,28 @@ a:
 # Left quad key.
 x:
   nomod: Smite
+  lt: "Shadow Word: Death"
 
-  lb: null
+  lb: Pain Suppression
 
-  lb_lt: null
-
-  lt: null
+  lb_lt: Rapture
 
   a:
     spell: Flash Heal
     macro: self
 
-  a_lb: null
+  a_lb: Premonition of Insight
 
 ###############################################################################
 
 # Top quad key.
 y:
   nomod: Dispel Magic
+  lt: Power Infusion
 
-  lb: null
+  lb: Void Shift
 
   lb_lt: null
-
-  lt: null
 
   a:
     spell: Purify
@@ -54,14 +51,15 @@ y:
 # Right quad key.
 b:
   nomod: Mind Blast
+  lt: Psychic Scream
 
-  lb: null
+  lb: Shadowfiend
 
   lb_lt: null
 
-  lt: null
-
-  a: null
+  a:
+    spell: "Power Word: Shield"
+    macro: self
 
   a_lb: null
 
@@ -70,12 +68,9 @@ b:
 # Right button.
 rb:
   nomod: Penance
+  lt: Ultimate Penitence
 
-  lb: Leap of Faith
-
-  lb_lt: Ultimate Penitence
-
-  lt: Levitate
+  lb_lt: Levitate
 
   a:
     spell: Penance
@@ -86,14 +81,13 @@ rb:
 # Right trigger.
 rt:
   nomod: Mass Dispel
+  lt: "Power Word: Barrier"
 
   lb:
     spell: Angelic Feather
     macro: self
 
   lb_lt: Angelic Feather
-
-  lt: "Power Word: Barrier"
 
   a:
     spell: Mass Dispel

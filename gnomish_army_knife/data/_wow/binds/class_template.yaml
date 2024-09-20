@@ -4,9 +4,10 @@
 # Bottom quad key.
 a:
   nomod: null
+  lt: null
+
   lb: null
   lb_lt: null
-  lt: null
   a: null
   a_lb:
     special: trinket
@@ -16,9 +17,10 @@ a:
 # Left quad key.
 x:
   nomod: null
+  lt: null
+
   lb: null
   lb_lt: null
-  lt: null
   a: null
   a_lb: null
 
@@ -27,9 +29,10 @@ x:
 # Top quad key.
 y:
   nomod: null
+  lt: null
+
   lb: null
   lb_lt: null
-  lt: null
   a: null
   a_lb:
     special: healthstone
@@ -39,9 +42,10 @@ y:
 # Right quad key.
 b:
   nomod: null
+  lt: null
+
   lb: null
   lb_lt: null
-  lt: null
   a: null
   a_lb: null
 
@@ -49,11 +53,16 @@ b:
 
 # Right button.
 rb:
+  # Good for binals.
   nomod: null
-  lb: null
-  lb_lt: null
   lt: null
+
+  lb:
+    special: interrupt
+
+  lb_lt: null
   a: null
+
   a_lb:
     special: racial
 
@@ -62,9 +71,10 @@ rb:
 # Right trigger.
 rt:
   nomod: null
+  lt: null
+
   lb: null
   lb_lt: null
-  lt: null
   a: null
   a_lb: null
 
