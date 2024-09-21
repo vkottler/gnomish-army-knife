@@ -1,0 +1,126 @@
+---
+###############################################################################
+
+# Bottom quad key.
+a:
+  nomod: null
+  lt: null
+
+  lb: null
+  lb_lt: null
+  a: null
+  a_lb:
+    special: trinket
+
+###############################################################################
+
+# Left quad key.
+x:
+  nomod: null
+  lt: null
+
+  lb: null
+  lb_lt: null
+  a: null
+  a_lb: null
+
+###############################################################################
+
+# Top quad key.
+y:
+  nomod: null
+  lt: null
+
+  lb: null
+  lb_lt: null
+  a: null
+  a_lb:
+    special: healthstone
+
+###############################################################################
+
+# Right quad key.
+b:
+  nomod: null
+  lt: null
+
+  lb: null
+  lb_lt: null
+  a: null
+  a_lb: null
+
+###############################################################################
+
+# Right button.
+rb:
+  # Good for binals.
+  nomod: null
+  lt: null
+
+  lb:
+    special: interrupt
+
+  lb_lt: null
+  a: null
+
+  a_lb:
+    special: racial
+
+###############################################################################
+
+# Right trigger.
+rt:
+  nomod: null
+  lt: null
+
+  lb: null
+  lb_lt: null
+  a: null
+  a_lb: null
+
+###############################################################################
+
+# Center button (typically used for mount and merchant mount).
+xbox:
+  nomod:
+    special: favorite_mount
+  a:
+    special: merchant_mount
+
+###############################################################################
+
+# D-pad down.
+dd:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
+
+# D-pad right.
+dr:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
+
+# D-pad up.
+du:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
+
+# D-pad left.
+dl:
+  a: null
+  a_lb: null
+  lb: null
+  a_lt: null
+
+###############################################################################
