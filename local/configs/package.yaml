@@ -13,6 +13,8 @@ dev_requirements:
   - types-setuptools
 
 commands:
+  - name: markdown
+    description: "generate Markdown content from class data"
   - name: scan
     description: "scan the 'World of Warcraft' directory for updates"
 

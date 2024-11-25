@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.1.4
-    hash=a7634265350cd77c31e11b1341cc0e76
+    hash=27fc7fb395997e7b47cc1626ff83e241
     =====================================
 -->
 
@@ -54,23 +54,60 @@ This project is named after an
 $ ./venv3.12/bin/gak -h
 
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
-           {scan,noop} ...
+           {markdown,scan,noop} ...
 
 Software tools for WoW arena analysis.
 
 options:
-  -h, --help         show this help message and exit
-  --version          show program's version number and exit
-  -v, --verbose      set to increase logging verbosity
-  -q, --quiet        set to reduce output
-  --curses           whether or not to use curses.wrapper when starting
-  --no-uvloop        whether or not to disable uvloop as event loop driver
-  -C DIR, --dir DIR  execute from a specific directory
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  -v, --verbose         set to increase logging verbosity
+  -q, --quiet           set to reduce output
+  --curses              whether or not to use curses.wrapper when starting
+  --no-uvloop           whether or not to disable uvloop as event loop driver
+  -C DIR, --dir DIR     execute from a specific directory
 
 commands:
-  {scan,noop}        set of available commands
-    scan             scan the 'World of Warcraft' directory for updates
-    noop             command stub (does nothing)
+  {markdown,scan,noop}  set of available commands
+    markdown            generate Markdown content from class data
+    scan                scan the 'World of Warcraft' directory for updates
+    noop                command stub (does nothing)
+
+```
+
+## Sub-command Options
+
+### `markdown`
+
+```
+$ ./venv3.12/bin/gak markdown -h
+
+usage: gak markdown [-h] [-o OUTPUT]
+
+options:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        output directory (default: gnomish-army-knife-
+                        markdown)
+
+```
+
+### `scan`
+
+```
+$ ./venv3.12/bin/gak scan -h
+
+usage: gak scan [-h] [-c CONFIG] [-s STATE] [-e]
+
+options:
+  -h, --help            show this help message and exit
+  -c CONFIG, --config CONFIG
+                        path to an optional configuration file (default:
+                        'gak.yaml')
+  -s STATE, --state STATE
+                        path to the program's state directory (default:
+                        '/home/vkottler/.local/state/gak')
+  -e, --ephemeral       set to use new, temporary directories when applicable
 
 ```
 

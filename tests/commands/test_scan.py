@@ -17,7 +17,7 @@ from gnomish_army_knife.entry import main as gnomish_army_knife_main
 from tests.resources import resource
 
 
-def test_entry_basic():
+def test_scan_basic():
     """Test basic scan invocations."""
 
     base = [PKG_NAME, "scan"]
