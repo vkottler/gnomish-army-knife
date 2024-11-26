@@ -1,12 +1,24 @@
 ---
 type: object
-required: []
 additionalProperties: false
 
-# spell ID for icon (default to the question mark?)
-# title
-# body
-# markdown == description
+# Macro contents and UI label are required.
+required: [text, label]
+
+properties:
+  label:
+    type: string
+
+  icon:
+    type: string
+    default: inv_misc_questionmark
+
+  title:
+    type: string
+    default: " "
+  text:
+    type: string
 
 includes:
+  # Optional description.
   - package://runtimepy/schemas/has_markdown.yaml
