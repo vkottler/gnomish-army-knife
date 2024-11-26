@@ -21,6 +21,7 @@ def test_macro_basic():
     )
 
     # print(macro.short_markdown)
+    # print(macro.markdown)
     # assert False
 
     assert macro.markdown

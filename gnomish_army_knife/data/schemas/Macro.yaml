@@ -1,17 +1,10 @@
 ---
-type: object
-additionalProperties: false
-
 # Macro contents and UI label are required.
 required: [text, label]
 
 properties:
   label:
     type: string
-
-  icon:
-    type: string
-    default: inv_misc_questionmark
 
   title:
     type: string
@@ -20,5 +13,8 @@ properties:
     type: string
 
 includes:
+  - is_object.yaml
+  - has_icon.yaml
+
   # Optional description.
   - package://runtimepy/schemas/has_markdown.yaml
