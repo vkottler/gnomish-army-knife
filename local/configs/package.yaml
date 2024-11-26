@@ -19,6 +19,7 @@ commands:
     description: "scan the 'World of Warcraft' directory for updates"
 
 init_local: |
+  PKG_SLUG = PKG_NAME.replace("-", "_")
   PKG_ABBREV = "gak"
   DEFAULT_CONFIG = f"{PKG_ABBREV}.yaml"
   WOW_DIR = "World of Warcraft"

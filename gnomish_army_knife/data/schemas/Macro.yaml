@@ -1,0 +1,12 @@
+---
+type: object
+required: []
+additionalProperties: false
+
+# spell ID for icon (default to the question mark?)
+# title
+# body
+# markdown == description
+
+includes:
+  - package://runtimepy/schemas/has_markdown.yaml

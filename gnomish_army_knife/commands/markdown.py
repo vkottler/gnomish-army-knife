@@ -12,12 +12,13 @@ from vcorelib.args import CommandFunction as _CommandFunction
 
 # internal
 from gnomish_army_knife import PKG_NAME
+from gnomish_army_knife.markdown.generate import entry
 
 
 def markdown_cmd(args: _Namespace) -> int:
     """Execute the markdown command."""
 
-    del args
+    entry(args.output)
 
     return 0
 
