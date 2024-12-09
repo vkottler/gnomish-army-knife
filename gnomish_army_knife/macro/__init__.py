@@ -10,9 +10,8 @@ from vcorelib.dict.codec import BasicDictCodec as _BasicDictCodec
 from vcorelib.io.types import JsonObject as _JsonObject
 
 # internal
+from gnomish_army_knife.icon import icon_url
 from gnomish_army_knife.schemas import GakDictCodec
-
-ICON_FSTR = "![icon](https://render.worldofwarcraft.com/us/icons/56/{}.jpg)"
 
 
 class Macro(GakDictCodec, _BasicDictCodec):
@@ -29,7 +28,7 @@ class Macro(GakDictCodec, _BasicDictCodec):
         # h1 - class page (or 'generic').
         # h2 - spec / category
         lines: list[str] = [
-            f"### {ICON_FSTR.format(data['icon'])} {data['label']}"
+            f"### {icon_url(str(data['icon']))} {data['label']}"
         ]
 
         # Macro description.

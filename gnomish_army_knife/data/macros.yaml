@@ -1,0 +1,23 @@
+---
+# Default macro database.
+
+categories:
+  - name: Druid
+    icon: classicon_druid
+    macros: []
+    groups:
+      - name: Balance
+        icon: ability_druid_improvedmoonkinform
+        macros: []
+
+      - name: Guardian
+        icon: ability_racial_bearform
+        macros: []
+
+      - name: Feral
+        icon: ability_druid_catform
+        macros: []
+
+      - name: Restoration
+        icon: ability_druid_improvedtreeform
+        macros: []

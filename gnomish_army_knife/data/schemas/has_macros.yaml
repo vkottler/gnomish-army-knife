@@ -1,0 +1,6 @@
+---
+properties:
+  macros:
+    type: array
+    items:
+      $ref: package://gnomish_army_knife/schemas/Macro.yaml

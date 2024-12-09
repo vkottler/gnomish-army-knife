@@ -8,7 +8,7 @@ a:
 
   lb: Leap of Faith
 
-  lb_lt: Desperate Prayer
+  lb_lt: "Power Word: Life"
 
   a:
     spell: Renew
@@ -29,7 +29,9 @@ x:
     spell: Flash Heal
     macro: self
 
-  a_lb: Premonition of Insight
+  a_lb:
+    spell: Pain Suppression
+    macro: self
 
 ###############################################################################
 
@@ -38,9 +40,9 @@ y:
   nomod: Dispel Magic
   lt: Power Infusion
 
-  lb: Void Shift
+  lb: Desperate Prayer
 
-  lb_lt: null
+  lb_lt: Void Shift
 
   a:
     spell: Purify
@@ -69,6 +71,8 @@ b:
 rb:
   nomod: Penance
   lt: Ultimate Penitence
+
+  lb: Premonition of Insight
 
   lb_lt: Levitate
 

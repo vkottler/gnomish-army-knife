@@ -1,9 +1,3 @@
 ---
-binal:
-  - Wild Charge
-  - Adaptive Swarm
-
-aimed:
-  - Ursol's Vortex
-
-# complements:
+includes:
+  - base.yaml

@@ -1,4 +1,6 @@
 ---
+includes:
+  - base.yaml
 
 # todo: move commentary to a schema definition
 
