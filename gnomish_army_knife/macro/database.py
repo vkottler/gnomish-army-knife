@@ -3,6 +3,7 @@ A module implementing a macro database structure.
 """
 
 # built-in
+from os import linesep
 from pathlib import Path
 
 # third-party
@@ -10,11 +11,12 @@ from vcorelib.io.types import JsonObject as _JsonObject
 from vcorelib.paths.find import find_file
 
 # internal
-from gnomish_army_knife import PKG_SLUG
+from gnomish_army_knife import PKG_NAME, PKG_SLUG
 from gnomish_army_knife.macro.category import MacroCategory
 from gnomish_army_knife.schemas import BasicGakCodec
 
 DEFAULT_MACRO_DATABASE = f"package://{PKG_SLUG}/macros.yaml"
+DEFAULT_OUT = f"{PKG_NAME}-markdown"
 
 
 class MacroDatabase(BasicGakCodec):
@@ -41,14 +43,44 @@ class MacroDatabase(BasicGakCodec):
                 [],
             )
         ]
+        self.title: str = data["title"]  # type: ignore
 
-    def write_markdown(self, path: Path) -> None:
+    def write_markdown_dir(self, path: Path, name: str = "index.md") -> None:
         """Write markdown contents to disk."""
 
         assert self.categories, "No macro categories loaded!"
 
         path.mkdir(parents=True, exist_ok=True)
 
-        # index page, include self's markdown (from init) + link to categories
+        link_strs: list[str] = []
+        for category in self.categories:
+            link = f"{category.slug}/index.html"
+            link_strs.append(
+                f"## [{category.icon_url}]({link}) [{category.name}]({link})"
+            )
 
-        # create category pages (implement in category class)
+            if category.groups:
+                link_strs.append("")
+
+            # Direct links to groups.
+            for group in category.groups:
+                link = f"{category.slug}/{group.slug}.html"
+                link_strs.append(
+                    f" * [{group.icon_url}]({link}) [{group.name}]({link})"
+                )
+
+            category.write_markdown_dir(
+                path.joinpath(category.slug), name=name
+            )
+
+        link_strs.append("")
+
+        # Index.
+        with path.joinpath(name).open("w") as path_fd:
+            path_fd.write(
+                linesep.join(
+                    [f"# {self.title}", ""]
+                    + link_strs
+                    + list(self.markdown_footer)
+                )
+            )

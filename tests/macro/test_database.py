@@ -2,37 +2,19 @@
 Test the 'macro.database' module.
 """
 
+# built-in
+from pathlib import Path
+
 # module under test
 from gnomish_army_knife.macro.category import MacroCategory
-from gnomish_army_knife.macro.database import MacroDatabase
+from gnomish_army_knife.macro.database import DEFAULT_OUT, MacroDatabase
 from gnomish_army_knife.macro.group import MacroGroup
-
-
-def dev_dump(data: MacroDatabase) -> None:
-    """Test method."""
-
-    for category in data.categories:
-        print(category.name)
-        print(category.icon_url)
-
-        for macro in category.macros:
-            print(macro)
-
-        for group in category.groups:
-            print(group.name)
-            print(group.icon_url)
-            for macro in group.macros:
-                print(macro)
-
-    assert False
 
 
 def test_macro_database_rendering():
     """Test rendering a macro database to markdown."""
 
-    data = MacroDatabase.load()
-    # dev_dump(data)
-    del data
+    MacroDatabase.load().write_markdown_dir(Path(DEFAULT_OUT))
 
 
 def test_macro_database_basic():

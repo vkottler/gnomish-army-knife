@@ -1,6 +1,11 @@
 ---
-# Class tier (or 'generic').
 properties:
+  title:
+    type: string
+    default: |-
+      [WoW Macro Database](https://github.com/vkottler/gnomish-army-knife)
+
+  # Class tier (or 'generic').
   categories:
     type: array
     items:

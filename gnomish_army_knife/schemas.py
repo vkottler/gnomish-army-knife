@@ -3,6 +3,7 @@ A module for working with schemas belonging to this package.
 """
 
 # built-in
+from typing import Iterator
 from typing import Optional as _Optional
 
 # third-party
@@ -41,3 +42,18 @@ class BasicGakCodec(GakDictCodec, _BasicDictCodec):
 
         super().init(data)
         self.set_markdown(config=data)
+
+    @staticmethod
+    def to_slug(data: str) -> str:
+        """Convert a string to a slug."""
+        return data.replace(" ", "_").replace("-", "_").lower()
+
+    @property
+    def markdown_footer(self) -> Iterator[str]:
+        """A simple footer."""
+
+        yield "---"
+        yield ""
+        yield "Data structure information below."
+        yield ""
+        yield self.markdown

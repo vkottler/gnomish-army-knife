@@ -11,9 +11,9 @@ from pathlib import Path
 from vcorelib.args import CommandFunction as _CommandFunction
 
 # internal
-from gnomish_army_knife import PKG_NAME
 from gnomish_army_knife.macro.database import (
     DEFAULT_MACRO_DATABASE,
+    DEFAULT_OUT,
     MacroDatabase,
 )
 
@@ -21,7 +21,7 @@ from gnomish_army_knife.macro.database import (
 def markdown_cmd(args: _Namespace) -> int:
     """Execute the markdown command."""
 
-    MacroDatabase.load(args.database).write_markdown(args.output)
+    MacroDatabase.load(args.database).write_markdown_dir(args.output)
 
     return 0
 
@@ -34,7 +34,7 @@ def add_markdown_cmd(parser: _ArgumentParser) -> _CommandFunction:
         "--output",
         type=Path,
         help="output directory (default: '%(default)s')",
-        default=f"{PKG_NAME}-markdown",
+        default=DEFAULT_OUT,
     )
 
     parser.add_argument(
