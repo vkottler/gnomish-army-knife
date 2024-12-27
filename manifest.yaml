@@ -23,6 +23,11 @@ compiles:
       - local/variables
 
 renders:
+  - name: expectedCVars.lua
+    output_dir: addon
+    dependencies:
+      - compiles-local
+
   - name: README.md
     output_dir: "."
     dependencies:
@@ -50,3 +55,4 @@ groups:
       - groups-license
       - groups-funding
       - renders-README.md
+      - renders-expectedCVars.lua

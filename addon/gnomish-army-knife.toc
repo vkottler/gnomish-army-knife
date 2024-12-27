@@ -9,6 +9,7 @@ buttons.lua
 
 actionbar_page_changed.lua
 keybinds.lua
+expectedCVars.lua
 cvars.lua
 macros.lua
 bars.lua

@@ -1,8 +1,8 @@
 <!--
     =====================================
     generator=datazen
-    version=3.1.4
-    hash=27fc7fb395997e7b47cc1626ff83e241
+    version=3.2.0
+    hash=17f2ec0950f105ba02101835df81e739
     =====================================
 -->
 
@@ -82,13 +82,16 @@ commands:
 ```
 $ ./venv3.12/bin/gak markdown -h
 
-usage: gak markdown [-h] [-o OUTPUT]
+usage: gak markdown [-h] [-o OUTPUT] [-d DATABASE]
 
 options:
   -h, --help            show this help message and exit
   -o OUTPUT, --output OUTPUT
-                        output directory (default: gnomish-army-knife-
-                        markdown)
+                        output directory (default: 'gnomish-army-knife-
+                        markdown')
+  -d DATABASE, --database DATABASE
+                        macro database (default:
+                        'package://gnomish_army_knife/macros.yaml')
 
 ```
 
