@@ -32,8 +32,12 @@ local function auditCVars()
 end
 
 local function setCVars()
+	local count = 0
+
 	for key, val in pairs(expectedCVars) do
 		if not doesCVarMatch(key, false) then
+			count = count + 1
+
 			if C_CVar.SetCVar(key, val) then
 				print("Set", key, "to", val)
 			else
@@ -41,6 +45,8 @@ local function setCVars()
 			end
 		end
 	end
+
+	print("Attempted", count, "variable updates.")
 end
 
 function CVarManagementInit(ui)
