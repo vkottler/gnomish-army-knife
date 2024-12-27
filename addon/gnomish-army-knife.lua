@@ -1,43 +1,58 @@
 -- https://wowprogramming.com/docs/api_categories.html
 -- |cAARRGGBB
 
--- info = {C_CVar.GetCVarInfo("GamePadEnable")}
--- print(info[1])
+local project = "gnomish-army-knife"
 
--- CVar's to set/audit
--- ----------------------------------------------------------------------------
--- GamePadEnable 1
+-- Create UI menu.
+local ui =
+	CreateFrame("Frame", project, UIParent, "BasicFrameTemplateWithInset")
+ui:SetSize(400, 300)
+ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
--- https://wowpedia.fandom.com/wiki/Game_Pad_buttons
--- GamePadEmulateAlt PADPADDLE2
+-- Initially hidden.
+ui:Hide()
 
--- GamePadRunThreshold 0
--- GamePadCameraYawSpeed 1.75
--- advancedCombatLogging 1
--- ----------------------------------------------------------------------------
+-- Add a title.
+ui.TitleBg:SetHeight(30)
+ui.title = ui:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+ui.title:SetPoint("TOPLEFT", ui.TitleBg, "TOPLEFT", 5, -5)
+ui.title:SetText(project)
 
--- https://wowpedia.fandom.com/wiki/Events
--- ACTIONBAR_PAGE_CHANGED
-local function initHelpHarmBar()
-	-- need some kind of actual UI interaction, attempt to replace the "1"
-	-- and "2" elements? or is that not possible
-	-- https://wowpedia.fandom.com/wiki/UIOBJECT_Frame
-	local frame = CreateFrame("Frame")
+-- Handle mouse move.
+-- https://wowpedia.fandom.com/wiki/Making_resizable_frames ?
+ui:EnableMouse(true)
+ui:SetMovable(true)
+ui:RegisterForDrag("LeftButton")
+ui:SetScript("OnDragStart", function(self)
+	self:StartMoving()
+end)
+ui:SetScript("OnDragStop", function(self)
+	self:StopMovingOrSizing()
+end)
 
-	-- check if current bar is "1" or "2" to initialize properly
-	-- GetActionBarPage()
+-- Handle show and hide.
+ui:SetScript("OnShow", function()
+	PlaySound(808)
+end)
+ui:SetScript("OnHide", function()
+	PlaySound(808)
+end)
 
-	-- https://wowpedia.fandom.com/wiki/UIHANDLER_OnEvent
-	frame:SetScript("OnEvent", function(_, event)
-		if event == "ACTIONBAR_PAGE_CHANGED" then
-			message("current action bar: " .. GetActionBarPage())
-		end
-	end)
-	frame:RegisterEvent("ACTIONBAR_PAGE_CHANGED")
+-- Register mechanisms to show UI.
+SLASH_GNOMISH_ARMY_KNIFE1 = "/" .. project
+SLASH_GNOMISH_ARMY_KNIFE2 = "/gak"
+SlashCmdList["GNOMISH_ARMY_KNIFE"] = function()
+	if ui:IsShown() then
+		ui:Hide()
+	else
+		ui:Show()
+	end
 end
 
-local function main()
-	initHelpHarmBar()
-end
+-- Register special frame.
+table.insert(UISpecialFrames, project)
 
-main()
+-- Initialize application.
+initHelpHarmBar(ui)
+CVarManagementInit(ui)
+KeybindManagementInit(ui)
