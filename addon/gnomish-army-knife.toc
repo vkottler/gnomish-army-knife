@@ -5,8 +5,12 @@
 ## Version: 1.0
 ## IconTexture: Interface\AddOns\gnomish-army-knife\gnomish-army-knife
 
+buttons.lua
+
 actionbar_page_changed.lua
 keybinds.lua
 cvars.lua
+macros.lua
+bars.lua
 
 gnomish-army-knife.lua

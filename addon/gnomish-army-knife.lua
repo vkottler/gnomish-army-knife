@@ -4,39 +4,11 @@
 local project = "gnomish-army-knife"
 
 -- Create UI menu.
-local ui =
-	CreateFrame("Frame", project, UIParent, "BasicFrameTemplateWithInset")
-ui:SetSize(400, 300)
+local ui = createButtonContainer(UIParent, project, 2, 5)
 ui:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
 
 -- Initially hidden.
 ui:Hide()
-
--- Add a title.
-ui.TitleBg:SetHeight(30)
-ui.title = ui:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-ui.title:SetPoint("TOPLEFT", ui.TitleBg, "TOPLEFT", 5, -5)
-ui.title:SetText(project)
-
--- Handle mouse move.
--- https://wowpedia.fandom.com/wiki/Making_resizable_frames ?
-ui:EnableMouse(true)
-ui:SetMovable(true)
-ui:RegisterForDrag("LeftButton")
-ui:SetScript("OnDragStart", function(self)
-	self:StartMoving()
-end)
-ui:SetScript("OnDragStop", function(self)
-	self:StopMovingOrSizing()
-end)
-
--- Handle show and hide.
-ui:SetScript("OnShow", function()
-	PlaySound(808)
-end)
-ui:SetScript("OnHide", function()
-	PlaySound(808)
-end)
 
 -- Register mechanisms to show UI.
 SLASH_GNOMISH_ARMY_KNIFE1 = "/" .. project
@@ -49,10 +21,17 @@ SlashCmdList["GNOMISH_ARMY_KNIFE"] = function()
 	end
 end
 
--- Register special frame.
-table.insert(UISpecialFrames, project)
-
 -- Initialize application.
 initHelpHarmBar(ui)
 CVarManagementInit(ui)
 KeybindManagementInit(ui)
+MacroManagementInit(ui)
+ActionBarManagementInit(ui)
+
+-- Utility buttons.
+createButton(ui, "Set UI", 0, 4, function()
+	print("Set UI")
+end)
+createButton(ui, "Reload", 1, 4, function()
+	ConsoleExec("reloadUI")
+end)
