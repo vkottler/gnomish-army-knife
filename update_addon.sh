@@ -8,7 +8,7 @@ PROJECT=gnomish-army-knife
 
 if [ -L wow ]; then
 	mkdir -p wow/$ADDONS/$PROJECT
-	rsync -r addon/ wow/$ADDONS/$PROJECT
+	rsync --del -r addon/ wow/$ADDONS/$PROJECT
 else
 	echo "No 'wow' symbolic link."
 fi

@@ -116,6 +116,237 @@ bindings:
     key: PADRSTICK
     modifiers: [ALT, SHIFT]
 
+  - command: TARGETPARTYMEMBER1
+    key: PADSYSTEM
+  - command: TARGETPARTYMEMBER4
+    key: PADSYSTEM
+    modifiers: [ALT]
+  - command: TARGETPARTYMEMBER2
+    key: PADSYSTEM
+    modifiers: [SHIFT]
+  - command: TARGETPARTYMEMBER3
+    key: PADSYSTEM
+    modifiers: [CTRL]
+  - command: TARGETSELF
+    key: PADSYSTEM
+    modifiers: [CTRL, SHIFT]
+  - command: TOGGLEGAK
+    key: PADSYSTEM
+    modifiers: [ALT, SHIFT]
+
+  - command: TOGGLEGAMEMENU
+    key: PADPADDLE4
+  - command: TARGETARENA3
+    key: PADPADDLE4
+    modifiers: [ALT]
+  - command: TARGETARENA1
+    key: PADPADDLE4
+    modifiers: [SHIFT]
+  - command: TARGETARENA2
+    key: PADPADDLE4
+    modifiers: [CTRL]
+  - command: VEHICLEEXIT
+    key: PADPADDLE4
+    modifiers: [CTRL, SHIFT]
+
+  - command: INTERACTTARGET
+    key: PADPADDLE3
+  - command: MULTIACTIONBAR4BUTTON7
+    key: PADPADDLE3
+    modifiers: [ALT]
+  - command: MULTIACTIONBAR3BUTTON7
+    key: PADPADDLE3
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR4BUTTON1
+    key: PADPADDLE3
+    modifiers: [CTRL]
+  - command: EXTRAACTIONBUTTON1
+    key: PADPADDLE3
+    modifiers: [CTRL, SHIFT]
+
+  - command: JUMP
+    key: PADPADDLE1
+  - command: NEXTACTIONPAGE
+    key: PADPADDLE1
+    modifiers: [ALT]
+  - command: MULTIACTIONBAR3BUTTON8
+    key: PADPADDLE1
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR4BUTTON2
+    key: PADPADDLE1
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR4BUTTON8
+    key: PADPADDLE1
+    modifiers: [CTRL, SHIFT]
+
+  - command: TOGGLEWORLDMAP
+    key: PADBACK
+  - command: TOGGLECHARACTER0
+    key: PADBACK
+    modifiers: [ALT]
+  - command: TOGGLESPELLBOOK
+    key: PADBACK
+    modifiers: [SHIFT]
+  - command: TOGGLETALENTS
+    key: PADBACK
+    modifiers: [CTRL]
+  - command: TOGGLEACHIEVEMENT
+    key: PADBACK
+    modifiers: [ALT, SHIFT]
+  - command: OPENALLBAGS
+    key: PADBACK
+    modifiers: [CTRL, SHIFT]
+  - command: TOGGLECOLLECTIONS
+    key: PADBACK
+    modifiers: [ALT, CTRL]
+
+  - command: TOGGLEAUTORUN
+    key: PADFORWARD
+  - command: TOGGLEGROUPFINDER
+    key: PADFORWARD
+    modifiers: [ALT]
+  - command: TOGGLEPROFESSIONBOOK
+    key: PADFORWARD
+    modifiers: [SHIFT]
+  - command: TOGGLEENCOUNTERJOURNAL
+    key: PADFORWARD
+    modifiers: [CTRL]
+  - command: TOGGLEGUILDTAB
+    key: PADFORWARD
+    modifiers: [ALT, SHIFT]
+  - command: FOLLOWTARGET
+    key: PADFORWARD
+    modifiers: [CTRL, SHIFT]
+  - command: TOGGLEWORLDSTATESCORES
+    key: PADFORWARD
+    modifiers: [ALT, CTRL]
+
+  - command: ACTIONBUTTON1
+    key: PADRSHOULDER
+  - command: MULTIACTIONBAR2BUTTON7
+    key: PADRSHOULDER
+    modifiers: [ALT]
+  - command: ACTIONBUTTON7
+    key: PADRSHOULDER
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR1BUTTON1
+    key: PADRSHOULDER
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR3BUTTON1
+    key: PADRSHOULDER
+    modifiers: [ALT, SHIFT]
+  - command: MULTIACTIONBAR1BUTTON7
+    key: PADRSHOULDER
+    modifiers: [CTRL, SHIFT]
+  - command: MULTIACTIONBAR2BUTTON1
+    key: PADRSHOULDER
+    modifiers: [ALT, CTRL]
+
+  - command: ACTIONBUTTON2
+    key: PADRTRIGGER
+  - command: MULTIACTIONBAR2BUTTON8
+    key: PADRTRIGGER
+    modifiers: [ALT]
+  - command: ACTIONBUTTON8
+    key: PADRTRIGGER
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR1BUTTON2
+    key: PADRTRIGGER
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR3BUTTON2
+    key: PADRTRIGGER
+    modifiers: [ALT, SHIFT]
+  - command: MULTIACTIONBAR1BUTTON8
+    key: PADRTRIGGER
+    modifiers: [CTRL, SHIFT]
+  - command: MULTIACTIONBAR2BUTTON2
+    key: PADRTRIGGER
+    modifiers: [ALT, CTRL]
+
+  - command: ACTIONBUTTON3
+    key: PAD3
+  - command: MULTIACTIONBAR2BUTTON9
+    key: PAD3
+    modifiers: [ALT]
+  - command: ACTIONBUTTON9
+    key: PAD3
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR1BUTTON3
+    key: PAD3
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR3BUTTON3
+    key: PAD3
+    modifiers: [ALT, SHIFT]
+  - command: MULTIACTIONBAR1BUTTON9
+    key: PAD3
+    modifiers: [CTRL, SHIFT]
+  - command: MULTIACTIONBAR2BUTTON3
+    key: PAD3
+    modifiers: [ALT, CTRL]
+
+  - command: ACTIONBUTTON4
+    key: PAD1
+  - command: MULTIACTIONBAR2BUTTON10
+    key: PAD1
+    modifiers: [ALT]
+  - command: ACTIONBUTTON10
+    key: PAD1
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR1BUTTON4
+    key: PAD1
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR3BUTTON4
+    key: PAD1
+    modifiers: [ALT, SHIFT]
+  - command: MULTIACTIONBAR1BUTTON10
+    key: PAD1
+    modifiers: [CTRL, SHIFT]
+  - command: MULTIACTIONBAR2BUTTON4
+    key: PAD1
+    modifiers: [ALT, CTRL]
+
+  - command: ACTIONBUTTON5
+    key: PAD4
+  - command: MULTIACTIONBAR2BUTTON11
+    key: PAD4
+    modifiers: [ALT]
+  - command: ACTIONBUTTON11
+    key: PAD4
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR1BUTTON5
+    key: PAD4
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR3BUTTON5
+    key: PAD4
+    modifiers: [ALT, SHIFT]
+  - command: MULTIACTIONBAR1BUTTON11
+    key: PAD4
+    modifiers: [CTRL, SHIFT]
+  - command: MULTIACTIONBAR2BUTTON5
+    key: PAD4
+    modifiers: [ALT, CTRL]
+
+  - command: ACTIONBUTTON6
+    key: PAD2
+  - command: MULTIACTIONBAR2BUTTON12
+    key: PAD2
+    modifiers: [ALT]
+  - command: ACTIONBUTTON12
+    key: PAD2
+    modifiers: [SHIFT]
+  - command: MULTIACTIONBAR1BUTTON6
+    key: PAD2
+    modifiers: [CTRL]
+  - command: MULTIACTIONBAR3BUTTON6
+    key: PAD2
+    modifiers: [ALT, SHIFT]
+  - command: MULTIACTIONBAR1BUTTON12
+    key: PAD2
+    modifiers: [CTRL, SHIFT]
+  - command: MULTIACTIONBAR2BUTTON6
+    key: PAD2
+    modifiers: [ALT, CTRL]
+
 keymap:
   PADRTRIGGER: BUTTON4
   PADRSHOULDER: BUTTON5

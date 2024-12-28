@@ -13,13 +13,20 @@ ui:Hide()
 -- Register mechanisms to show UI.
 SLASH_GNOMISH_ARMY_KNIFE1 = "/" .. project
 SLASH_GNOMISH_ARMY_KNIFE2 = "/gak"
-SlashCmdList["GNOMISH_ARMY_KNIFE"] = function()
+
+function ToggleGnomishArmyKnife()
 	if ui:IsShown() then
 		ui:Hide()
 	else
 		ui:Show()
 	end
 end
+
+SlashCmdList["GNOMISH_ARMY_KNIFE"] = ToggleGnomishArmyKnife
+
+-- Custom keybinds.
+BINDING_HEADER_GAK = project
+BINDING_NAME_TOGGLEGAK = "Toggle gnomish-army-knife Window"
 
 -- Initialize application.
 initHelpHarmBar(ui)

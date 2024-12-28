@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=c868d2af5ac12db5e06e4da5224c5fca
+-- hash=f8084b9851ad9fae11bee214422fe85e
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
@@ -202,5 +202,436 @@ bindings["SCREENSHOT"] = {
 	{
 		"ALT",
 		"SHIFT",
+	},
+}
+bindings["TARGETPARTYMEMBER1"] = { "PADSYSTEM", nil }
+bindings["TARGETPARTYMEMBER4"] = {
+	"PADSYSTEM",
+	{
+		"ALT",
+	},
+}
+bindings["TARGETPARTYMEMBER2"] = {
+	"PADSYSTEM",
+	{
+		"SHIFT",
+	},
+}
+bindings["TARGETPARTYMEMBER3"] = {
+	"PADSYSTEM",
+	{
+		"CTRL",
+	},
+}
+bindings["TARGETSELF"] = {
+	"PADSYSTEM",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["TOGGLEGAK"] = {
+	"PADSYSTEM",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["TOGGLEGAMEMENU"] = { "PADPADDLE4", nil }
+bindings["TARGETARENA3"] = {
+	"PADPADDLE4",
+	{
+		"ALT",
+	},
+}
+bindings["TARGETARENA1"] = {
+	"PADPADDLE4",
+	{
+		"SHIFT",
+	},
+}
+bindings["TARGETARENA2"] = {
+	"PADPADDLE4",
+	{
+		"CTRL",
+	},
+}
+bindings["VEHICLEEXIT"] = {
+	"PADPADDLE4",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["INTERACTTARGET"] = { "PADPADDLE3", nil }
+bindings["MULTIACTIONBAR4BUTTON7"] = {
+	"PADPADDLE3",
+	{
+		"ALT",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON7"] = {
+	"PADPADDLE3",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR4BUTTON1"] = {
+	"PADPADDLE3",
+	{
+		"CTRL",
+	},
+}
+bindings["EXTRAACTIONBUTTON1"] = {
+	"PADPADDLE3",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["JUMP"] = { "PADPADDLE1", nil }
+bindings["NEXTACTIONPAGE"] = {
+	"PADPADDLE1",
+	{
+		"ALT",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON8"] = {
+	"PADPADDLE1",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR4BUTTON2"] = {
+	"PADPADDLE1",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR4BUTTON8"] = {
+	"PADPADDLE1",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["TOGGLEWORLDMAP"] = { "PADBACK", nil }
+bindings["TOGGLECHARACTER0"] = {
+	"PADBACK",
+	{
+		"ALT",
+	},
+}
+bindings["TOGGLESPELLBOOK"] = {
+	"PADBACK",
+	{
+		"SHIFT",
+	},
+}
+bindings["TOGGLETALENTS"] = {
+	"PADBACK",
+	{
+		"CTRL",
+	},
+}
+bindings["TOGGLEACHIEVEMENT"] = {
+	"PADBACK",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["OPENALLBAGS"] = {
+	"PADBACK",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["TOGGLECOLLECTIONS"] = {
+	"PADBACK",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["TOGGLEAUTORUN"] = { "PADFORWARD", nil }
+bindings["TOGGLEGROUPFINDER"] = {
+	"PADFORWARD",
+	{
+		"ALT",
+	},
+}
+bindings["TOGGLEPROFESSIONBOOK"] = {
+	"PADFORWARD",
+	{
+		"SHIFT",
+	},
+}
+bindings["TOGGLEENCOUNTERJOURNAL"] = {
+	"PADFORWARD",
+	{
+		"CTRL",
+	},
+}
+bindings["TOGGLEGUILDTAB"] = {
+	"PADFORWARD",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["FOLLOWTARGET"] = {
+	"PADFORWARD",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["TOGGLEWORLDSTATESCORES"] = {
+	"PADFORWARD",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["ACTIONBUTTON1"] = { "PADRSHOULDER", nil }
+bindings["MULTIACTIONBAR2BUTTON7"] = {
+	"PADRSHOULDER",
+	{
+		"ALT",
+	},
+}
+bindings["ACTIONBUTTON7"] = {
+	"PADRSHOULDER",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON1"] = {
+	"PADRSHOULDER",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON1"] = {
+	"PADRSHOULDER",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON7"] = {
+	"PADRSHOULDER",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR2BUTTON1"] = {
+	"PADRSHOULDER",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["ACTIONBUTTON2"] = { "PADRTRIGGER", nil }
+bindings["MULTIACTIONBAR2BUTTON8"] = {
+	"PADRTRIGGER",
+	{
+		"ALT",
+	},
+}
+bindings["ACTIONBUTTON8"] = {
+	"PADRTRIGGER",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON2"] = {
+	"PADRTRIGGER",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON2"] = {
+	"PADRTRIGGER",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON8"] = {
+	"PADRTRIGGER",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR2BUTTON2"] = {
+	"PADRTRIGGER",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["ACTIONBUTTON3"] = { "PAD3", nil }
+bindings["MULTIACTIONBAR2BUTTON9"] = {
+	"PAD3",
+	{
+		"ALT",
+	},
+}
+bindings["ACTIONBUTTON9"] = {
+	"PAD3",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON3"] = {
+	"PAD3",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON3"] = {
+	"PAD3",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON9"] = {
+	"PAD3",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR2BUTTON3"] = {
+	"PAD3",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["ACTIONBUTTON4"] = { "PAD1", nil }
+bindings["MULTIACTIONBAR2BUTTON10"] = {
+	"PAD1",
+	{
+		"ALT",
+	},
+}
+bindings["ACTIONBUTTON10"] = {
+	"PAD1",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON4"] = {
+	"PAD1",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON4"] = {
+	"PAD1",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON10"] = {
+	"PAD1",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR2BUTTON4"] = {
+	"PAD1",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["ACTIONBUTTON5"] = { "PAD4", nil }
+bindings["MULTIACTIONBAR2BUTTON11"] = {
+	"PAD4",
+	{
+		"ALT",
+	},
+}
+bindings["ACTIONBUTTON11"] = {
+	"PAD4",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON5"] = {
+	"PAD4",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON5"] = {
+	"PAD4",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON11"] = {
+	"PAD4",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR2BUTTON5"] = {
+	"PAD4",
+	{
+		"ALT",
+		"CTRL",
+	},
+}
+bindings["ACTIONBUTTON6"] = { "PAD2", nil }
+bindings["MULTIACTIONBAR2BUTTON12"] = {
+	"PAD2",
+	{
+		"ALT",
+	},
+}
+bindings["ACTIONBUTTON12"] = {
+	"PAD2",
+	{
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON6"] = {
+	"PAD2",
+	{
+		"CTRL",
+	},
+}
+bindings["MULTIACTIONBAR3BUTTON6"] = {
+	"PAD2",
+	{
+		"ALT",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR1BUTTON12"] = {
+	"PAD2",
+	{
+		"CTRL",
+		"SHIFT",
+	},
+}
+bindings["MULTIACTIONBAR2BUTTON6"] = {
+	"PAD2",
+	{
+		"ALT",
+		"CTRL",
 	},
 }
