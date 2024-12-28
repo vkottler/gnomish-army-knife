@@ -8,6 +8,7 @@
 buttons.lua
 
 actionbar_page_changed.lua
+keymap.lua
 keybinds.lua
 expectedCVars.lua
 cvars.lua

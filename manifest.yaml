@@ -27,6 +27,10 @@ renders:
     output_dir: addon
     dependencies:
       - compiles-local
+  - name: keymap.lua
+    output_dir: addon
+    dependencies:
+      - compiles-local
 
   - name: README.md
     output_dir: "."
@@ -56,3 +60,4 @@ groups:
       - groups-funding
       - renders-README.md
       - renders-expectedCVars.lua
+      - renders-keymap.lua
