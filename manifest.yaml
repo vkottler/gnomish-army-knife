@@ -23,14 +23,11 @@ compiles:
       - local/variables
 
 renders:
-  - name: expectedCVars.lua
+  - name: "{key}.lua"
     output_dir: addon
     dependencies:
       - compiles-local
-  - name: keymap.lua
-    output_dir: addon
-    dependencies:
-      - compiles-local
+
   - name: addon.md
     output_path: README.md
     output_dir: addon
@@ -62,6 +59,7 @@ groups:
     dependencies:
       - renders-expectedCVars.lua
       - renders-keymap.lua
+      - renders-meta.lua
       - renders-addon.md
 
   - name: all

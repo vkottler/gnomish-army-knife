@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=bc442b08a4de7e71140dfc3ebce7b0e1
+    hash=9f8c1f6722eaa74081e1e8506f9031ea
     =====================================
 -->
 
@@ -43,6 +43,9 @@ This package is tested on the following platforms:
 * `windows-latest`
 
 # Introduction
+
+LUA source hosted [here](https://github.com/vkottler/gak-lua) for
+[CurseForge](https://www.curseforge.com/wow) integration.
 
 # Command-line Options
 
