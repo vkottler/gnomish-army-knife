@@ -1,7 +1,7 @@
 ---
 name: gnomish-army-knife
 version: "{{major}}.{{minor}}.{{patch}}"
-description: Software tools for WoW arena analysis.
+description: World of Warcraft polyfills and standardization.
 entry: {{entry}}
 
 requirements:

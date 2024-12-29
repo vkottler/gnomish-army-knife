@@ -11,6 +11,10 @@ cvars:
 # ALT-SHIFT
 # ALT-CTRL
 # CTRL-SHIFT
+modifiers:
+  SHIFT: PADLSHOULDER
+  CTRL: PADLTRIGGER
+  ALT: PADPADDLE2
 
 bindings:
   - command: TARGETFOCUS
@@ -117,21 +121,21 @@ bindings:
     modifiers: [ALT, SHIFT]
 
   - command: TARGETPARTYMEMBER1
-    key: PADSYSTEM
+    key: PADFORWARD
   - command: TARGETPARTYMEMBER4
-    key: PADSYSTEM
+    key: PADFORWARD
     modifiers: [ALT]
   - command: TARGETPARTYMEMBER2
-    key: PADSYSTEM
+    key: PADFORWARD
     modifiers: [SHIFT]
   - command: TARGETPARTYMEMBER3
-    key: PADSYSTEM
+    key: PADFORWARD
     modifiers: [CTRL]
   - command: TARGETSELF
-    key: PADSYSTEM
+    key: PADFORWARD
     modifiers: [CTRL, SHIFT]
   - command: TOGGLEGAK
-    key: PADSYSTEM
+    key: PADFORWARD
     modifiers: [ALT, SHIFT]
 
   - command: TOGGLEGAMEMENU
@@ -201,24 +205,24 @@ bindings:
     modifiers: [ALT, CTRL]
 
   - command: TOGGLEAUTORUN
-    key: PADFORWARD
+    key: PADSYSTEM
   - command: TOGGLEGROUPFINDER
-    key: PADFORWARD
+    key: PADSYSTEM
     modifiers: [ALT]
   - command: TOGGLEPROFESSIONBOOK
-    key: PADFORWARD
+    key: PADSYSTEM
     modifiers: [SHIFT]
   - command: TOGGLEENCOUNTERJOURNAL
-    key: PADFORWARD
+    key: PADSYSTEM
     modifiers: [CTRL]
   - command: TOGGLEGUILDTAB
-    key: PADFORWARD
+    key: PADSYSTEM
     modifiers: [ALT, SHIFT]
   - command: FOLLOWTARGET
-    key: PADFORWARD
+    key: PADSYSTEM
     modifiers: [CTRL, SHIFT]
   - command: TOGGLEWORLDSTATESCORES
-    key: PADFORWARD
+    key: PADSYSTEM
     modifiers: [ALT, CTRL]
 
   - command: ACTIONBUTTON1

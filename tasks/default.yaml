@@ -2,6 +2,9 @@
 includes_left:
   - package://runtimepy/server.yaml
 
+port_overrides:
+  runtimepy_http_server: 8000
+
 config_builders:
   - tasks.util.add_web_server_paths
 

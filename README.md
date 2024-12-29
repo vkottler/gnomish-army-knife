@@ -2,9 +2,11 @@
     =====================================
     generator=datazen
     version=3.2.0
-    hash=17f2ec0950f105ba02101835df81e739
+    hash=c154f9196b16e9638904ffb66a29f235
     =====================================
 -->
+
+[![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife)
 
 # gnomish-army-knife ([1.0.1](https://pypi.org/project/gnomish-army-knife/))
 
@@ -14,7 +16,7 @@
 ![PyPI - Status](https://img.shields.io/pypi/status/gnomish-army-knife)
 ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/gnomish-army-knife)
 
-*Software tools for WoW arena analysis.*
+*World of Warcraft polyfills and standardization.*
 
 ## Documentation
 
@@ -42,12 +44,6 @@ This package is tested on the following platforms:
 
 # Introduction
 
-![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)
-
-This project is named after an
-[in-game item](https://www.wowhead.com/item=40772/gnomish-army-knife)
-(real ones will know!).
-
 # Command-line Options
 
 ```
@@ -56,7 +52,7 @@ $ ./venv3.12/bin/gak -h
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
            {markdown,scan,noop} ...
 
-Software tools for WoW arena analysis.
+World of Warcraft polyfills and standardization.
 
 options:
   -h, --help            show this help message and exit

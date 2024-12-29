@@ -31,6 +31,11 @@ renders:
     output_dir: addon
     dependencies:
       - compiles-local
+  - name: addon.md
+    output_path: README.md
+    output_dir: addon
+    dependencies:
+      - compiles-local
 
   - name: README.md
     output_dir: "."
@@ -53,11 +58,16 @@ renders:
       - compiles-python
 
 groups:
+  - name: addon
+    dependencies:
+      - renders-expectedCVars.lua
+      - renders-keymap.lua
+      - renders-addon.md
+
   - name: all
     dependencies:
       - groups-python
       - groups-license
       - groups-funding
       - renders-README.md
-      - renders-expectedCVars.lua
-      - renders-keymap.lua
+      - groups-addon

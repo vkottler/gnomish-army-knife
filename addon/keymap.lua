@@ -1,7 +1,7 @@
 -- =====================================
 -- generator=datazen
 -- version=3.2.0
--- hash=f8084b9851ad9fae11bee214422fe85e
+-- hash=f6f86b2cacec5562ad8db42630b25228
 -- =====================================
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
@@ -204,34 +204,34 @@ bindings["SCREENSHOT"] = {
 		"SHIFT",
 	},
 }
-bindings["TARGETPARTYMEMBER1"] = { "PADSYSTEM", nil }
+bindings["TARGETPARTYMEMBER1"] = { "PADFORWARD", nil }
 bindings["TARGETPARTYMEMBER4"] = {
-	"PADSYSTEM",
+	"PADFORWARD",
 	{
 		"ALT",
 	},
 }
 bindings["TARGETPARTYMEMBER2"] = {
-	"PADSYSTEM",
+	"PADFORWARD",
 	{
 		"SHIFT",
 	},
 }
 bindings["TARGETPARTYMEMBER3"] = {
-	"PADSYSTEM",
+	"PADFORWARD",
 	{
 		"CTRL",
 	},
 }
 bindings["TARGETSELF"] = {
-	"PADSYSTEM",
+	"PADFORWARD",
 	{
 		"CTRL",
 		"SHIFT",
 	},
 }
 bindings["TOGGLEGAK"] = {
-	"PADSYSTEM",
+	"PADFORWARD",
 	{
 		"ALT",
 		"SHIFT",
@@ -355,41 +355,41 @@ bindings["TOGGLECOLLECTIONS"] = {
 		"CTRL",
 	},
 }
-bindings["TOGGLEAUTORUN"] = { "PADFORWARD", nil }
+bindings["TOGGLEAUTORUN"] = { "PADSYSTEM", nil }
 bindings["TOGGLEGROUPFINDER"] = {
-	"PADFORWARD",
+	"PADSYSTEM",
 	{
 		"ALT",
 	},
 }
 bindings["TOGGLEPROFESSIONBOOK"] = {
-	"PADFORWARD",
+	"PADSYSTEM",
 	{
 		"SHIFT",
 	},
 }
 bindings["TOGGLEENCOUNTERJOURNAL"] = {
-	"PADFORWARD",
+	"PADSYSTEM",
 	{
 		"CTRL",
 	},
 }
 bindings["TOGGLEGUILDTAB"] = {
-	"PADFORWARD",
+	"PADSYSTEM",
 	{
 		"ALT",
 		"SHIFT",
 	},
 }
 bindings["FOLLOWTARGET"] = {
-	"PADFORWARD",
+	"PADSYSTEM",
 	{
 		"CTRL",
 		"SHIFT",
 	},
 }
 bindings["TOGGLEWORLDSTATESCORES"] = {
-	"PADFORWARD",
+	"PADSYSTEM",
 	{
 		"ALT",
 		"CTRL",
