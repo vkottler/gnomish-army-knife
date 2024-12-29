@@ -60,6 +60,7 @@ groups:
       - renders-expectedCVars.lua
       - renders-keymap.lua
       - renders-meta.lua
+      - renders-create_macros.lua
       - renders-addon.md
 
   - name: all

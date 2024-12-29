@@ -1,0 +1,42 @@
+---
+global:
+  - name: "13"
+    body: |-
+      #showtooltip
+      /use 13
+
+  - name: "14"
+    body: |-
+      #showtooltip
+      /use 14
+
+classes:
+  # https://wowwiki-archive.fandom.com/wiki/API_UnitClass
+  # 1
+  WARRIOR: []
+  # 2
+  PALADIN: []
+  # 3
+  HUNTER: []
+  # 4
+  ROGUE: []
+  # 5
+  PRIEST: []
+  # 6
+  DEATHKNIGHT: []
+  # 7
+  SHAMAN: []
+  # 8
+  MAGE: []
+  # 9
+  WARLOCK: []
+  # 10
+  MONK: []
+  # 11
+  DRUID:
+    - name: "self"
+      body: |-
+        #showtooltip
+        /cast [@player] Rejuvenation
+  # 12
+  DEMONHUNTER: []
