@@ -1,7 +1,0 @@
-<Bindings>
-  <Binding name="TOGGLEGAK"
-           description="Toggle gnomish-army-knife Window"
-           header="gnomish-army-knife">
-    ToggleGnomishArmyKnife()
-  </Binding>
-</Bindings>

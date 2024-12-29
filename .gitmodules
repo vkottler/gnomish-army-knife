@@ -1,3 +1,6 @@
 [submodule "config"]
 	path = config
 	url = https://github.com/vkottler/config
+[submodule "addon"]
+	path = addon
+	url = https://github.com/vkottler/gak-lua.git
