@@ -1,5 +1,5 @@
 [DESIGN]
-max-parents=13
+max-parents=14
 
 [MESSAGES CONTROL]
 disable=too-few-public-methods,duplicate-code

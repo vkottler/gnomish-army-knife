@@ -1,0 +1,50 @@
+# [![Gnomish Army Knife Icon](https://wow.zamimg.com/images/wow/icons/large/inv_misc_enggizmos_swissarmy.jpg)](https://www.wowhead.com/item=40772/gnomish-army-knife) {{package["name"]}} ({{package["version"]}})
+
+*{{package["description"]}}*
+
+---
+
+## [CVar](https://wowpedia.fandom.com/wiki/Console_variables)'s
+
+Name | Value
+---- | -----
+{% for key, value in addon["cvars"].items() %}
+{{key}} | {% if value is string %}`{{value}}`{% else %}{{value}}{% endif +%}
+{% endfor %}
+
+---
+
+## [Keybinds](https://wowpedia.fandom.com/wiki/Creating_key_bindings)
+
+### GamePad
+
+{% macro mod_str(mods, gamepad=true) -%}
+{% if gamepad and mods %}
+{% for mod in mods %}
+{{addon["modifiers"][mod]}}{% if loop.index < mods|length %}, {% endif %}
+{% endfor %}
+{%- elif mods %}
+{{", ".join(mods)}}
+{%- endif %}
+{%- endmacro %}
+Command | Key | Modifiers
+--------|-----|----------
+{% for bind in addon["bindings"] %}
+{% if "command" in bind and bind["command"] %}
+{% if "ACTION" in bind["command"] %}`{{bind["command"]}}`{% else %}{{bind["command"]}}{% endif %} | {{bind["key"]}} | {% if "modifiers" in bind %}{{mod_str(bind["modifiers"])}}{% endif +%}
+{% endif %}
+{% endfor %}
+
+---
+
+### Keyboard
+
+Command | Key | Modifiers
+--------|-----|----------
+{% for bind in addon["bindings"] %}
+{% if "command" in bind and bind["command"] %}
+{% if "ACTION" in bind["command"] %}`{{bind["command"]}}`{% else %}{{bind["command"]}}{% endif %} | {{addon["keymap"][bind["key"]]}} | {% if "modifiers" in bind %}{{mod_str(bind["modifiers"], false)}}{% endif +%}
+{% endif %}
+{% endfor %}
+
+---

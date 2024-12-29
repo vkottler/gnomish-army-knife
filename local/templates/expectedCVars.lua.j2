@@ -1,0 +1,8 @@
+expectedCVars = {}
+{% for key, val in addon["cvars"].items() %}
+{% if val is number %}
+expectedCVars["{{key}}"] = {{val}}
+{% else %}
+expectedCVars["{{key}}"] = "{{val}}"
+{% endif %}
+{% endfor %}

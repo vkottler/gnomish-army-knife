@@ -1,0 +1,18 @@
+---
+properties:
+  title:
+    type: string
+    default: |-
+      [WoW Macro Database](https://github.com/vkottler/gnomish-army-knife)
+
+  # Class tier (or 'generic').
+  categories:
+    type: array
+    items:
+      $ref: package://gnomish_army_knife/schemas/MacroCategory.yaml
+
+includes:
+  - is_object.yaml
+
+  # Optional description.
+  - package://runtimepy/schemas/has_markdown.yaml

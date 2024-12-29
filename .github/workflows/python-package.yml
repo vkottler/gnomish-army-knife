@@ -19,8 +19,8 @@ jobs:
     strategy:
       matrix:
         python-version:
-          - "3.11"
           - "3.12"
+          - "3.13"
         system:
           - ubuntu-latest
           - macos-latest
@@ -73,7 +73,7 @@ jobs:
 
       - run: |
           mk python-release owner=vkottler \
-                            repo=gnomish-army-knife version=1.0.1
+                            repo=gnomish-army-knife version=1.1.0
         if: |
           matrix.python-version == '3.12'
           && matrix.system == 'ubuntu-latest'

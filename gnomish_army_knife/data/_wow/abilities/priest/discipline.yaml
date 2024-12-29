@@ -1,0 +1,37 @@
+---
+includes:
+  - base.yaml
+
+# todo: move commentary to a schema definition
+
+# Main action bar convention: '1' (default) == harm, '2' == help. Useful
+# convention for multiple stance or form bars.
+
+# Generate help/harm macro variants for these abilities, so they can be placed
+# on the main action bar.
+#
+# todo: enforce that these always end up on main bar (bind each macro)
+#
+binal:
+  - Penance
+  - Ultimate Penitence
+
+# aimed, generate @player macros for each
+aimed:
+  - Mass Dispel
+  - Angelic Feather
+  - "Power Word: Barrier"
+
+# harm->help
+#
+# todo: like binals, ensure these all get bound to main bar
+#
+complements:
+  "Shadow Word: Pain": Renew
+  Smite: Flash Heal
+  Dispel Magic: Purify
+  Mind Blast: "Power Word: Shield"
+  "Shadow Word: Death": "Power Word: Radiance"
+
+# todo: keep track of per-character macro slot usage to handle overflow into
+#       generic macros (30 max, 6 columns 5 rows)

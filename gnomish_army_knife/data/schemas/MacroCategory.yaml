@@ -1,0 +1,16 @@
+---
+# Spec/category tier.
+properties:
+  groups:
+    type: array
+    items:
+      $ref: package://gnomish_army_knife/schemas/MacroGroup.yaml
+
+includes:
+  - is_object.yaml
+  - has_icon.yaml
+  - has_macros.yaml
+  - package://runtimepy/schemas/has_name.yaml
+
+  # Optional description.
+  - package://runtimepy/schemas/has_markdown.yaml

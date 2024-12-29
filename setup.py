@@ -1,7 +1,7 @@
 # =====================================
 # generator=datazen
-# version=3.1.4
-# hash=9488ecf11fb2f1e64e61f87cb9b1c7e6
+# version=3.2.0
+# hash=7e154dbc4dcc906993a41502a02d7357
 # =====================================
 
 """
@@ -19,7 +19,7 @@ from gnomish_army_knife import DESCRIPTION, PKG_NAME, VERSION
 
 author_info = {
     "name": "Vaughn Kottler",
-    "email": "vaughnkottler@gmail.com",
+    "email": "vaughn@libre-embedded.com",
     "username": "vkottler",
 }
 pkg_info = {
@@ -28,8 +28,8 @@ pkg_info = {
     "version": VERSION,
     "description": DESCRIPTION,
     "versions": [
-        "3.11",
         "3.12",
+        "3.13",
     ],
 }
 setup(

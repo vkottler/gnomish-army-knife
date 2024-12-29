@@ -1,0 +1,20 @@
+---
+# Macro contents and UI label are required.
+required: [text, label]
+
+properties:
+  label:
+    type: string
+
+  title:
+    type: string
+    default: " "
+  text:
+    type: string
+
+includes:
+  - is_object.yaml
+  - has_icon.yaml
+
+  # Optional description.
+  - package://runtimepy/schemas/has_markdown.yaml

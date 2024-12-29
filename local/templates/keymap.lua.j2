@@ -1,0 +1,24 @@
+-- Mapping of gamepad inputs to keyboard inputs.
+keymap = {}
+{% for key, val in addon["keymap"].items() %}
+keymap["{{key}}"] = "{{val}}"
+{% endfor %}
+
+-- Mapping of gamepad inputs to command plus any modifiers.
+bindings = {}
+{% for binding in addon["bindings"] %}
+{% if binding["command"] %}
+{% if "modifiers" in binding and binding["modifiers"] %}
+bindings["{{binding["command"]}}"] = {
+	"{{binding["key"]}}",
+	{
+{% for modifier in binding["modifiers"] %}
+		"{{modifier}}",
+{% endfor %}
+	},
+}
+{% else %}
+bindings["{{binding["command"]}}"] = { "{{binding["key"]}}", nil }
+{% endif %}
+{% endif %}
+{% endfor %}
