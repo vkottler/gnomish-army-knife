@@ -5,13 +5,18 @@ renders:
     dependencies:
       - compiles-local
 
+  - name: "{key}.md"
+    output_dir: addon
+    dependencies:
+      - compiles-local
+
   - name: addon.md
     output_path: README.md
     output_dir: addon
     dependencies:
       - compiles-local
 
-  - name: "{key}.md"
+  - name: gnomish-army-knife.toc
     output_dir: addon
     dependencies:
       - compiles-local
@@ -41,3 +46,4 @@ groups:
       - renders-monk_macros.md
       - renders-druid_macros.md
       - renders-demonhunter_macros.md
+      - renders-gnomish-army-knife.toc
