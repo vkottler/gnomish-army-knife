@@ -1,0 +1,43 @@
+---
+renders:
+  - name: "{key}.lua"
+    output_dir: addon
+    dependencies:
+      - compiles-local
+
+  - name: addon.md
+    output_path: README.md
+    output_dir: addon
+    dependencies:
+      - compiles-local
+
+  - name: "{key}.md"
+    output_dir: addon
+    dependencies:
+      - compiles-local
+
+groups:
+  - name: addon
+    dependencies:
+      - renders-expectedCVars.lua
+      - renders-keymap.lua
+      - renders-meta.lua
+      - renders-create_macros.lua
+      - renders-addon.md
+      - renders-cvar.md
+      - renders-gamepad_keybinds.md
+      - renders-keyboard_keybinds.md
+      - renders-keymap.md
+      - renders-global_macros.md
+      - renders-warrior_macros.md
+      - renders-paladin_macros.md
+      - renders-hunter_macros.md
+      - renders-rogue_macros.md
+      - renders-priest_macros.md
+      - renders-deathknight_macros.md
+      - renders-shaman_macros.md
+      - renders-mage_macros.md
+      - renders-warlock_macros.md
+      - renders-monk_macros.md
+      - renders-druid_macros.md
+      - renders-demonhunter_macros.md

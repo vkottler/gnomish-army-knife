@@ -14,8 +14,8 @@ function createCharacterMacros()
 {% for macro in macros %}
 		CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]], 1)
-		print("Created {{macros|length}}", select(1, UnitClass("player")), "macros.")
 {% endfor %}
+		print("Created {{macros|length}}", select(1, UnitClass("player")), "macros.")
 	end
 {% endfor %}
 end

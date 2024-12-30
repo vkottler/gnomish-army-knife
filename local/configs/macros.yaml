@@ -1,5 +1,10 @@
 ---
 global:
+  - name: gak
+    icon: inv_misc_enggizmos_swissarmy
+    body: |-
+      /gnomish-army-knife
+
   - name: "13"
     body: |-
       #showtooltip
@@ -9,6 +14,16 @@ global:
     body: |-
       #showtooltip
       /use 14
+
+  - name: hs
+    body: |-
+      #showtooltip
+      /use Healthstone
+
+  - name: gg
+    icon: achievement_bg_takexflags_ab
+    body: |-
+      /run LeaveBattlefield()
 
 classes:
   # https://wowwiki-archive.fandom.com/wiki/API_UnitClass
@@ -34,9 +49,91 @@ classes:
   MONK: []
   # 11
   DRUID:
-    - name: "self"
+    - name: " "
+      body: |-
+        #showtooltip
+        /cast [indoors] !Cat Form; !Travel Form
+
+    - name: " "
+      body: |-
+        #showtooltip Prowl
+        /cast [nocombat] !Prowl
+        /changeactionbar 1
+
+    - name: " "
+      body: |-
+        #showtooltip Cat Form
+        /cast [noform:2] Cat Form
+        /changeactionbar 1
+
+    - name: " "
+      body: |-
+        #showtooltip Bear Form
+        /cast [noform:1] Bear Form
+        /changeactionbar 1
+
+    - name: help
+      body: |-
+        #showtooltip Wild Charge
+        /targetfriend [harm]
+        /cancelform
+        /cast [help] Wild Charge
+        /cleartarget
+
+    - name: self
       body: |-
         #showtooltip
         /cast [@player] Rejuvenation
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Mark of the Wild
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Lifebloom
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Remove Corruption
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Efflorescence
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Wild Growth
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Swiftmend
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Overgrowth
+
+    - name: self
+      body: |-
+        #showtoolip
+        /cast [@player] Regrowth
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Cenarion Ward
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Ironbark
+
   # 12
   DEMONHUNTER: []

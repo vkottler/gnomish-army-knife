@@ -11,6 +11,7 @@ includes:
   - config/includes/license.yaml
   - config/includes/funding.yaml
   - local/includes/sub_commands.yaml
+  - local/includes/addon.yaml
 
 templates:
   - local/templates
@@ -23,17 +24,6 @@ compiles:
       - local/variables
 
 renders:
-  - name: "{key}.lua"
-    output_dir: addon
-    dependencies:
-      - compiles-local
-
-  - name: addon.md
-    output_path: README.md
-    output_dir: addon
-    dependencies:
-      - compiles-local
-
   - name: README.md
     output_dir: "."
     dependencies:
@@ -55,14 +45,6 @@ renders:
       - compiles-python
 
 groups:
-  - name: addon
-    dependencies:
-      - renders-expectedCVars.lua
-      - renders-keymap.lua
-      - renders-meta.lua
-      - renders-create_macros.lua
-      - renders-addon.md
-
   - name: all
     dependencies:
       - groups-python

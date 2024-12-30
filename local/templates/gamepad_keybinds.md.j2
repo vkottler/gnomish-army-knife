@@ -1,0 +1,12 @@
+# GamePad Keybinds
+
+([back](README.md))
+
+{% import __templates__["macros"] as m %}
+Command | Key | Modifiers
+--------|-----|----------
+{% for bind in addon["bindings"] %}
+{% if "command" in bind and bind["command"] %}
+{% if "ACTION" in bind["command"] %}`{{bind["command"]}}`{% else %}{{bind["command"]}}{% endif %} | {{bind["key"]}} | {% if "modifiers" in bind %}{{m.mod_str(addon, bind["modifiers"])}}{% endif +%}
+{% endif %}
+{% endfor %}
