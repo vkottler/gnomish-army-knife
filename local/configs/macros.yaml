@@ -25,28 +25,388 @@ global:
     body: |-
       /run LeaveBattlefield()
 
+  - name: pet
+    icon: inv_leatherworking_70_petleash
+    body: |-
+      /petdismiss
+
+  - name: canc
+    icon: creatureportrait_creature_iceblock
+    body: |-
+      /stopcasting
+      /cancelaura Slow Fall
+      /cancelaura Levitate
+
 classes:
   # https://wowwiki-archive.fandom.com/wiki/API_UnitClass
+
   # 1
   WARRIOR: []
+
   # 2
-  PALADIN: []
+  PALADIN:
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Flash of Light
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Word of Glory
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Lay on Hands
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Blessing of Protection
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Blessing of Freedom
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Final Reckoning
+
   # 3
-  HUNTER: []
+  HUNTER:
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Binding Shot
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Roar of Sacrifice
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Steel Trap
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Freezing Trap
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Tar Trap
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Flare
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Command Pet
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] High Explosive Trap
+
   # 4
-  ROGUE: []
+  ROGUE:
+    - name: 1
+      body: |-
+        #showtooltip Shadowstep
+        /cast [@arena1] Shadowstep
+        /cast [@arena1] Kick
+
+    - name: 2
+      body: |-
+        #showtooltip Shadowstep
+        /cast [@arena2] Shadowstep
+        /cast [@arena2] Kick
+
+    - name: 3
+      body: |-
+        #showtooltip Shadowstep
+        /cast [@arena3] Shadowstep
+        /cast [@arena3] Kick
+
+    - name: s
+      body: |-
+        #showtooltip Stealth
+        /cancelaura [nocombat] Shadow Dance
+        /stopattack
+        /cast !Stealth
+
+    - name: ssap
+      body: |-
+        #showtooltip Sap
+        /cleartarget
+        /targetenemyplayer
+        /cast Sap
+        /stopattack
+
   # 5
-  PRIEST: []
+  PRIEST:
+    - name: harm
+      body: |-
+        #showtooltip Ultimate Penitence
+        /targetenemy [help]
+        /cast [harm] Ultimate Penitence
+        /cleartarget
+
+    - name: harm
+      body: |-
+        #showtooltip Penance
+        /targetenemy [help]
+        /cast [harm] Penance
+        /cleartarget
+
+    - name: help
+      body: |-
+        #showtooltip Penance
+        /targetfriend [harm]
+        /cast [help] Penance
+        /cleartarget
+
+    - name: help
+      body: |-
+        #showtooltip Ultimate Penitence
+        /targetfriend [harm]
+        /cast [help] Ultimate Penitence
+        /cleartarget
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Purify
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Penance
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Mass Dispel
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Power Word: Barrier
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Power Word: Shield
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Flash Heal
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Renew
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Pain Suppression
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Power Word: Life
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Angelic Feather
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Levitate
+
+    - name: " "
+      body: |-
+        #showtooltip
+        /cast !Shadowform
+
   # 6
-  DEATHKNIGHT: []
+  DEATHKNIGHT:
+    - name: pet
+      body: |-
+        #showtooltip
+        /cast [@pet] Death Coil
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Death Coil
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Death and Decay
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Anti-Magic Shell
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Anti-Magic Zone
+
   # 7
-  SHAMAN: []
+  SHAMAN:
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Water Walking
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Skyfury
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Healing Surge
+
   # 8
-  MAGE: []
+  MAGE:
+    - name: canc
+      body: |-
+        #showtooltip Ice Block
+        /cancelaura Ice Block
+        /cast Ice Block
+
+    - name: spam
+      body: |-
+        #showtooltip Fire Blast
+        /castsequence reset=0.5 Fire Blast, Languages
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Blizzard
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Ring of Fire
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Arcane Intellect
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Ring of Frost
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Remove Curse
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Slow Fall
+
   # 9
-  WARLOCK: []
+  WARLOCK:
+    - name: soul
+      body: |-
+        #showtooltip Demonic Circle: Teleport
+        /cast Soulburn
+        /cast Demonic Circle: Teleport
+
+    - name: soul
+      body: |-
+        #showtooltip Healthstone
+        /cast Soulburn
+        /use Healthstone
+
+    - name: soul
+      body: |-
+        #showtooltip Demonic Gateway
+        /cast Soulburn
+        /cast Demonic Gateway
+
+    - name: crit
+      body: |-
+        #showtooltip Amplify Curse
+        /cast Amplify Curse
+        /cast Curse of Weakness
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Shadowfury
+
   # 10
-  MONK: []
+  MONK:
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Soothing Mist
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Enveloping Mist
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Detox
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Vivify
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Ring of Peace
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Summon Jade Serpent Statue
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Renewing Mist
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Tiger's Lust
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Life Cocoon
+
   # 11
   DRUID:
     - name: " "
@@ -71,6 +431,11 @@ classes:
         #showtooltip Bear Form
         /cast [noform:1] Bear Form
         /changeactionbar 1
+
+    - name: canc
+      icon: ability_racial_twoforms
+      body: |-
+        /cancelform
 
     - name: help
       body: |-
@@ -135,5 +500,46 @@ classes:
         #showtooltip
         /cast [@player] Ironbark
 
+    - name: flap
+      body: |-
+        #showtooltip Moonkin Form
+        /cast [noform:4] Moonkin Form
+        /cast [form:4] Flap
+
   # 12
-  DEMONHUNTER: []
+  DEMONHUNTER:
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Metamorphosis
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Sigil of Misery
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Sigil of Flame
+
+  # 13
+  EVOKER:
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Living Flame
+
+    - name: harm
+      body: |-
+        #showtooltip Living Flame
+        /targetenemy [help]
+        /cast [harm] Living Flame
+        /cleartarget
+
+    - name: help
+      body: |-
+        #showtooltip Living Flame
+        /targetfriend [harm]
+        /cast [help] Living Flame
+        /cleartarget

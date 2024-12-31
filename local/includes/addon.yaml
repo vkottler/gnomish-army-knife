@@ -45,5 +45,6 @@ groups:
       - renders-warlock_macros.md
       - renders-monk_macros.md
       - renders-druid_macros.md
+      - renders-evoker_macros.md
       - renders-demonhunter_macros.md
       - renders-gnomish-army-knife.toc
