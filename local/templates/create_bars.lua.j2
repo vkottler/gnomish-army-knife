@@ -1,0 +1,54 @@
+-- https://wowpedia.fandom.com/wiki/Action_slot
+GAK_MAX_ACTIONBAR = 180
+
+function GakClearActionBars()
+	for i = 1, GAK_MAX_ACTIONBAR do
+		if GetActionInfo(i) then
+			PickupAction(i)
+			ClearCursor()
+		end
+	end
+end
+
+function GakSetActionBars()
+	-- Clear all existing bars.
+	GakClearActionBars()
+
+	-- Make sure cursor is clear.
+	ClearCursor()
+
+	-- items ?
+
+	-- Global binds.
+{% for bind in bars["global"] %}
+	{{bind[1]}}
+	PlaceAction({{bind[0]}})
+{% endfor %}
+	print("Placed {{bars["global"]|length}} global actions.")
+
+	-- Class binds.
+	local class_str = select(2, UnitClass("player"))
+{% for class_str, binds in bars["classes"].items() %}
+
+	if class_str == "{{class_str}}" then
+{% for bind in binds %}
+		{{bind[1]}}
+		PlaceAction({{bind[0]}})
+{% endfor %}
+		print("Placed {{binds|length}} {{class_str|capitalize}} actions.")
+	end
+{% endfor %}
+
+	-- Specialization binds.
+	local id, name = GetSpecializationInfo(GetSpecialization())
+{% for id, binds in bars["specializations"].items() %}
+
+	if id == {{id}} then
+{% for bind in binds %}
+		{{bind[1]}}
+		PlaceAction({{bind[0]}})
+{% endfor %}
+		print("Placed {{binds|length}} " .. name .. " actions.")
+	end
+{% endfor %}
+end

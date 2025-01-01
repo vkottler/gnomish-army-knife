@@ -28,6 +28,7 @@ groups:
       - renders-keymap.lua
       - renders-meta.lua
       - renders-create_macros.lua
+      - renders-create_bars.lua
       - renders-addon.md
       - renders-cvar.md
       - renders-gamepad_keybinds.md

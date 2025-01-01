@@ -1,10 +1,5 @@
 ---
 global:
-  - name: gak
-    icon: inv_misc_enggizmos_swissarmy
-    body: |-
-      /gnomish-army-knife
-
   - name: "13"
     body: |-
       #showtooltip
@@ -15,27 +10,38 @@ global:
       #showtooltip
       /use 14
 
-  - name: hs
-    body: |-
-      #showtooltip
-      /use Healthstone
-
-  - name: gg
-    icon: achievement_bg_takexflags_ab
-    body: |-
-      /run LeaveBattlefield()
-
-  - name: pet
-    icon: inv_leatherworking_70_petleash
-    body: |-
-      /petdismiss
-
   - name: canc
     icon: creatureportrait_creature_iceblock
     body: |-
       /stopcasting
       /cancelaura Slow Fall
       /cancelaura Levitate
+
+  - name: dis
+    icon: ability_marksmanship
+    body: |-
+      /dismount
+      /cancelform
+
+  - name: gak
+    icon: inv_misc_enggizmos_swissarmy
+    body: |-
+      /gnomish-army-knife
+
+  - name: gg
+    icon: achievement_bg_takexflags_ab
+    body: |-
+      /run LeaveBattlefield()
+
+  - name: hs
+    body: |-
+      #showtooltip
+      /use Healthstone
+
+  - name: pet
+    icon: inv_leatherworking_70_petleash
+    body: |-
+      /petdismiss
 
 classes:
   # https://wowwiki-archive.fandom.com/wiki/API_UnitClass
@@ -437,6 +443,12 @@ classes:
       body: |-
         /cancelform
 
+    - name: flap
+      body: |-
+        #showtooltip Moonkin Form
+        /cast [noform:4] Moonkin Form
+        /cast [form:4] Flap
+
     - name: help
       body: |-
         #showtooltip Wild Charge
@@ -444,16 +456,6 @@ classes:
         /cancelform
         /cast [help] Wild Charge
         /cleartarget
-
-    - name: self
-      body: |-
-        #showtooltip
-        /cast [@player] Rejuvenation
-
-    - name: self
-      body: |-
-        #showtooltip
-        /cast [@player] Mark of the Wild
 
     - name: self
       body: |-
@@ -468,7 +470,12 @@ classes:
     - name: self
       body: |-
         #showtooltip
-        /cast [@player] Efflorescence
+        /cast [@player] Mark of the Wild
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Rejuvenation
 
     - name: self
       body: |-
@@ -500,11 +507,20 @@ classes:
         #showtooltip
         /cast [@player] Ironbark
 
-    - name: flap
+    - name: self
       body: |-
-        #showtooltip Moonkin Form
-        /cast [noform:4] Moonkin Form
-        /cast [form:4] Flap
+        #showtooltip
+        /cast [@player] Grove Guardians
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Ursol's Vortex
+
+    - name: self
+      body: |-
+        #showtooltip
+        /cast [@player] Efflorescence
 
   # 12
   DEMONHUNTER:

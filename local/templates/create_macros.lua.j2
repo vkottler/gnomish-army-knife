@@ -1,4 +1,4 @@
-function createGlobalMacros()
+function GakCreateGlobalMacros()
 {% for macro in macros["global"] %}
 CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]])
@@ -6,7 +6,7 @@ CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}
 	print("Created {{macros["global"]|length}} global macros.")
 end
 
-function createCharacterMacros()
+function GakCreateCharacterMacros()
 	local class_str = select(2, UnitClass("player"))
 {% for class_str, macros in macros["classes"].items() %}
 
