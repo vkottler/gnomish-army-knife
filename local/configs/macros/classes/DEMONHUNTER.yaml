@@ -1,0 +1,17 @@
+---
+# 12
+array:
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Metamorphosis
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Sigil of Misery
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Sigil of Flame

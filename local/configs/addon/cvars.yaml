@@ -1,0 +1,19 @@
+---
+GamePadEnable: 1
+GamePadEmulateAlt: "PADPADDLE2"
+GamePadEmulateShift: "PADLSHOULDER"
+GamePadEmulateCtrl: "PADLTRIGGER"
+GamePadRunThreshold: 0
+GamePadCameraYawSpeed: 1.75
+advancedCombatLogging: 1
+autoLootDefault: 1
+autoLootRate: 50
+enableMultiActionBars: 15
+SoftTargetEnemy: 3
+SoftTargetFriend: 3
+SoftTargetInteract: 3
+SoftTargetIconFriend: 1
+SoftTargetNameplateInteract: 1
+
+# Coerce some defaults too (is there a 'reset to default' mechanism in LUA?).
+SoftTargetIconEnemy: 0

@@ -1,0 +1,16 @@
+{% macro render_macros(macros) %}
+{% for macro in macros %}
+{% if "icon" in macro and macro["icon"] %}
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/{{macro.get("icon", "inv_misc_questionmark")}}.jpg)
+{% endif %}
+
+{{macro["name"]}}
+
+```
+{{macro["body"]}}
+```
+
+---
+{% endfor %}
+{% endmacro %}

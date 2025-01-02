@@ -1,0 +1,42 @@
+---
+# 3
+array:
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Binding Shot
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Roar of Sacrifice
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Steel Trap
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Freezing Trap
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Tar Trap
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Flare
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Command Pet
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] High Explosive Trap

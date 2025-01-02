@@ -1,0 +1,90 @@
+---
+# 5
+array:
+  - name: harm
+    body: |-
+      #showtooltip Ultimate Penitence
+      /targetenemy [help]
+      /cast [harm] Ultimate Penitence
+      /cleartarget
+
+  - name: harm
+    body: |-
+      #showtooltip Penance
+      /targetenemy [help]
+      /cast [harm] Penance
+      /cleartarget
+
+  - name: help
+    body: |-
+      #showtooltip Penance
+      /targetfriend [harm]
+      /cast [help] Penance
+      /cleartarget
+
+  - name: help
+    body: |-
+      #showtooltip Ultimate Penitence
+      /targetfriend [harm]
+      /cast [help] Ultimate Penitence
+      /cleartarget
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Purify
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Penance
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Mass Dispel
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Barrier
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Shield
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Flash Heal
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Renew
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Pain Suppression
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Life
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Angelic Feather
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Levitate
+
+  - name: " "
+    body: |-
+      #showtooltip
+      /cast !Shadowform

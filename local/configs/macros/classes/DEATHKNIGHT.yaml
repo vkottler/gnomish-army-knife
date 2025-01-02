@@ -1,0 +1,27 @@
+---
+# 6
+array:
+  - name: pet
+    body: |-
+      #showtooltip
+      /cast [@pet] Death Coil
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Death Coil
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Death and Decay
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Anti-Magic Shell
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Anti-Magic Zone

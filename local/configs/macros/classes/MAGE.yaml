@@ -1,0 +1,43 @@
+---
+# 8
+array:
+  - name: canc
+    body: |-
+      #showtooltip Ice Block
+      /cancelaura Ice Block
+      /cast Ice Block
+
+  - name: spam
+    body: |-
+      #showtooltip Fire Blast
+      /castsequence reset=0.5 Fire Blast, Languages
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blizzard
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Ring of Fire
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Arcane Intellect
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Ring of Frost
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Remove Curse
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Slow Fall

@@ -1,0 +1,31 @@
+---
+# 9
+array:
+  - name: soul
+    body: |-
+      #showtooltip Demonic Circle: Teleport
+      /cast Soulburn
+      /cast Demonic Circle: Teleport
+
+  - name: soul
+    body: |-
+      #showtooltip Healthstone
+      /cast Soulburn
+      /use Healthstone
+
+  - name: soul
+    body: |-
+      #showtooltip Demonic Gateway
+      /cast Soulburn
+      /cast Demonic Gateway
+
+  - name: crit
+    body: |-
+      #showtooltip Amplify Curse
+      /cast Amplify Curse
+      /cast Curse of Weakness
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Shadowfury

@@ -1,0 +1,32 @@
+---
+# 2
+array:
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Flash of Light
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Word of Glory
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Lay on Hands
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Protection
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Freedom
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Final Reckoning
