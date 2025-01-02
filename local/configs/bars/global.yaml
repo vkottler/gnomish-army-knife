@@ -1,0 +1,25 @@
+---
+array:
+  # Mounts
+  - [48, "C_MountJournal.Pickup(0)"]
+  - [42, "C_Spell.PickupSpell(122708)"]
+  - [36, "C_Spell.PickupSpell(465235)"]
+
+  # Dragon Riding
+  - [121, "C_Spell.PickupSpell(372608)"]
+  - [122, "C_Spell.PickupSpell(425782)"]
+  - [123, "C_Spell.PickupSpell(374990)"]
+  - [124, "C_Spell.PickupSpell(372610)"]
+  - [125, "C_Spell.PickupSpell(465235)"]
+  - [126, "C_Spell.PickupSpell(436854)"]
+  - [127, "C_Spell.PickupSpell(361584)"]
+  - [128, "PickupMacro(4)"]
+  - [130, "C_Spell.PickupSpell(403092)"]
+  - [131, "C_Spell.PickupSpell(122708)"]
+
+  # Macros
+  - [33, "PickupMacro(120 + 1)"]
+  - [34, "PickupMacro(1)"]
+  - [35, "PickupMacro(2)"]
+  - [39, "PickupMacro(3)"]
+  - [40, "PickupMacro(7)"]

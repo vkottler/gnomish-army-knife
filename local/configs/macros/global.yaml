@@ -1,0 +1,44 @@
+---
+array:
+  - name: "13"
+    body: |-
+      #showtooltip
+      /use 13
+
+  - name: "14"
+    body: |-
+      #showtooltip
+      /use 14
+
+  - name: canc
+    icon: creatureportrait_creature_iceblock
+    body: |-
+      /stopcasting
+      /cancelaura Slow Fall
+      /cancelaura Levitate
+
+  - name: dis
+    icon: ability_marksmanship
+    body: |-
+      /dismount
+      /cancelform
+
+  - name: gak
+    icon: inv_misc_enggizmos_swissarmy
+    body: |-
+      /gnomish-army-knife
+
+  - name: gg
+    icon: achievement_bg_takexflags_ab
+    body: |-
+      /run LeaveBattlefield()
+
+  - name: hs
+    body: |-
+      #showtooltip
+      /use Healthstone
+
+  - name: pet
+    icon: inv_leatherworking_70_petleash
+    body: |-
+      /petdismiss

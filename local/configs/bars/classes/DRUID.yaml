@@ -1,0 +1,21 @@
+---
+array:
+  # Rejuvenation
+  - [1, "C_Spell.PickupSpell(774)"]
+  # Regrowth
+  - [2, "C_Spell.PickupSpell(8936)"]
+
+  # Wild Growth
+  - [5, "C_Spell.PickupSpell(48438)"]
+  # Wild Charge
+  - [6, "C_Spell.PickupSpell(102401)"]
+
+  # Rejuvenation
+  - [13, "PickupMacro(120 + 12)"]
+  # Regrowth
+  - [14, "PickupMacro(120 + 16)"]
+
+  # Wild Growth
+  - [17, "PickupMacro(120 + 13)"]
+  # Wild Charge [help]
+  - [18, "PickupMacro(120 + 8)"]
