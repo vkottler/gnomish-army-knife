@@ -3,6 +3,8 @@ array:
   # Mounts
   - [48, "C_MountJournal.Pickup(0)"]
   - [42, "C_Spell.PickupSpell(122708)"]
+  # should add a runtime audit for having any of the water (check role too?)
+  - [45, "PickupMacro(8)"]
   - [36, "C_Spell.PickupSpell(465235)"]
 
   # Dragon Riding
@@ -23,3 +25,6 @@ array:
   - [35, "PickupMacro(2)"]
   - [39, "PickupMacro(3)"]
   - [40, "PickupMacro(7)"]
+
+  # Food ?
+  # PickupItem("Quicksilver Sipper")

@@ -38,6 +38,12 @@ array:
       #showtooltip
       /use Healthstone
 
+  - name: mana
+    icon: inv_drink_milk_01
+    body: |-
+      /use Conjured Mana Bun
+      /use Quicksilver Sipper
+
   - name: pet
     icon: inv_leatherworking_70_petleash
     body: |-

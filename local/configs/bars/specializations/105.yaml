@@ -35,7 +35,7 @@ array:
   # Ironbark
   - [24, "PickupMacro(120 + 18)"]
 
-  - [25, "C_Spell.PickupSpell(5176)"]
+  - [25, "C_Spell.PickupSpell(33891)"]  # incarn tree
   - [26, "C_Spell.PickupSpell(740)"]
   - [49, "C_Spell.PickupSpell(33786)"]
   - [50, "C_Spell.PickupSpell(339)"]
@@ -46,20 +46,20 @@ array:
   - [58, "C_Spell.PickupSpell(108238)"]
   - [59, "C_Spell.PickupSpell(106898)"]
   - [60, "C_Spell.PickupSpell(22812)"]
-  - [61, "C_Spell.PickupSpell(132469)"]
+  - [61, "C_Spell.PickupSpell(5176)"]  # wrath
 
   - [63, "C_Spell.PickupSpell(197628)"]
   - [64, "C_Spell.PickupSpell(319454)"]
   - [65, "C_Spell.PickupSpell(1850)"]
   - [66, "C_Spell.PickupSpell(20484)"]
-  - [67, "C_Spell.PickupSpell(33891)"]
+  - [67, "C_Spell.PickupSpell(132469)"]  # typhoon
 
   # Nature's Swiftness
   - [56, "C_Spell.PickupSpell(132158)"]
 
   # Ursol's Vortex
   - [62, "C_Spell.PickupSpell(102793)"]
-  - [68, "PickupMacro(120 + 19)"]
+  - [68, "PickupMacro(120 + 20)"]
 
   # Forms
   - [44, "PickupMacro(120 + 6)"]
