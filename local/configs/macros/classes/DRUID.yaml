@@ -107,3 +107,8 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Efflorescence
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Thorns

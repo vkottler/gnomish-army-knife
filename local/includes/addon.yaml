@@ -6,7 +6,7 @@ renders:
       - compiles-local
 
   - name: "{key}.md"
-    output_dir: addon
+    output_dir: addon/docs
     dependencies:
       - compiles-local
 

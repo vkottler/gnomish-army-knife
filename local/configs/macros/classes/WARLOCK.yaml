@@ -29,3 +29,13 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Shadowfury
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Soulstone
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Unending Breath

@@ -15,3 +15,8 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Healing Surge
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Earth Shield

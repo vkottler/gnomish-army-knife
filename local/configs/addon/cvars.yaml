@@ -5,6 +5,7 @@ GamePadEmulateShift: "PADLSHOULDER"
 GamePadEmulateCtrl: "PADLTRIGGER"
 GamePadRunThreshold: 0
 GamePadCameraYawSpeed: 1.75
+AutoPushSpellToActionBar: 0
 advancedCombatLogging: 1
 autoLootDefault: 1
 autoLootRate: 50

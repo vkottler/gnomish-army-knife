@@ -1,12 +1,23 @@
 ---
+# https://wowwiki-archive.fandom.com/wiki/API_UnitRace
+
 # 2
 Orc: Blood Fury
 
 # 4
 NightElf: Shadowmeld
 
+# 5
+Undead: Will of the Forsaken
+
+# 9
+Goblin: Rocket Jump
+
 # 10
 BloodElf: Arcane Torrent
 
 # 28
 HighmountainTauren: Bull Rush
+
+# 70
+Dracthyr: Wing Buffet
