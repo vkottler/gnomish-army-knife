@@ -25,6 +25,9 @@ hideAdventureJournalAlerts: 1
 
 spellBookHidePassives: 1
 
+pvpFramesDisplayClassColor: 1
+raidFramesDisplayClassColor: 1
+
 # Coerce some defaults too (is there a 'reset to default' mechanism in LUA?).
 # /console cvar_default
 SoftTargetIconEnemy: 0
