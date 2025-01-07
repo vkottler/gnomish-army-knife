@@ -18,11 +18,10 @@ array:
   - [109, 'C_Spell.PickupSpell("Stellar Flare")']  # moonkin, stellar flare
 
   - [55, 'C_Spell.PickupSpell("Starfire")']  # starfire
-  - [49, 'C_Spell.PickupSpell("Cyclone")']  # cyclone
   - [25, 'C_Spell.PickupSpell("Fury of Elune")']  # fury of elune
 
   # PADRTRIGGER column
-  - [68, 'C_Spell.PickupSpell("Typhoon")']  # typhoon
+  - [68, 'C_Spell.PickupSpell("Typhoon")']
   - [62, 'C_Spell.PickupSpell("Force of Nature")']  # force of nature
 
   - [8, 'C_Spell.PickupSpell("Starfall")']  # starfall
@@ -38,7 +37,6 @@ array:
   - [110, 'C_Spell.PickupSpell("Starsurge")']  # moonkin, starsurge
 
   - [56, 'C_Spell.PickupSpell("Celestial Alignment")']  # celestial alignment
-  - [50, 'C_Spell.PickupSpell("Entangling Roots")']  # entangling roots
   - [26, 'C_Spell.PickupSpell("Convoke the Spirits")']  # convoke the spirits
 
   # PAD3 column
@@ -63,7 +61,6 @@ array:
 
   # PAD1 column
   # - [70, ""]
-  - [64, 'C_Spell.PickupSpell("Heart of the Wild")']  # heart of the wild
 
   - [10, "PickupMacro(120 + 12)"]  # remove corruption
   - [22, 'C_Spell.PickupSpell("Remove Corruption")']  # bar 2
@@ -77,13 +74,11 @@ array:
   - [76, "PickupMacro(120 + 17)"]  # cat
   - [112, "PickupMacro(120 + 17)"]  # moonkin
 
-  - [58, 'C_Spell.PickupSpell("Renewal")']  # renewal
   # - [52, ""]
   # - [28, ""]
 
   # PAD4 column
   # - [71, ""]
-  - [65, 'C_Spell.PickupSpell("Dash")']  # dash
 
   - [11, "PickupMacro(120 + 14)"]  # wild growth
   - [23, 'C_Spell.PickupSpell("Wild Growth")']  # bar 2
@@ -97,7 +92,6 @@ array:
   - [77, "PickupMacro(120 + 24)"]  # cat
   - [113, "PickupMacro(120 + 24)"]  # moonkin
 
-  - [59, 'C_Spell.PickupSpell("Stampeding Roar")']  # stampeding roar
   # - [53, ""]
   # - [29, ""]
 
@@ -111,26 +105,8 @@ array:
   - [84, "PickupMacro(120 + 23)"]  # cat
   - [120, "PickupMacro(120 + 23)"]  # moonkin
 
-  - [6, 'C_Spell.PickupSpell("Wild Charge")']  # wild charge
-  - [18, "PickupMacro(120 + 10)"]  # bar 2
-  - [102, 'C_Spell.PickupSpell("Wild Charge")']  # bear
-  - [78, 'C_Spell.PickupSpell("Wild Charge")']  # cat
-  - [114, 'C_Spell.PickupSpell("Wild Charge")']  # moonkin
-
-  - [60, 'C_Spell.PickupSpell("Barkskin")']  # barkskin
   # - [54, ""]
   # - [30, ""]
 
-  # paddles (left)
-  - [43, "PickupMacro(120 + 9)"]  # boomkin / flap (macro)
-  - [37, "PickupMacro(120 + 4)"]  # prowl (macro)
-  - [31, "PickupMacro(120 + 5)"]  # cat form (macro)
-  # paddles (right)
-  - [44, "PickupMacro(120 + 8)"]  # cancel form (macro)
-  - [38, "PickupMacro(120 + 6)"]  # bear form (macro)
-  - [32, "PickupMacro(120 + 3)"]  # travel form (macro)
-
-  # d-pad (down)
-  - [46, "PickupMacro(120 + 11)"]  # mark of the wild (macro)
   # d-pad (up)
-  - [47, 'C_Spell.PickupSpell("Revive")']  # Revive
+  - [47, 'C_Spell.PickupSpell("Revive")']
