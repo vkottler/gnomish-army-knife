@@ -54,7 +54,9 @@ function GakSetActionBars()
 	print("Placed ".. class_bind_count .. " " .. class_str .. " actions.")
 
 	-- Specialization binds.
-	local id, name = GetSpecializationInfo(GetSpecialization())
+	local spec_info = {GetSpecializationInfo(GetSpecialization())}
+	local id = spec_info[1]
+	local name = spec_info[2]
 	local spec_bind_count = 0
 {% for id, data in bars["specializations"].items() %}
 
@@ -72,4 +74,10 @@ function GakSetActionBars()
 	end
 {% endfor %}
 	print("Placed " .. spec_bind_count .. " " .. name .. " (" .. id .. ") actions.")
+
+	-- Role binds.
+	local role = spec_info[5]
+
+	-- Not implemented yet.
+	print("Placed 0 " .. role .. " actions.")
 end

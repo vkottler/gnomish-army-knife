@@ -1,28 +1,34 @@
 ---
 # 11
 array:
-  - name: "2"
+  - name: "3"
     body: |-
       #showtooltip
       /cast [indoors] !Cat Form; !Travel Form
 
-  - name: "3"
+  - name: "4"
     body: |-
       #showtooltip Prowl
       /cast [nocombat] !Prowl
       /changeactionbar 1
 
-  - name: "4"
+  - name: "5"
     body: |-
       #showtooltip Cat Form
       /cast [noform:2] Cat Form
       /changeactionbar 1
 
-  - name: "5"
+  - name: "6"
     body: |-
       #showtooltip Bear Form
       /cast [noform:1] Bear Form
       /changeactionbar 1
+
+  - name: beam
+    body: |-
+      #showtooltip
+      /cast Solar Beam
+      /cast Mass Entanglement
 
   - name: canc
     icon: ability_racial_twoforms
@@ -46,7 +52,7 @@ array:
   - name: self
     body: |-
       #showtooltip
-      /cast [@player] Lifebloom
+      /cast [@player] Mark of the Wild
 
   - name: self
     body: |-
@@ -56,12 +62,7 @@ array:
   - name: self
     body: |-
       #showtooltip
-      /cast [@player] Mark of the Wild
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Rejuvenation
+      /cast [@player] Lifebloom
 
   - name: self
     body: |-
@@ -112,3 +113,8 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Thorns
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Rejuvenation

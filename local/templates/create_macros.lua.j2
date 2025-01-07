@@ -1,6 +1,6 @@
 function GakCreateGlobalMacros()
 {% for macro in macros["global"]["array"] %}
-CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
+	CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]])
 {% endfor %}
 	print("Created {{macros["global"]["array"]|length}} global macros.")
@@ -9,11 +9,22 @@ end
 function GakCreateCharacterMacros()
 	-- Create a racial macro.
 	local our_race = select(2, UnitRace("player"))
-{% for race, ability in addon["racials"].items() %}
+{% for race, abilities in addon["racials"].items() %}
+
 	if our_race == "{{race}}" then
+{% if abilities|length == 1 %}
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
+/cast {{abilities[0]}}]], 1)
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
+{% else %}
+{% for ability in abilities %}
+		CreateMacro("{{loop.index}}", "inv_misc_questionmark", [[
+#showtooltip
 /cast {{ability}}]], 1)
+{% endfor %}
+{% endif %}
 	end
 {% endfor %}
 
