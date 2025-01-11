@@ -35,3 +35,21 @@ raidFramesDisplayPowerBars: 1
 # Coerce some defaults too (is there a 'reset to default' mechanism in LUA?).
 # /console cvar_default
 SoftTargetIconEnemy: 0
+
+NameplatePersonalShowAlways: 1
+nameplateSelfTopInset: 0.45
+nameplateSelfBottomInset: 0.45
+nameplateSelfScale: 1.0
+
+nameplateShowFriends: 1
+nameplateShowSelf: 1
+nameplateShowEnemies: 1
+nameplateShowDebuffsOnFriendly: 1  # default
+
+# nameplateSelfScale: 1.0
+# nameplateGlobalScale: 1
+# nameplateLargerScale: 1.2
+
+# Some variables can't be set..
+# nameplateShowFriendlyBuffs: 1
+# nameplateShowFriendlyTotems: 1
