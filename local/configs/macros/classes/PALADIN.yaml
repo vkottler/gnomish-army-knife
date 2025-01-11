@@ -11,6 +11,20 @@ array:
       #showtooltip
       /cast [@player] Holy Shock
 
+  - name: harm
+    body: |-
+      #showtooltip Holy Shock
+      /targetenemy [help]
+      /cast [harm] Holy Shock
+      /cleartarget
+
+  - name: help
+    body: |-
+      #showtooltip Holy Shock
+      /targetfriend [harm]
+      /cast [help] Holy Shock
+      /cleartarget
+
   - name: self
     body: |-
       #showtooltip

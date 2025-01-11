@@ -5,11 +5,11 @@ array:
   - [67, C_Spell.PickupSpell("Rebuke")]
   - [61, C_Spell.PickupSpell("Judgment")]
 
-  - [7, PickupMacro(120 + 3)]
+  - [7, PickupMacro(120 + 6)]
   - [19, C_Spell.PickupSpell("Flash of Light")]  # bar 2
 
-  - [1, PickupMacro(120 + 4)]
-  - [13, C_Spell.PickupSpell("Holy Shock")]  # bar 2
+  - [1, PickupMacro(120 + 5)]  # holy shock
+  - [13, PickupMacro(120 + 4)]  # bar 2, holy shock help
 
   - [55, C_Spell.PickupSpell("Crusader Strike")]
   - [49, C_Spell.PickupSpell("Blinding Light")]
@@ -19,10 +19,10 @@ array:
   - [68, C_Spell.PickupSpell("Shield of the Righteous")]
   - [62, C_Spell.PickupSpell("Light of Dawn")]
 
-  - [8, PickupMacro(120 + 5)]
+  - [8, PickupMacro(120 + 7)]
   - [20, C_Spell.PickupSpell("Holy Light")]  # bar 2
 
-  - [2, PickupMacro(120 + 9)]
+  - [2, PickupMacro(120 + 11)]
   - [14, C_Spell.PickupSpell("Word of Glory")]  # bar 2
 
   - [56, C_Spell.PickupSpell("Hammer of Justice")]
@@ -33,10 +33,10 @@ array:
   # - [69, ""]
   - [63, C_Spell.PickupSpell("Beacon of Faith")]
 
-  - [9, PickupMacro(120 + 6)]
+  - [9, PickupMacro(120 + 8)]
   - [21, C_Spell.PickupSpell("Beacon of Light")]  # bar 2
 
-  - [3, PickupMacro(120 + 7)]
+  - [3, PickupMacro(120 + 9)]
   - [15, C_Spell.PickupSpell("Cleanse")]  # bar 2
 
   - [57, C_Spell.PickupSpell("Aura Mastery")]
@@ -47,10 +47,10 @@ array:
   # - [70, ""]
   - [64, C_Spell.PickupSpell("Divine Shield")]
 
-  - [10, PickupMacro(120 + 10)]
+  - [10, PickupMacro(120 + 12)]
   - [22, C_Spell.PickupSpell(633)]  # bar 2, "Lay on Hands"
 
-  - [4, PickupMacro(120 + 8)]
+  - [4, PickupMacro(120 + 10)]
   - [16, C_Spell.PickupSpell("Barrier of Faith")]  # bar 2
 
   - [58, C_Spell.PickupSpell("Consecration")]
@@ -61,10 +61,10 @@ array:
   # - [71, ""]
   # - [65, ""]
 
-  - [11, PickupMacro(120 + 11)]
+  - [11, PickupMacro(120 + 13)]
   - [23, C_Spell.PickupSpell("Blessing of Protection")]  # bar 2
 
-  - [5, PickupMacro(120 + 15)]
+  - [5, PickupMacro(120 + 17)]
   - [17, C_Spell.PickupSpell("Holy Bulwark")]  # bar 2
 
   # - [59, ""]
@@ -75,10 +75,10 @@ array:
   # - [72, ""]
   - [66, C_Spell.PickupSpell("Intercession")]
 
-  - [12, PickupMacro(120 + 13)]
+  - [12, PickupMacro(120 + 15)]
   - [24, C_Spell.PickupSpell("Blessing of Summer")]  # bar 2
 
-  - [6, PickupMacro(120 + 12)]
+  - [6, PickupMacro(120 + 14)]
   - [18, C_Spell.PickupSpell("Blessing of Freedom")]  # bar 2
 
   - [60, C_Spell.PickupSpell("Divine Protection")]
@@ -91,7 +91,7 @@ array:
   # - [31, ""]
   # paddles (right)
   # - [44, ""]
-  # - [38, ""]
+  - [38, PickupMacro(120 + 3)]
   # - [32, ""]
 
   # d-pad (left)
