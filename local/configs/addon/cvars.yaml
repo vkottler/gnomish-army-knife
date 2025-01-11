@@ -49,6 +49,9 @@ nameplateShowFriends: 1
 nameplateShowSelf: 1
 nameplateShowEnemies: 1
 nameplateShowDebuffsOnFriendly: 1  # default
+nameplateHideHealthAndPower: 0
+
+combinedBags: 1
 
 lossOfControl: 0
 
