@@ -36,6 +36,10 @@ raidFramesDisplayPowerBars: 1
 # /console cvar_default
 SoftTargetIconEnemy: 0
 
+# Gets overwritten by "use large nameplates" ?
+# NamePlateVerticalScale: 2.4
+# NamePlateHorizontalScale: 1.2
+
 NameplatePersonalShowAlways: 1
 nameplateSelfTopInset: 0.45
 nameplateSelfBottomInset: 0.45
@@ -45,6 +49,8 @@ nameplateShowFriends: 1
 nameplateShowSelf: 1
 nameplateShowEnemies: 1
 nameplateShowDebuffsOnFriendly: 1  # default
+
+lossOfControl: 0
 
 # nameplateSelfScale: 1.0
 # nameplateGlobalScale: 1

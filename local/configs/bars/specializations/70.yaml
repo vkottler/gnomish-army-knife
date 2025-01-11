@@ -16,7 +16,7 @@ array:
   - [25, "C_Spell.PickupSpell(853)"]
 
   # PADRTRIGGER column
-  - [68, "PickupMacro(120 + 7)"]
+  - [68, "PickupMacro(120 + 14)"]  # self final reckoning
   - [62, "C_Spell.PickupSpell(343721)"]
 
   - [8, "C_Spell.PickupSpell(53385)"]
@@ -33,10 +33,10 @@ array:
   # - [69, ""]
   - [63, ""]
 
-  - [9, "PickupMacro(120 + 5)"]
+  - [9, "PickupMacro(120 + 11)"]  # blessing of protection
   - [21, "C_Spell.PickupSpell(1022)"]  # bar 2
 
-  - [3, "PickupMacro(120 + 3)"]
+  - [3, "PickupMacro(120 + 9)"]  # word of glory
   - [15, "C_Spell.PickupSpell(85673)"]  # bar 2
 
   - [57, ""]
@@ -47,10 +47,10 @@ array:
   # - [70, ""]
   - [64, ""]
 
-  - [10, "PickupMacro(120 + 4)"]
+  - [10, "PickupMacro(120 + 10)"]  # lay on hands
   - [22, "C_Spell.PickupSpell(633)"]  # 471195 # bar 2
 
-  - [4, "PickupMacro(120 + 8)"]
+  - [4, "PickupMacro(120 + 3)"]  # flash of light
   - [16, "C_Spell.PickupSpell(19750)"]  # bar 2
 
   - [58, ""]
@@ -78,7 +78,7 @@ array:
   - [12, "C_Spell.PickupSpell(642)"]
   - [24, "C_Spell.PickupSpell(642)"]  # bar 2
 
-  - [6, "PickupMacro(120 + 6)"]
+  - [6, "PickupMacro(120 + 12)"]  # blessing of freedom
   - [18, "C_Spell.PickupSpell(1044)"]  # bar 2
 
   - [60, ""]
@@ -86,25 +86,25 @@ array:
   # - [30, ""]
 
   # paddles (left)
-  - [43, "C_Spell.PickupSpell(465)"]
-  - [37, "C_Spell.PickupSpell(317920)"]
-  - [31, "C_Spell.PickupSpell(32223)"]
+  # - [43, ""]
+  # - [37, ""]
+  # - [31, ""]
   # paddles (right)
   - [44, ""]
   - [38, "C_Spell.PickupSpell(210256)"]
-  - [32, "C_Spell.PickupSpell(190784)"]
+  # - [32, ""]
 
   # d-pad (left)
   # - [45, ""]
   # - [39, ""]
   # - [33, ""]
   # d-pad (down)
-  - [46, "C_Spell.PickupSpell(7328)"]
+  - [46, ""]
   # - [40, ""]
   # - [34, ""]
   # d-pad (up)
-  - [47, ""]
-  - [41, "C_Spell.PickupSpell(5502)"]
+  # - [47, ""]
+  # - [41, "C_Spell.PickupSpell(5502)"]
   # - [35, ""]
   # d-pad (right)
   # - [48, ""]

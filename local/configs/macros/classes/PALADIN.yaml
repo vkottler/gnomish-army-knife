@@ -9,6 +9,31 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Holy Shock
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Light
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Beacon of Light
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Cleanse
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Barrier of Faith
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Word of Glory
 
   - name: self
@@ -29,4 +54,14 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Blessing of Summer
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Final Reckoning
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Bulwark

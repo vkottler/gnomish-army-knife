@@ -22,6 +22,7 @@ function GakSetActionBars()
 	-- Global binds.
 	local global_bind_count = 0
 {% for bind in bars["global"]["array"] %}
+{% if bind[1] %}
 	{{bind[1]}}
 	if GetCursorInfo() then
 		PlaceAction({{bind[0]}})
@@ -30,6 +31,7 @@ function GakSetActionBars()
 		print("(global) Couldn't bind slot {{bind[0]}}:", [[
 {{bind[1]}}]])
 	end
+{% endif %}
 {% endfor %}
 	print("Placed " .. global_bind_count .. "/{{bars["global"]["array"]|length}} global actions.")
 
@@ -40,6 +42,7 @@ function GakSetActionBars()
 
 	if class_str == "{{class_str}}" then
 {% for bind in data["array"] %}
+{% if bind[1] %}
 		{{bind[1]}}
 		if GetCursorInfo() then
 			PlaceAction({{bind[0]}})
@@ -48,6 +51,7 @@ function GakSetActionBars()
 			print("(class) Couldn't bind slot {{bind[0]}}:", [[
 {{bind[1]}}]])
 		end
+{% endif %}
 {% endfor %}
 	end
 {% endfor %}
@@ -62,6 +66,7 @@ function GakSetActionBars()
 
 	if id == {{id}} then
 {% for bind in data["array"] %}
+{% if bind[1] %}
 		{{bind[1]}}
 		if GetCursorInfo() then
 			PlaceAction({{bind[0]}})
@@ -70,6 +75,7 @@ function GakSetActionBars()
 			print("(spec) Couldn't bind slot {{bind[0]}}:", [[
 {{bind[1]}}]])
 		end
+{% endif %}
 {% endfor %}
 	end
 {% endfor %}
