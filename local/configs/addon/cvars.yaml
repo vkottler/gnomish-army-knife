@@ -16,6 +16,9 @@ SoftTargetInteract: 3
 SoftTargetIconFriend: 1
 SoftTargetNameplateInteract: 1
 
+scriptErrors: 1
+scriptWarnings: 1
+
 floatingCombatTextCombatDamage: 0
 floatingCombatTextCombatHealing: 0
 
@@ -49,7 +52,9 @@ nameplateShowFriends: 1
 nameplateShowSelf: 1
 nameplateShowEnemies: 1
 nameplateShowDebuffsOnFriendly: 1  # default
-nameplateHideHealthAndPower: 0
+nameplateHideHealthAndPower: 1
+
+occludedSilhouettePlayer: 1
 
 combinedBags: 1
 
