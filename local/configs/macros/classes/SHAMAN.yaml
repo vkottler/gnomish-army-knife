@@ -19,4 +19,69 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Healing Wave
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Purify Spirit
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Primordial Wave
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Earth Shield
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Thunderstorm
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Chain Heal
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Surging Totem
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Totemic Projection
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Earthen Wall Totem
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Riptide
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Unleash Life
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Capacitor Totem
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Earthgrab Totem
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Spirit Link Totem

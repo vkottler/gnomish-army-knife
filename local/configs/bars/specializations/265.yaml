@@ -1,9 +1,10 @@
 ---
 # Affliction Warlock
+# set these with felhunter out
 array:
   # PADRSHOULDER column
-  - [67, C_Spell.PickupSpell("Command Demon")]
-  - [61, C_Spell.PickupSpell("Soulburn")]
+  - [67, C_Spell.PickupSpell(119898)]  # "Command Demon"
+  - [61, PickupPetSpell(19505)]  # felhunter devour magic
 
   - [7, C_Spell.PickupSpell("Haunt")]
   - [19, C_Spell.PickupSpell("Haunt")]  # bar 2
@@ -30,7 +31,7 @@ array:
   - [26, C_Spell.PickupSpell("Summon Darkglare")]
 
   # PAD3 column
-  # - [69, ""]
+  - [69, "C_SpellBook.PickupSpellBookItem(2, 1)"]
   - [63, PickupMacro(120 + 7)]  # soulburn demonic healthstone
 
   - [9, C_Spell.PickupSpell("Corruption")]
@@ -44,8 +45,8 @@ array:
   # - [27, ""]
 
   # PAD1 column
-  # - [70, ""]
-  - [64, C_Spell.PickupSpell("Summon Voidwalker")]
+  - [70, "C_SpellBook.PickupSpellBookItem(6, 1)"]
+  - [64, C_Spell.PickupSpell("Soulburn")]
 
   - [10, C_Spell.PickupSpell("Health Funnel")]
   - [22, C_Spell.PickupSpell("Health Funnel")]  # bar 2
@@ -58,7 +59,7 @@ array:
   - [28, C_Spell.PickupSpell("Eye of Kilrogg")]
 
   # PAD4 column
-  # - [71, ""]
+  - [71, "C_SpellBook.PickupSpellBookItem(7, 1)"]
   - [65, C_Spell.PickupSpell("Summon Felhunter")]
 
   - [11, C_Spell.PickupSpell("Fel Domination")]
@@ -72,8 +73,8 @@ array:
   - [29, C_Spell.PickupSpell("Ritual of Summoning")]
 
   # PAD2 column
-  # - [72, ""]
-  # - [66, ""]
+  - [72, "C_SpellBook.PickupSpellBookItem(11, 1)"]
+  - [66, C_Spell.PickupSpell("Summon Voidwalker")]
 
   - [12, PickupMacro(120 + 5)]
   - [24, C_Spell.PickupSpell("Soulstone")]  # bar 2
@@ -86,9 +87,9 @@ array:
   - [30, C_Spell.PickupSpell("Ritual of Doom")]
 
   # paddles (left)
-  # - [43, ""]
-  # - [37, ""]
-  # - [31, ""]
+  - [43, "C_SpellBook.PickupSpellBookItem(4, 1)"]
+  - [37, "C_SpellBook.PickupSpellBookItem(8, 1)"]
+  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]
   # paddles (right)
   - [44, C_Spell.PickupSpell("Subjugate Demon")]
   - [38, C_Spell.PickupSpell("Curse of Weakness")]

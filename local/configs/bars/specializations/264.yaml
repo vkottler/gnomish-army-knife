@@ -1,0 +1,112 @@
+---
+# Restoration Shaman
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Wind Shear")]
+  - [61, C_Spell.PickupSpell("Lava Burst")]
+
+  - [7, PickupMacro(120 + 16)]
+  - [19, C_Spell.PickupSpell("Unleash Life")]  # bar 2
+
+  - [1, PickupMacro(120 + 15)]
+  - [13, C_Spell.PickupSpell("Riptide")]  # bar 2
+
+  - [55, C_Spell.PickupSpell("Flame Shock")]
+  - [49, C_Spell.PickupSpell("Hex")]
+  - [25, C_Spell.PickupSpell("Healing Stream Totem")]
+
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Grounding Totem")]
+  - [62, C_Spell.PickupSpell("Healing Tide Totem")]
+
+  - [8, PickupMacro(120 + 6)]
+  - [20, C_Spell.PickupSpell("Healing Wave")]  # bar 2
+
+  - [2, PickupMacro(120 + 5)]
+  - [14, C_Spell.PickupSpell("Healing Surge")]  # bar 2
+
+  - [56, C_Spell.PickupSpell("Nature's Swiftness")]
+  - [50, C_Spell.PickupSpell("Lightning Lasso")]
+  - [26, C_Spell.PickupSpell("Greater Purge")]
+
+  # PAD3 column
+  - [69, PickupMacro(120 + 19)]
+  - [63, C_Spell.PickupSpell("Spirit Link Totem")]
+
+  - [9, PickupMacro(120 + 8)]
+  - [21, C_Spell.PickupSpell("Primordial Wave")]  # bar 2
+
+  - [3, PickupMacro(120 + 7)]
+  - [15, C_Spell.PickupSpell("Purify Spirit")]  # bar 2
+
+  - [57, C_Spell.PickupSpell("Ascendance")]
+  - [51, C_Spell.PickupSpell("Far Sight")]
+  - [27, C_Spell.PickupSpell("Bloodlust")]
+
+  # PAD1 column
+  - [70, PickupMacro(120 + 18)]
+  - [64, C_Spell.PickupSpell("Earthgrab Totem")]
+
+  - [10, PickupMacro(120 + 10)]
+  - [22, C_Spell.PickupSpell(51490)]  # bar 2, "Thunderstorm"
+
+  - [4, PickupMacro(120 + 9)]
+  - [16, C_Spell.PickupSpell("Earth Shield")]  # bar 2
+
+  - [58, C_Spell.PickupSpell("Astral Shift")]
+  - [52, C_Spell.PickupSpell("Water Walking")]
+  - [28, PickupMacro(120 + 3)]
+
+  # PAD4 column
+  - [71, PickupMacro(120 + 17)]
+  - [65, C_Spell.PickupSpell("Capacitor Totem")]
+
+  - [11, PickupMacro(120 + 12)]
+  - [23, C_Spell.PickupSpell("Surging Totem")]  # bar 2
+
+  - [5, PickupMacro(120 + 11)]
+  - [17, C_Spell.PickupSpell("Chain Heal")]  # bar 2
+
+  - [59, C_Spell.PickupSpell("Ancestral Guidance")]
+  - [53, C_Spell.PickupSpell("Astral Recall")]
+  - [29, C_Spell.PickupSpell("Earthliving Weapon")]
+
+  # PAD2 column
+  - [72, C_Spell.PickupSpell("Stone Bulwark Totem")]
+  - [66, C_Spell.PickupSpell("Totemic Recall")]
+
+  - [12, PickupMacro(120 + 14)]
+  - [24, C_Spell.PickupSpell("Earthen Wall Totem")]  # bar 2
+
+  - [6, PickupMacro(120 + 13)]
+  - [18, C_Spell.PickupSpell("Totemic Projection")]  # bar 2
+
+  - [60, C_Spell.PickupSpell("Tremor Totem")]
+  - [54, C_Spell.PickupSpell("Lightning Shield")]
+  - [30, C_Spell.PickupSpell("Tidecaller's Guard")]
+
+  # paddles (left)
+  - [43, C_Spell.PickupSpell("Mana Tide Totem")]
+  - [37, C_Spell.PickupSpell("Water Shield")]
+  - [31, C_Spell.PickupSpell("Lightning Bolt")]
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Spiritwalker's Grace")]
+  - [38, C_Spell.PickupSpell("Spirit Walk")]
+  - [32, C_Spell.PickupSpell("Ghost Wolf")]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, PickupMacro(120 + 4)]  # skyfury buff
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Ancestral Vision")]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]
