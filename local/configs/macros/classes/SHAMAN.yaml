@@ -84,4 +84,14 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Earthquake
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Spirit Link Totem
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Liquid Magma Totem

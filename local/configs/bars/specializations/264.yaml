@@ -30,7 +30,7 @@ array:
   - [26, C_Spell.PickupSpell("Greater Purge")]
 
   # PAD3 column
-  - [69, PickupMacro(120 + 19)]
+  - [69, PickupMacro(120 + 20)]
   - [63, C_Spell.PickupSpell("Spirit Link Totem")]
 
   - [9, PickupMacro(120 + 8)]
