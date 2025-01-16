@@ -1,43 +1,43 @@
 ---
-# Elemental Shaman
+# Enhancement Shaman
 array:
   # PADRSHOULDER column
   # - [67, ""]
-  - [61, C_Spell.PickupSpell("Primordial Wave")]
+  - [61, C_Spell.PickupSpell("Lava Burst")]
 
-  - [7, C_Spell.PickupSpell("Earth Shock")]
-  - [19, C_Spell.PickupSpell("Earth Shock")]  # bar 2
+  - [7, C_Spell.PickupSpell("Lava Lash")]
+  - [19, C_Spell.PickupSpell("Lava Lash")]  # bar 2
 
-  - [1, C_Spell.PickupSpell("Flame Shock")]
-  - [13, C_Spell.PickupSpell("Flame Shock")]  # bar 2
+  - [1, C_Spell.PickupSpell("Stormstrike")]
+  - [13, C_Spell.PickupSpell("Stormstrike")]  # bar 2
 
-  - [55, C_Spell.PickupSpell("Lightning Bolt")]
+  - [55, C_Spell.PickupSpell("Flame Shock")]
   # - [49, ""]
-  - [25, C_Spell.PickupSpell("Healing Stream Totem")]
+  - [25, C_Spell.PickupSpell("Feral Lunge")]
 
   # PADRTRIGGER column
   # - [68, ""]
   - [62, C_Spell.PickupSpell("Frost Shock")]
 
-  - [8, PickupMacro(120 + 19)]
-  - [20, C_Spell.PickupSpell("Earthquake")]  # bar 2
+  - [8, C_Spell.PickupSpell("Crash Lightning")]
+  - [20, C_Spell.PickupSpell("Crash Lightning")]  # bar 2
 
-  - [2, C_Spell.PickupSpell("Lava Burst")]
-  - [14, C_Spell.PickupSpell("Lava Burst")]  # bar 2
+  - [2, C_Spell.PickupSpell("Lightning Bolt")]
+  - [14, C_Spell.PickupSpell("Lightning Bolt")]  # bar 2
 
-  - [56, C_Spell.PickupSpell("Nature's Swiftness")]
+  - [56, C_Spell.PickupSpell("Sundering")]
   # - [50, ""]
   # - [26, ""]
 
   # PAD3 column
-  - [69, C_Spell.PickupSpell("Fire Elemental")]
-  - [63, C_Spell.PickupSpell("Chain Lightning")]
+  # - [69, ""]
+  - [63, C_Spell.PickupSpell("Doom Winds")]
 
-  - [9, C_Spell.PickupSpell("Stormkeeper")]
-  - [21, C_Spell.PickupSpell("Stormkeeper")]  # bar 2
+  - [9, C_Spell.PickupSpell("Primordial Wave")]
+  - [21, C_Spell.PickupSpell("Primordial Wave")]  # bar 2
 
-  - [3, PickupMacro(120 + 21)]
-  - [15, C_Spell.PickupSpell("Liquid Magma Totem")]  # bar 2
+  - [3, C_Spell.PickupSpell("Chain Lightning")]
+  - [15, C_Spell.PickupSpell("Chain Lightning")]  # bar 2
 
   - [57, C_Spell.PickupSpell("Ascendance")]
   # - [51, ""]
@@ -45,7 +45,7 @@ array:
 
   # PAD1 column
   # - [70, ""]
-  # - [64, ""]
+  - [64, C_Spell.PickupSpell("Burrow")]
 
   - [10, PickupMacro(120 + 10)]
   - [22, C_Spell.PickupSpell("Thunderstorm")]  # bar 2
@@ -59,21 +59,21 @@ array:
 
   # PAD4 column
   # - [71, ""]
-  # - [65, ""]
+  - [65, C_Spell.PickupSpell("Earth Elemental")]
 
-  - [11, C_Spell.PickupSpell("Earth Elemental")]
-  - [23, C_Spell.PickupSpell("Earth Elemental")]  # bar 2
+  - [11, PickupMacro(120 + 17)]
+  - [23, C_Spell.PickupSpell("Capacitor Totem")]  # bar 2
 
   - [5, PickupMacro(120 + 5)]
   - [17, C_Spell.PickupSpell("Healing Surge")]  # bar 2
 
   # - [59, ""]
   # - [53, ""]
-  # - [29, ""]
+  - [29, C_Spell.PickupSpell("Flametongue Weapon")]
 
   # PAD2 column
   # - [72, ""]
-  # - [66, ""]
+  - [66, C_Spell.PickupSpell("Totemic Recall")]
 
   - [12, PickupMacro(120 + 18)]
   - [24, C_Spell.PickupSpell("Earthgrab Totem")]  # bar 2
@@ -83,14 +83,14 @@ array:
 
   - [60, C_Spell.PickupSpell("Tremor Totem")]
   - [54, C_Spell.PickupSpell("Lightning Shield")]
-  - [30, C_Spell.PickupSpell("Flametongue Weapon")]
+  - [30, C_Spell.PickupSpell("Windfury Weapon")]
 
   # paddles (left)
   - [43, ""]
   - [37, ""]
-  - [31, ""]
+  - [31, C_Spell.PickupSpell("Feral Spirit")]
   # paddles (right)
-  - [44, C_Spell.PickupSpell("Spiritwalker's Grace")]
+  - [44, ""]
   - [38, C_Spell.PickupSpell("Gust of Wind")]
   # - [32, ""]
 

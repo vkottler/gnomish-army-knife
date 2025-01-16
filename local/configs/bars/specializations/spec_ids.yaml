@@ -1,0 +1,67 @@
+---
+# https://warcraft.wiki.gg/wiki/SpecializationID
+
+# Death Knight
+250: Blood Death Knight
+251: Frost Death Knight
+252: Unholy Death Knight
+
+# Demon Hunter
+577: Havoc Demon Hunter
+581: Vengeance Demon Hunter
+
+# Druid
+102: Balance Druid
+103: Feral Druid
+104: Guardian Druid
+105: Restoration Druid
+
+# Evoker
+1467: Devastation Evoker
+1468: Preservation Evoker
+1473: Augmentation Evoker
+
+# Hunter
+253: Beast Mastery Hunter
+254: Marksmanship Hunter
+255: Survival Hunter
+
+# Mage
+62: Arcane Mage
+63: Fire Mage
+64: Frost Mage
+
+# Monk
+268: Brewmaster Monk
+270: Mistweaver Monk
+269: Windwalker Monk
+
+# Paladin
+65: Holy Paladin
+66: Protection Paladin
+70: Retribution Paladin
+
+# Priest
+256: Discipline Priest
+257: Holy Priest
+258: Shadow Priest
+
+# Rogue
+259: Assassination Rogue
+260: Outlaw Rogue
+261: Subtlety Rogue
+
+# Shaman
+262: Elemental Shaman
+263: Enhancement Shaman
+264: Restoration Shaman
+
+# Warlock
+265: Affliction Warlock
+266: Demonology Warlock
+267: Destruction Warlock
+
+# Warrior
+71: Arms Warrior
+72: Fury Warrior
+73: Protection Warrior

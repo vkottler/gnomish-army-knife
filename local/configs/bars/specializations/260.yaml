@@ -14,8 +14,8 @@ array:
   - [73, C_Spell.PickupSpell("Ambush")]  # stealth
 
   - [55, C_Spell.PickupSpell("Kidney Shot")]
-  - [49, C_Spell.PickupSpell("Killing Spree")]
-  - [25, C_Spell.PickupSpell("Roll the Bones")]
+  - [49, C_Spell.PickupSpell("Ghostly Strike")]
+  - [25, C_Spell.PickupSpell("Blade Flurry")]
 
   # PADRTRIGGER column
   - [68, C_Spell.PickupSpell("Sap")]
@@ -31,7 +31,7 @@ array:
 
   - [56, C_Spell.PickupSpell("Cheap Shot")]
   - [50, C_Spell.PickupSpell("Distract")]
-  - [26, C_Spell.PickupSpell("Ghostly Strike")]
+  - [26, C_Spell.PickupSpell("Killing Spree")]
 
   # PAD3 column
   # - [69, ""]
@@ -41,9 +41,9 @@ array:
   - [21, C_Spell.PickupSpell("Adrenaline Rush")]  # bar 2
   - [81, C_Spell.PickupSpell("Adrenaline Rush")]  # stealth
 
-  - [3, C_Spell.PickupSpell("Blade Flurry")]
-  - [15, C_Spell.PickupSpell("Blade Flurry")]  # bar 2
-  - [75, C_Spell.PickupSpell("Blade Flurry")]  # stealth
+  - [3, C_Spell.PickupSpell("Roll the Bones")]
+  - [15, C_Spell.PickupSpell("Roll the Bones")]  # bar 2
+  - [75, C_Spell.PickupSpell("Roll the Bones")]  # stealth
 
   # - [57, ""]
   # - [51, ""]
