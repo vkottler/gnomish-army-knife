@@ -9,7 +9,7 @@ array:
   - [19, C_Spell.PickupSpell("Flash of Light")]  # bar 2
 
   - [1, PickupMacro(120 + 5)]  # holy shock
-  - [13, PickupMacro(120 + 4)]  # bar 2, holy shock help
+  - [13, C_Spell.PickupSpell("Holy Shock")]  # bar 2
 
   - [55, C_Spell.PickupSpell("Crusader Strike")]
   - [49, C_Spell.PickupSpell("Blinding Light")]
@@ -90,8 +90,8 @@ array:
   # - [37, ""]
   # - [31, ""]
   # paddles (right)
-  # - [44, ""]
-  - [38, PickupMacro(120 + 3)]
+  - [44, PickupMacro(120 + 4)]  # holy shock help
+  - [38, PickupMacro(120 + 3)]  # holy shock harm
   # - [32, ""]
 
   # d-pad (left)

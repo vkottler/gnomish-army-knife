@@ -5,8 +5,8 @@ array:
   # - [67, ""]
   - [61, C_Spell.PickupSpell("Sundering")]
 
-  - [7, C_Spell.PickupSpell("Lava Lash")]
-  - [19, C_Spell.PickupSpell("Lava Lash")]  # bar 2
+  - [7, C_Spell.PickupSpell("Crash Lightning")]
+  - [19, C_Spell.PickupSpell("Crash Lightning")]  # bar 2
 
   - [1, C_Spell.PickupSpell("Stormstrike")]
   - [13, C_Spell.PickupSpell("Stormstrike")]  # bar 2
@@ -19,13 +19,13 @@ array:
   # - [68, ""]
   - [62, C_Spell.PickupSpell("Frost Shock")]
 
-  - [8, C_Spell.PickupSpell("Crash Lightning")]
-  - [20, C_Spell.PickupSpell("Crash Lightning")]  # bar 2
+  - [8, C_Spell.PickupSpell("Primordial Wave")]
+  - [20, C_Spell.PickupSpell("Primordial Wave")]  # bar 2
 
   - [2, C_Spell.PickupSpell("Lightning Bolt")]
   - [14, C_Spell.PickupSpell("Lightning Bolt")]  # bar 2
 
-  - [56, C_Spell.PickupSpell("Primordial Wave")]
+  - [56, C_Spell.PickupSpell("Lava Lash")]
   # - [50, ""]
   # - [26, ""]
 

@@ -77,12 +77,22 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Power Word: Fortitude
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Angelic Feather
 
   - name: self
     body: |-
       #showtooltip
       /cast [@player] Levitate
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Rapture
 
   - name: " "
     body: |-

@@ -1,19 +1,19 @@
 ---
 # 4
 array:
-  - name: 1
+  - name: a1
     body: |-
       #showtooltip Shadowstep
       /cast [@arena1] Shadowstep
       /cast [@arena1] Kick
 
-  - name: 2
+  - name: a2
     body: |-
       #showtooltip Shadowstep
       /cast [@arena2] Shadowstep
       /cast [@arena2] Kick
 
-  - name: 3
+  - name: a3
     body: |-
       #showtooltip Shadowstep
       /cast [@arena3] Shadowstep
