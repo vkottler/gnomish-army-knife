@@ -10,9 +10,10 @@ NightElf:
   - Shadowmeld
 
 # 5
-Undead:
+Undead: &undead
   - Will of the Forsaken
   - Cannibalize
+Scourge: *undead
 
 # 7
 Gnome:

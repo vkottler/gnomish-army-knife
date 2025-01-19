@@ -94,7 +94,7 @@ array:
       #showtooltip
       /cast [@player] Rapture
 
-  - name: " "
+  - name: form
     body: |-
       #showtooltip
       /cast !Shadowform

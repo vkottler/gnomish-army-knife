@@ -97,7 +97,7 @@ array:
   - name: self
     body: |-
       #showtooltip
-      /cast [@player] Grove Guardians
+      /cast [@player,known:Nourish] Nourish; [@player] Grove Guardians
 
   - name: self
     body: |-
@@ -117,4 +117,24 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Innervate
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Rejuvenation
+
+  - name: ch
+    body: |-
+      #showtooltip
+      /cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex
+
+  - name: ch
+    body: |-
+      #showtooltip
+      /cast [known:Nourish] Nourish; Grove Guardians
+
+  - name: ch
+    body: |-
+      #showtooltip
+      /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life

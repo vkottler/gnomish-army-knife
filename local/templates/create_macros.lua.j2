@@ -6,18 +6,31 @@ function GakCreateGlobalMacros()
 	print("Created {{macros["global"]["array"]|length}} global macros.")
 end
 
+local function createFirstRacialMacro()
+		CreateMacro("1", "inv_misc_questionmark", [[
+/run print("no first racial")]], 1)
+end
+
+local function createSecondRacialMacro()
+		CreateMacro("2", "inv_misc_questionmark", [[
+/run print("no second racial")]], 1)
+end
+
 function GakCreateCharacterMacros()
 	-- Create a racial macro.
 	local our_race = select(2, UnitRace("player"))
+	local racial_macros_created = false
 {% for race, abilities in addon["racials"].items() %}
 
 	if our_race == "{{race}}" then
-{% if abilities|length == 1 %}
+{% if abilities|length == 0 %}
+		createFirstRacialMacro()
+		createSecondRacialMacro()
+{% elif abilities|length == 1 %}
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
 /cast {{abilities[0]}}]], 1)
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+		createSecondRacialMacro()
 {% else %}
 {% for ability in abilities %}
 		CreateMacro("{{loop.index}}", "inv_misc_questionmark", [[
@@ -25,8 +38,16 @@ function GakCreateCharacterMacros()
 /cast {{ability}}]], 1)
 {% endfor %}
 {% endif %}
+		print("Created macros for '" .. our_race .. "'.")
+		racial_macros_created = true
 	end
 {% endfor %}
+
+	if not racial_macros_created then
+		createFirstRacialMacro()
+		createSecondRacialMacro()
+		print("Racial macros not configured for '".. our_race .."'.")
+	end
 
 	local class_str = select(2, UnitClass("player"))
 {% for class_str, data in macros["classes"].items() %}

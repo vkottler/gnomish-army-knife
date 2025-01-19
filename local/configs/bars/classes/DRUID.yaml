@@ -27,7 +27,7 @@ array:
   - [60, C_Spell.PickupSpell("Barkskin")]
 
   # paddles (left)
-  - [43, PickupMacro(120 + 9)]  # boomkin / flap (macro)
+  - [43, PickupMacro(120 + 12)]  # boomkin / flap (macro)
   - [37, PickupMacro(120 + 4)]  # prowl (macro)
   - [31, PickupMacro(120 + 5)]  # cat form (macro)
   # paddles (right)
@@ -36,4 +36,4 @@ array:
   - [32, PickupMacro(120 + 3)]  # travel form (macro)
 
   # d-pad (down)
-  - [46, PickupMacro(120 + 11)]  # mark of the wild (macro)
+  - [46, PickupMacro(120 + 15)]  # mark of the wild (macro)
