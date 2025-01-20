@@ -5,10 +5,10 @@ array:
   - [67, C_Spell.PickupSpell("Dispel Magic")]
   - [61, C_Spell.PickupSpell("Smite")]
 
-  - [7, PickupMacro(120 + 13)]
+  - [7, PickupMacro(120 + 14)]
   - [19, C_Spell.PickupSpell("Renew")]  # bar 2
 
-  - [1, PickupMacro(120 + 20)]
+  - [1, PickupMacro(120 + 12)]
   - [13, 'C_Spell.PickupSpell("Power Word: Shield")']  # bar 2
 
   - [55, 'C_Spell.PickupSpell("Shadow Word: Pain")']
@@ -16,10 +16,10 @@ array:
   - [25, C_Spell.PickupSpell("Mind Blast")]
 
   # PADRTRIGGER column
-  - [68, C_Spell.PickupSpell("Ultimate Penitence")]
+  - [68, C_Spell.PickupSpell("Leap of Faith")]
   - [62, 'C_Spell.PickupSpell("Power Word: Radiance")']
 
-  - [8, PickupMacro(120 + 12)]
+  - [8, PickupMacro(120 + 13)]
   - [20, C_Spell.PickupSpell("Flash Heal")]  # bar 2
 
   - [2, PickupMacro(120 + 10)]
@@ -27,19 +27,19 @@ array:
 
   - [56, 'C_Spell.PickupSpell("Shadow Word: Death")']
   - [50, C_Spell.PickupSpell("Void Tendrils")]
-  - [26, C_Spell.PickupSpell("Mindbender")]
+  - [26, PickupMacro(120 + 4)]  # Mindbender harm
 
   # PAD3 column
-  - [69, C_Spell.PickupSpell("Void Shift")]
-  - [63, PickupMacro(120 + 7)]  # penance help
+  # - [69, ""]
+  - [63, PickupMacro(120 + 8)]  # penance help
 
-  - [9, PickupMacro(120 + 19)]
+  - [9, PickupMacro(120 + 20)]
   - [21, C_Spell.PickupSpell("Rapture")]  # bar 2
 
   - [3, PickupMacro(120 + 11)]
   - [15, C_Spell.PickupSpell("Purify")]  # bar 2
 
-  - [57, PickupMacro(120 + 5)]  # penance harm
+  - [57, PickupMacro(120 + 6)]  # penance harm
   # - [51, ""]
   # - [27, ""]
 
@@ -50,24 +50,24 @@ array:
   - [10, C_Spell.PickupSpell("Power Infusion")]
   - [22, C_Spell.PickupSpell("Power Infusion")]  # bar 2
 
-  - [4, PickupMacro(120 + 17)]
+  - [4, PickupMacro(120 + 18)]
   - [16, C_Spell.PickupSpell("Angelic Feather")]  # bar 2
 
-  - [58, C_Spell.PickupSpell("Fade")]
+  - [58, C_Spell.PickupSpell("Void Shift")]
   # - [52, ""]
   - [28, C_Spell.PickupSpell("Mind Vision")]
 
   # PAD4 column
   # - [71, ""]
-  - [65, ""]
+  - [65, PickupMacro(120 + 7)]  # ulti P help
 
-  - [11, PickupMacro(120 + 9)]
+  - [11, PickupMacro(120 + 21)]
   - [23, 'C_Spell.PickupSpell("Power Word: Barrier")']  # bar 2
 
-  - [5, PickupMacro(120 + 14)]
+  - [5, PickupMacro(120 + 15)]
   - [17, C_Spell.PickupSpell("Pain Suppression")]  # bar 2
 
-  - [59, ""]
+  - [59, PickupMacro(120 + 5)]  # ulti P harm
   # - [53, ""]
   - [29, C_Spell.PickupSpell("Mind Soothe")]
 
@@ -75,10 +75,10 @@ array:
   # - [72, ""]
   - [66, ""]
 
-  - [12, PickupMacro(120 + 18)]
+  - [12, PickupMacro(120 + 19)]
   - [24, C_Spell.PickupSpell("Levitate")]  # bar 2
 
-  - [6, PickupMacro(120 + 8)]
+  - [6, PickupMacro(120 + 9)]
   - [18, C_Spell.PickupSpell("Mass Dispel")]  # bar 2
 
   - [60, ""]
@@ -90,7 +90,7 @@ array:
   - [37, ""]
   - [31, ""]
   # paddles (right)
-  - [44, C_Spell.PickupSpell("Inner Light and Shadow")]
+  - [44, C_Spell.PickupSpell("Inner Light")]  # or Inner Shadow
   # - [38, ""]
   # - [32, ""]
 

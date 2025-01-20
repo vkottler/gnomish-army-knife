@@ -19,3 +19,48 @@ array:
       /targetfriend [harm]
       /cast [help] Living Flame
       /cleartarget
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Echo
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Reversion
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Living Flame
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Verdant Embrace
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Emerald Blossom
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Naturalize
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Cauterizing Flame
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Spiritbloom
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Time Dilation

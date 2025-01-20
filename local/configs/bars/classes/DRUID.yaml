@@ -17,7 +17,7 @@ array:
   - [59, C_Spell.PickupSpell("Stampeding Roar")]  # stampeding roar
 
   # PAD2 column
-  - [72, PickupMacro(120 + 10)]  # cancel + jump to teammate button
+  - [72, PickupMacro(120 + 13)]  # cancel + jump to teammate button
   - [6, C_Spell.PickupSpell("Wild Charge")]
   - [18, C_Spell.PickupSpell("Wild Charge")]  # bar 2
   - [102, C_Spell.PickupSpell("Wild Charge")]  # bear

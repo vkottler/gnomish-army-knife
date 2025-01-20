@@ -15,6 +15,13 @@ array:
       /cast [harm] Penance
       /cleartarget
 
+  - name: harm
+    body: |-
+      #showtooltip Shadowfiend
+      /targetenemy [help]
+      /cast [harm] Shadowfiend
+      /cleartarget
+
   - name: help
     body: |-
       #showtooltip Penance

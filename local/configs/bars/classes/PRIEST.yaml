@@ -1,8 +1,8 @@
 ---
 array:
   # paddles (right)
-  - [38, C_Spell.PickupSpell("Leap of Faith")]
-  - [32, C_Spell.PickupSpell("Psychic Scream")]
+  - [38, C_Spell.PickupSpell("Psychic Scream")]
+  - [32, C_Spell.PickupSpell("Fade")]
 
   # d-pad (down)
   - [46, PickupMacro(120 + 14)]
