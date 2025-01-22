@@ -60,6 +60,11 @@ combinedBags: 1
 
 lossOfControl: 0
 
+UnitNamePlayerPVPTitle: 0
+UnitNamePlayerGuild: 0
+UnitNameOwn: 0
+UnitNameFriendlyPlayerName: 0
+
 # nameplateSelfScale: 1.0
 # nameplateGlobalScale: 1
 # nameplateLargerScale: 1.2

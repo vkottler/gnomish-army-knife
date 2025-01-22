@@ -16,6 +16,7 @@ array:
       /stopcasting
       /cancelaura Slow Fall
       /cancelaura Levitate
+      /cleartarget
 
   - name: dis
     icon: ability_marksmanship

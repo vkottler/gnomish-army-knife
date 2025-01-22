@@ -1,3 +1,112 @@
 ---
 # Marksmanship Hunter
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Counter Shot")]
+  - [61, C_Spell.PickupSpell("Steady Shot")]
+
+  - [7, C_Spell.PickupSpell("Arcane Shot")]
+  - [19, C_Spell.PickupSpell("Arcane Shot")]  # bar 2
+
+  - [1, C_Spell.PickupSpell("Aimed Shot")]
+  - [13, C_Spell.PickupSpell("Aimed Shot")]  # bar 2
+
+  - [55, PickupMacro(120 + 3)]  # Kill Shot / Black Arrow
+  - [49, ""]
+  - [25, C_Spell.PickupSpell("Trueshot")]
+
+  # PADRTRIGGER column
+  - [68, ""]
+  - [62, C_Spell.PickupSpell("Hunter's Mark")]
+
+  - [8, PickupMacro(120 + 13)]
+  - [20, C_Spell.PickupSpell("Volley")]  # bar 2
+
+  - [2, C_Spell.PickupSpell("Rapid Fire")]
+  - [14, C_Spell.PickupSpell("Rapid Fire")]  # bar 2
+
+  - [56, C_Spell.PickupSpell("Concussive Shot")]
+  - [50, ""]
+  - [26, ""]
+
+  # PAD3 column
+  # - [69, ""]
+  - [63, C_Spell.PickupSpell("Intimidation")]
+
+  - [9, PickupMacro(120 + 5)]
+  - [21, C_Spell.PickupSpell("Binding Shot")]  # bar 2
+
+  - [3, PickupMacro(120 + 8)]
+  - [15, C_Spell.PickupSpell("Freezing Trap")]  # bar 2
+
+  - [57, "C_SpellBook.PickupSpellBookItem(2, 1)"]  # Attack
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  - [70, "C_SpellBook.PickupSpellBookItem(7, 1)"]  # Follow
+  - [64, C_Spell.PickupSpell("Mend Pet")]
+
+  - [10, PickupMacro(120 + 6)]
+  - [22, C_Spell.PickupSpell("Roar of Sacrifice")]  # bar 2
+
+  - [4, PickupMacro(120 + 11)]
+  - [16, PickupMacro(120 + 4)]  # bar 2, Command Pet
+
+  - [58, C_Spell.PickupSpell("Exhilaration")]
+  # - [52, ""]
+  # - [28, ""]
+
+  # PAD4 column
+  - [71, "C_SpellBook.PickupSpellBookItem(10, 1)"]  # Move To
+  - [65, C_Spell.PickupSpell("Aspect of the Cheetah")]
+
+  - [11, PickupMacro(120 + 10)]
+  - [23, C_Spell.PickupSpell("Flare")]  # bar 2
+
+  - [5, C_Spell.PickupSpell("Tranquilizing Shot")]
+  - [17, C_Spell.PickupSpell("Tranquilizing Shot")]  # bar 2
+
+  - [59, C_Spell.PickupSpell("Camouflage")]
+  # - [53, ""]
+  - [29, C_Spell.PickupSpell("Eyes of the Beast")]
+
+  # PAD2 column
+  - [72, "C_SpellBook.PickupSpellBookItem(14, 1)"]  # Stay
+  - [66, C_Spell.PickupSpell("Aspect of the Turtle")]
+
+  - [12, PickupMacro(120 + 12)]
+  - [24, C_Spell.PickupSpell("High Explosive Trap")]  # bar 2
+
+  - [6, PickupMacro(120 + 9)]
+  - [18, C_Spell.PickupSpell("Tar Trap")]  # bar 2
+
+  - [60, C_Spell.PickupSpell("Survival of the Fittest")]
+  # - [54, ""]
+  - [30, C_Spell.PickupSpell("Eagle Eye")]
+
+  # paddles (left)
+  - [43, "C_SpellBook.PickupSpellBookItem(6, 1)"]  # Defensive
+  - [37, "C_SpellBook.PickupSpellBookItem(11, 1)"]  # Passive
+  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]  # Assist
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Dismiss Pet")]
+  - [38, C_Spell.PickupSpell("Disengage")]
+  - [32, C_Spell.PickupSpell("Feign Death")]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, C_Spell.PickupSpell("Call Pet 1")]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Revive Pet")]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

@@ -87,9 +87,9 @@ array:
   - [30, C_Spell.PickupSpell("Ritual of Doom")]
 
   # paddles (left)
-  - [43, "C_SpellBook.PickupSpellBookItem(4, 1)"]
-  - [37, "C_SpellBook.PickupSpellBookItem(8, 1)"]
-  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]
+  - [43, "C_SpellBook.PickupSpellBookItem(4, 1)"]  # Defensive
+  - [37, "C_SpellBook.PickupSpellBookItem(8, 1)"]  # Passive
+  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]  # Assist
   # paddles (right)
   - [44, C_Spell.PickupSpell("Subjugate Demon")]
   - [38, C_Spell.PickupSpell("Curse of Weakness")]
