@@ -1,0 +1,47 @@
+---
+# 10
+array:
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Soothing Mist
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Enveloping Mist
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Detox
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Vivify
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Ring of Peace
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Summon Jade Serpent Statue
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Renewing Mist
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Tiger's Lust
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Life Cocoon

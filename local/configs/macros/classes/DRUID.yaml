@@ -1,0 +1,140 @@
+---
+# 11
+array:
+  - name: "3"
+    body: |-
+      #showtooltip
+      /cast [indoors] !Cat Form; !Travel Form
+
+  - name: "4"
+    body: |-
+      #showtooltip Prowl
+      /cast [nocombat] !Prowl
+      /changeactionbar 1
+
+  - name: "5"
+    body: |-
+      #showtooltip Cat Form
+      /cast [noform:2] Cat Form
+      /changeactionbar 1
+
+  - name: "6"
+    body: |-
+      #showtooltip Bear Form
+      /cast [noform:1] Bear Form
+      /changeactionbar 1
+
+  - name: beam
+    body: |-
+      #showtooltip
+      /cast Solar Beam
+      /cast Mass Entanglement
+
+  - name: canc
+    icon: ability_racial_twoforms
+    body: |-
+      /cancelform
+
+  - name: flap
+    body: |-
+      #showtooltip Moonkin Form
+      /cast [noform:4] Moonkin Form
+      /cast [form:4] Flap
+
+  - name: help
+    body: |-
+      #showtooltip Wild Charge
+      /targetfriend [harm]
+      /cancelform
+      /cast [help] Wild Charge
+      /cleartarget
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Mark of the Wild
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Remove Corruption
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Lifebloom
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Wild Growth
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Swiftmend
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Overgrowth
+
+  - name: self
+    body: |-
+      #showtoolip
+      /cast [@player] Regrowth
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Cenarion Ward
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Ironbark
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player,known:Nourish] Nourish; [@player] Grove Guardians
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Ursol's Vortex
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Efflorescence
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Thorns
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Innervate
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Rejuvenation
+
+  - name: ch
+    body: |-
+      #showtooltip
+      /cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex
+
+  - name: ch
+    body: |-
+      #showtooltip
+      /cast [known:Nourish] Nourish; Grove Guardians
+
+  - name: ch
+    body: |-
+      #showtooltip
+      /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life

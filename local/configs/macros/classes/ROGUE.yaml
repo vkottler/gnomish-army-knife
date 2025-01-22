@@ -1,0 +1,35 @@
+---
+# 4
+array:
+  - name: a1
+    body: |-
+      #showtooltip Shadowstep
+      /cast [@arena1] Shadowstep
+      /cast [@arena1] Kick
+
+  - name: a2
+    body: |-
+      #showtooltip Shadowstep
+      /cast [@arena2] Shadowstep
+      /cast [@arena2] Kick
+
+  - name: a3
+    body: |-
+      #showtooltip Shadowstep
+      /cast [@arena3] Shadowstep
+      /cast [@arena3] Kick
+
+  - name: s
+    body: |-
+      #showtooltip Stealth
+      /cancelaura [nocombat] Shadow Dance
+      /stopattack
+      /cast !Stealth
+
+  - name: ssap
+    body: |-
+      #showtooltip Sap
+      /cleartarget
+      /targetenemyplayer
+      /cast Sap
+      /stopattack

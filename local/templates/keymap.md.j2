@@ -1,0 +1,25 @@
+# GamePad <-> Keyboard Mapping
+
+([back](../README.md))
+
+---
+
+## Modifiers
+
+Keyboard | GamePad
+-------- | -------
+{% for keyboard, gamepad in addon["modifiers"].items() %}
+{{keyboard}} | {{gamepad}}
+{% endfor %}
+
+---
+
+## Keys
+
+Keyboard | GamePad
+-------- | -------
+{% for gamepad, keyboard in addon["keymap"].items() %}
+{{keyboard}} | {{gamepad}}
+{% endfor %}
+
+---

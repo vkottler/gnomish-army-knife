@@ -1,0 +1,15 @@
+---
+array:
+  # PAD4 column
+  - [29, C_Spell.PickupSpell("Sense Undead")]
+
+  # paddles (left)
+  - [43, C_Spell.PickupSpell("Concentration Aura")]
+  - [37, C_Spell.PickupSpell("Crusader Aura")]
+  - [31, C_Spell.PickupSpell("Devotion Aura")]
+
+  # paddles (right)
+  - [32, C_Spell.PickupSpell("Divine Steed")]
+
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Redemption")]

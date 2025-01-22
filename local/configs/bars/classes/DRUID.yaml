@@ -1,0 +1,39 @@
+---
+array:
+  # PADRSHOULDER column
+  - [49, C_Spell.PickupSpell("Cyclone")]
+
+  # PADRTRIGGER column
+  - [50, C_Spell.PickupSpell("Entangling Roots")]
+
+  # PAD3 column
+
+  # PAD1 column
+  - [64, C_Spell.PickupSpell("Heart of the Wild")]
+  - [58, C_Spell.PickupSpell("Renewal")]
+
+  # PAD4 column
+  - [65, C_Spell.PickupSpell("Dash")]  # dash
+  - [59, C_Spell.PickupSpell("Stampeding Roar")]  # stampeding roar
+
+  # PAD2 column
+  - [72, PickupMacro(120 + 13)]  # cancel + jump to teammate button
+  - [6, C_Spell.PickupSpell("Wild Charge")]
+  - [18, C_Spell.PickupSpell("Wild Charge")]  # bar 2
+  - [102, C_Spell.PickupSpell("Wild Charge")]  # bear
+  - [78, C_Spell.PickupSpell("Wild Charge")]  # cat
+  - [114, C_Spell.PickupSpell("Wild Charge")]  # moonkin
+
+  - [60, C_Spell.PickupSpell("Barkskin")]
+
+  # paddles (left)
+  - [43, PickupMacro(120 + 12)]  # boomkin / flap (macro)
+  - [37, PickupMacro(120 + 4)]  # prowl (macro)
+  - [31, PickupMacro(120 + 5)]  # cat form (macro)
+  # paddles (right)
+  - [44, PickupMacro(120 + 8)]  # cancel form (macro)
+  - [38, PickupMacro(120 + 6)]  # bear form (macro)
+  - [32, PickupMacro(120 + 3)]  # travel form (macro)
+
+  # d-pad (down)
+  - [46, PickupMacro(120 + 15)]  # mark of the wild (macro)

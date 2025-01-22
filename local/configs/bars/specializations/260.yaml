@@ -1,0 +1,124 @@
+---
+# Outlaw Rogue
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Kick")]
+  - [61, C_Spell.PickupSpell("Gouge")]
+
+  - [7, C_Spell.PickupSpell("Pistol Shot")]
+  - [19, C_Spell.PickupSpell("Pistol Shot")]  # bar 2
+  - [79, C_Spell.PickupSpell("Pistol Shot")]  # stealth
+
+  - [1, C_Spell.PickupSpell("Sinister Strike")]
+  - [13, C_Spell.PickupSpell("Sinister Strike")]  # bar 2
+  - [73, C_Spell.PickupSpell("Ambush")]  # stealth
+
+  - [55, C_Spell.PickupSpell("Kidney Shot")]
+  - [49, C_Spell.PickupSpell("Ghostly Strike")]
+  - [25, C_Spell.PickupSpell("Blade Flurry")]
+
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Sap")]
+  - [62, C_Spell.PickupSpell("Grappling Hook")]
+
+  - [8, C_Spell.PickupSpell("Between the Eyes")]
+  - [20, C_Spell.PickupSpell("Between the Eyes")]  # bar 2
+  - [80, C_Spell.PickupSpell("Between the Eyes")]  # stealth
+
+  - [2, C_Spell.PickupSpell("Dispatch")]
+  - [14, C_Spell.PickupSpell("Dispatch")]  # bar 2
+  - [74, C_Spell.PickupSpell("Dispatch")]  # stealth
+
+  - [56, C_Spell.PickupSpell("Cheap Shot")]
+  - [50, C_Spell.PickupSpell("Distract")]
+  - [26, C_Spell.PickupSpell("Killing Spree")]
+
+  # PAD3 column
+  # - [69, ""]
+  # - [63, ""]
+
+  - [9, C_Spell.PickupSpell("Adrenaline Rush")]
+  - [21, C_Spell.PickupSpell("Adrenaline Rush")]  # bar 2
+  - [81, C_Spell.PickupSpell("Adrenaline Rush")]  # stealth
+
+  - [3, C_Spell.PickupSpell("Roll the Bones")]
+  - [15, C_Spell.PickupSpell("Roll the Bones")]  # bar 2
+  - [75, C_Spell.PickupSpell("Roll the Bones")]  # stealth
+
+  # - [57, ""]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  - [64, PickupMacro(120 + 6)]  # stealth
+
+  - [10, C_Spell.PickupSpell(1784)]  # Stealth
+  - [22, C_Spell.PickupSpell(1784)]  # bar 2
+  - [82, C_Spell.PickupSpell("Pick Pocket")]  # stealth
+
+  - [4, C_Spell.PickupSpell("Crimson Vial")]
+  - [16, C_Spell.PickupSpell("Crimson Vial")]  # bar 2
+  - [76, C_Spell.PickupSpell("Crimson Vial")]  # stealth
+
+  - [58, PickupMacro(120 + 7)]  # search sap
+  # - [52, ""]
+  - [28, C_Spell.PickupSpell("Pick Lock")]
+
+  # PAD4 column
+  # - [71, ""]
+  # - [65, ""]
+
+  - [11, C_Spell.PickupSpell("Cloak of Shadows")]
+  - [23, C_Spell.PickupSpell("Cloak of Shadows")]  # bar 2
+  - [83, C_Spell.PickupSpell("Cloak of Shadows")]  # stealth
+
+  - [5, C_Spell.PickupSpell("Evasion")]
+  - [17, C_Spell.PickupSpell("Evasion")]  # bar 2
+  - [77, C_Spell.PickupSpell("Evasion")]  # stealth
+
+  # - [59, ""]
+  # - [53, ""]
+  - [29, C_Spell.PickupSpell("Detection")]
+
+  # PAD2 column
+  # - [72, ""]
+  # - [66, ""]
+
+  # - [12, ""]
+  # - [24, ""]  # bar 2
+  - [84, ""]  # stealth
+
+  - [6, C_Spell.PickupSpell("Slice and Dice")]
+  - [18, C_Spell.PickupSpell("Slice and Dice")]  # bar 2
+  - [78, C_Spell.PickupSpell("Slice and Dice")]  # stealth
+
+  # - [60, ""]
+  # - [54, ""]
+  - [30, C_Spell.PickupSpell("Instant Poison")]
+
+  # paddles (left)
+  - [43, C_Spell.PickupSpell("Smoke Bomb")]
+  - [37, C_Spell.PickupSpell("Vanish")]
+  - [31, C_Spell.PickupSpell("Blind")]
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Shroud of Concealment")]
+  - [38, C_Spell.PickupSpell("Feint")]
+  - [32, C_Spell.PickupSpell("Sprint")]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, C_Spell.PickupSpell("Wound Poison")]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Crippling Poison")]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

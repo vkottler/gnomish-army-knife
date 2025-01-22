@@ -1,0 +1,113 @@
+---
+# Affliction Warlock
+# set these with felhunter out
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell(119898)]  # "Command Demon"
+  - [61, PickupPetSpell(19505)]  # felhunter devour magic
+
+  - [7, C_Spell.PickupSpell("Haunt")]
+  - [19, C_Spell.PickupSpell("Haunt")]  # bar 2
+
+  - [1, C_Spell.PickupSpell("Unstable Affliction")]
+  - [13, C_Spell.PickupSpell("Unstable Affliction")]  # bar 2
+
+  - [55, C_Spell.PickupSpell("Shadow Bolt")]
+  - [49, C_Spell.PickupSpell("Fear")]
+  - [25, C_Spell.PickupSpell("Soul Rot")]
+
+  # PADRTRIGGER column
+  - [68, PickupMacro(120 + 8)]  # soulburn port
+  - [62, PickupMacro(120 + 9)]  # soulburn gateway
+
+  - [8, C_Spell.PickupSpell("Phantom Singularity")]
+  - [20, C_Spell.PickupSpell("Phantom Singularity")]  # bar 2
+
+  - [2, C_Spell.PickupSpell("Malefic Rapture")]
+  - [14, C_Spell.PickupSpell("Malefic Rapture")]  # bar 2
+
+  - [56, C_Spell.PickupSpell("Curse of Exhaustion")]
+  - [50, C_Spell.PickupSpell("Mortal Coil")]
+  - [26, C_Spell.PickupSpell("Summon Darkglare")]
+
+  # PAD3 column
+  - [69, "C_SpellBook.PickupSpellBookItem(2, 1)"]
+  - [63, PickupMacro(120 + 7)]  # soulburn demonic healthstone
+
+  - [9, C_Spell.PickupSpell("Corruption")]
+  - [21, C_Spell.PickupSpell("Corruption")]  # bar 2
+
+  - [3, C_Spell.PickupSpell("Agony")]
+  - [15, C_Spell.PickupSpell("Agony")]  # bar 2
+
+  - [57, C_Spell.PickupSpell("Seed of Corruption")]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  - [70, "C_SpellBook.PickupSpellBookItem(6, 1)"]
+  - [64, C_Spell.PickupSpell("Soulburn")]
+
+  - [10, C_Spell.PickupSpell("Health Funnel")]
+  - [22, C_Spell.PickupSpell("Health Funnel")]  # bar 2
+
+  - [4, C_Spell.PickupSpell("Drain Life")]
+  - [16, C_Spell.PickupSpell("Drain Life")]  # bar 2
+
+  - [58, C_Spell.PickupSpell("Dark Pact")]
+  # - [52, ""]
+  - [28, C_Spell.PickupSpell("Eye of Kilrogg")]
+
+  # PAD4 column
+  - [71, "C_SpellBook.PickupSpellBookItem(7, 1)"]
+  - [65, C_Spell.PickupSpell("Summon Felhunter")]
+
+  - [11, C_Spell.PickupSpell("Fel Domination")]
+  - [23, C_Spell.PickupSpell("Fel Domination")]  # bar 2
+
+  - [5, C_Spell.PickupSpell("Demonic Circle")]
+  - [17, C_Spell.PickupSpell("Demonic Circle")]  # bar 2
+
+  - [59, C_Spell.PickupSpell("Summon Imp")]
+  - [53, C_Spell.PickupSpell("Summon Sayaad")]
+  - [29, C_Spell.PickupSpell("Ritual of Summoning")]
+
+  # PAD2 column
+  - [72, "C_SpellBook.PickupSpellBookItem(11, 1)"]
+  - [66, C_Spell.PickupSpell("Summon Voidwalker")]
+
+  - [12, PickupMacro(120 + 5)]
+  - [24, C_Spell.PickupSpell("Soulstone")]  # bar 2
+
+  - [6, PickupMacro(120 + 6)]
+  - [18, C_Spell.PickupSpell("Unending Breath")]  # bar 2
+
+  - [60, C_Spell.PickupSpell("Unending Resolve")]
+  # - [54, ""]
+  - [30, C_Spell.PickupSpell("Ritual of Doom")]
+
+  # paddles (left)
+  - [43, "C_SpellBook.PickupSpellBookItem(4, 1)"]  # Defensive
+  - [37, "C_SpellBook.PickupSpellBookItem(8, 1)"]  # Passive
+  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]  # Assist
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Subjugate Demon")]
+  - [38, C_Spell.PickupSpell("Curse of Weakness")]
+  - [32, C_Spell.PickupSpell("Curse of Tongues")]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, C_Spell.PickupSpell("Create Soulwell")]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Create Healthstone")]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

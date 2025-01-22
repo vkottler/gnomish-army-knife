@@ -1,0 +1,52 @@
+---
+# https://wowwiki-archive.fandom.com/wiki/API_UnitRace
+
+# 2
+Orc:
+  - Blood Fury
+
+# 4
+NightElf:
+  - Shadowmeld
+
+# 5
+Undead: &undead
+  - Will of the Forsaken
+  - Cannibalize
+Scourge: *undead
+
+# 7
+Gnome:
+  - Escape Artist
+
+# 8
+Troll:
+  - Berserking
+
+# 9, Pack Hobgoblin
+Goblin:
+  - Rocket Jump
+  - Rocket Barrage
+
+# 10
+BloodElf:
+  - Arcane Torrent
+
+# 22, Calm the Wolf
+Worgen:
+  - Darkflight
+  - Two Forms
+
+# 28
+HighmountainTauren:
+  - Bull Rush
+
+# 70, Visage, Chosen Identity
+Dracthyr:
+  - Wing Buffet
+  - Soar
+
+# 84
+EarthenDwarf:
+  - Azerite Surge
+  - Quiet Contemplation

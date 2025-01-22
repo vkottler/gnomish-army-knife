@@ -1,21 +1,4 @@
 ---
-cvars:
-  GamePadEnable: 1
-  GamePadEmulateAlt: "PADPADDLE2"
-  GamePadEmulateShift: "PADLSHOULDER"
-  GamePadEmulateCtrl: "PADLTRIGGER"
-  GamePadRunThreshold: 0
-  GamePadCameraYawSpeed: 1.75
-  advancedCombatLogging: 1
-
-# ALT-SHIFT
-# ALT-CTRL
-# CTRL-SHIFT
-modifiers:
-  SHIFT: PADLSHOULDER
-  CTRL: PADLTRIGGER
-  ALT: PADPADDLE2
-
 bindings:
   - command: TARGETFOCUS
     key: PADDLEFT
@@ -350,28 +333,3 @@ bindings:
   - command: MULTIACTIONBAR2BUTTON6
     key: PAD2
     modifiers: [ALT, CTRL]
-
-keymap:
-  PADRTRIGGER: BUTTON4
-  PADRSHOULDER: BUTTON5
-  PAD1: S
-  PAD2: R
-  PAD3: Q
-  PAD4: 3
-
-  PADDLEFT: 2
-  PADDUP: MOUSEWHEELUP
-  PADDDOWN: MOUSEWHEELDOWN
-  PADDRIGHT: 4
-
-  PADLSTICK: T
-  PADRSTICK: V
-
-  PADBACK: Z
-  PADSYSTEM: X
-  PADFORWARD: C
-
-  PADPADDLE1: SPACE
-  PADPADDLE2: ALT
-  PADPADDLE3: F
-  PADPADDLE4: 1

@@ -1,3 +1,3 @@
 #!/bin/bash
 
-rcmpy watch addon ./update_addon.sh
+rcmpy -v watch addon ./update_addon.sh

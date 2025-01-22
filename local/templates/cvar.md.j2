@@ -1,0 +1,9 @@
+# [CVar](https://wowpedia.fandom.com/wiki/Console_variables)'s
+
+([back](../README.md))
+
+Name | Value
+---- | -----
+{% for key, value in addon["cvars"].items() %}
+{{key}} | {% if value is string %}`{{value}}`{% else %}{{value}}{% endif +%}
+{% endfor %}

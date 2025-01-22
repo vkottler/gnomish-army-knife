@@ -1,0 +1,9 @@
+{% macro mod_str(addon, mods, gamepad=true) -%}
+{% if gamepad and mods %}
+{% for mod in mods %}
+{{addon["modifiers"][mod]}}{% if loop.index < mods|length %}, {% endif %}
+{% endfor %}
+{%- elif mods %}
+{{", ".join(mods)}}
+{%- endif %}
+{%- endmacro %}

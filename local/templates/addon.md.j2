@@ -4,47 +4,21 @@
 
 ---
 
-## [CVar](https://wowpedia.fandom.com/wiki/Console_variables)'s
+## Documentation
 
-Name | Value
----- | -----
-{% for key, value in addon["cvars"].items() %}
-{{key}} | {% if value is string %}`{{value}}`{% else %}{{value}}{% endif +%}
+* [CVar Table](docs/cvar.md)
+* Keybinds
+    * [GamePad](docs/gamepad_keybinds.md)
+    * [Keyboard](docs/keyboard_keybinds.md)
+    * [GamePad <-> Keyboard Mapping](docs/keymap.md)
+* Macros
+    * [Global](docs/global_macros.md)
+{% for class in macros["classes"] %}
+    * [{{class|capitalize}}](docs/{{class|lower}}_macros.md)
 {% endfor %}
+* [Action Bar Layout](docs/bars.md)
+* [Various Import Strings](docs/copy_strings.md)
 
 ---
 
-## [Keybinds](https://wowpedia.fandom.com/wiki/Creating_key_bindings)
-
-### GamePad
-
-{% macro mod_str(mods, gamepad=true) -%}
-{% if gamepad and mods %}
-{% for mod in mods %}
-{{addon["modifiers"][mod]}}{% if loop.index < mods|length %}, {% endif %}
-{% endfor %}
-{%- elif mods %}
-{{", ".join(mods)}}
-{%- endif %}
-{%- endmacro %}
-Command | Key | Modifiers
---------|-----|----------
-{% for bind in addon["bindings"] %}
-{% if "command" in bind and bind["command"] %}
-{% if "ACTION" in bind["command"] %}`{{bind["command"]}}`{% else %}{{bind["command"]}}{% endif %} | {{bind["key"]}} | {% if "modifiers" in bind %}{{mod_str(bind["modifiers"])}}{% endif +%}
-{% endif %}
-{% endfor %}
-
----
-
-### Keyboard
-
-Command | Key | Modifiers
---------|-----|----------
-{% for bind in addon["bindings"] %}
-{% if "command" in bind and bind["command"] %}
-{% if "ACTION" in bind["command"] %}`{{bind["command"]}}`{% else %}{{bind["command"]}}{% endif %} | {{addon["keymap"][bind["key"]]}} | {% if "modifiers" in bind %}{{mod_str(bind["modifiers"], false)}}{% endif +%}
-{% endif %}
-{% endfor %}
-
----
+([build system](https://github.com/vkottler/{{package["name"]}}))

@@ -1,0 +1,81 @@
+---
+# 2
+array:
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Flash of Light
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Shock
+
+  - name: harm
+    body: |-
+      #showtooltip Holy Shock
+      /targetenemy [help]
+      /cast [harm] Holy Shock
+      /cleartarget
+
+  - name: help
+    body: |-
+      #showtooltip Holy Shock
+      /targetfriend [harm]
+      /cast [help] Holy Shock
+      /cleartarget
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Light
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Beacon of Light
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Cleanse
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Barrier of Faith
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Word of Glory
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Lay on Hands
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Protection
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Freedom
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Summer
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Final Reckoning
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Bulwark

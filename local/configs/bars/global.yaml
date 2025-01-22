@@ -1,0 +1,31 @@
+---
+array:
+  # Mounts
+  - [48, "C_MountJournal.Pickup(0)"]  # favorite mount
+  - [42, "C_Spell.PickupSpell(122708)"]  # Grand Expedition Yak
+  - [36, "C_Spell.PickupSpell(465235)"]  # Trader's Gilded Brutosair
+
+  # Dragon Riding
+  - [121, "C_Spell.PickupSpell(372608)"]
+  - [122, "C_Spell.PickupSpell(425782)"]
+  - [123, "C_Spell.PickupSpell(374990)"]
+  - [124, "C_Spell.PickupSpell(372610)"]
+  - [125, "C_Spell.PickupSpell(465235)"]
+  - [126, "C_Spell.PickupSpell(436854)"]
+  - [127, "C_Spell.PickupSpell(361584)"]
+  - [128, "PickupMacro(4)"]  # dismount
+  - [130, "C_Spell.PickupSpell(403092)"]
+  - [131, "C_Spell.PickupSpell(122708)"]
+
+  # Macros
+  - [33, "PickupMacro(120 + 1)"]  # first racial
+  - [34, "PickupMacro(1)"]  # 13
+  - [35, "PickupMacro(2)"]  # 14
+  - [39, "PickupMacro(3)"]  # cancel some auras (slow fall etc.)
+
+  # this doesn't work for warlock's new healthstones
+  - [40, "PickupMacro(7)"]  # healthstone
+
+  - [41, "PickupMacro(120 + 2)"]  # second racial
+
+  - [45, "PickupMacro(8)"]  # drink (mage food + water)

@@ -1,0 +1,112 @@
+---
+# Retribution Paladin
+array:
+  # PADRSHOULDER column
+  - [67, "C_Spell.PickupSpell(96231)"]
+  - [61, "C_Spell.PickupSpell(24275)"]
+
+  - [7, "C_Spell.PickupSpell(20271)"]
+  - [19, "C_Spell.PickupSpell(62124)"]  # bar 2
+
+  - [1, "C_Spell.PickupSpell(184575)"]
+  - [13, "C_Spell.PickupSpell(210256)"]  # bar 2
+
+  - [55, "C_Spell.PickupSpell(255937)"]
+  - [49, "C_Spell.PickupSpell(115750)"]
+  - [25, "C_Spell.PickupSpell(853)"]
+
+  # PADRTRIGGER column
+  - [68, "PickupMacro(120 + 16)"]  # self final reckoning
+  - [62, "C_Spell.PickupSpell(343721)"]
+
+  - [8, "C_Spell.PickupSpell(53385)"]
+  - [20, "C_Spell.PickupSpell(391054)"]  # bar 2
+
+  - [2, "C_Spell.PickupSpell(383328)"]
+  - [14, "C_Spell.PickupSpell(6940)"]  # bar 2
+
+  - [56, "C_Spell.PickupSpell(375576)"]
+  - [50, "C_Spell.PickupSpell(6940)"]
+  - [26, "C_Spell.PickupSpell(410126)"]
+
+  # PAD3 column
+  # - [69, ""]
+  - [63, ""]
+
+  - [9, "PickupMacro(120 + 13)"]  # blessing of protection
+  - [21, "C_Spell.PickupSpell(1022)"]  # bar 2
+
+  - [3, "PickupMacro(120 + 11)"]  # word of glory
+  - [15, "C_Spell.PickupSpell(85673)"]  # bar 2
+
+  - [57, ""]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  - [64, ""]
+
+  - [10, "PickupMacro(120 + 12)"]  # lay on hands
+  - [22, "C_Spell.PickupSpell(633)"]  # 471195 # bar 2
+
+  - [4, "PickupMacro(120 + 6)"]  # flash of light
+  - [16, "C_Spell.PickupSpell(19750)"]  # bar 2
+
+  - [58, ""]
+  # - [52, ""]
+  # - [28, ""]
+
+  # PAD4 column
+  # - [71, ""]
+  - [65, ""]
+
+  - [11, "C_Spell.PickupSpell(184662)"]
+  - [23, "C_Spell.PickupSpell(184662)"]  # bar 2
+
+  - [5, "C_Spell.PickupSpell(403876)"]
+  - [17, "C_Spell.PickupSpell(403876)"]  # bar 2
+
+  - [59, ""]
+  # - [53, ""]
+  # - [29, ""]
+
+  # PAD2 column
+  # - [72, ""]
+  - [66, ""]
+
+  - [12, "C_Spell.PickupSpell(642)"]
+  - [24, "C_Spell.PickupSpell(642)"]  # bar 2
+
+  - [6, "PickupMacro(120 + 14)"]  # blessing of freedom
+  - [18, "C_Spell.PickupSpell(1044)"]  # bar 2
+
+  - [60, ""]
+  # - [54, ""]
+  # - [30, ""]
+
+  # paddles (left)
+  # - [43, ""]
+  # - [37, ""]
+  # - [31, ""]
+  # paddles (right)
+  - [44, ""]
+  - [38, "C_Spell.PickupSpell(210256)"]
+  # - [32, ""]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, ""]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  # - [47, ""]
+  # - [41, "C_Spell.PickupSpell(5502)"]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

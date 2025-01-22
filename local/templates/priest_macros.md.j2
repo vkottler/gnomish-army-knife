@@ -1,0 +1,6 @@
+{% set class_str = "PRIEST" %}
+# {{class_str|capitalize}} Macros
+
+([back](../README.md))
+{% import __templates__["render_macros"] as m %}
+{{m.render_macros(macros["classes"][class_str]["array"])}}

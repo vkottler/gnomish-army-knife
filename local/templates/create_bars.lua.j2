@@ -1,0 +1,107 @@
+-- https://wowpedia.fandom.com/wiki/Action_slot
+GAK_MAX_ACTIONBAR = 180
+
+function GakClearActionBars()
+	for i = 1, GAK_MAX_ACTIONBAR do
+		if GetActionInfo(i) then
+			PickupAction(i)
+			ClearCursor()
+		end
+	end
+end
+
+function GakSetGlobalActions()
+	local global_bind_count = 0
+
+{% for bind in bars["global"]["array"] %}
+{% if bind[1] %}
+	{{bind[1]}}
+	if GetCursorInfo() then
+		PlaceAction({{bind[0]}})
+		global_bind_count = global_bind_count + 1
+	else
+		print("(global) Couldn't bind slot {{bind[0]}}:", [[
+{{bind[1]}}]])
+	end
+{% endif %}
+{% endfor %}
+
+	print("Placed " .. global_bind_count .. "/{{bars["global"]["array"]|length}} global actions.")
+end
+
+function GakSetClassActions()
+	local class_str = select(2, UnitClass("player"))
+	local class_bind_count = 0
+{% for class_str, data in bars["classes"].items() %}
+
+	if class_str == "{{class_str}}" then
+{% for bind in data["array"] %}
+{% if bind[1] %}
+		{{bind[1]}}
+		if GetCursorInfo() then
+			PlaceAction({{bind[0]}})
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot {{bind[0]}}:", [[
+{{bind[1]}}]])
+		end
+{% endif %}
+{% endfor %}
+	end
+{% endfor %}
+
+	print("Placed ".. class_bind_count .. " " .. class_str .. " actions.")
+end
+
+function GakSetSpecializationActions()
+	local spec_info = {GetSpecializationInfo(GetSpecialization())}
+	local id = spec_info[1]
+	local name = spec_info[2]
+	local spec_bind_count = 0
+{% for id, data in bars["specializations"].items() %}
+{% if id|int != 0 %}
+
+	if id == {{id}} then
+{% for bind in data["array"] %}
+{% if bind[1] %}
+		{{bind[1]}}
+		if GetCursorInfo() then
+			PlaceAction({{bind[0]}})
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot {{bind[0]}}:", [[
+{{bind[1]}}]])
+		end
+{% endif %}
+{% endfor %}
+	end
+{% endif %}
+{% endfor %}
+
+	print("Placed " .. spec_bind_count .. " " .. name .. " (" .. id .. ") actions.")
+end
+
+function GakSetRoleActions()
+	local spec_info = {GetSpecializationInfo(GetSpecialization())}
+	local role = spec_info[5]
+
+	-- Not implemented yet.
+	print("Placed 0 " .. role .. " actions.")
+end
+
+function GakSetActionBars()
+	-- Clear all existing bars.
+	GakClearActionBars()
+
+	-- Always set character-specific macros.
+	GakSetCharacterMacros()
+
+	-- Make sure cursor is clear.
+	ClearCursor()
+
+	-- Set all binds.
+	GakSetGlobalActions()
+	GakSetClassActions()
+	GakSetSpecializationActions()
+	GakSetRoleActions()
+end
