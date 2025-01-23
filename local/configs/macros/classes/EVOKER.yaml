@@ -33,11 +33,6 @@ array:
   - name: self
     body: |-
       #showtooltip
-      /cast [@player] Living Flame
-
-  - name: self
-    body: |-
-      #showtooltip
       /cast [@player] Verdant Embrace
 
   - name: self
@@ -49,6 +44,11 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Naturalize
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Expunge
 
   - name: self
     body: |-

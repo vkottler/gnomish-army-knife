@@ -48,9 +48,11 @@ nameplateSelfTopInset: 0.45
 nameplateSelfBottomInset: 0.45
 nameplateSelfScale: 1.0
 
-nameplateShowFriends: 1
+# Overwritten by role-based logic.
+# nameplateShowFriends: 1
+# nameplateShowEnemies: 1
+
 nameplateShowSelf: 1
-nameplateShowEnemies: 1
 nameplateShowDebuffsOnFriendly: 1  # default
 nameplateHideHealthAndPower: 1
 
@@ -64,6 +66,11 @@ UnitNamePlayerPVPTitle: 0
 UnitNamePlayerGuild: 0
 UnitNameOwn: 0
 UnitNameFriendlyPlayerName: 0
+
+pvpFramesHealthText: "none"
+raidFramesHealthText: "none"
+
+showToastWindow: 0
 
 # nameplateSelfScale: 1.0
 # nameplateGlobalScale: 1
