@@ -89,6 +89,11 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Power Word: Radiance
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Angelic Feather
 
   - name: self

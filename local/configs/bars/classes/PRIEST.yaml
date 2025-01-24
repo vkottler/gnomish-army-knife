@@ -5,4 +5,4 @@ array:
   - [32, C_Spell.PickupSpell("Fade")]
 
   # d-pad (down)
-  - [46, PickupMacro(120 + 14)]
+  - [46, PickupMacro(120 + 17)]
