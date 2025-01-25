@@ -72,6 +72,15 @@ raidFramesHealthText: "none"
 
 showToastWindow: 0
 
+Sound_EnableSFX: 1  # default
+Sound_EnableMusic: 0
+Sound_EnableAmbience: 0
+Sound_EnableDialog: 0
+Sound_EnableSoundWhenGameIsInBG: 1
+Sound_MasterVolume: 1
+Sound_SFXVolume: 1
+Sound_EnableReverb: 1  # default
+
 # nameplateSelfScale: 1.0
 # nameplateGlobalScale: 1
 # nameplateLargerScale: 1.2
