@@ -49,6 +49,11 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Shadow Crash
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Mass Dispel
 
   - name: self

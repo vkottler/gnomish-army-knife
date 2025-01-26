@@ -1,3 +1,112 @@
 ---
 # Shadow Priest
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Silence")]
+  - [61, C_Spell.PickupSpell("Psychic Horror")]
+
+  - [7, C_Spell.PickupSpell("Mind Blast")]
+  - [19, C_Spell.PickupSpell("Mind Blast")]  # bar 2
+
+  - [1, C_Spell.PickupSpell("Vampiric Touch")]
+  - [13, C_Spell.PickupSpell("Vampiric Touch")]  # bar 2
+
+  - [55, 'C_Spell.PickupSpell("Shadow Word: Pain")']
+  - [49, C_Spell.PickupSpell("Psyfiend")]
+  - [25, C_Spell.PickupSpell("Divine Star")]
+
+  # PADRTRIGGER column
+  # - [68, ""]
+  # - [62, ""]
+
+  - [8, C_Spell.PickupSpell("Mind Flay")]
+  - [20, C_Spell.PickupSpell("Mind Flay")]  # bar 2
+
+  - [2, C_Spell.PickupSpell("Devouring Plague")]
+  - [14, C_Spell.PickupSpell("Devouring Plague")]  # bar 2
+
+  # - [56, ""]
+  # - [50, ""]
+  - [26, C_Spell.PickupSpell("Void Torrent")]
+
+  # PAD3 column
+  # - [69, ""]
+  - [63, C_Spell.PickupSpell("Void Eruption")]
+
+  - [9, PickupMacro(120 + 5)]
+  - [21, PickupMacro(120 + 5)]  # bar 2, psyfiend
+
+  - [3, PickupMacro(120 + 9)]
+  - [15, C_Spell.PickupSpell("Shadow Crash")]  # bar 2
+
+  - [57, PickupMacro(120 + 3)]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  # - [64, ""]
+
+  - [10, PickupMacro(120 + 13)]
+  - [22, 'C_Spell.PickupSpell("Power Word: Shield")']  # bar 2
+
+  # - [4, ""]
+  # - [16, ""]  # bar 2
+
+  # - [58, ""]
+  # - [52, ""]
+  # - [28, ""]
+
+  # PAD4 column
+  # - [71, ""]
+  - [65, ""]
+
+  - [11, C_Spell.PickupSpell("Vampiric Embrace")]
+  - [23, C_Spell.PickupSpell("Vampiric Embrace")]  # bar 2
+
+  - [5, PickupMacro(120 + 14)]
+  - [17, C_Spell.PickupSpell("Flash Heal")]  # bar 2
+
+  - [59, ""]
+  # - [53, ""]
+  # - [29, ""]
+
+  # PAD2 column
+  # - [72, ""]
+  - [66, ""]
+
+  # - [12, ""]
+  # - [24, ""]  # bar 2
+
+  # - [6, ""]
+  # - [18, ""]  # bar 2
+
+  - [60, C_Spell.PickupSpell("Dispersion")]
+  # - [54, ""]
+  # - [30, ""]
+
+  # paddles (left)
+  - [43, ""]
+  - [37, ""]
+  - [31, ""]
+  # paddles (right)
+  - [44, ""]
+  - [38, ""]
+  - [32, ""]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, ""]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, ""]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]
