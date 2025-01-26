@@ -2,72 +2,72 @@
 # Mistweaver Monk
 array:
   # PADRSHOULDER column
-  - [67, "C_Spell.PickupSpell(116705)"]
-  - [61, "C_Spell.PickupSpell(107428)"]
+  # - [67, ""]
+  - [61, C_Spell.PickupSpell("Blackout Kick")]
 
-  - [7, "C_Spell.PickupSpell(116670)"]
-  - [19, "PickupMacro(120 + 6)"]
+  - [7, PickupMacro(120 + 6)]
+  - [19, C_Spell.PickupSpell("Vivify")]  # bar 2
 
-  - [1, "C_Spell.PickupSpell(115175)"]
-  - [13, "PickupMacro(120 + 3)"]
+  - [1, PickupMacro(120 + 3)]
+  - [13, C_Spell.PickupSpell("Soothing Mist")]  # bar 2
 
-  - [55, "C_Spell.PickupSpell(116680)"]
-  - [49, "C_Spell.PickupSpell(101546)"]  # spinning crane kick
-  - [25, "C_Spell.PickupSpell(100784)"]  # blackout kick
+  - [55, C_Spell.PickupSpell("Thunder Focus Tea")]
+  # - [49, ""]
+  - [25, 'C_Spell.PickupSpell("Invoke Chi-Ji, the Red Crane")']
 
   # PADRTRIGGER column
-  - [68, "PickupMacro(120 + 7)"]
-  - [62, "C_Spell.PickupSpell(116844)"]
+  - [68, C_Spell.PickupSpell("Restoral")]
+  - [62, C_Spell.PickupSpell("Rising Sun Kick")]
 
-  - [8, "C_Spell.PickupSpell(124682)"]
-  - [20, "PickupMacro(120 + 4)"]  # bar 2
+  - [8, PickupMacro(120 + 4)]
+  - [20, C_Spell.PickupSpell("Enveloping Mist")]  # bar 2
 
-  - [2, "C_Spell.PickupSpell(115151)"]
-  - [14, "PickupMacro(120 + 9)"]  # bar 2
+  - [2, PickupMacro(120 + 9)]
+  - [14, C_Spell.PickupSpell("Renewing Mist")]  # bar 2
 
-  - [56, "C_Spell.PickupSpell(116095)"]
-  - [50, "C_Spell.PickupSpell(100780)"]  # tiger palm
-  - [26, "C_Spell.PickupSpell(117952)"]  # crackling lightning
+  # - [56, ""]
+  # - [50, ""]
+  # - [26, ""]
 
   # PAD3 column
   # - [69, ""]
-  - [63, "C_Spell.PickupSpell(322109)"]  # tod
+  - [63, C_Spell.PickupSpell("Tiger Palm")]
 
-  - [9, "C_Spell.PickupSpell(115313)"]
-  - [21, "PickupMacro(120 + 8)"]
+  - [9, PickupMacro(120 + 8)]
+  - [21, C_Spell.PickupSpell("Summon Jade Serpent Statue")]
 
-  - [3, "C_Spell.PickupSpell(115450)"]
-  - [15, "PickupMacro(120 + 5)"]  # bar 2
+  - [3, PickupMacro(120 + 5)]
+  - [15, C_Spell.PickupSpell("Detox")]  # bar 2
 
-  - [57, "C_Spell.PickupSpell(122783)"]
+  - [57, C_Spell.PickupSpell("Mana Tea")]
   # - [51, ""]
   # - [27, ""]
 
   # PAD1 column
   # - [70, ""]
-  - [64, "C_Spell.PickupSpell(325197)"]  # chi-ji
+  # - [64, ""]
 
-  - [10, "C_Spell.PickupSpell(388615)"]
-  - [22, "C_Spell.PickupSpell(388615)"]  # bar 2
+  # - [10, ""]
+  # - [22, ""]  # bar 2
 
-  - [4, "C_Spell.PickupSpell(322101)"]
-  - [16, "C_Spell.PickupSpell(322101)"]  # bar 2
+  # - [4, ""]
+  # - [16, ""]  # bar 2
 
-  - [58, "C_Spell.PickupSpell(115203)"]
+  # - [58, ""]
   # - [52, ""]
-  - [28, "C_Spell.PickupSpell(115546)"]
+  # - [28, ""]
 
   # PAD4 column
   # - [71, ""]
-  - [65, ""]
+  # - [65, ""]
 
-  - [11, "C_Spell.PickupSpell(101643)"]
-  - [23, "C_Spell.PickupSpell(101643)"]  # bar 2
+  # - [11, ""]
+  # - [23, ""]  # bar 2
 
-  - [5, "C_Spell.PickupSpell(119996)"]
-  - [17, "C_Spell.PickupSpell(119996)"]  # bar 2
+  # - [5, ""]
+  # - [17, ""]  # bar 2
 
-  - [59, "C_Spell.PickupSpell(115294)"]
+  # - [59, ""]
   # - [53, ""]
   # - [29, ""]
 
@@ -75,36 +75,36 @@ array:
   # - [72, ""]
   - [66, ""]
 
-  - [12, "C_Spell.PickupSpell(116849)"]
-  - [24, "PickupMacro(120 + 11)"]  # bar 2
+  - [12, PickupMacro(120 + 11)]
+  - [24, C_Spell.PickupSpell("Life Cocoon")]  # bar 2
 
-  - [6, "C_Spell.PickupSpell(116841)"]
-  - [18, "PickupMacro(120 + 10)"]  # bar 2
+  - [6, ""]
+  - [18, ""]  # bar 2
 
   - [60, ""]
   # - [54, ""]
-  # - [30, ""]
+  - [30, ""]
 
   # paddles (left)
   - [43, ""]
   - [37, ""]
   - [31, ""]
   # paddles (right)
-  - [44, "C_Spell.PickupSpell(115078)"]
-  - [38, "C_Spell.PickupSpell(119381)"]
-  - [32, "C_Spell.PickupSpell(115008)"]
+  - [44, ""]
+  # - [38, ""]
+  - [32, C_Spell.PickupSpell("Chi Torpedo")]
 
   # d-pad (left)
   # - [45, ""]
   # - [39, ""]
   # - [33, ""]
   # d-pad (down)
-  - [46, ""]
+  - [46, C_Spell.PickupSpell("Reawaken")]
   # - [40, ""]
   # - [34, ""]
   # d-pad (up)
-  - [47, ""]
-  - [41, "C_Spell.PickupSpell(212051)"]
+  # - [47, ""]
+  # - [41, ""]
   # - [35, ""]
   # d-pad (right)
   # - [48, ""]
