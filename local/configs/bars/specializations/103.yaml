@@ -28,8 +28,8 @@ array:
   - [104, C_Spell.PickupSpell("Strength of the Wild")]  # bear
   - [80, C_Spell.PickupSpell("Rip")]  # cat
 
-  - [2, PickupMacro(120 + 5)]
-  - [14, PickupMacro(120 + 5)]  # bar 2
+  - [2, PickupMacro(120 + 6)]
+  - [14, PickupMacro(120 + 6)]  # bar 2
   - [98, C_Spell.PickupSpell("Frenzied Regeneration")]  # bear
   - [74, C_Spell.PickupSpell("Ferocious Bite")]  # cat
 
@@ -38,8 +38,8 @@ array:
   - [26, C_Spell.PickupSpell("Feral Frenzy")]
 
   # PAD3 column
-  - [69, 'C_Spell.PickupSpell("Incarnation: Avatar of Ashamane")']
-  - [63, C_Spell.PickupSpell("Thrash")]
+  - [69, C_Spell.PickupSpell("Thrash")]
+  - [63, 'C_Spell.PickupSpell("Incarnation: Avatar of Ashamane")']
 
   - [9, C_Spell.PickupSpell("Adaptive Swarm")]
   - [21, C_Spell.PickupSpell("Adaptive Swarm")]  # bar 2
@@ -53,7 +53,7 @@ array:
 
   - [57, C_Spell.PickupSpell("Moonfire")]
   # - [51, ""]
-  # - [27, ""]
+  - [27, C_Spell.PickupSpell("Prowl")]
 
   # PAD1 column
   - [70, C_Spell.PickupSpell("Frenzied Regeneration")]

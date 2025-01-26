@@ -93,6 +93,10 @@ function GakSetActionBars()
 	-- Clear all existing bars.
 	GakClearActionBars()
 
+	-- Set character-specific macros (due to specialization-specific macro
+	-- indices).
+	GakSetCharacterMacros()
+
 	-- Make sure cursor is clear.
 	ClearCursor()
 

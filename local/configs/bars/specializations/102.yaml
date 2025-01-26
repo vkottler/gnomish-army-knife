@@ -64,9 +64,9 @@ array:
 
   - [10, "PickupMacro(120 + 27)"]  # remove corruption
   - [22, 'C_Spell.PickupSpell("Remove Corruption")']  # bar 2
-  - [106, "PickupMacro(120 + 12)"]  # bear
-  - [82, "PickupMacro(120 + 12)"]  # cat
-  - [118, "PickupMacro(120 + 12)"]  # moonkin
+  - [106, "PickupMacro(120 + 27)"]  # bear
+  - [82, "PickupMacro(120 + 27)"]  # cat
+  - [118, "PickupMacro(120 + 27)"]  # moonkin
 
   - [4, "PickupMacro(120 + 17)"]  # regrowth
   - [16, 'C_Spell.PickupSpell("Regrowth")']  # bar 2
@@ -86,11 +86,11 @@ array:
   - [83, "PickupMacro(120 + 14)"]  # cat
   - [119, "PickupMacro(120 + 14)"]  # moonkin
 
-  - [5, "PickupMacro(120 + 24)"]  # rejuvenation
+  - [5, "PickupMacro(120 + 25)"]  # rejuvenation
   - [17, 'C_Spell.PickupSpell("Rejuvenation")']  # bar 2
-  - [101, "PickupMacro(120 + 24)"]  # bear
-  - [77, "PickupMacro(120 + 24)"]  # cat
-  - [113, "PickupMacro(120 + 24)"]  # moonkin
+  - [101, "PickupMacro(120 + 25)"]  # bear
+  - [77, "PickupMacro(120 + 25)"]  # cat
+  - [113, "PickupMacro(120 + 25)"]  # moonkin
 
   # - [53, ""]
   # - [29, ""]
