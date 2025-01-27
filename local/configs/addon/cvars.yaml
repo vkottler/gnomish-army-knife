@@ -39,10 +39,6 @@ raidFramesDisplayPowerBars: 1
 # /console cvar_default
 SoftTargetIconEnemy: 0
 
-# Gets overwritten by "use large nameplates" ?
-# NamePlateVerticalScale: 2.4
-# NamePlateHorizontalScale: 1.2
-
 NameplatePersonalShowAlways: 1
 nameplateSelfTopInset: 0.45
 nameplateSelfBottomInset: 0.45
@@ -66,6 +62,8 @@ UnitNamePlayerPVPTitle: 0
 UnitNamePlayerGuild: 0
 UnitNameOwn: 0
 UnitNameFriendlyPlayerName: 0
+UnitNameNPC: 0
+UnitNameInteractiveNPC: 1  # default
 
 pvpFramesHealthText: "none"
 raidFramesHealthText: "none"
@@ -80,11 +78,19 @@ Sound_EnableSoundWhenGameIsInBG: 1
 Sound_MasterVolume: 1
 Sound_SFXVolume: 1
 Sound_EnableReverb: 1  # default
+Sound_EnableEmoteSounds: 0
 
+# BetterBlizzPlates does all of these
+# Gets overwritten by "use large nameplates" ?
 # nameplateSelfScale: 1.0
 # nameplateGlobalScale: 1
 # nameplateLargerScale: 1.2
+# NamePlateHorizontalScale: 0.5
+# NamePlateVerticalScale: 1
+# nameplateSelectedScale: 1.2
+# nameplateMinScale: 0.9
+# nameplateMaxScale: 0.9
 
-# Some variables can't be set..
-# nameplateShowFriendlyBuffs: 1
-# nameplateShowFriendlyTotems: 1
+nameplateShowFriendlyBuffs: 1
+nameplateShowFriendlyTotems: 1
+nameplateShowPersonalCooldowns: 1
