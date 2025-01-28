@@ -12,11 +12,11 @@ array:
   - [13, C_Spell.PickupSpell("Holy Shock")]  # bar 2
 
   - [55, C_Spell.PickupSpell("Crusader Strike")]
-  - [49, C_Spell.PickupSpell("Blinding Light")]
+  - [49, C_Spell.PickupSpell("Repentance")]
   - [25, C_Spell.PickupSpell("Divine Toll")]
 
   # PADRTRIGGER column
-  - [68, C_Spell.PickupSpell("Shield of the Righteous")]
+  - [68, C_Spell.PickupSpell("Searing Glare")]
   - [62, C_Spell.PickupSpell("Light of Dawn")]
 
   - [8, PickupMacro(120 + 7)]
@@ -30,16 +30,16 @@ array:
   - [26, C_Spell.PickupSpell("Avenging Wrath")]
 
   # PAD3 column
-  # - [69, ""]
-  - [63, C_Spell.PickupSpell("Beacon of Faith")]
+  - [69, C_Spell.PickupSpell("Shield of the Righteous")]
+  - [63, PickupMacro(120 + 4)]  # holy shock help
 
-  - [9, PickupMacro(120 + 8)]
-  - [21, C_Spell.PickupSpell("Beacon of Light")]  # bar 2
+  - [9, PickupMacro(120 + 13)]
+  - [21, C_Spell.PickupSpell("Blessing of Protection")]  # bar 2
 
   - [3, PickupMacro(120 + 9)]
   - [15, C_Spell.PickupSpell("Cleanse")]  # bar 2
 
-  - [57, C_Spell.PickupSpell("Aura Mastery")]
+  - [57, PickupMacro(120 + 3)]  # holy shock harm
   # - [51, ""]
   # - [27, ""]
 
@@ -59,15 +59,15 @@ array:
 
   # PAD4 column
   # - [71, ""]
-  # - [65, ""]
+  - [65, C_Spell.PickupSpell("Beacon of Faith")]
 
-  - [11, PickupMacro(120 + 13)]
-  - [23, C_Spell.PickupSpell("Blessing of Protection")]  # bar 2
+  - [11, PickupMacro(120 + 8)]
+  - [23, C_Spell.PickupSpell("Beacon of Light")]  # bar 2
 
-  - [5, PickupMacro(120 + 17)]
+  - [5, PickupMacro(120 + 18)]
   - [17, C_Spell.PickupSpell("Holy Bulwark")]  # bar 2
 
-  # - [59, ""]
+  - [59, C_Spell.PickupSpell("Aura Mastery")]
   # - [53, ""]
   # - [29, ""]
 
@@ -90,8 +90,8 @@ array:
   # - [37, ""]
   # - [31, ""]
   # paddles (right)
-  - [44, PickupMacro(120 + 4)]  # holy shock help
-  - [38, PickupMacro(120 + 3)]  # holy shock harm
+  - [44, ""]
+  - [38, ""]
   # - [32, ""]
 
   # d-pad (left)

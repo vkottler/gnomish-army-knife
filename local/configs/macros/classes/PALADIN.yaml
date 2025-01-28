@@ -73,6 +73,11 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Blessing of Sanctuary
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Final Reckoning
 
   - name: self
