@@ -77,10 +77,12 @@ array:
   # - [71, ""]
   # - [65, ""]
 
-  - [11, PickupMacro(120 + 27)]
-  - [23, C_Spell.PickupSpell("Remove Corruption")]  # bar 2
-  - [107, PickupMacro(120 + 27)]  # bear
-  - [83, PickupMacro(120 + 27)]  # cat
+  # switch to ironfur for druid of claw
+  # else "Remove Corruption" / macro 27 (self)
+  - [11, C_Spell.PickupSpell("Ironfur")]
+  - [23, C_Spell.PickupSpell("Ironfur")]  # bar 2
+  - [107, C_Spell.PickupSpell("Ironfur")]  # bear
+  - [83, C_Spell.PickupSpell("Ironfur")]  # cat
 
   - [5, C_Spell.PickupSpell("Mangle")]
   - [17, C_Spell.PickupSpell("Mangle")]  # bar 2
