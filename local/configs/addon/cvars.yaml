@@ -91,6 +91,9 @@ Sound_EnableEmoteSounds: 0
 # nameplateMinScale: 0.9
 # nameplateMaxScale: 0.9
 
+showPartyPets: 1
+raidOptionDisplayPets: 1
+
 nameplateShowFriendlyBuffs: 1
 nameplateShowFriendlyTotems: 1
 nameplateShowPersonalCooldowns: 1
