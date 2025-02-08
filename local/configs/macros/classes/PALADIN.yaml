@@ -43,6 +43,11 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Cleanse Toxins
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Barrier of Faith
 
   - name: self
@@ -84,3 +89,8 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Holy Bulwark
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Spellwarding

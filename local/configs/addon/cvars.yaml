@@ -97,3 +97,5 @@ raidOptionDisplayPets: 1
 nameplateShowFriendlyBuffs: 1
 nameplateShowFriendlyTotems: 1
 nameplateShowPersonalCooldowns: 1
+
+SoftTargetNameplateFriend: 0

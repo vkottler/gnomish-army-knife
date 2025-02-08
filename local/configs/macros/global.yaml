@@ -16,6 +16,7 @@ array:
       /stopcasting
       /cancelaura Slow Fall
       /cancelaura Levitate
+      /cancelaura Enchanted Candle
       /cleartarget
 
   - name: dis
