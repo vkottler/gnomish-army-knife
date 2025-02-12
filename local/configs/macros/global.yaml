@@ -17,6 +17,7 @@ array:
       /cancelaura Slow Fall
       /cancelaura Levitate
       /cancelaura Enchanted Candle
+      /cancelaura Alter Time
       /cleartarget
 
   - name: dis
