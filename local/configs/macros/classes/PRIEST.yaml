@@ -3,38 +3,28 @@
 array:
   - name: harm
     body: |-
-      #showtooltip Ultimate Penitence
-      /targetenemy [help]
-      /cast [harm] Ultimate Penitence
-      /cleartarget
+      #showtooltip
+      /cast [@anyenemy] Ultimate Penitence
 
   - name: harm
     body: |-
-      #showtooltip Penance
-      /targetenemy [help]
-      /cast [harm] Penance
-      /cleartarget
+      #showtooltip
+      /cast [@anyenemy] Penance
 
   - name: harm
     body: |-
-      #showtooltip Shadowfiend
-      /targetenemy [help]
-      /cast [harm] Shadowfiend
-      /cleartarget
+      #showtooltip
+      /cast [@anyenemy] Shadowfiend
 
   - name: help
     body: |-
-      #showtooltip Penance
-      /targetfriend [harm]
-      /cast [help] Penance
-      /cleartarget
+      #showtooltip
+      /cast [@anyfriend] Penance
 
   - name: help
     body: |-
-      #showtooltip Ultimate Penitence
-      /targetfriend [harm]
-      /cast [help] Ultimate Penitence
-      /cleartarget
+      #showtooltip
+      /cast [@anyfriend] Ultimate Penitence
 
   - name: self
     body: |-

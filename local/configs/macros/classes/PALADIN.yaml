@@ -13,17 +13,13 @@ array:
 
   - name: harm
     body: |-
-      #showtooltip Holy Shock
-      /targetenemy [help]
-      /cast [harm] Holy Shock
-      /cleartarget
+      #showtooltip
+      /cast [@anyenemy] Holy Shock
 
   - name: help
     body: |-
-      #showtooltip Holy Shock
-      /targetfriend [harm]
-      /cast [help] Holy Shock
-      /cleartarget
+      #showtooltip
+      /cast [@anyfriend] Holy Shock
 
   - name: self
     body: |-

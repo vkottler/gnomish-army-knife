@@ -22,14 +22,12 @@ array:
   - [28, C_Spell.PickupSpell("Provoke")]
 
   # PAD4 column
-  # - [71, ""]
   - [65, 'C_Spell.PickupSpell("Transcendence: Transfer")']
 
   - [11, PickupMacro(120 + 7)]
   - [23, C_Spell.PickupSpell("Ring of Peace")]  # bar 2
 
-  - [5, C_Spell.PickupSpell("Transcendence")]
-  - [17, C_Spell.PickupSpell("Transcendence")]  # bar 2
+  - [59, C_Spell.PickupSpell("Transcendence")]
 
   # PAD2 column
   - [6, PickupMacro(120 + 10)]

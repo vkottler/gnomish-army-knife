@@ -8,7 +8,7 @@ array:
   - [7, PickupMacro(120 + 6)]
   - [19, C_Spell.PickupSpell("Vivify")]  # bar 2
 
-  - [1, PickupMacro(120 + 3)]
+  - [1, PickupMacro(120 + 13)]
   - [13, C_Spell.PickupSpell("Soothing Mist")]  # bar 2
 
   - [55, C_Spell.PickupSpell("Thunder Focus Tea")]
@@ -19,7 +19,7 @@ array:
   - [68, C_Spell.PickupSpell("Restoral")]
   - [62, C_Spell.PickupSpell("Rising Sun Kick")]
 
-  - [8, PickupMacro(120 + 4)]
+  - [8, PickupMacro(120 + 8)]
   - [20, C_Spell.PickupSpell("Enveloping Mist")]  # bar 2
 
   - [2, PickupMacro(120 + 9)]
@@ -33,7 +33,7 @@ array:
   # - [69, ""]
   - [63, C_Spell.PickupSpell("Tiger Palm")]
 
-  - [9, PickupMacro(120 + 8)]
+  - [9, PickupMacro(120 + 14)]
   - [21, C_Spell.PickupSpell("Summon Jade Serpent Statue")]
 
   - [3, PickupMacro(120 + 5)]
@@ -64,8 +64,8 @@ array:
   # - [11, ""]
   # - [23, ""]  # bar 2
 
-  # - [5, ""]
-  # - [17, ""]  # bar 2
+  - [5, PickupMacro(120 + 12)]
+  - [17, PickupMacro(120 + 4)]  # bar 2, Zen Spheres help
 
   # - [59, ""]
   # - [53, ""]
@@ -73,7 +73,7 @@ array:
 
   # PAD2 column
   # - [72, ""]
-  - [66, ""]
+  - [66, PickupMacro(120 + 3)]  # Zen Spheres harm
 
   - [12, PickupMacro(120 + 11)]
   - [24, C_Spell.PickupSpell("Life Cocoon")]  # bar 2
