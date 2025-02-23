@@ -48,6 +48,10 @@ nameplateSelfScale: 1.0
 # nameplateShowFriends: 1
 # nameplateShowEnemies: 1
 
+# Overwritten by content-based logic.
+# UnitNameFriendlyPlayerName: 0
+# UnitNameEnemyPlayerName: 0
+
 nameplateShowSelf: 1
 nameplateShowDebuffsOnFriendly: 1  # default
 nameplateHideHealthAndPower: 1
@@ -61,7 +65,6 @@ lossOfControl: 0
 UnitNamePlayerPVPTitle: 0
 UnitNamePlayerGuild: 0
 UnitNameOwn: 0
-UnitNameFriendlyPlayerName: 0
 UnitNameNPC: 0
 UnitNameInteractiveNPC: 1  # default
 
@@ -101,4 +104,8 @@ nameplateShowPersonalCooldowns: 1
 SoftTargetNameplateFriend: 0
 
 nameplateMotion: 1
-nameplateMotionSpeed: 0.25
+nameplateMotionSpeed: 0.05
+nameplateOverlapH: 0.6
+nameplateOverlapV: 0.6
+
+GamePadOverlapMouseMs: 0
