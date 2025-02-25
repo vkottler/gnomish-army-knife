@@ -1,2 +1,42 @@
 ---
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Quell")]
+  - [49, C_Spell.PickupSpell("Sleep Walk")]
+
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Landslide")]
+  - [50, C_Spell.PickupSpell("Nullifying Shroud")]
+  - [26, C_Spell.PickupSpell("Tip the Scales")]
+
+  # PAD3 column
+  - [63, PickupMacro(120 + 4)]  # living flame help
+  - [57, PickupMacro(120 + 3)]  # living flame harm
+  - [27, C_Spell.PickupSpell("Fury of the Aspects")]
+
+  # PAD1 column
+  - [64, C_Spell.PickupSpell("Oppressing Roar")]
+
+  - [10, PickupMacro(120 + 12)]
+  - [22, C_Spell.PickupSpell("Cauterizing Flame")]  # bar 2
+
+  # PAD4 column
+  - [5, C_Spell.PickupSpell("Renewing Blaze")]
+  - [17, C_Spell.PickupSpell("Renewing Blaze")]  # bar 2
+  - [59, C_Spell.PickupSpell("Tail Swipe")]
+
+  # PAD2 column
+  - [66, C_Spell.PickupSpell("Zephyr")]
+
+  - [6, C_Spell.PickupSpell("Obsidian Scales")]
+  - [18, C_Spell.PickupSpell("Obsidian Scales")]  # bar 2
+
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Time Spiral")]
+  - [38, C_Spell.PickupSpell("Rescue")]
+  - [32, C_Spell.PickupSpell("Hover")]
+
+  # d-pad (down)
+  - [46, C_Spell.PickupSpell("Blessing of the Bronze")]
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Return")]

@@ -33,8 +33,8 @@ array:
   # - [69, ""]
   - [63, C_Spell.PickupSpell("Recklessness")]
 
-  - [9, C_Spell.PickupSpell(46924)]  # Bladestorm
-  - [21, C_Spell.PickupSpell(46924)]  # bar 2
+  - [9, C_Spell.PickupSpell(227847)]  # Bladestorm
+  - [21, C_Spell.PickupSpell(227847)]  # bar 2
 
   - [3, C_Spell.PickupSpell("Thunderous Roar")]
   - [15, C_Spell.PickupSpell("Thunderous Roar")]  # bar 2
@@ -47,8 +47,8 @@ array:
   # - [70, ""]
   # - [64, ""]
 
-  - [10, C_Spell.PickupSpell("Bitter Immunity")]
-  - [22, C_Spell.PickupSpell("Bitter Immunity")]  # bar 2
+  - [10, C_Spell.PickupSpell("Enraged Regeneration")]
+  - [22, C_Spell.PickupSpell("Enraged Regeneration")]  # bar 2
 
   - [4, C_Spell.PickupSpell("Rallying Cry")]
   - [16, C_Spell.PickupSpell("Rallying Cry")]  # bar 2
@@ -61,8 +61,8 @@ array:
   # - [71, ""]
   # - [65, ""]
 
-  - [11, C_Spell.PickupSpell("Enraged Regeneration")]
-  - [23, C_Spell.PickupSpell("Enraged Regeneration")]  # bar 2
+  - [11, C_Spell.PickupSpell("Bitter Immunity")]
+  - [23, C_Spell.PickupSpell("Bitter Immunity")]  # bar 2
 
   - [5, C_Spell.PickupSpell("Berserker Rage")]
   - [17, C_Spell.PickupSpell("Berserker Rage")]  # bar 2

@@ -1,3 +1,112 @@
 ---
 # Frost Mage
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Counterspell")]
+  - [61, C_Spell.PickupSpell("Cone of Cold")]
+
+  - [7, C_Spell.PickupSpell("Flurry")]
+  - [19, C_Spell.PickupSpell("Flurry")]  # bar 2
+
+  - [1, C_Spell.PickupSpell("Frostbolt")]
+  - [13, C_Spell.PickupSpell("Frostbolt")]  # bar 2
+
+  - [55, C_Spell.PickupSpell("Frost Nova")]
+  - [49, C_Spell.PickupSpell("Polymorph")]
+  - [25, C_Spell.PickupSpell("Comet Storm")]
+
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Arcane Explosion")]
+  - [62, C_Spell.PickupSpell("Frozen Orb")]
+
+  - [8, PickupMacro(120 + 5)]
+  - [20, C_Spell.PickupSpell("Blizzard")]  # bar 2
+
+  - [2, C_Spell.PickupSpell("Ice Lance")]
+  - [14, C_Spell.PickupSpell("Ice Lance")]  # bar 2
+
+  - [56, C_Spell.PickupSpell("Slow")]
+  - [50, C_Spell.PickupSpell("Dragon's Breath")]
+  - [26, C_Spell.PickupSpell("Shifting Power")]
+
+  # PAD3 column
+  # - [69, ""]
+  - [63, C_Spell.PickupSpell("Icy Veins")]
+
+  - [9, PickupMacro(120 + 6)]
+  - [21, C_Spell.PickupSpell("Ring of Fire")]  # bar 2
+
+  - [3, C_Spell.PickupSpell("Alter Time")]
+  - [15, C_Spell.PickupSpell("Alter Time")]  # bar 2
+
+  - [57, C_Spell.PickupSpell("Fire Blast")]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  - [64, C_Spell.PickupSpell("Mirror Image")]
+
+  - [10, PickupMacro(120 + 8)]
+  - [22, C_Spell.PickupSpell("Ring of Frost")]  # bar 2
+
+  - [4, C_Spell.PickupSpell("Ice Barrier")]
+  - [16, C_Spell.PickupSpell("Ice Barrier")]  # bar 2
+
+  - [58, C_Spell.PickupSpell("Greater Invisibility")]
+  # - [52, ""]
+  # - [28, ""]
+
+  # PAD4 column
+  # - [71, ""]
+  - [65, C_Spell.PickupSpell("Ice Wall")]
+
+  - [11, PickupMacro(120 + 4)]
+  - [23, C_Spell.PickupSpell("Remove Curse")]  # bar 2
+
+  - [5, C_Spell.PickupSpell("Spellsteal")]
+  - [17, C_Spell.PickupSpell("Spellsteal")]  # bar 2
+
+  - [59, C_Spell.PickupSpell("Mass Barrier")]
+  # - [53, ""]
+  - [29, C_Spell.PickupSpell("Teleport")]
+
+  # PAD2 column
+  # - [72, ""]
+  - [66, C_Spell.PickupSpell("Ice Block")]
+
+  - [12, PickupMacro(120 + 9)]
+  - [24, C_Spell.PickupSpell("Slow Fall")]  # bar 2
+
+  - [6, C_Spell.PickupSpell("Blast Wave")]
+  - [18, C_Spell.PickupSpell("Blast Wave")]  # bar 2
+
+  - [60, C_Spell.PickupSpell("Cold Snap")]
+  # - [54, ""]
+  - [30, C_Spell.PickupSpell("Portal")]
+
+  # paddles (left)
+  # - [43, ""]
+  # - [37, ""]
+  # - [31, ""]
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Displacement")]
+  - [38, C_Spell.PickupSpell("Ice Floes")]
+  - [32, C_Spell.PickupSpell("Blink")]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, PickupMacro(120 + 7)]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Conjure Refreshment")]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

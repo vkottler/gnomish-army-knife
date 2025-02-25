@@ -1,8 +1,38 @@
 ---
 array:
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Power Infusion")]
+  - [62, C_Spell.PickupSpell("Dispel Magic")]
+  - [56, 'C_Spell.PickupSpell("Shadow Word: Death")']
+  - [50, C_Spell.PickupSpell("Void Tendrils")]
+
+  # PAD3 column
+
+  # PAD1 column
+  - [64, C_Spell.PickupSpell("Desperate Prayer")]
+
+  - [4, PickupMacro(120 + 20)]
+  - [16, C_Spell.PickupSpell("Angelic Feather")]  # bar 2
+
+  - [58, C_Spell.PickupSpell("Void Shift")]
+  - [28, C_Spell.PickupSpell("Mind Vision")]
+
+  # PAD4 column
+  - [29, C_Spell.PickupSpell("Mind Soothe")]
+
+  # PAD2 column
+  - [12, PickupMacro(120 + 21)]
+  - [24, C_Spell.PickupSpell("Levitate")]  # bar 2
+  - [6, PickupMacro(120 + 10)]
+  - [18, C_Spell.PickupSpell("Mass Dispel")]  # bar 2
+
   # paddles (right)
+  - [44, C_Spell.PickupSpell("Leap of Faith")]
   - [38, C_Spell.PickupSpell("Psychic Scream")]
   - [32, C_Spell.PickupSpell("Fade")]
 
   # d-pad (down)
-  - [46, PickupMacro(120 + 14)]
+  - [46, PickupMacro(120 + 18)]
+
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Resurrection")]

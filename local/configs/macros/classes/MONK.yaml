@@ -45,3 +45,18 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Life Cocoon
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Zen Spheres
+
+  - name: harm
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Zen Spheres
+
+  - name: help
+    body: |-
+      #showtooltip
+      /cast [@anyfriend] Zen Spheres

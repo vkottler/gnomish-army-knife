@@ -8,17 +8,13 @@ array:
 
   - name: harm
     body: |-
-      #showtooltip Living Flame
-      /targetenemy [help]
-      /cast [harm] Living Flame
-      /cleartarget
+      #showtooltip
+      /cast [@anyenemy] Living Flame
 
   - name: help
     body: |-
-      #showtooltip Living Flame
-      /targetfriend [harm]
-      /cast [help] Living Flame
-      /cleartarget
+      #showtooltip
+      /cast [@anyfriend] Living Flame
 
   - name: self
     body: |-
@@ -29,11 +25,6 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Reversion
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Living Flame
 
   - name: self
     body: |-
@@ -49,6 +40,11 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Naturalize
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Expunge
 
   - name: self
     body: |-

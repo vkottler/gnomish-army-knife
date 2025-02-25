@@ -44,10 +44,8 @@ array:
   - name: help
     body: |-
       #showtooltip Wild Charge
-      /targetfriend [harm]
       /cancelform
-      /cast [help] Wild Charge
-      /cleartarget
+      /cast [@anyfriend] Wild Charge
 
   - name: self
     body: |-
