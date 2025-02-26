@@ -5,6 +5,12 @@ GamePadEmulateShift: "PADLSHOULDER"
 GamePadEmulateCtrl: "PADLTRIGGER"
 GamePadRunThreshold: 0
 GamePadCameraYawSpeed: 1.75
+GamePadOverlapMouseMs: 50
+
+# 0 == camera centered placement, 1 == regular mouse, 2 == mouse snap to target
+GamePadCursorForTargeting: 2
+GamePadCursorAutoDisableSticks: 1
+
 AutoPushSpellToActionBar: 0
 advancedCombatLogging: 1
 autoLootDefault: 1
@@ -107,5 +113,3 @@ nameplateMotion: 1
 nameplateMotionSpeed: 0.05
 nameplateOverlapH: 0.6
 nameplateOverlapV: 0.6
-
-GamePadOverlapMouseMs: 0
