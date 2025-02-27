@@ -10,6 +10,8 @@ GamePadOverlapMouseMs: 50
 # 0 == camera centered placement, 1 == regular mouse, 2 == mouse snap to target
 GamePadCursorForTargeting: 2
 GamePadCursorAutoDisableSticks: 1
+GamePadCursorSpeedMax: 2
+GamePadCursorSpeedStart: 0.5
 
 AutoPushSpellToActionBar: 0
 advancedCombatLogging: 1
@@ -23,7 +25,6 @@ SoftTargetIconFriend: 1
 SoftTargetNameplateInteract: 1
 
 scriptErrors: 1
-scriptWarnings: 1
 
 floatingCombatTextCombatDamage: 0
 floatingCombatTextCombatHealing: 0
