@@ -31,6 +31,8 @@ VERSION_EVENT = "COMBAT_LOG_VERSION"
 class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
     """The top-level configuration object for the package."""
 
+    time_format = "%m/%d/%Y %H:%M:%S"
+
     def init(self, data: _JsonObject) -> None:
         """Initialize this instance."""
 
@@ -74,7 +76,7 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
         datetime_raw, millis = timestamp_raw.split(".")
         timestamp = datetime(
             log_date.year,
-            *strptime(datetime_raw, "%m/%d %H:%M:%S")[1:6],
+            *strptime(datetime_raw, self.time_format)[1:6],
             microsecond=int(millis) * 1000,
         )
 
