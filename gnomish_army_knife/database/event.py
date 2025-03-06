@@ -4,6 +4,7 @@ A module implementing interfaces for combat log events.
 
 # built-in
 from datetime import datetime
+from time import strptime
 from typing import Callable, NamedTuple
 
 # third-party
@@ -13,12 +14,30 @@ from vcorelib.logging import LoggerType
 CombatLogEventHandler = Callable[["CombatLogEvent"], None]
 
 
+def parse_timestamp(data: str) -> datetime:
+    """Parse a timestamp string from a combat log line."""
+
+    # Parse the timestamp.
+    datetime_raw, millis = data.split(".")
+
+    # Ignore timezone suffix (non-standard).
+    millis = millis.split("-")[0].split("+")[0]
+
+    timestamp = datetime(
+        *strptime(datetime_raw, "%m/%d/%Y %H:%M:%S")[:6],
+        microsecond=int(millis) * 1000,
+    )
+
+    return timestamp
+
+
 class CombatLogEvent(NamedTuple):
     """A simple container for combat log events."""
 
     timestamp: datetime
     name: str
     data: list[str]
+    line: str
 
     def as_json(self) -> JsonMessage:
         """Create a JSON serializable dictionary from this instance."""
@@ -27,7 +46,37 @@ class CombatLogEvent(NamedTuple):
             "timestamp": str(self.timestamp),
             "name": self.name,
             "data": self.data,
+            "line": self.line,
         }
+
+    @staticmethod
+    def from_json(data: JsonMessage) -> "CombatLogEvent":
+        """Create an event from JSON message data."""
+
+        return CombatLogEvent(
+            datetime.fromisoformat(data["timestamp"]),
+            data["name"],
+            data["data"],
+            data["line"],
+        )
+
+    @staticmethod
+    def from_line(line: str) -> "CombatLogEvent":
+        """Create an event from a string line."""
+
+        timestamp_raw, event_raw = line.rstrip().split("  ", 1)
+        event_items = event_raw.split(",")
+
+        return CombatLogEvent(
+            parse_timestamp(timestamp_raw),
+            event_items[0],
+            event_items[1:],
+            line,
+        )
+
+    def log(self, logger: LoggerType) -> None:
+        """Log this event."""
+        logger.info("(%s) %s: %s.", self.timestamp, self.name, self.data)
 
     @staticmethod
     def log_handler(logger: LoggerType) -> CombatLogEventHandler:
@@ -35,9 +84,6 @@ class CombatLogEvent(NamedTuple):
 
         def handler(event: CombatLogEvent) -> None:
             """A simple event handler that logs."""
-
-            logger.info(
-                "(%s) %s: %s.", event.timestamp, event.name, event.data
-            )
+            event.log(logger)
 
         return handler

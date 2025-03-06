@@ -3,7 +3,6 @@ A module implementing a simple event log server task.
 """
 
 # built-in
-import argparse
 import asyncio
 from queue import Queue
 from threading import Event, Thread
@@ -11,36 +10,79 @@ from time import sleep
 
 # third-party
 from runtimepy.net.arbiter import AppInfo
-from runtimepy.net.arbiter.task import ArbiterTask
-from runtimepy.primitives import Uint32
 
 # internal
 from gnomish_army_knife.database.event import CombatLogEvent
+from gnomish_army_knife.database.writer import ArenaMatchWriter
 from gnomish_army_knife.net.connection import CombatLogEventConnection
-from gnomish_army_knife.runtime import GakRuntime
+from gnomish_army_knife.runtime.task import GakRuntimeTask
 
 
-class LogServerTask(ArbiterTask):
+class LogWriterTask(GakRuntimeTask):
+    """A class that writes incoming arena match data to a file database."""
+
+    writers: dict[
+        CombatLogEventConnection,
+        tuple[ArenaMatchWriter, Queue[CombatLogEvent], int],
+    ]
+
+    async def init(self, app: AppInfo) -> None:
+        """Initialize this task with application information."""
+
+        await super().init(app)
+        self.writers = {}
+
+    async def dispatch(self) -> bool:
+        """Dispatch an iteration of this task."""
+
+        inactive = set()
+
+        # Determine which connections are still active or need writing
+        # interfaces.
+        active = set()
+        for conn in self.app.conn_manager.by_type(CombatLogEventConnection):
+            active.add(conn)
+
+            # should move this to some kind of "connection instance created"
+            # callback (need runtimepy to support this), maybe just "connected"
+            # callback? (that can fire multiple times i.e. on re-connect?)
+            # should be a connect/disconnect callback thing?
+            if conn not in self.writers:
+                writer = self.runtime.database.create_writer()
+                queue: Queue[CombatLogEvent] = Queue()
+                self.writers[conn] = (
+                    writer,
+                    queue,
+                    conn.queue.register(queue),
+                )
+
+        # Clean up inactive writers (could move this to disconnect callback
+        # system described above).
+        for conn in self.writers:
+            if conn not in active:
+                inactive.add(conn)
+        for conn in inactive:
+            conn.queue.remove(self.writers[conn][2])
+            del self.writers[conn]
+
+        # Handle connection events.
+        for conn, (writer, queue, _) in self.writers.items():
+            while not queue.empty():
+                event = queue.get_nowait()
+
+                # Could count ignored events at some point.
+                if await writer.handle(event):
+                    self.event_count.increment()
+
+        return True
+
+
+class LogServerTask(GakRuntimeTask):
     """A class implementing a runtime environment for an event log server."""
 
     queue: Queue[CombatLogEvent]
-
-    runtime: GakRuntime
-
     stop_reading_log: Event
     log_file_reader_thread: Thread
-
-    # Metrics.
-    event_count: Uint32
-
-    # No stateful elements are currently allocated during (runtime) init.
-    auto_finalize = True
-
-    def _init_state(self) -> None:
-        """Add channels to this instance's channel environment."""
-
-        self.event_count = Uint32()
-        self.env.channel("event_count", self.event_count)
 
     def log_file_reader_main(self) -> None:
         """
@@ -68,20 +110,6 @@ class LogServerTask(ArbiterTask):
         self.queue = Queue()
         self.stop_reading_log = Event()
 
-        # Parse command-line options and create the runtime instance.
-        parser = argparse.ArgumentParser()
-        GakRuntime.cli_args(parser)
-        self.runtime = app.stack.enter_context(
-            GakRuntime.create(
-                parser.parse_args(
-                    app.config.get(  # type: ignore
-                        "gak_cli_args",
-                        [],
-                    )
-                )
-            )
-        )
-
         # Connect queue to event stream.
         app.stack.enter_context(
             self.runtime.database.logs.queue.registered(self.queue)
@@ -105,7 +133,11 @@ class LogServerTask(ArbiterTask):
         while not self.queue.empty():
             item = self.queue.get_nowait()
             self.event_count.increment()
-            for conn in self.app.search(kind=CombatLogEventConnection):
+
+            # Forward events to connected clients.
+            for conn in self.app.conn_manager.by_type(
+                CombatLogEventConnection
+            ):
                 conn.forward_handler(item)
 
             # Ensure other things get to run if the queue is populated at or

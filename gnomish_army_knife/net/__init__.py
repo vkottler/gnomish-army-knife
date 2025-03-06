@@ -12,10 +12,12 @@ from runtimepy.net.websocket import WebsocketConnection
 # internal
 from gnomish_army_knife.net.connection import CombatLogEventConnection
 from gnomish_army_knife.net.task import LogServerTask
+from gnomish_army_knife.net.writer import LogWriterTask
 
 __all__ = [
     "CombatLogEventConnection",
     "LogServer",
+    "LogWriter",
     "TcpCombatLogEvent",
     "WebsocketCombatLogEvent",
     "WebsocketCombatLogEventConnection",
@@ -27,6 +29,12 @@ class LogServer(TaskFactory[LogServerTask]):
     """A class implementing a log-server task factory."""
 
     kind = LogServerTask
+
+
+class LogWriter(TaskFactory[LogWriterTask]):
+    """A class implementing a log-writer task factory."""
+
+    kind = LogWriterTask
 
 
 class WebsocketCombatLogEventConnection(

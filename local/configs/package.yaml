@@ -6,7 +6,7 @@ entry: {{entry}}
 
 requirements:
   - vcorelib>=3.1.1
-  - runtimepy
+  - runtimepy>=5.9.0
 
 dev_requirements:
   - setuptools-wrapper
@@ -23,3 +23,7 @@ init_local: |
   PKG_ABBREV = "gak"
   DEFAULT_CONFIG = f"{PKG_ABBREV}.yaml"
   WOW_DIR = "World of Warcraft"
+
+mypy_local: |
+  [mypy-aiofiles.*]
+  ignore_missing_imports = True

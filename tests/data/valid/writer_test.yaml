@@ -1,0 +1,8 @@
+---
+includes:
+  - package://gnomish_army_knife/writer.yaml
+
+# Use an ephemeral state directory.
+config: {gak_cli_args: [-e]}
+
+app: tests.net.test_writer.writer_test

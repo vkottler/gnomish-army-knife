@@ -1,0 +1,16 @@
+---
+includes:
+  - package://gnomish_army_knife/factories.yaml
+
+ports:
+  - {name: tcp_combat_log, type: tcp}
+  - {name: websocket_combat_log, type: tcp}
+servers:
+  - factory: tcp_combat_log_event
+    kwargs: {port: "$tcp_combat_log"}
+  - factory: websocket_combat_log_event
+    kwargs: {port: "$websocket_combat_log"}
+
+config:
+  # Can specify command-line arguments.
+  gak_cli_args: []
