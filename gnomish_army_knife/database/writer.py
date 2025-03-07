@@ -34,11 +34,9 @@ class ArenaMatchWriter(LoggerMixin):
     def _reset(self) -> None:
         """Reset internal state."""
 
-        self.start_event = None
-
         # Could check for dropped events/loss at some point.
         self.bucket = []
-        self.meta.reset()
+        self.start_event = None
 
     async def _end_match(self) -> None:
         """Handle the end of a match."""
@@ -71,9 +69,7 @@ class ArenaMatchWriter(LoggerMixin):
 
         if result:
             self.bucket.append(event.line)
-            self.meta.handle(event)
-
-            if event.name == LogEvent.MATCH_END:
+            if self.meta.handle(event):
                 await self._end_match()
 
         return result
