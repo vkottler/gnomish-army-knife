@@ -13,9 +13,7 @@ from vcorelib.paths import Pathlike, normalize, rel
 # internal
 from gnomish_army_knife.database.event import CombatLogEvent
 from gnomish_army_knife.database.meta import ArenaMatchMetadata
-
-MATCH_START = "ARENA_MATCH_START"
-MATCH_END = "ARENA_MATCH_END"
+from gnomish_army_knife.enums.events import LogEvent
 
 
 class ArenaMatchWriter(LoggerMixin):
@@ -63,7 +61,7 @@ class ArenaMatchWriter(LoggerMixin):
         """Returns true if the arena-match-writer consumed the event."""
 
         # Always check for a new start event.
-        if event.name == MATCH_START:
+        if event.name == LogEvent.MATCH_START:
             self._reset()
             self.start_event = event
 
@@ -75,7 +73,7 @@ class ArenaMatchWriter(LoggerMixin):
             self.bucket.append(event.line)
             self.meta.handle(event)
 
-            if event.name == MATCH_END:
+            if event.name == LogEvent.MATCH_END:
                 await self._end_match()
 
         return result

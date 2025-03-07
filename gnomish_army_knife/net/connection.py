@@ -9,7 +9,7 @@ from runtimepy.net.stream.json import JsonMessageConnection
 # internal
 from gnomish_army_knife.database.event import CombatLogEvent
 from gnomish_army_knife.database.queue import CombatLogQueueHandler
-from gnomish_army_knife.database.writer import MATCH_END, MATCH_START
+from gnomish_army_knife.enums.events import LogEvent
 
 
 class CombatLogEventConnection(JsonMessageConnection):
@@ -21,7 +21,7 @@ class CombatLogEventConnection(JsonMessageConnection):
     # Connect handlers to this queue to receive incoming events.
     queue: CombatLogQueueHandler
 
-    watch_names: set[str] = {MATCH_START, MATCH_END}
+    watch_names: set[str] = {LogEvent.MATCH_START, LogEvent.MATCH_END}
 
     def forward_handler(self, event: CombatLogEvent) -> None:
         """Handle a combat log event."""

@@ -3,17 +3,19 @@ Test the 'net.writer' module.
 """
 
 # third-party
+import aiofiles
 from runtimepy import PKG_NAME
 from runtimepy.entry import main as runtimepy_main
 from runtimepy.net.arbiter import AppInfo
 
 # module under test
 from gnomish_army_knife import DEFAULT_CONFIG
+from gnomish_army_knife.database.event import CombatLogEvent
 from gnomish_army_knife.net import TcpCombatLogEventConnection
 from gnomish_army_knife.net.writer import LogWriterTask
 
 # internal
-from tests.resources import resource
+from tests.resources import resource, sample_event_log
 
 
 async def writer_test(app: AppInfo) -> int:
@@ -30,7 +32,13 @@ async def writer_test(app: AppInfo) -> int:
 
         await task.wait_iterations(2.0, count=2)
 
-        # do tests (feed events over client side of connection)
+        async with aiofiles.open(sample_event_log(), mode="r") as path_fd:
+            for line in await path_fd.readlines():
+                client.forward_handler(CombatLogEvent.from_line(line))
+
+        await client.loopback()
+
+        await task.wait_iterations(2.0, count=2)
 
     await task.wait_iterations(2.0, count=2)
 
