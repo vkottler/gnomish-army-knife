@@ -53,10 +53,7 @@ class ArenaMatchMetadata(LoggerMixin):
 
         self.seen_match_start: bool = False
         self.seen_match_end: bool = False
-
-        self.instance: str = ""
         self.data: JsonObject = {}
-
         self.reset()
 
     @property
@@ -78,13 +75,17 @@ class ArenaMatchMetadata(LoggerMixin):
         # another example
         # atinylittleshell/wow-combat-log-parser/src/actions/ArenaMatchStart.ts
 
-        self.data["instance_id"] = int(event.data[0])
-        self.data["instance"] = ARENAS.get(
-            cast(int, self.data["instance_id"]), event.data[0]
-        )
-        self.data["unknown"] = event.data[1]
-        self.data["match_type"] = event.data[2]
-        self.data["team_id"] = int(event.data[3])
+        # These should always be the same for i.e. solo shuffle rounds.
+        if not self.seen_match_start:
+            self.data["instance_id"] = int(event.data[0])
+            self.data["instance"] = ARENAS.get(
+                cast(int, self.data["instance_id"]), event.data[0]
+            )
+            self.data["unknown"] = event.data[1]
+            self.data["match_type"] = event.data[2]
+            self.data["team_id"] = int(event.data[3])
+
+        self.seen_match_start = True
 
     def _match_end(self, event: CombatLogEvent) -> None:
         """Handle the match end event."""
@@ -105,6 +106,8 @@ class ArenaMatchMetadata(LoggerMixin):
 
         self.data["summary"] = self.summary
 
+        self.seen_match_end = True
+
     def handle(self, event: CombatLogEvent) -> bool:
         """
         Attempt to glean new metadata from this event. Returns whether or not
@@ -118,9 +121,7 @@ class ArenaMatchMetadata(LoggerMixin):
 
         match event.name:
             case LogEvent.MATCH_START:
-                self.reset()
                 self._match_start(event)
-                self.seen_match_start = True
                 keep_metadata = True
 
             case LogEvent.COMBATANT_INFO:
@@ -131,7 +132,6 @@ class ArenaMatchMetadata(LoggerMixin):
             case LogEvent.MATCH_END:
                 if self.seen_match_start:
                     self._match_end(event)
-                    self.seen_match_end = True
                     result = True
                     keep_metadata = True
 
@@ -152,7 +152,6 @@ class ArenaMatchMetadata(LoggerMixin):
 
         self.seen_match_start = False
         self.seen_match_end = False
-        self.instance = ""
         self.data = {"events": {}, "metadata_event_count": 0}
 
     def file_path(self, base: Path, suffix: str = ".txt") -> Optional[Path]:

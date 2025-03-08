@@ -37,6 +37,7 @@ class ArenaMatchWriter(LoggerMixin):
         # Could check for dropped events/loss at some point.
         self.bucket = []
         self.start_event = None
+        self.meta.reset()
 
     async def _end_match(self) -> None:
         """Handle the end of a match."""
@@ -68,7 +69,6 @@ class ArenaMatchWriter(LoggerMixin):
 
         # Always check for a new start event.
         if event.name == LogEvent.MATCH_START:
-            self._reset()
             self.start_event = event
 
         # Have a reference to a start event, this new event will
