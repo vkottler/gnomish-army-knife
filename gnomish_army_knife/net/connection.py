@@ -2,9 +2,6 @@
 A module implementing a network-connection interfaces.
 """
 
-# built-in
-from datetime import datetime
-
 # third-party
 from runtimepy.message import JsonMessage
 from runtimepy.net.stream.json import JsonMessageConnection
@@ -12,6 +9,7 @@ from runtimepy.net.stream.json import JsonMessageConnection
 # internal
 from gnomish_army_knife.database.event import CombatLogEvent
 from gnomish_army_knife.database.queue import CombatLogQueueHandler
+from gnomish_army_knife.enums.events import LogEvent
 
 
 class CombatLogEventConnection(JsonMessageConnection):
@@ -23,6 +21,8 @@ class CombatLogEventConnection(JsonMessageConnection):
     # Connect handlers to this queue to receive incoming events.
     queue: CombatLogQueueHandler
 
+    watch_names: set[str] = {LogEvent.MATCH_START, LogEvent.MATCH_END}
+
     def forward_handler(self, event: CombatLogEvent) -> None:
         """Handle a combat log event."""
         self.send_json({"event": event.as_json()})
@@ -33,13 +33,15 @@ class CombatLogEventConnection(JsonMessageConnection):
         """Service this connection's queue."""
 
         del response
-        self.queue.handle(
-            CombatLogEvent(
-                datetime.fromisoformat(data["timestamp"]),
-                data["name"],
-                data["data"],
-            )
-        )
+
+        event = CombatLogEvent.from_json(data)
+
+        # Log watched events.
+        if event.name in self.watch_names:
+            event.log(self.logger)
+
+        # Service queues.
+        self.queue.handle(event)
 
     def init(self) -> None:
         """Initialize this instance."""

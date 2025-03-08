@@ -13,17 +13,13 @@ array:
 
   - name: harm
     body: |-
-      #showtooltip Holy Shock
-      /targetenemy [help]
-      /cast [harm] Holy Shock
-      /cleartarget
+      #showtooltip
+      /cast [@anyenemy] Holy Shock
 
   - name: help
     body: |-
-      #showtooltip Holy Shock
-      /targetfriend [harm]
-      /cast [help] Holy Shock
-      /cleartarget
+      #showtooltip
+      /cast [@anyfriend] Holy Shock
 
   - name: self
     body: |-
@@ -39,6 +35,11 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Cleanse
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Cleanse Toxins
 
   - name: self
     body: |-
@@ -73,9 +74,19 @@ array:
   - name: self
     body: |-
       #showtooltip
+      /cast [@player] Blessing of Sanctuary
+
+  - name: self
+    body: |-
+      #showtooltip
       /cast [@player] Final Reckoning
 
   - name: self
     body: |-
       #showtooltip
       /cast [@player] Holy Bulwark
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Spellwarding

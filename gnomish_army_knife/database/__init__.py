@@ -11,6 +11,7 @@ from vcorelib.logging import LoggerMixin
 
 # internal
 from gnomish_army_knife.database.combat_log import CombatLogState
+from gnomish_army_knife.database.writer import ArenaMatchWriter
 
 
 class ArenaMatchDb(LoggerMixin):
@@ -30,6 +31,10 @@ class ArenaMatchDb(LoggerMixin):
         self.logs = stack.enter_context(
             CombatLogState.file_cache(self.combat_log_state_path)
         )
+
+    def create_writer(self, subdir: str = "matchdb") -> ArenaMatchWriter:
+        """Create an arena-match writer interface."""
+        return ArenaMatchWriter(self.root.joinpath(subdir))
 
     def data_path(self, name: str) -> Path:
         """Get the path to a data file."""

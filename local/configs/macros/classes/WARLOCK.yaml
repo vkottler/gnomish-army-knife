@@ -47,3 +47,23 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Unending Breath
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Rain of Fire
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Shadowfury
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Bane of Havoc
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Summon Infernal

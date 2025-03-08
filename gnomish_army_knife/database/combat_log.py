@@ -7,7 +7,6 @@ from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from threading import Event
-from time import strptime
 from typing import Any
 
 # third-party
@@ -68,21 +67,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
     def process_line(self, key: str, line: str, log_date: datetime) -> None:
         """Process a line from a combat log file."""
 
-        timestamp_raw, event_raw = line.split("  ", 1)
+        del log_date
 
-        # Parse the timestamp.
-        datetime_raw, millis = timestamp_raw.split(".")
-        timestamp = datetime(
-            log_date.year,
-            *strptime(datetime_raw, "%m/%d %H:%M:%S")[1:6],
-            microsecond=int(millis) * 1000,
-        )
-
-        # Parse the event data.
-        event_items = event_raw.split(",")
-        self.process_event(
-            key, CombatLogEvent(timestamp, event_items[0], event_items[1:])
-        )
+        self.process_event(key, CombatLogEvent.from_line(line))
 
     def process_log(self, path: Path, stop: Event = None) -> None:
         """Process a combat log file."""
@@ -117,17 +104,9 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
             reached_eof = False
             while not reached_eof and (stop is None or not stop.is_set()):
-                line = log.readline().rstrip()
-                if line:
-                    # This is some kind of bug in the client? Event lines with
-                    # no timestamp, and only for this event.
-                    if line.startswith(VERSION_EVENT):
-                        parsed = line.split(",")
-                        self.process_event(
-                            key, CombatLogEvent(date, parsed[0], parsed[1:])
-                        )
-                    else:
-                        self.process_line(key, line, date)
+                line = log.readline()
+                if line.rstrip():
+                    self.process_line(key, line, date)
                 else:
                     file_data["state"] = "reached_eof"
                     reached_eof = True

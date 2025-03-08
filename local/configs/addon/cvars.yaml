@@ -5,6 +5,14 @@ GamePadEmulateShift: "PADLSHOULDER"
 GamePadEmulateCtrl: "PADLTRIGGER"
 GamePadRunThreshold: 0
 GamePadCameraYawSpeed: 1.75
+GamePadOverlapMouseMs: 50
+
+# 0 == camera centered placement, 1 == regular mouse, 2 == mouse snap to target
+GamePadCursorForTargeting: 2
+GamePadCursorAutoDisableSticks: 1
+GamePadCursorSpeedMax: 2
+GamePadCursorSpeedStart: 0.5
+
 AutoPushSpellToActionBar: 0
 advancedCombatLogging: 1
 autoLootDefault: 1
@@ -17,7 +25,6 @@ SoftTargetIconFriend: 1
 SoftTargetNameplateInteract: 1
 
 scriptErrors: 1
-scriptWarnings: 1
 
 floatingCombatTextCombatDamage: 0
 floatingCombatTextCombatHealing: 0
@@ -39,18 +46,20 @@ raidFramesDisplayPowerBars: 1
 # /console cvar_default
 SoftTargetIconEnemy: 0
 
-# Gets overwritten by "use large nameplates" ?
-# NamePlateVerticalScale: 2.4
-# NamePlateHorizontalScale: 1.2
-
 NameplatePersonalShowAlways: 1
 nameplateSelfTopInset: 0.45
 nameplateSelfBottomInset: 0.45
 nameplateSelfScale: 1.0
 
-nameplateShowFriends: 1
+# Overwritten by role-based logic.
+# nameplateShowFriends: 1
+# nameplateShowEnemies: 1
+
+# Overwritten by content-based logic.
+# UnitNameFriendlyPlayerName: 0
+# UnitNameEnemyPlayerName: 0
+
 nameplateShowSelf: 1
-nameplateShowEnemies: 1
 nameplateShowDebuffsOnFriendly: 1  # default
 nameplateHideHealthAndPower: 1
 
@@ -63,12 +72,45 @@ lossOfControl: 0
 UnitNamePlayerPVPTitle: 0
 UnitNamePlayerGuild: 0
 UnitNameOwn: 0
-UnitNameFriendlyPlayerName: 0
+UnitNameNPC: 0
+UnitNameInteractiveNPC: 1  # default
 
+pvpFramesHealthText: "none"
+raidFramesHealthText: "none"
+
+showToastWindow: 0
+
+Sound_EnableSFX: 1  # default
+Sound_EnableMusic: 0
+Sound_EnableAmbience: 0
+Sound_EnableDialog: 0
+Sound_EnableSoundWhenGameIsInBG: 1
+Sound_MasterVolume: 1
+Sound_SFXVolume: 1
+Sound_EnableReverb: 1  # default
+Sound_EnableEmoteSounds: 0
+
+# BetterBlizzPlates does all of these
+# Gets overwritten by "use large nameplates" ?
 # nameplateSelfScale: 1.0
 # nameplateGlobalScale: 1
 # nameplateLargerScale: 1.2
+# NamePlateHorizontalScale: 0.5
+# NamePlateVerticalScale: 1
+# nameplateSelectedScale: 1.2
+# nameplateMinScale: 0.9
+# nameplateMaxScale: 0.9
 
-# Some variables can't be set..
-# nameplateShowFriendlyBuffs: 1
-# nameplateShowFriendlyTotems: 1
+showPartyPets: 1
+raidOptionDisplayPets: 1
+
+nameplateShowFriendlyBuffs: 1
+nameplateShowFriendlyTotems: 1
+nameplateShowPersonalCooldowns: 1
+
+SoftTargetNameplateFriend: 0
+
+nameplateMotion: 1
+nameplateMotionSpeed: 0.05
+nameplateOverlapH: 0.6
+nameplateOverlapV: 0.6

@@ -44,11 +44,11 @@ bindings:
   - command: TARGETNEARESTENEMY
     key: PADDUP
     modifiers: [CTRL, SHIFT]
-  - command: TARGETSCANENEMY
+  - command: TARGETLASTTARGET
     key: PADDUP
     modifiers: [ALT, SHIFT]
 
-  - command: ASSISTTARGET
+  - command: TARGETSCANENEMY
     key: PADDRIGHT
   - command: MULTIACTIONBAR4BUTTON12
     key: PADDRIGHT
@@ -59,7 +59,7 @@ bindings:
   - command: MULTIACTIONBAR4BUTTON6
     key: PADDRIGHT
     modifiers: [CTRL]
-  - command: TARGETLASTTARGET
+  - command: ASSISTTARGET
     key: PADDRIGHT
     modifiers: [CTRL, SHIFT]
 

@@ -95,3 +95,8 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Liquid Magma Totem
+
+  - name: self1
+    body: |-
+      #showtooltip
+      /cast [@player] Wind Rush Totem

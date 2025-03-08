@@ -33,3 +33,13 @@ array:
       /targetenemyplayer
       /cast Sap
       /stopattack
+
+  - name: harm
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Shadowstep
+
+  - name: help
+    body: |-
+      #showtooltip
+      /cast [@anyfriend] Shadowstep

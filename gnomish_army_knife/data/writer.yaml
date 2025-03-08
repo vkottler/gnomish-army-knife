@@ -1,0 +1,6 @@
+---
+includes:
+  - package://gnomish_army_knife/base.yaml
+
+tasks:
+  - {name: log_writer, factory: log_writer, period_s: 0.1}

@@ -1,2 +1,41 @@
 ---
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Spear Hand Strike")]
+  - [49, C_Spell.PickupSpell("Paralysis")]
+
+  # PADRTRIGGER column
+  - [56, C_Spell.PickupSpell("Disable")]
+  - [50, C_Spell.PickupSpell("Touch of Death")]
+  - [26, C_Spell.PickupSpell("Crackling Jade Lightning")]
+
+  # PAD1 column
+  - [64, C_Spell.PickupSpell("Diffuse Magic")]
+
+  - [10, C_Spell.PickupSpell("Expel Harm")]
+  - [22, C_Spell.PickupSpell("Expel Harm")]  # bar 2
+
+  - [4, C_Spell.PickupSpell("Spinning Crane Kick")]
+  - [16, C_Spell.PickupSpell("Spinning Crane Kick")]  # bar 2
+
+  - [58, C_Spell.PickupSpell("Fortifying Brew")]
+  - [28, C_Spell.PickupSpell("Provoke")]
+
+  # PAD4 column
+  - [65, 'C_Spell.PickupSpell("Transcendence: Transfer")']
+
+  - [11, PickupMacro(120 + 7)]
+  - [23, C_Spell.PickupSpell("Ring of Peace")]  # bar 2
+
+  - [59, C_Spell.PickupSpell("Transcendence")]
+
+  # PAD2 column
+  - [6, PickupMacro(120 + 10)]
+  - [18, C_Spell.PickupSpell("Tiger's Lust")]  # bar 2
+  - [30, C_Spell.PickupSpell("Zen Flight")]
+
+  # paddles (right)
+  - [38, C_Spell.PickupSpell("Leg Sweep")]
+
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Resuscitate")]

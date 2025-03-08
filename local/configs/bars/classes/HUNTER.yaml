@@ -1,2 +1,16 @@
 ---
-array: []
+array:
+  # paddles (left)
+  - [43, "C_SpellBook.PickupSpellBookItem(6, 1)"]  # Defensive
+  - [37, "C_SpellBook.PickupSpellBookItem(11, 1)"]  # Passive
+  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]  # Assist
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Dismiss Pet")]
+  - [38, C_Spell.PickupSpell("Disengage")]
+  - [32, C_Spell.PickupSpell("Feign Death")]
+
+  # d-pad (down)
+  - [46, C_Spell.PickupSpell("Call Pet 1")]
+
+  # d-pad (up)
+  - [47, C_Spell.PickupSpell("Revive Pet")]

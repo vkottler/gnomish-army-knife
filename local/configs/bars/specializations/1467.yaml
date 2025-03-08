@@ -1,3 +1,112 @@
 ---
 # Devastation Evoker
-array: []
+array:
+  # PADRSHOULDER column
+  # - [67, ""]
+  - [61, C_Spell.PickupSpell(357208)]  # Fire Breath
+
+  - [7, PickupMacro(120 + 3)]  # living flame harm
+  - [19, PickupMacro(120 + 4)]  # bar 2, living flame help
+
+  - [1, C_Spell.PickupSpell("Azure Strike")]
+  - [13, C_Spell.PickupSpell("Azure Strike")]  # bar 2
+
+  - [55, C_Spell.PickupSpell("Shattering Star")]
+  # - [49, ""]
+  - [25, C_Spell.PickupSpell("Dragonrage")]
+
+  # PADRTRIGGER column
+  # - [68, ""]
+  - [62, C_Spell.PickupSpell(357210)]  # Deep Breath
+
+  - [8, C_Spell.PickupSpell("Pyre")]
+  - [20, C_Spell.PickupSpell("Pyre")]  # bar 2
+
+  - [2, C_Spell.PickupSpell("Disintegrate")]
+  - [14, C_Spell.PickupSpell("Disintegrate")]  # bar 2
+
+  - [56, C_Spell.PickupSpell(359073)]  # Eternity Surge
+  # - [50, ""]
+  # - [26, ""]
+
+  # PAD3 column
+  # - [69, ""]
+  # - [63, ""]
+
+  - [9, PickupMacro(120 + 9)]
+  - [21, C_Spell.PickupSpell("Emerald Blossom")]  # bar 2
+
+  - [3, PickupMacro(120 + 11)]
+  - [15, C_Spell.PickupSpell("Expunge")]  # bar 2
+
+  # - [57, ""]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  # - [64, ""]
+
+  # - [10, ""]
+  # - [22, ""]  # bar 2
+
+  - [4, PickupMacro(120 + 5)]  # living flame self
+  - [16, C_Spell.PickupSpell("Living Flame")]  # bar 2
+
+  - [58, ""]
+  # - [52, ""]
+  # - [28, ""]
+
+  # PAD4 column
+  # - [71, ""]
+  - [65, ""]
+
+  - [11, PickupMacro(120 + 8)]
+  - [23, C_Spell.PickupSpell("Verdant Embrace")]  # bar 2
+
+  # - [5, ""]
+  # - [17, ""]  # bar 2
+
+  # - [59, ""]
+  # - [53, ""]
+  # - [29, ""]
+
+  # PAD2 column
+  # - [72, ""]
+  # - [66, ""]
+
+  - [12, ""]
+  - [24, ""]  # bar 2
+
+  # - [6, ""]
+  # - [18, ""]  # bar 2
+
+  - [60, ""]
+  # - [54, ""]
+  # - [30, ""]
+
+  # paddles (left)
+  - [43, ""]
+  - [37, ""]
+  - [31, ""]
+  # paddles (right)
+  # - [44, ""]
+  # - [38, ""]
+  # - [32, ""]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  # - [46, ""]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  # - [47, ""]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]
