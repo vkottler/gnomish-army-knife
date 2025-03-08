@@ -1,0 +1,12 @@
+---
+includes:
+  - default.yaml
+  - package://gnomish_army_knife/server.yaml
+
+clients:
+  - factory: tcp_combat_log_event
+    name: tcp_client
+    kwargs: {host: e8hundo, port: 10041}
+
+config:
+  gak_cli_args: [--config, tasks/config.yaml]
