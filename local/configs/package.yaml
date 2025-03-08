@@ -5,7 +5,7 @@ description: World of Warcraft polyfills and standardization.
 entry: {{entry}}
 
 requirements:
-  - vcorelib>=3.1.1
+  - vcorelib>=3.5.0
   - runtimepy>=5.9.0
 
 dev_requirements:

@@ -7,6 +7,7 @@ import aiofiles
 from runtimepy import PKG_NAME
 from runtimepy.entry import main as runtimepy_main
 from runtimepy.net.arbiter import AppInfo
+from vcorelib import DEFAULT_ENCODING
 
 # module under test
 from gnomish_army_knife import DEFAULT_CONFIG
@@ -32,7 +33,9 @@ async def writer_test(app: AppInfo) -> int:
 
         await task.wait_iterations(2.0, count=2)
 
-        async with aiofiles.open(sample_event_log(), mode="r") as path_fd:
+        async with aiofiles.open(
+            sample_event_log(), encoding=DEFAULT_ENCODING
+        ) as path_fd:
             for line in await path_fd.readlines():
                 client.forward_handler(CombatLogEvent.from_line(line))
 

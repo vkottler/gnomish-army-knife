@@ -7,6 +7,7 @@ from typing import Optional
 
 # third-party
 import aiofiles
+from vcorelib.io import ARBITER
 from vcorelib.logging import LoggerMixin
 from vcorelib.paths import Pathlike, normalize, rel
 
@@ -24,7 +25,6 @@ class ArenaMatchWriter(LoggerMixin):
 
         super().__init__()
         self.root = normalize(root)
-        self.root.mkdir(parents=True, exist_ok=True)
 
         self.start_event: Optional[CombatLogEvent] = None
         self.bucket: list[str] = []
@@ -41,17 +41,25 @@ class ArenaMatchWriter(LoggerMixin):
     async def _end_match(self) -> None:
         """Handle the end of a match."""
 
-        path = self.meta.file_path()
+        path = self.meta.file_path(self.root)
         if self.bucket and path is not None and not path.is_file():
+            path.parent.mkdir(parents=True, exist_ok=True)
+
+            # Write event file.
             with self.log_time(
                 "Writing '%s' (%d events) to '%s'",
                 self.meta.summary,
                 len(self.bucket),
                 str(rel(path, base=self.root)),
             ):
-                path.parent.mkdir(parents=True, exist_ok=True)
                 async with aiofiles.open(path, mode="w") as path_fd:
                     await path_fd.writelines(self.bucket)
+
+            # Write metadata.
+            with self.log_time("Writing metadata JSON"):
+                await ARBITER.encode_async(
+                    path.with_suffix(".json"), self.meta.data
+                )
 
         self._reset()
 

@@ -11,6 +11,9 @@ from typing import Callable, NamedTuple
 from runtimepy.message import JsonMessage
 from vcorelib.logging import LoggerType
 
+# internal
+from gnomish_army_knife.enums.events import LogEvent
+
 CombatLogEventHandler = Callable[["CombatLogEvent"], None]
 
 
@@ -45,7 +48,11 @@ class CombatLogEvent(NamedTuple):
         return {
             "timestamp": str(self.timestamp),
             "name": self.name,
-            "data": self.data,
+            # This complex data structure is not parsed correctly for some
+            # events.
+            "data": (
+                self.data if not self.name == LogEvent.COMBATANT_INFO else []
+            ),
             "line": self.line,
         }
 

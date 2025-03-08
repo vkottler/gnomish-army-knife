@@ -4,7 +4,6 @@ A module implementing a common runtime task base.
 
 # built-in
 import argparse
-from typing import Optional
 
 # third-party
 from runtimepy.net.arbiter import AppInfo
@@ -13,9 +12,6 @@ from runtimepy.primitives import Uint32
 
 # internal
 from gnomish_army_knife.runtime import GakRuntime
-
-# Only one instance is needed across tasks.
-RUNTIME: Optional[GakRuntime] = None
 
 
 class GakRuntimeTask(ArbiterTask):
@@ -45,19 +41,15 @@ class GakRuntimeTask(ArbiterTask):
         """Initialize package runtime."""
 
         # Parse command-line options and create the runtime instance.
-        global RUNTIME  # pylint: disable=global-statement
-        if RUNTIME is None:
-            parser = argparse.ArgumentParser()
-            GakRuntime.cli_args(parser)
-            RUNTIME = app.stack.enter_context(
-                GakRuntime.create(
-                    parser.parse_args(
-                        app.config.get(  # type: ignore
-                            "gak_cli_args",
-                            [],
-                        )
+        parser = argparse.ArgumentParser()
+        GakRuntime.cli_args(parser)
+        self.runtime = app.stack.enter_context(
+            GakRuntime.create(
+                parser.parse_args(
+                    app.config.get(  # type: ignore
+                        "gak_cli_args",
+                        [],
                     )
                 )
             )
-
-        self.runtime = RUNTIME
+        )
