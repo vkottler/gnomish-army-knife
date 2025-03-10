@@ -4,11 +4,12 @@ GamePadEmulateAlt: "PADPADDLE2"
 GamePadEmulateShift: "PADLSHOULDER"
 GamePadEmulateCtrl: "PADLTRIGGER"
 GamePadRunThreshold: 0
-GamePadCameraYawSpeed: 1.75
+GamePadCameraYawSpeed: 3.0
+GamePadCameraPitchSpeed: 2.0
 GamePadOverlapMouseMs: 50
 
 # 0 == camera centered placement, 1 == regular mouse, 2 == mouse snap to target
-GamePadCursorForTargeting: 2
+GamePadCursorForTargeting: 0
 GamePadCursorAutoDisableSticks: 1
 GamePadCursorSpeedMax: 2
 GamePadCursorSpeedStart: 0.5
