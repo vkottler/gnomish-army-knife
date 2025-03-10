@@ -1,3 +1,112 @@
 ---
 # Havoc Demon Hunter
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, C_Spell.PickupSpell("Disrupt")]
+  - [61, PickupMacro(120 + 3)]  # eye beam macro
+
+  - [7, C_Spell.PickupSpell("Immolation Aura")]
+  - [19, C_Spell.PickupSpell("Immolation Aura")]  # bar 2
+
+  - [1, C_Spell.PickupSpell("Felblade")]
+  - [13, C_Spell.PickupSpell("Felblade")]  # bar 2
+
+  - [55, C_Spell.PickupSpell("Consume Magic")]
+  - [49, C_Spell.PickupSpell(217832)]  # Imprison
+  - [25, C_Spell.PickupSpell("The Hunt")]
+
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Arcane Torrent")]  # blood elf
+  - [62, C_Spell.PickupSpell("Essence Break")]
+
+  - [8, C_Spell.PickupSpell("Blade Dance")]
+  - [20, C_Spell.PickupSpell("Blade Dance")]  # bar 2
+
+  - [2, C_Spell.PickupSpell("Chaos Strike")]
+  - [14, C_Spell.PickupSpell("Chaos Strike")]  # bar 2
+
+  - [56, C_Spell.PickupSpell("Throw Glaive")]
+  - [50, C_Spell.PickupSpell("Fel Eruption")]
+  - [26, C_Spell.PickupSpell("Reverse Magic")]
+
+  # PAD3 column
+  # - [69, ""]
+  - [63, C_Spell.PickupSpell("Chaos Nova")]
+
+  - [9, PickupMacro(120 + 5)]
+  - [21, C_Spell.PickupSpell("Sigil of Spite")]  # bar 2
+
+  - [3, PickupMacro(120 + 4)]
+  - [15, C_Spell.PickupSpell("Sigil of Flame")]  # bar 2
+
+  - [57, ""]
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  - [64, ""]
+
+  - [10, C_Spell.PickupSpell("Spectral Sight")]
+  - [22, C_Spell.PickupSpell("Spectral Sight")]  # bar 2
+
+  - [4, PickupMacro(120 + 7)]
+  - [16, C_Spell.PickupSpell("Metamorphosis")]  # bar 2
+
+  - [58, ""]
+  # - [52, ""]
+  # - [28, ""]
+
+  # PAD4 column
+  # - [71, ""]
+  - [65, ""]
+
+  - [11, C_Spell.PickupSpell("Darkness")]
+  - [23, C_Spell.PickupSpell("Darkness")]  # bar 2
+
+  - [5, PickupMacro(120 + 6)]
+  - [17, C_Spell.PickupSpell("Sigil of Misery")]  # bar 2
+
+  - [59, ""]
+  # - [53, ""]
+  # - [29, ""]
+
+  # PAD2 column
+  # - [72, ""]
+  - [66, ""]
+
+  - [12, C_Spell.PickupSpell("Netherwalk")]
+  - [24, C_Spell.PickupSpell("Netherwalk")]  # bar 2
+
+  - [6, C_Spell.PickupSpell("Blur")]
+  - [18, C_Spell.PickupSpell("Blur")]  # bar 2
+
+  - [60, ""]
+  # - [54, ""]
+  # - [30, ""]
+
+  # paddles (left)
+  - [43, ""]
+  - [37, ""]
+  - [31, ""]
+  # paddles (right)
+  - [44, C_Spell.PickupSpell("Glide")]
+  - [38, C_Spell.PickupSpell("Vengeful Retreat")]
+  - [32, C_Spell.PickupSpell("Fel Rush")]
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, ""]
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, ""]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

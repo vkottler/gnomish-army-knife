@@ -15,3 +15,14 @@ array:
     body: |-
       #showtooltip
       /cast [@player] Sigil of Flame
+
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Sigil of Spite
+
+  - name: badge
+    body: |-
+      #showtooltip Eye Beam
+      /use 14
+      /cast Eye Beam
