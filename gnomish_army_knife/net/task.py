@@ -32,15 +32,22 @@ class LogServerTask(GakRuntimeTask):
 
         self.logger.info("Combat-log reading thread started.")
 
-        while not self.stop_reading_log.is_set():
-            # Ensure we don't starve due to no active log file.
-            sleep(0.1)
+        # Always attempt to re-process prior logs that may have been
+        # written to.
+        for log in self.runtime.combat_logs:
+            self.runtime.database.logs.process_log(
+                log, stop=self.stop_reading_log
+            )
 
+        while not self.stop_reading_log.is_set():
             latest = self.runtime.latest_combat_log()
             if latest is not None:
                 self.runtime.database.logs.process_log(
                     latest, stop=self.stop_reading_log
                 )
+
+            # Ensure we don't starve due to no active log file.
+            sleep(0.1)
 
     async def init(self, app: AppInfo) -> None:
         """Initialize this task with application information."""
