@@ -79,7 +79,8 @@ class CombatLogState(GakDictCodec, _BasicDictCodec, LoggerMixin):
 
         # Return early if this log has already been processed.
         if file_data["state"] == "reached_eof":
-            return
+            if file_data["position"] >= path.stat().st_size:
+                return
 
         file_data.setdefault("position", 0)
 

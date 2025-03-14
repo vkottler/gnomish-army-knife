@@ -18,6 +18,7 @@ from gnomish_army_knife.net import (
     TcpCombatLogEventConnection,
     WebsocketCombatLogEventConnection,
 )
+from gnomish_army_knife.net.task import LogServerTask
 
 # internal
 from tests.resources import resource
@@ -38,6 +39,9 @@ async def conn_test(app: AppInfo) -> int:
                 await sleep(0.1)
 
             assert queue.get_nowait()
+
+    task = list(app.search_tasks(LogServerTask))[0]
+    await task.wait_iterations(30.0, count=2)
 
     return 0
 
