@@ -1,0 +1,13 @@
+---
+includes:
+  - test_common.yaml
+
+servers:
+  - factory: tcp_combat_log_event
+    kwargs: {host: 127.0.0.1, port: 10041}
+
+tasks:
+  - {name: log_writer, factory: log_writer, period_s: 0.1}
+
+app:
+  - runtimepy.net.apps.wait_for_stop

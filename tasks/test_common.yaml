@@ -1,0 +1,6 @@
+---
+includes:
+  - package://gnomish_army_knife/factories.yaml
+
+config:
+  gak_cli_args: [--state, tasks, --config, tasks/test_config.yaml]

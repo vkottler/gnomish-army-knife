@@ -1,0 +1,17 @@
+---
+includes:
+  - test_common.yaml
+
+clients:
+  - factory: tcp_combat_log_event
+    name: tcp_client
+    kwargs: {host: 127.0.0.1, port: 10041}
+
+config:
+  log_server_once: true
+
+tasks:
+  - {name: log_server, factory: log_server, period_s: 0.05}
+
+app:
+  - tasks.test_db.write_db
