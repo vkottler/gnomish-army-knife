@@ -1,17 +1,14 @@
 ---
 includes:
-  - package://gnomish_army_knife/factories.yaml
+  - package://gnomish_army_knife/base.yaml
 
-config:
-  gak_cli_args: [-e, --config, tasks/test_config.yaml]
-
+app: gnomish_army_knife.runtimepy.peer_finish_then_copy
 tasks:
   - {name: log_writer, factory: log_writer, period_s: 0.1}
-servers:
-  - factory: tcp_combat_log_event
-    kwargs: {host: 127.0.0.1, port: 10041}
 
-app: tasks.test_db.peer_finish
+config:
+  gak_cli_args: [-e, --config, tests/data/valid/test_config.yaml]
+  matchdb_dest: "."
 
 processes:
   - name: log_reader
@@ -20,15 +17,14 @@ processes:
       includes:
         - package://gnomish_army_knife/factories.yaml
 
+      app: gnomish_army_knife.runtimepy.send_all_events
       tasks:
         - {name: log_server, factory: log_server, period_s: 0.05}
       clients:
         - factory: tcp_combat_log_event
           name: tcp_client
-          kwargs: {host: 127.0.0.1, port: 10041}
+          kwargs: {host: 127.0.0.1, port: "$tcp_combat_log"}
 
       config:
         log_server_once: true
-        gak_cli_args: [-e, --config, tasks/test_config.yaml]
-
-      app: [tasks.test_db.write_db, tasks.test_db.peer_finish]
+        gak_cli_args: [-e, --config, tests/data/valid/test_config.yaml]

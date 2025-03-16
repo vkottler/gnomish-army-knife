@@ -1,2 +1,2 @@
 vcorelib>=3.5.0
-runtimepy>=5.9.2
+runtimepy>=5.10.1

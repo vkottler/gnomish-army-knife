@@ -32,13 +32,18 @@ class ArenaMatchDb(LoggerMixin):
             CombatLogState.file_cache(self.combat_log_state_path)
         )
 
-    def create_writer(self, subdir: str = "matchdb") -> ArenaMatchWriter:
+    def create_writer(self) -> ArenaMatchWriter:
         """Create an arena-match writer interface."""
-        return ArenaMatchWriter(self.root.joinpath(subdir))
+        return ArenaMatchWriter(self.matchdb_path)
 
     def data_path(self, name: str) -> Path:
         """Get the path to a data file."""
         return self.root.joinpath(f"{name}.{self.ext}")
+
+    @property
+    def matchdb_path(self) -> Path:
+        """The path to the matchdb directory."""
+        return self.root.joinpath("matchdb")
 
     @property
     def combat_log_state_path(self) -> Path:

@@ -40,6 +40,10 @@ jobs:
 
       - run: pip${{matrix.python-version}} install vmklib>=2.0.3
 
+      # Begin project-specific setup.
+      - run: mk python-editable
+      # End project-specific setup.
+
       - run: mk python-sa-types
 
       - name: lint and build

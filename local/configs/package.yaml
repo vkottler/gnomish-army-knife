@@ -6,7 +6,7 @@ entry: {{entry}}
 
 requirements:
   - vcorelib>=3.5.0
-  - runtimepy>=5.10.0
+  - runtimepy>=5.10.1
 
 dev_requirements:
   - setuptools-wrapper
@@ -27,3 +27,6 @@ init_local: |
 mypy_local: |
   [mypy-aiofiles.*]
   ignore_missing_imports = True
+
+ci_local:
+  - "- run: mk python-editable"
