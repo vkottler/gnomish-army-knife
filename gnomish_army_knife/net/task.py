@@ -23,6 +23,9 @@ class LogServerTask(GakRuntimeTask):
     queue: Queue[CombatLogEvent]
     stop_reading_log: Event
     log_file_reader_thread: Thread
+    queue_saturated: asyncio.Event
+    once: bool
+    eloop: asyncio.AbstractEventLoop
 
     def log_file_reader_main(self) -> None:
         """
@@ -46,6 +49,8 @@ class LogServerTask(GakRuntimeTask):
                     latest, stop=self.stop_reading_log
                 )
 
+            self.eloop.call_soon_threadsafe(self.queue_saturated.set)
+
             # Ensure we don't starve due to no active log file.
             sleep(0.1)
 
@@ -56,6 +61,11 @@ class LogServerTask(GakRuntimeTask):
 
         self.queue = Queue()
         self.stop_reading_log = Event()
+        self.queue_saturated = asyncio.Event()
+        self.eloop = asyncio.get_event_loop()
+
+        # get this from config
+        self.once = app.config_param("log_server_once", False)
 
         # Connect queue to event stream.
         app.stack.enter_context(
@@ -65,6 +75,12 @@ class LogServerTask(GakRuntimeTask):
         # Create and start log-file-reading thread.
         self.log_file_reader_thread = Thread(target=self.log_file_reader_main)
         self.log_file_reader_thread.start()
+
+        # Allow the queue to fully saturate.
+        with self.log_time(
+            "Waiting for event queue to saturate", reminder=True
+        ):
+            await self.queue_saturated.wait()
 
     async def stop_extra(self) -> None:
         """Extra actions to perform when this task is stopping."""
@@ -86,9 +102,8 @@ class LogServerTask(GakRuntimeTask):
                 CombatLogEventConnection
             ):
                 conn.forward_handler(item)
+                await asyncio.sleep(0)
 
-            # Ensure other things get to run if the queue is populated at or
-            # greater than the rate of forwarding.
             await asyncio.sleep(0)
 
-        return True
+        return not self.once

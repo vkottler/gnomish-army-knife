@@ -3,7 +3,9 @@ Test the 'net.connection' module.
 """
 
 # built-in
-from asyncio import sleep
+import asyncio
+import os
+from pathlib import Path
 from queue import Queue
 
 # third-party
@@ -36,18 +38,22 @@ async def conn_test(app: AppInfo) -> int:
         with client.queue.registered(queue):
             # Wait for the queue to have something.
             while queue.empty():
-                await sleep(0.1)
+                await asyncio.sleep(0.1)
 
             assert queue.get_nowait()
 
     task = list(app.search_tasks(LogServerTask))[0]
-    await task.wait_iterations(30.0, count=2)
+    await task.wait_iterations(40.0, count=2)
 
     return 0
 
 
 def test_combat_log_event_connection():
     """Test the combat-log event server."""
+
+    os.environ["PYTHONPATH"] = (
+        f"{Path().resolve()}:{os.environ.get('PYTHONPATH', "")}"
+    )
 
     assert (
         runtimepy_main(
@@ -56,7 +62,8 @@ def test_combat_log_event_connection():
                 "-C",
                 str(resource(DEFAULT_CONFIG).parent),
                 "arbiter",
-                "server_test.yaml",
+                # was 'server_test.yaml'
+                "combined_test.yaml",
             ]
         )
         == 0

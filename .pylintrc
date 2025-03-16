@@ -1,5 +1,8 @@
 [DESIGN]
 max-parents=14
 
+[IMPORTS]
+known-third-party=runtimepy
+
 [MESSAGES CONTROL]
 disable=too-few-public-methods,duplicate-code

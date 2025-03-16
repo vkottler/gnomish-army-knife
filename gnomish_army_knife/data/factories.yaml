@@ -1,4 +1,7 @@
 ---
+includes:
+  - package://runtimepy/factories.yaml
+
 factories:
   - {name: gnomish_army_knife.net.LogServer}
   - {name: gnomish_army_knife.net.LogWriter}

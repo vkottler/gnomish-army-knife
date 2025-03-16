@@ -40,6 +40,10 @@ jobs:
 
       - run: pip${{matrix.python-version}} install vmklib>=2.0.3
 
+      # Begin project-specific setup.
+      - run: mk python-editable
+      # End project-specific setup.
+
       - run: mk python-sa-types
 
       - name: lint and build
@@ -73,7 +77,7 @@ jobs:
 
       - run: |
           mk python-release owner=vkottler \
-                            repo=gnomish-army-knife version=1.5.6
+                            repo=gnomish-army-knife version=1.5.7
         if: |
           matrix.python-version == '3.12'
           && matrix.system == 'ubuntu-latest'
