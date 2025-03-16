@@ -2,13 +2,25 @@
 A module implementing test data utilities.
 """
 
+# built-in
+import asyncio
+
 # third-party
 from runtimepy.net.arbiter.info import AppInfo
 
-from gnomish_army_knife.net.connection import CombatLogEventConnection
-
 # internal
+from gnomish_army_knife.net.connection import CombatLogEventConnection
 from gnomish_army_knife.net.task import LogServerTask
+
+
+async def peer_finish(app: AppInfo) -> int:
+    """A network application that doesn't do anything."""
+
+    await asyncio.gather(
+        *(proc.protocol.exited.wait() for proc in app.peers.values())
+    )
+
+    return 0
 
 
 async def write_db(app: AppInfo) -> int:

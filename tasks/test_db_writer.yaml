@@ -1,13 +1,34 @@
 ---
 includes:
-  - test_common.yaml
+  - package://gnomish_army_knife/factories.yaml
 
+config:
+  gak_cli_args: [-e, --config, tasks/test_config.yaml]
+
+tasks:
+  - {name: log_writer, factory: log_writer, period_s: 0.1}
 servers:
   - factory: tcp_combat_log_event
     kwargs: {host: 127.0.0.1, port: 10041}
 
-tasks:
-  - {name: log_writer, factory: log_writer, period_s: 0.1}
+app: tasks.test_db.peer_finish
 
-app:
-  - runtimepy.net.apps.wait_for_stop
+processes:
+  - name: log_reader
+    factory: runtimepy_peer
+    config:
+      includes:
+        - package://gnomish_army_knife/factories.yaml
+
+      tasks:
+        - {name: log_server, factory: log_server, period_s: 0.05}
+      clients:
+        - factory: tcp_combat_log_event
+          name: tcp_client
+          kwargs: {host: 127.0.0.1, port: 10041}
+
+      config:
+        log_server_once: true
+        gak_cli_args: [-e, --config, tasks/test_config.yaml]
+
+      app: [tasks.test_db.write_db, tasks.test_db.peer_finish]

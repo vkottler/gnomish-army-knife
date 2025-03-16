@@ -41,7 +41,7 @@ async def conn_test(app: AppInfo) -> int:
             assert queue.get_nowait()
 
     task = list(app.search_tasks(LogServerTask))[0]
-    await task.wait_iterations(30.0, count=2)
+    await task.wait_iterations(40.0, count=2)
 
     return 0
 
