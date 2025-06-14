@@ -1,3 +1,112 @@
 ---
 # Arms Warrior
-array: []
+array:
+  # PADRSHOULDER column
+  - [67, 'C_Spell.PickupSpell("Pummel")']
+  - [61, 'C_Spell.PickupSpell("Skullsplitter")']
+
+  - [7, 'C_Spell.PickupSpell("Rend")']
+  - [19, 'C_Spell.PickupSpell("Rend")']  # bar 2
+
+  - [1, 'C_Spell.PickupSpell("Overpower")']
+  - [13, 'C_Spell.PickupSpell("Overpower")']  # bar 2
+
+  - [55, 'C_Spell.PickupSpell("Hamstring")']
+  - [49, 'C_Spell.PickupSpell("Impending Victory")']
+  - [25, 'C_Spell.PickupSpell("Colossus Smash")']
+
+  # PADRTRIGGER column
+  - [68, C_Spell.PickupSpell("Champion's Spear")]
+  - [62, 'C_Spell.PickupSpell("Heroic Leap")']
+
+  - [8, 'C_Spell.PickupSpell(163201)']  # Execute
+  - [20, 'C_Spell.PickupSpell(163201)']  # Execute bar 2
+
+  - [2, 'C_Spell.PickupSpell("Mortal Strike")']
+  - [14, 'C_Spell.PickupSpell("Mortal Strike")']  # bar 2
+
+  - [56, 'C_Spell.PickupSpell("Storm Bolt")']
+  - [50, 'C_Spell.PickupSpell("Shockwave")']
+  - [26, 'C_Spell.PickupSpell("Demolish")']
+
+  # PAD3 column
+  # - [69, ""]
+  - [63, 'C_Spell.PickupSpell("Piercing Howl")']
+
+  - [9, 'C_Spell.PickupSpell("Thunderous Roar")']
+  - [21, 'C_Spell.PickupSpell("Thunderous Roar")']  # bar 2
+
+  - [3, 'C_Spell.PickupSpell("Thunder Clap")']
+  - [15, 'C_Spell.PickupSpell("Thunder Clap")']  # bar 2
+
+  - [57, 'C_Spell.PickupSpell("Bladestorm")']
+  # - [51, ""]
+  # - [27, ""]
+
+  # PAD1 column
+  # - [70, ""]
+  - [64, 'C_Spell.PickupSpell("Intimidating Shout")']
+
+  - [10, 'C_Spell.PickupSpell("Rallying Cry")']
+  - [22, 'C_Spell.PickupSpell("Rallying Cry")']  # bar 2
+
+  - [4, 'C_Spell.PickupSpell("Ignore Pain")']
+  - [16, 'C_Spell.PickupSpell("Ignore Pain")']  # bar 2
+
+  - [58, 'C_Spell.PickupSpell("Avatar")']
+  - [52, 'C_Spell.PickupSpell("Shield Block")']
+  - [28, 'C_Spell.PickupSpell("Shield Slam")']
+
+  # PAD4 column
+  # - [71, ""]
+  - [65, 'C_Spell.PickupSpell("Berserker Rage")']
+
+  - [11, 'C_Spell.PickupSpell("Die by the Sword")']
+  - [23, 'C_Spell.PickupSpell("Die by the Sword")']  # bar 2
+
+  - [5, 'C_Spell.PickupSpell("Spell Reflection")']
+  - [17, 'C_Spell.PickupSpell("Spell Reflection")']  # bar 2
+
+  - [59, "PickupMacro(120 + 3)"]  # stance macro
+  # - [53, ""]
+  # - [29, ""]
+
+  # PAD2 column
+  # - [72, ""]
+  - [66, 'C_Spell.PickupSpell("Slam")']
+
+  - [12, 'C_Spell.PickupSpell("Whirlwind")']
+  - [24, 'C_Spell.PickupSpell("Whirlwind")']  # bar 2
+
+  - [6, 'C_Spell.PickupSpell("Sweeping Strikes")']
+  - [18, 'C_Spell.PickupSpell("Sweeping Strikes")']  # bar 2
+
+  - [60, 'C_Spell.PickupSpell("Taunt")']
+  # - [54, ""]
+  # - [30, ""]
+
+  # paddles (left)
+  - [43, ""]
+  - [37, ""]
+  - [31, 'C_Spell.PickupSpell("Heroic Throw")']
+  # paddles (right)
+  - [44, ""]
+  - [38, 'C_Spell.PickupSpell("Intervene")']
+  - [32, 'C_Spell.PickupSpell("Charge")']
+
+  # d-pad (left)
+  # - [45, ""]
+  # - [39, ""]
+  # - [33, ""]
+  # d-pad (down)
+  - [46, 'C_Spell.PickupSpell("Battle Shout")']
+  # - [40, ""]
+  # - [34, ""]
+  # d-pad (up)
+  - [47, ""]
+  # - [41, ""]
+  # - [35, ""]
+  # d-pad (right)
+  # - [48, ""]
+  # - [42, ""]
+  # - [36, ""]

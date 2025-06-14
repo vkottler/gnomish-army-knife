@@ -1,3 +1,7 @@
 ---
 # 1
-array: []
+array:
+  - name: "stance"
+    body: |-
+      #showtooltip
+      /cast [stance:1] Battle Stance; [stance:2] Defensive Stance
