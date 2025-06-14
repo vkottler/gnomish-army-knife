@@ -52,3 +52,21 @@ array:
     icon: inv_leatherworking_70_petleash
     body: |-
       /petdismiss
+
+  - name: z0
+    body: |-
+      #showtooltip
+      /cast Rake
+      /changeactionbar 1
+
+  - name: z1
+    body: |-
+      #showtooltip
+      /cast Mangle
+      /changeactionbar 1
+
+  - name: z2
+    body: |-
+      #showtooltip
+      /cast Skull Bash
+      /changeactionbar 1

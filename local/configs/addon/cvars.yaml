@@ -85,7 +85,7 @@ Sound_EnableSFX: 1  # default
 Sound_EnableMusic: 0
 Sound_EnableAmbience: 0
 Sound_EnableDialog: 0
-Sound_EnableSoundWhenGameIsInBG: 1
+Sound_EnableSoundWhenGameIsInBG: 1  # for queue pop
 Sound_MasterVolume: 1
 Sound_SFXVolume: 1
 Sound_EnableReverb: 1  # default
@@ -115,3 +115,5 @@ nameplateMotion: 1
 nameplateMotionSpeed: 0.05
 nameplateOverlapH: 0.6
 nameplateOverlapV: 0.6
+
+cooldownViewerEnabled: 1

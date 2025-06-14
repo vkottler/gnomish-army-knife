@@ -1,8 +1,8 @@
 <!--
     =====================================
     generator=datazen
-    version=3.2.0
-    hash=1cd78ba8ef9b84a6ec6ae37d9af907fc
+    version=3.2.3
+    hash=0ba2470459970b8f79e488079c6c9f17
     =====================================
 -->
 
@@ -108,7 +108,7 @@ options:
                         'gak.yaml')
   -s STATE, --state STATE
                         path to the program's state directory (default:
-                        '/home/mmbrea/.local/state/gak')
+                        '/home/vkottler/.local/state/gak')
   -e, --ephemeral       set to use new, temporary directories when applicable
 
 ```
