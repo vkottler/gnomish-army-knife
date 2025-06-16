@@ -6,6 +6,6 @@ Total: `{{addon["cvars"]|length}}`
 
 Name | Value
 ---- | -----
-{% for key, value in addon["cvars"].items() %}
+{% for key, value in addon["cvars"].items()|sort(attribute='0') %}
 {{key}} | {% if value is string %}`{{value}}`{% else %}{{value}}{% endif +%}
 {% endfor %}

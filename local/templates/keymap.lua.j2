@@ -1,6 +1,6 @@
 -- Mapping of gamepad inputs to keyboard inputs.
 keymap = {}
-{% for key, val in addon["keymap"].items() %}
+{% for key, val in addon["keymap"].items()|sort(attribute='0') %}
 keymap["{{key}}"] = "{{val}}"
 {% endfor %}
 

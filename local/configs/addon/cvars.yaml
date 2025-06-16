@@ -48,8 +48,8 @@ raidFramesDisplayPowerBars: 1
 SoftTargetIconEnemy: 0
 
 NameplatePersonalShowAlways: 1
-nameplateSelfTopInset: 0.45
-nameplateSelfBottomInset: 0.45
+nameplateSelfTopInset: 0.50
+nameplateSelfBottomInset: 0.29
 nameplateSelfScale: 1.0
 
 # Overwritten by role-based logic.
@@ -83,8 +83,8 @@ showToastWindow: 0
 
 Sound_EnableSFX: 1  # default
 Sound_EnableMusic: 0
-Sound_EnableAmbience: 0
-Sound_EnableDialog: 0
+Sound_EnableAmbience: 1
+Sound_EnableDialog: 1
 Sound_EnableSoundWhenGameIsInBG: 1  # for queue pop
 Sound_MasterVolume: 1
 Sound_SFXVolume: 1
@@ -117,3 +117,11 @@ nameplateOverlapH: 0.6
 nameplateOverlapV: 0.6
 
 cooldownViewerEnabled: 1
+
+# 'basic' https://wowpedia.fandom.com/wiki/CVar_ActionCam
+test_cameraDynamicPitch: 1
+test_cameraHeadMovementStrength: 0
+test_cameraOverShoulder: 0
+test_cameraTargetFocusInteractEnable: 0
+test_cameraTargetFocusEnemyEnable: 0
+CameraKeepCharacterCentered: 0

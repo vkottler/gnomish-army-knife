@@ -32,7 +32,7 @@ end
 function GakSetClassActions()
 	local class_str = select(2, UnitClass("player"))
 	local class_bind_count = 0
-{% for class_str, data in bars["classes"].items() %}
+{% for class_str, data in bars["classes"].items()|sort(attribute='0') %}
 
 	if class_str == "{{class_str}}" then
 {% for bind in data["array"] %}
@@ -58,7 +58,7 @@ function GakSetSpecializationActions()
 	local id = spec_info[1]
 	local name = spec_info[2]
 	local spec_bind_count = 0
-{% for id, data in bars["specializations"].items() %}
+{% for id, data in bars["specializations"].items()|sort(attribute='0') %}
 {% if id|int != 0 %}
 
 	if id == {{id}} then

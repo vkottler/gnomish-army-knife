@@ -20,7 +20,7 @@ function GakCreateCharacterMacros()
 	-- Create a racial macro.
 	local our_race = select(2, UnitRace("player"))
 	local racial_macros_created = false
-{% for race, abilities in addon["racials"].items() %}
+{% for race, abilities in addon["racials"].items()|sort(attribute='0') %}
 
 	if our_race == "{{race}}" then
 {% if abilities|length == 0 %}
@@ -50,7 +50,7 @@ function GakCreateCharacterMacros()
 	end
 
 	local class_str = select(2, UnitClass("player"))
-{% for class_str, data in macros["classes"].items() %}
+{% for class_str, data in macros["classes"].items()|sort(attribute='0') %}
 
 	if class_str == "{{class_str}}" then
 {% for macro in data["array"] %}

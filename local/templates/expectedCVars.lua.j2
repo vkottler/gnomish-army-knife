@@ -1,5 +1,5 @@
 expectedCVars = {}
-{% for key, val in addon["cvars"].items() %}
+{% for key, val in addon["cvars"].items()|sort(attribute='0') %}
 {% if val is number %}
 expectedCVars["{{key}}"] = {{val}}
 {% else %}

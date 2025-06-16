@@ -8,7 +8,7 @@
 
 Keyboard | GamePad
 -------- | -------
-{% for keyboard, gamepad in addon["modifiers"].items() %}
+{% for keyboard, gamepad in addon["modifiers"].items()|sort(attribute='0') %}
 {{keyboard}} | {{gamepad}}
 {% endfor %}
 
@@ -18,7 +18,7 @@ Keyboard | GamePad
 
 Keyboard | GamePad
 -------- | -------
-{% for gamepad, keyboard in addon["keymap"].items() %}
+{% for gamepad, keyboard in addon["keymap"].items()|sort(attribute='0') %}
 {{keyboard}} | {{gamepad}}
 {% endfor %}
 
