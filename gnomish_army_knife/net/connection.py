@@ -18,6 +18,8 @@ class CombatLogEventConnection(JsonMessageConnection):
     events.
     """
 
+    default_auto_restart = True
+
     # Connect handlers to this queue to receive incoming events.
     queue: CombatLogQueueHandler
 
