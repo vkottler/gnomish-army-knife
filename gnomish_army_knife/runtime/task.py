@@ -30,6 +30,8 @@ class GakRuntimeTask(ArbiterTask):
 
         self.event_count = Uint32()
         self.env.channel("event_count", self.event_count)
+        self.ignore_count = Uint32()
+        self.env.channel("ignore_count", self.ignore_count)
 
     async def init(self, app: AppInfo) -> None:
         """Initialize this task with application information."""

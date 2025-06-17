@@ -4,6 +4,7 @@ A module implementing interfaces for combat log events.
 
 # built-in
 from datetime import datetime
+from logging import INFO
 from time import strptime
 from typing import Callable, NamedTuple
 
@@ -81,9 +82,9 @@ class CombatLogEvent(NamedTuple):
             line,
         )
 
-    def log(self, logger: LoggerType) -> None:
+    def log(self, logger: LoggerType, level: int = INFO) -> None:
         """Log this event."""
-        logger.info("(%s) %s: %s.", self.timestamp, self.name, self.data)
+        logger.log(level, "(%s) %s: %s.", self.timestamp, self.name, self.data)
 
     @staticmethod
     def log_handler(logger: LoggerType) -> CombatLogEventHandler:

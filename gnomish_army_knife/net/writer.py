@@ -3,6 +3,7 @@ A module implementing an arena-match database writer task.
 """
 
 # built-in
+from logging import DEBUG
 from queue import Queue
 
 # third-party
@@ -70,5 +71,8 @@ class LogWriterTask(GakRuntimeTask):
                 # Could count ignored events at some point.
                 if await writer.handle(event):
                     self.event_count.increment()
+                else:
+                    self.ignore_count.increment()
+                    event.log(self.logger, level=DEBUG)
 
         return True
