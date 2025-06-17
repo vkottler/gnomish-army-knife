@@ -1,7 +1,7 @@
 # =====================================
 # generator=datazen
 # version=3.2.3
-# hash=c1bf470998cd20f558d753814bcec228
+# hash=2d78b6c1130befd988955bc9a725e618
 # =====================================
 
 """
@@ -13,7 +13,6 @@ import argparse
 import os
 from pathlib import Path
 import sys
-from typing import List
 
 # third-party
 from vcorelib.logging import init_logging, logging_args
@@ -23,7 +22,7 @@ from gnomish_army_knife import DESCRIPTION, VERSION
 from gnomish_army_knife.app import add_app_args, entry
 
 
-def main(argv: List[str] = None) -> int:
+def main(argv: list[str] = None) -> int:
     """Program entry-point."""
 
     result = 0

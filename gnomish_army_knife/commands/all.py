@@ -1,16 +1,12 @@
 # =====================================
 # generator=datazen
 # version=3.2.3
-# hash=4331c5cb512c29fba9fa6d90509366a2
+# hash=f4256143f73cfcee94dcf8635a09a9fe
 # =====================================
 
 """
 A module aggregating package commands.
 """
-
-# built-in
-from typing import List as _List
-from typing import Tuple as _Tuple
 
 # third-party
 from vcorelib.args import CommandRegister as _CommandRegister
@@ -20,7 +16,7 @@ from gnomish_army_knife.commands.markdown import add_markdown_cmd
 from gnomish_army_knife.commands.scan import add_scan_cmd
 
 
-def commands() -> _List[_Tuple[str, str, _CommandRegister]]:
+def commands() -> list[tuple[str, str, _CommandRegister]]:
     """Get this package's commands."""
 
     return [

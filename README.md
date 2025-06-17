@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=0ba2470459970b8f79e488079c6c9f17
+    hash=2fc76fc077d5f52b3a8c05c7893e0b82
     =====================================
 -->
 
@@ -18,14 +18,7 @@
 
 *World of Warcraft polyfills and standardization.*
 
-## Documentation
-
-### Generated
-
-* By [sphinx-apidoc](https://vkottler.github.io/python/sphinx/gnomish-army-knife)
-(What's [`sphinx-apidoc`](https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html)?)
-* By [pydoc](https://vkottler.github.io/python/pydoc/gnomish_army_knife.html)
-(What's [`pydoc`](https://docs.python.org/3/library/pydoc.html)?)
+([interface documentation](https://vkottler.github.io/python/gnomish-army-knife))
 
 ## Python Version Support
 

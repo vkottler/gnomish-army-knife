@@ -35,6 +35,9 @@ class LogWriterTask(GakRuntimeTask):
 
         inactive = set()
 
+        # log some info when connection state changed / reconcile with
+        # UiTask implementation
+
         # Determine which connections are still active or need writing
         # interfaces.
         active = set()
