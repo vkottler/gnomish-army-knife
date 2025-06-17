@@ -59,6 +59,8 @@ class LogServerTask(GakRuntimeTask):
 
         await super().init(app)
 
+        assert list(self.app.conn_manager.by_type(CombatLogEventConnection))
+
         self.queue = Queue()
         self.stop_reading_log = Event()
         self.queue_saturated = asyncio.Event()
