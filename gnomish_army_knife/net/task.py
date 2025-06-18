@@ -35,6 +35,8 @@ class LogServerTask(GakRuntimeTask):
 
         self.logger.info("Combat-log reading thread started.")
 
+        latest = self.runtime.latest_combat_log()
+
         # Always attempt to re-process prior logs that may have been
         # written to.
         for log in self.runtime.combat_logs:
@@ -42,8 +44,11 @@ class LogServerTask(GakRuntimeTask):
                 log, stop=self.stop_reading_log
             )
 
+            # Prune old log files by default.
+            if latest is not None and log != latest:
+                log.unlink()
+
         while not self.stop_reading_log.is_set():
-            latest = self.runtime.latest_combat_log()
             if latest is not None:
                 self.runtime.database.logs.process_log(
                     latest, stop=self.stop_reading_log
