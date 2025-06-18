@@ -56,6 +56,7 @@ class LogWriterTask(GakRuntimeTask):
                     queue,
                     conn.queue.register(queue),
                 )
+                conn.logger.info("Registered as match database stream.")
 
         # Clean up inactive writers (could move this to disconnect callback
         # system described above).
@@ -71,11 +72,15 @@ class LogWriterTask(GakRuntimeTask):
             while not queue.empty():
                 event = queue.get_nowait()
 
+                # time since last event seen
+
                 # Could count ignored events at some point.
                 if await writer.handle(event):
                     self.event_count.increment()
                 else:
                     self.ignore_count.increment()
                     event.log(self.logger, level=DEBUG)
+
+        # update time since last event channel
 
         return True
