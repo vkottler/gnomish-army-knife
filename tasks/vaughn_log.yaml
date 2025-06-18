@@ -5,10 +5,10 @@ includes:
 
 clients:
   - factory: tcp_combat_log_event
-    name: tcp_client
+    name: matchdb_client
     kwargs: {host: zima1, port: 10041}
   - factory: tcp_combat_log_event
-    name: tcp_client
+    name: ui_client
     kwargs: {host: rpi5-lkottler, port: 10041}
 
 config:
