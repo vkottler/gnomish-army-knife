@@ -7,4 +7,3 @@ factories:
   - {name: gnomish_army_knife.net.LogWriter}
   - {name: gnomish_army_knife.net.TcpCombatLogEvent}
   - {name: gnomish_army_knife.net.WebsocketCombatLogEvent}
-  - {name: gnomish_army_knife.ui.GakUi}
