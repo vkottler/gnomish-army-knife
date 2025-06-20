@@ -117,6 +117,7 @@ nameplateOverlapH: 0.6
 nameplateOverlapV: 0.6
 
 cooldownViewerEnabled: 1
+assistedCombatHighlight: 1
 
 # 'basic' https://wowpedia.fandom.com/wiki/CVar_ActionCam
 test_cameraDynamicPitch: 1
