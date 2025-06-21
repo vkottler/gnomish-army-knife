@@ -85,18 +85,19 @@ bindings:
   - command: TOGGLESHEATH
     key: PADLSTICK
     modifiers: [CTRL]
-  - command: TOGGLEFPS
+  - command: TOGGLEUI
     key: PADRSTICK
     modifiers: [CTRL]
 
-  - command: FLIPCAMERAYAW
+  # FLIPCAMERAYAW - useless with stick camera imo
+  - command: TOGGLEBATTLEFIELDMINIMAP
     key: PADLSTICK
     modifiers: [CTRL, SHIFT]
   - command: CENTERCAMERA
     key: PADRSTICK
     modifiers: [CTRL, SHIFT]
 
-  - command: TOGGLEUI
+  - command: TOGGLEFPS
     key: PADLSTICK
     modifiers: [ALT, SHIFT]
   - command: SCREENSHOT
