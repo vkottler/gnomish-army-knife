@@ -29,6 +29,7 @@ scriptErrors: 1
 
 floatingCombatTextCombatDamage: 0
 floatingCombatTextCombatHealing: 0
+floatingCombatTextCombatState: 0
 
 cameraSmoothStyle: 1
 countdownForCooldowns: 1
@@ -84,12 +85,17 @@ showToastWindow: 0
 Sound_EnableSFX: 1  # default
 Sound_EnableMusic: 0
 Sound_EnableAmbience: 1
-Sound_EnableDialog: 1
+Sound_EnableDialog: 0
 Sound_EnableSoundWhenGameIsInBG: 1  # for queue pop
 Sound_MasterVolume: 1
 Sound_SFXVolume: 1
 Sound_EnableReverb: 1  # default
 Sound_EnableEmoteSounds: 0
+
+# feature only used for griefing
+enablePings: 0
+showPingsInChat: 0
+Sound_EnablePingSounds: 0
 
 # BetterBlizzPlates does all of these
 # Gets overwritten by "use large nameplates" ?
