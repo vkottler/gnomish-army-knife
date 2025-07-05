@@ -51,6 +51,11 @@ array:
       #showtooltip
       /cast [@player] Zen Spheres
 
+  - name: self
+    body: |-
+      #showtooltip
+      /cast [@player] Sheilun's Gift
+
   - name: harm
     body: |-
       #showtooltip
