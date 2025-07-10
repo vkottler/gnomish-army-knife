@@ -4,12 +4,12 @@ includes:
   - package://gnomish_army_knife/server.yaml
 
 clients:
+  # - factory: tcp_combat_log_event
+  #   name: ui_client
+  #   kwargs: {host: rpi5-lkottler, port: 10041}
   - factory: tcp_combat_log_event
     name: matchdb_client
     kwargs: {host: zima1, port: 10041}
-  - factory: tcp_combat_log_event
-    name: ui_client
-    kwargs: {host: rpi5-lkottler, port: 10041}
 
 config:
   gak_cli_args: [--config, tasks/config.yaml]
