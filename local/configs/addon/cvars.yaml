@@ -30,6 +30,13 @@ scriptErrors: 1
 floatingCombatTextCombatDamage: 0
 floatingCombatTextCombatHealing: 0
 floatingCombatTextCombatState: 0
+floatingCombatTextSpellMechanics: 0
+floatingCombatTextPetMeleeDamage: 0
+floatingCombatTextPetSpellDamage: 0
+floatingCombatTextReactives: 0
+
+WorldTextScale: 0
+threatWorldText: 0
 
 cameraSmoothStyle: 1
 countdownForCooldowns: 1
