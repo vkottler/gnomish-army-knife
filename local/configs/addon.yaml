@@ -68,10 +68,11 @@ bindings:
   - command: NAMEPLATES
     key: PADRSTICK
 
-  - command: TOGGLE_VOICE_SELF_MUTE
+  # not using in game voice chat
+  - command: TOGGLESHEATH
     key: PADLSTICK
     modifiers: [ALT]
-  - command: TOGGLE_VOICE_SELF_DEAFEN
+  - command: TOGGLESHEATH
     key: PADRSTICK
     modifiers: [ALT]
 
@@ -90,7 +91,8 @@ bindings:
     modifiers: [CTRL]
 
   # FLIPCAMERAYAW - useless with stick camera imo
-  - command: TOGGLEBATTLEFIELDMINIMAP
+  # TOGGLEBATTLEFIELDMINIMAP - no need to control manually
+  - command: TOGGLESHEATH
     key: PADLSTICK
     modifiers: [CTRL, SHIFT]
   - command: CENTERCAMERA
