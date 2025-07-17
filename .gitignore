@@ -20,3 +20,4 @@ src
 gnomish-army-knife-markdown
 *.bkp
 tests/data/valid/matchdb
+/blizz
