@@ -59,6 +59,7 @@ NameplatePersonalShowAlways: 1
 nameplateSelfTopInset: 0.50
 nameplateSelfBottomInset: 0.29
 nameplateSelfScale: 1.0
+nameplateResourceOnTarget: 0
 
 # Overwritten by role-based logic.
 # nameplateShowFriends: 1
