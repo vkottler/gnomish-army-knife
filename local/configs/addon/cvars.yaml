@@ -43,6 +43,7 @@ countdownForCooldowns: 1
 
 hideAdventureJournalAlerts: 1
 showTutorials: 0
+showHonorAsExperience: 0
 
 spellBookHidePassives: 1
 
