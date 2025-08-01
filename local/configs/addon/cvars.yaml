@@ -121,7 +121,7 @@ showPartyPets: 1
 raidOptionDisplayPets: 1
 
 nameplateShowFriendlyBuffs: 1
-nameplateShowFriendlyTotems: 1
+nameplateShowFriendlyTotems: 0
 nameplateShowPersonalCooldowns: 1
 
 SoftTargetNameplateFriend: 0
