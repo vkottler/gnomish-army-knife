@@ -68,11 +68,10 @@ bindings:
   - command: NAMEPLATES
     key: PADRSTICK
 
-  # not using in game voice chat
-  - command: TOGGLESHEATH
+  - command: MINIMAPZOOMOUT
     key: PADLSTICK
     modifiers: [ALT]
-  - command: TOGGLESHEATH
+  - command: MINIMAPZOOMIN
     key: PADRSTICK
     modifiers: [ALT]
 
