@@ -142,4 +142,4 @@ test_cameraTargetFocusInteractEnable: 0
 test_cameraTargetFocusEnemyEnable: 0
 CameraKeepCharacterCentered: 0
 
-rotateMinimap: 1
+rotateMinimap: 0
