@@ -71,6 +71,7 @@ nameplateResourceOnTarget: 0
 # UnitNameEnemyPlayerName: 0
 
 nameplateShowSelf: 1
+nameplateShowAll: 1
 nameplateShowDebuffsOnFriendly: 1  # default
 nameplateHideHealthAndPower: 1
 
