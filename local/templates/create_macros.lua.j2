@@ -8,12 +8,12 @@ end
 
 local function createFirstRacialMacro()
 		CreateMacro("1", "inv_misc_questionmark", [[
-/run print("no first racial")]], 1)
+/run print("no first racial")]], true)
 end
 
 local function createSecondRacialMacro()
 		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], 1)
+/run print("no second racial")]], true)
 end
 
 function GakCreateCharacterMacros()
@@ -29,13 +29,13 @@ function GakCreateCharacterMacros()
 {% elif abilities|length == 1 %}
 		CreateMacro("1", "inv_misc_questionmark", [[
 #showtooltip
-/cast {{abilities[0]}}]], 1)
+/cast {{abilities[0]}}]], true)
 		createSecondRacialMacro()
 {% else %}
 {% for ability in abilities %}
 		CreateMacro("{{loop.index}}", "inv_misc_questionmark", [[
 #showtooltip
-/cast {{ability}}]], 1)
+/cast {{ability}}]], true)
 {% endfor %}
 {% endif %}
 		print("Created macros for '" .. our_race .. "'.")
@@ -55,7 +55,7 @@ function GakCreateCharacterMacros()
 	if class_str == "{{class_str}}" then
 {% for macro in data["array"] %}
 		CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
-{{macro["body"]}}]], 1)
+{{macro["body"]}}]], true)
 {% endfor %}
 		print("Created {{data["array"]|length}}", select(1, UnitClass("player")), "macros.")
 	end
