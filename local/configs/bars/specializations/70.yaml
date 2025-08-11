@@ -1,112 +1,37 @@
 ---
 # Retribution Paladin
-array:
-  # PADRSHOULDER column
-  - [67, C_Spell.PickupSpell(96231)]
-  - [61, C_Spell.PickupSpell(24275)]
+by_key:
+  L2_R1: s 24275
 
-  - [7, C_Spell.PickupSpell(20271)]
-  - [19, C_Spell.PickupSpell(20271)]  # bar 2
+  L1_R1_1: s 20271
+  L1_R1_2: s 20271
 
-  - [1, C_Spell.PickupSpell(184575)]
-  - [13, C_Spell.PickupSpell(184575)]  # bar 2
+  R1_1: s 184575
+  R1_2: s 184575
 
-  - [55, C_Spell.PickupSpell(255937)]
-  - [49, C_Spell.PickupSpell(115750)]
-  - [25, C_Spell.PickupSpell(853)]
+  P2_R1: s 255937
 
-  # PADRTRIGGER column
-  - [68, PickupMacro(120 + 18)]  # self final reckoning
-  - [62, C_Spell.PickupSpell(343721)]
+  L2_L1_R2: m sfr  # self final reckoning
+  L2_R2: s 343721
 
-  - [8, C_Spell.PickupSpell(53385)]
-  - [20, C_Spell.PickupSpell(53385)]  # bar 2
+  L1_R2_1: s 53385
+  L1_R2_2: s 53385
 
-  - [2, C_Spell.PickupSpell(383328)]
-  - [14, C_Spell.PickupSpell(383328)]  # bar 2
+  R2_1: s 383328
+  R2_2: s 383328
 
-  - [56, C_Spell.PickupSpell(375576)]
-  - [50, C_Spell.PickupSpell(6940)]
-  - [26, C_Spell.PickupSpell(410126)]
+  L1_P2_R2: s "Divine Hammer"
 
-  # PAD3 column
-  # - [69, ""]
-  - [63, ""]
+  L2_S: s 184662
 
-  - [9, PickupMacro(120 + 14)]  # blessing of protection
-  - [21, C_Spell.PickupSpell(1022)]  # bar 2
+  S_1: m swog  # word of glory
+  S_2: s 85673
 
-  - [3, PickupMacro(120 + 12)]  # word of glory
-  - [15, C_Spell.PickupSpell(85673)]  # bar 2
+  X_1: m sfol  # flash of light
+  X_2: s 19750
 
-  - [57, ""]
-  # - [51, ""]
-  # - [27, ""]
+  T_1: m sbos  # self sanc
+  T_2: s "Blessing of Sanctuary"
 
-  # PAD1 column
-  # - [70, ""]
-  - [64, C_Spell.PickupSpell("Hand of Reckoning")]
-
-  - [10, PickupMacro(120 + 13)]  # lay on hands
-  - [22, C_Spell.PickupSpell(633)]  # 471195 # bar 2
-
-  - [4, PickupMacro(120 + 6)]  # flash of light
-  - [16, C_Spell.PickupSpell(19750)]  # bar 2
-
-  - [58, ""]
-  # - [52, ""]
-  # - [28, ""]
-
-  # PAD4 column
-  # - [71, ""]
-  - [65, C_Spell.PickupSpell("Blessing of Sanctuary")]
-
-  - [11, C_Spell.PickupSpell(184662)]
-  - [23, C_Spell.PickupSpell(184662)]  # bar 2
-
-  - [5, C_Spell.PickupSpell(403876)]
-  - [17, C_Spell.PickupSpell(403876)]  # bar 2
-
-  - [59, PickupMacro(120 + 17)]  # self sanc
-  # - [53, ""]
-  # - [29, ""]
-
-  # PAD2 column
-  # - [72, ""]
-  - [66, C_Spell.PickupSpell("Intercession")]
-
-  - [12, C_Spell.PickupSpell(642)]
-  - [24, C_Spell.PickupSpell(642)]  # bar 2
-
-  - [6, PickupMacro(120 + 15)]  # blessing of freedom
-  - [18, C_Spell.PickupSpell(1044)]  # bar 2
-
-  - [60, ""]
-  # - [54, ""]
-  # - [30, ""]
-
-  # paddles (left)
-  # - [43, ""]
-  # - [37, ""]
-  # - [31, ""]
-  # paddles (right)
-  - [44, ""]
-  - [38, C_Spell.PickupSpell(210256)]
-  # - [32, ""]
-
-  # d-pad (left)
-  # - [45, ""]
-  # - [39, ""]
-  # - [33, ""]
-  # d-pad (down)
-  - [46, ""]
-  # - [40, ""]
-  # - [34, ""]
-  # d-pad (up)
-  # - [47, ""]
-  # - [41, "C_Spell.PickupSpell(5502)"]
-  # - [35, ""]
-  # d-pad (right)
-  # - [48, ""]
-  # - [42, ""]
-  # - [36, ""]
+  L1_C_1: m sct
+  L1_C_2: s "Cleanse Toxins"

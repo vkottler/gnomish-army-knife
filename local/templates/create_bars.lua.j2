@@ -1,3 +1,26 @@
+{% macro action_id(value) -%}
+{% if value in addon["ps"] %}{{addon["ps"][value]}}{% else %}{{value}}{% endif %}
+{%- endmacro %}
+
+{%- macro tabs(count) -%}{% for _ in range(count)%}	{% endfor %}{%- endmacro %}
+
+{%- macro place_action(value, indent) -%}
+PlaceAction({{action_id(value)}})
+{{tabs(indent)}}if GetCursorInfo() then
+{{tabs(indent)}}	print("wrote over existing action in slot '{{value}}'")
+{{tabs(indent)}}	ClearCursor()
+{{tabs(indent)}}end
+{%- endmacro %}
+{%- macro pickup_action(value) -%}
+{% if value.startswith("m ") %}
+PickupMacro("{{value[2:]}}")
+{%- elif value.startswith("s ") %}
+C_Spell.PickupSpell({{value[2:]}})
+{%- else %}
+{{value}}
+{%- endif %}
+{%- endmacro %}
+
 -- https://wowpedia.fandom.com/wiki/Action_slot
 GAK_MAX_ACTIONBAR = 180
 
@@ -13,20 +36,21 @@ end
 function GakSetGlobalActions()
 	local global_bind_count = 0
 
-{% for bind in bars["global"]["array"] %}
-{% if bind[1] %}
-	{{bind[1]}}
+{% for key, bind in bars["global"]["by_key"].items() %}
+{% if bind %}
+	-- {{key}}
+	{{pickup_action(bind)}}
 	if GetCursorInfo() then
-		PlaceAction({{bind[0]}})
+		{{place_action(key, 2)}}
 		global_bind_count = global_bind_count + 1
 	else
-		print("(global) Couldn't bind slot {{bind[0]}}:", [[
-{{bind[1]}}]])
+		print("(global) Couldn't bind slot {{key}}:", [[
+{{bind}}]])
 	end
 {% endif %}
 {% endfor %}
 
-	print("Placed " .. global_bind_count .. "/{{bars["global"]["array"]|length}} global actions.")
+	print("Placed " .. global_bind_count .. "/{{bars["global"]["by_key"]|length}} global actions.")
 end
 
 function GakSetClassActions()
@@ -35,15 +59,29 @@ function GakSetClassActions()
 {% for class_str, data in bars["classes"].items()|sort(attribute='0') %}
 
 	if class_str == "{{class_str}}" then
-{% for bind in data["array"] %}
+{% for bind in data.get("array", []) %}
 {% if bind[1] %}
-		{{bind[1]}}
+		-- {{bind[0]}}
+		{{pickup_action(bind[1])}}
 		if GetCursorInfo() then
-			PlaceAction({{bind[0]}})
+			{{place_action(bind[0], 3)}}
 			class_bind_count = class_bind_count + 1
 		else
 			print("(class) Couldn't bind slot {{bind[0]}}:", [[
 {{bind[1]}}]])
+		end
+{% endif %}
+{% endfor %}
+{% for key, bind in data.get("by_key", {}).items() %}
+{% if bind %}
+		-- {{key}}
+		{{pickup_action(bind)}}
+		if GetCursorInfo() then
+			{{place_action(key, 3)}}
+			class_bind_count = class_bind_count + 1
+		else
+			print("(class) Couldn't bind slot {{key}}:", [[
+{{bind}}]])
 		end
 {% endif %}
 {% endfor %}
@@ -62,14 +100,28 @@ function GakSetSpecializationActions()
 {% if id|int != 0 %}
 
 	if id == {{id}} then
-{% for bind in data["array"] %}
+{% for bind in data.get("array", []) %}
 {% if bind[1] %}
-		{{bind[1]}}
+		-- {{bind[0]}}
+		{{pickup_action(bind[1])}}
 		if GetCursorInfo() then
-			PlaceAction({{bind[0]}})
+			{{place_action(bind[0], 3)}}
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot {{bind[0]}}:", [[
+{{bind[1]}}]])
+		end
+{% endif %}
+{% endfor %}
+{% for key, bind in data.get("by_key", {}).items() %}
+{% if bind %}
+		-- {{key}}
+		{{pickup_action(bind)}}
+		if GetCursorInfo() then
+			{{place_action(key, 3)}}
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot {{key}}:", [[
 {{bind[1]}}]])
 		end
 {% endif %}

@@ -1,136 +1,70 @@
 ---
 # Feral Druid
-array:
-  # PADRSHOULDER column
-  - [67, C_Spell.PickupSpell("Skull Bash")]
-  - [61, C_Spell.PickupSpell("Maim")]
+by_key:
+  L2_R1: s "Adaptive Swarm"
+  L1_R1_1: s "Rake"
+  L1_R1_2: s "Rake"
+  L1_R1_B: s "Shred"
+  L1_R1_C: s "Rake"
+  L1_R1_M: s "Rake"
+  R1_1: s "Shred"
+  R1_2: s "Shred"
+  R1_B: s "Mangle"
+  R1_C: s "Shred"
+  R1_M: s "Shred"
+  P2_R1: s "Tiger's Fury"
+  L1_P2_R1: s "Feral Frenzy"
 
-  - [7, C_Spell.PickupSpell("Rake")]
-  - [19, C_Spell.PickupSpell("Rake")]  # bar 2
-  - [103, C_Spell.PickupSpell("Rake")]  # bear
-  - [79, C_Spell.PickupSpell("Rake")]  # cat
+  L2_L1_R2: ""
+  L1_R2_1: s "Wrath"
+  L1_R2_2: s "Wrath"
+  L1_R2_B: s "Ironfur"
+  L1_R2_C: s "Rip"
+  L1_R2_M: ""
+  R2_1: s "Mangle"
+  R2_2: s "Mangle"
+  R2_B: s "Strength of the Wild"
+  R2_C: s "Ferocious Bite"
+  R2_M: ""
+  P2_R2: s "Maim"
+  L1_P2_R2: s "Mighty Bash"
 
-  - [1, C_Spell.PickupSpell("Shred")]
-  - [13, C_Spell.PickupSpell("Shred")]  # bar 2
-  - [97, C_Spell.PickupSpell("Shred")]  # bear
-  - [73, C_Spell.PickupSpell("Shred")]  # cat
+  L2_L1_S: ""
+  L2_S: s "Berserk"
+  L1_S_1: ""
+  L1_S_2: ""
+  L1_S_C: s "Primal Wrath"
+  L1_S_M: ""
+  S_1: ""
+  S_2: ""
+  S_C: s "Swipe"
+  S_M: ""
+  L2_P2_S: ""
+  L1_P2_S: ""
 
-  - [55, C_Spell.PickupSpell("Mighty Bash")]
-  # - [49, ""]
-  - [25, C_Spell.PickupSpell("Tiger's Fury")]
+  L2_X: ""
+  L1_X_1: m srj
+  L1_X_2: s "Rejuvenation"
+  L1_X_B: m srj
+  L1_X_C: m srj
+  L1_X_M: m srj
+  X_1: m srg
+  X_2: s "Regrowth"
+  X_B: m srg
+  X_C: m srg
+  X_M: m srg
+  P2_X: s "Survival Instincts"
+  L2_P2_X: ""
 
-  # PADRTRIGGER column
-  - [68, PickupMacro(120 + 21)]  # self ursol's
-  - [62, PickupMacro(120 + 10)]  # mass root / ursol's
+  L1_T_1: m src
+  L1_T_2: s "Remove Corruption"
+  L1_T_B: m src
+  L1_T_C: m src
+  L1_T_M: m src
 
-  - [8, PickupMacro(120 + 5)]
-  - [20, PickupMacro(120 + 5)]  # bar 2
-  - [104, C_Spell.PickupSpell("Strength of the Wild")]  # bear
-  - [80, C_Spell.PickupSpell("Rip")]  # cat
-
-  - [2, PickupMacro(120 + 6)]
-  - [14, PickupMacro(120 + 6)]  # bar 2
-  - [98, C_Spell.PickupSpell("Frenzied Regeneration")]  # bear
-  - [74, C_Spell.PickupSpell("Ferocious Bite")]  # cat
-
-  - [56, C_Spell.PickupSpell("Primal Wrath")]
-  # - [50, ""]
-  - [26, C_Spell.PickupSpell("Feral Frenzy")]
-
-  # PAD3 column
-  - [69, C_Spell.PickupSpell("Thrash")]
-  - [63, 'C_Spell.PickupSpell("Incarnation: Avatar of Ashamane")']
-
-  - [9, C_Spell.PickupSpell("Adaptive Swarm")]
-  - [21, C_Spell.PickupSpell("Adaptive Swarm")]  # bar 2
-  - [105, C_Spell.PickupSpell("Adaptive Swarm")]  # bear
-  - [81, C_Spell.PickupSpell("Adaptive Swarm")]  # cat
-
-  - [3, PickupMacro(120 + 5)]
-  - [15, PickupMacro(120 + 5)]  # bar 2
-  - [99, C_Spell.PickupSpell("Brutal Slash")]  # bear
-  - [75, C_Spell.PickupSpell("Brutal Slash")]  # cat
-
-  - [57, C_Spell.PickupSpell("Moonfire")]
-  # - [51, ""]
-  - [27, C_Spell.PickupSpell("Prowl")]
-
-  # PAD1 column
-  - [70, C_Spell.PickupSpell("Frenzied Regeneration")]
-  # - [64, ""]
-
-  - [10, PickupMacro(120 + 25)]
-  - [22, C_Spell.PickupSpell("Rejuvenation")]  # bar 2
-  - [106, PickupMacro(120 + 25)]  # bear
-  - [82, PickupMacro(120 + 25)]  # cat
-
-  - [4, PickupMacro(120 + 17)]
-  - [16, C_Spell.PickupSpell("Regrowth")]  # bar 2
-  - [100, PickupMacro(120 + 17)]  # bear
-  - [76, PickupMacro(120 + 17)]  # cat
-
-  - [58, C_Spell.PickupSpell("Renewal")]
-  # - [52, ""]
-  # - [28, ""]
-
-  # PAD4 column
-  # - [71, ""]
-  # - [65, ""]
-
-  # switch to ironfur for druid of claw
-  # else "Remove Corruption" / macro 27 (self)
-  - [11, C_Spell.PickupSpell("Ironfur")]
-  - [23, C_Spell.PickupSpell("Ironfur")]  # bar 2
-  - [107, C_Spell.PickupSpell("Ironfur")]  # bear
-  - [83, C_Spell.PickupSpell("Ironfur")]  # cat
-
-  - [5, C_Spell.PickupSpell("Mangle")]
-  - [17, C_Spell.PickupSpell("Mangle")]  # bar 2
-  - [101, C_Spell.PickupSpell("Mangle")]  # bear
-  - [77, C_Spell.PickupSpell("Mangle")]  # cat
-
-  # - [59, ""]
-  # - [53, ""]
-  # - [29, ""]
-
-  # PAD2 column
-  # - [72, ""]
-  - [66, C_Spell.PickupSpell("Survival Instincts")]
-
-  - [12, PickupMacro(120 + 14)]
-  - [24, C_Spell.PickupSpell("Wild Growth")]  # bar 2
-  - [108, PickupMacro(120 + 14)]  # bear
-  - [84, PickupMacro(120 + 14)]  # cat
-
-  # - [6, ""]
-  # - [18, ""]  # bar 2
-
-  # - [60, ""]
-  # - [54, ""]
-  # - [30, ""]
-
-  # paddles (left)
-  # - [43, ""]
-  # - [37, ""]
-  # - [31, ""]
-  # paddles (right)
-  # - [44, ""]
-  # - [38, ""]
-  # - [32, ""]
-
-  # d-pad (left)
-  # - [45, ""]
-  # - [39, ""]
-  # - [33, ""]
-  # d-pad (down)
-  # - [46, ""]
-  # - [40, ""]
-  # - [34, ""]
-  # d-pad (up)
-  - [47, C_Spell.PickupSpell("Revive")]
-  # - [41, ""]
-  # - [35, ""]
-  # d-pad (right)
-  # - [48, ""]
-  # - [42, ""]
-  # - [36, ""]
+  L1_C_1: ""
+  L1_C_2: ""
+  L1_C_B: s "Thrash"
+  L1_C_C: s "Thrash"
+  L1_C_M: ""
+  L2_P2_C: ""

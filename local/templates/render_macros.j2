@@ -14,3 +14,19 @@
 ---
 {% endfor %}
 {% endmacro %}
+{% macro render_macros_map(macros) %}
+{% for name, macro in macros.items() %}
+{% if "icon" in macro and macro["icon"] %}
+
+![icon image](https://wow.zamimg.com/images/wow/icons/large/{{macro.get("icon", "inv_misc_questionmark")}}.jpg)
+{% endif %}
+
+{{name}}
+
+```
+{{macro["body"]}}
+```
+
+---
+{% endfor %}
+{% endmacro %}

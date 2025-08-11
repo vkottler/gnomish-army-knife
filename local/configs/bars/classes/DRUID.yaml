@@ -1,39 +1,57 @@
 ---
-array:
-  # PADRSHOULDER column
-  - [49, C_Spell.PickupSpell("Cyclone")]
+by_key:
+  L2_L1_R1: m ffsb
+  L2_P2_R1: s "Cyclone"
 
-  # PADRTRIGGER column
-  - [50, C_Spell.PickupSpell("Entangling Roots")]
+  L2_L1_R2: s "Typhoon"  # self ursol's
+  L2_R2: m root  # mass root / ursol's
+  L2_P2_R2: s "Entangling Roots"
 
-  # PAD3 column
+  L1_S_B: s "Growl"
+  P2_S: s "Moonfire"
+  L2_P2_S: s "Starfire"
+  S_B: s "Frenzied Regeneration"
 
-  # PAD1 column
-  - [64, C_Spell.PickupSpell("Heart of the Wild")]
-  - [58, C_Spell.PickupSpell("Renewal")]
+  L2_L1_X: s "Heart of the Wild"
+  L1_P2_X: m suv  # self ursol's
 
-  # PAD4 column
-  - [65, C_Spell.PickupSpell("Dash")]  # dash
-  - [59, C_Spell.PickupSpell("Stampeding Roar")]  # stampeding roar
+  L2_L1_T: s "Dash"
+  L2_T: m ffr
+  T_1: m swg
+  T_2: s "Wild Growth"
+  T_B: m swg
+  T_C: m swg
+  T_M: m swg
+  P2_T: s "Stampeding Roar"
+  L1_P2_T: s "Frenzied Regeneration"
+  L2_P2_T: m ffs
 
-  # PAD2 column
-  - [72, PickupMacro(120 + 13)]  # cancel + jump to teammate button
-  - [6, C_Spell.PickupSpell("Wild Charge")]
-  - [18, C_Spell.PickupSpell("Wild Charge")]  # bar 2
-  - [102, C_Spell.PickupSpell("Wild Charge")]  # bear
-  - [78, C_Spell.PickupSpell("Wild Charge")]  # cat
-  - [114, C_Spell.PickupSpell("Wild Charge")]  # moonkin
+  L2_L1_C: m wch  # cancel + jump to teammate button
+  L2_C: m ffm
+  C_1: s "Wild Charge"
+  C_2: s "Wild Charge"
+  C_B: s "Wild Charge"
+  C_C: s "Wild Charge"
+  C_M: s "Wild Charge"
+  P2_C: s "Barkskin"
+  L1_P2_C: s "Rebirth"
 
-  - [60, C_Spell.PickupSpell("Barkskin")]
+  P2_P3: m flap  # boomkin / flap (macro)
+  L2_P3: m prow  # prowl (macro)
+  L1_P3: m cat  # cat form (macro)
 
-  # paddles (left)
-  - [43, PickupMacro(120 + 12)]  # boomkin / flap (macro)
-  - [37, PickupMacro(120 + 4)]  # prowl (macro)
-  - [31, PickupMacro(120 + 5)]  # cat form (macro)
-  # paddles (right)
-  - [44, PickupMacro(120 + 8)]  # cancel form (macro)
-  - [38, PickupMacro(120 + 6)]  # bear form (macro)
-  - [32, PickupMacro(120 + 3)]  # travel form (macro)
+  L2_L1_P1: m cf  # cancel form (macro)
+  L2_P1: m bear  # bear form (macro)
+  L1_P1: m trav  # travel form (macro)
 
-  # d-pad (down)
-  - [46, PickupMacro(120 + 15)]  # mark of the wild (macro)
+  P2_D: m motw  # mark of the wild (macro)
+
+  P2_U: s "Revive"
+
+  # cancel macro override (has dedicated bind)
+  # L2_L: ""
+
+  # mount button overrides
+  # P2_R: ""
+  # L2_R: ""
+  # L1_R: ""

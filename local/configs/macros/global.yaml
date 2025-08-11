@@ -1,16 +1,16 @@
 ---
-array:
-  - name: "13"
+by_name:
+  t13:
     body: |-
       #showtooltip
       /use 13
 
-  - name: "14"
+  t14:
     body: |-
       #showtooltip
       /use 14
 
-  - name: canc
+  gc:
     icon: creatureportrait_creature_iceblock
     body: |-
       /stopcasting
@@ -18,55 +18,72 @@ array:
       /cancelaura Levitate
       /cancelaura Enchanted Candle
       /cancelaura Alter Time
-      /cleartarget
 
-  - name: dis
+  dis:
     icon: ability_marksmanship
     body: |-
       /dismount
       /cancelform
 
-  - name: gak
+  gak:
     icon: inv_misc_enggizmos_swissarmy
     body: |-
       /gnomish-army-knife
 
-  - name: gg
+  gg:
     icon: achievement_bg_takexflags_ab
     body: |-
       /run LeaveBattlefield()
 
-  - name: hs
+  hs:
     body: |-
       #showtooltip
       /use Healthstone
 
-  - name: mana
+  mana:
     icon: inv_drink_milk_01
     body: |-
       /cleartarget
       /use Conjured Mana Bun
       /use Quicksilver Sipper
 
-  - name: pet
+  pet:
     icon: inv_leatherworking_70_petleash
     body: |-
       /petdismiss
 
-  - name: z0
+  ffr:
+    # icon: ability_druid_disembowel
     body: |-
       #showtooltip
       /cast Rake
       /changeactionbar 1
 
-  - name: z1
+  ffm:
+    # icon: ability_druid_mangle2
     body: |-
       #showtooltip
       /cast Mangle
       /changeactionbar 1
 
-  - name: z2
+  ffs:
+    # icon: spell_shadow_vampiricaura
     body: |-
       #showtooltip
-      /cast Skull Bash
+      /cast Shred
       /changeactionbar 1
+
+  fav:
+    icon: achievement_guildperk_mountup
+    body: |-
+      /run C_MountJournal.SummonByID(0)
+
+  yak:
+    icon: ability_mount_travellersyakmount
+    body: |-
+      /use Grand Expedition Yak
+
+  ah:
+    icon: inv_brontsaurusmountspecial
+    body: |-
+      /use Trader's Gilded Brutosaur

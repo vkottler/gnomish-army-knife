@@ -1,0 +1,144 @@
+---
+# PADRSHOULDER column
+L2_L1_R1: 67
+L2_R1: 61
+L1_R1_1: 7
+L1_R1_2: 19
+L1_R1_D: 127
+L1_R1_B: 103
+L1_R1_C: 79
+L1_R1_M: 115
+R1_1: 1
+R1_2: 13
+R1_D: 121
+R1_B: 97
+R1_C: 73
+R1_M: 109
+P2_R1: 55
+L2_P2_R1: 49
+L1_P2_R1: 25
+
+# PADRTRIGGER column
+L2_L1_R2: 68
+L2_R2: 62
+L1_R2_1: 8
+L1_R2_2: 20
+L1_R2_D: 128
+L1_R2_B: 104
+L1_R2_C: 80
+L1_R2_M: 116
+R2_1: 2
+R2_2: 14
+R2_D: 122
+R2_B: 98
+R2_C: 74
+R2_M: 110
+P2_R2: 56
+L2_P2_R2: 50
+L1_P2_R2: 26
+
+# PAD3 column
+L2_L1_S: 69
+L2_S: 63
+L1_S_1: 9
+L1_S_2: 21
+L1_S_D: 129
+L1_S_B: 105
+L1_S_C: 81
+L1_S_M: 117
+S_1: 3
+S_2: 15
+S_D: 123
+S_B: 99
+S_C: 75
+S_M: 111
+P2_S: 57
+L2_P2_S: 51
+L1_P2_S: 27
+
+# PAD1 column
+L2_L1_X: 70
+L2_X: 64
+L1_X_1: 10
+L1_X_2: 22
+L1_X_D: 130
+L1_X_B: 106
+L1_X_C: 82
+L1_X_M: 118
+X_1: 4
+X_2: 16
+X_D: 124
+X_B: 100
+X_C: 76
+X_M: 112
+P2_X: 58
+L2_P2_X: 52
+L1_P2_X: 28
+
+# PAD4 column
+L2_L1_T: 71
+L2_T: 65
+L1_T_1: 11
+L1_T_2: 23
+L1_T_D: 131
+L1_T_B: 107
+L1_T_C: 83
+L1_T_M: 119
+T_1: 5
+T_2: 17
+T_D: 125
+T_B: 101
+T_C: 77
+T_M: 113
+P2_T: 59
+L2_P2_T: 53
+L1_P2_T: 29
+
+# PAD2 column
+L2_L1_C: 72
+L2_C: 66
+L1_C_1: 12
+L1_C_2: 24
+L1_C_D: 132
+L1_C_B: 108
+L1_C_C: 84
+L1_C_M: 120
+C_1: 6
+C_2: 18
+C_D: 126
+C_B: 102
+C_C: 78
+C_M: 114
+P2_C: 60
+L2_P2_C: 54
+L1_P2_C: 30
+
+# paddles (left)
+P2_P3: 43
+L2_P3: 37
+L1_P3: 31
+
+# paddles (right)
+L2_L1_P1: 44
+L2_P1: 38
+L1_P1: 32
+
+# d-pad (left)
+P2_L: 45
+L2_L: 39
+L1_L: 33
+
+# d-pad (down)
+P2_D: 46
+L2_D: 40
+L1_D: 34
+
+# d-pad (up)
+P2_U: 47
+L2_U: 41
+L1_U: 35
+
+# d-pad (right)
+P2_R: 48
+L2_R: 42
+L1_R: 36

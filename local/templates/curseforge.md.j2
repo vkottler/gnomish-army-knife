@@ -60,22 +60,22 @@ documentation for additional details.
 
 Type | Count
 -----|------
-Shared | `{{macros["global"]["array"]|length}}`
+Shared | `{{macros["global"]["by_name"]|length}}`
 {% for class in macros["classes"] %}
-{{class|capitalize}} | `{{macros["classes"][class]["array"]|length}}`
+{{class|capitalize}} | `{{macros["classes"][class].get("array", [])|length + macros["classes"][class].get("by_name", {})|length}}`
 {% endfor %}
 
 ### Action Bars
 
 Type | Action Count
 -----|-------------
-Global | `{{bars["global"]["array"]|length}}`
+Global | `{{bars["global"]["by_key"]|length}}`
 {% for class in bars["classes"] %}
-{{class|capitalize}} | `{{bars["classes"][class]["array"]|length}}`
+{{class|capitalize}} | `{{bars["classes"][class].get("array", [])|length + bars["classes"][class].get("by_key", {})|length}}`
 {% endfor %}
 {% for spec_id in bars["specializations"] %}
 {% if spec_id|int != 0 %}
-{{bars["specializations"]["spec_ids"][spec_id|int]}} | `{{bars["specializations"][spec_id]["array"]|length}}`
+{{bars["specializations"]["spec_ids"][spec_id|int]}} | `{{bars["specializations"][spec_id].get("array", [])|length + bars["specializations"][spec_id].get("by_key", {})|length}}`
 {% endif %}
 {% endfor %}
 

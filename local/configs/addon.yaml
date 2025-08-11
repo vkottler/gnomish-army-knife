@@ -14,6 +14,8 @@ bindings:
   - command: FOCUSTARGET
     key: PADDLEFT
     modifiers: [CTRL, SHIFT]
+  # ALT, SHIFT
+  # ALT, CTRL
 
   - command: TARGETNEARESTFRIENDPLAYER
     key: PADDDOWN
@@ -29,6 +31,8 @@ bindings:
   - command: TARGETPREVIOUSFRIENDPLAYER
     key: PADDDOWN
     modifiers: [CTRL, SHIFT]
+  # ALT, SHIFT
+  # ALT, CTRL
 
   - command: TARGETNEARESTENEMYPLAYER
     key: PADDUP
@@ -47,6 +51,9 @@ bindings:
   - command: TARGETLASTTARGET
     key: PADDUP
     modifiers: [ALT, SHIFT]
+  - command: MACRO fav
+    key: PADDUP
+    modifiers: [ALT, CTRL]
 
   - command: TARGETSCANENEMY
     key: PADDRIGHT
@@ -62,6 +69,12 @@ bindings:
   - command: ASSISTTARGET
     key: PADDRIGHT
     modifiers: [CTRL, SHIFT]
+  - command: MACRO yak
+    key: PADDRIGHT
+    modifiers: [ALT, SHIFT]
+  - command: MACRO ah
+    key: PADDRIGHT
+    modifiers: [ALT, CTRL]
 
   - command: FRIENDNAMEPLATES
     key: PADLSTICK
@@ -91,10 +104,11 @@ bindings:
 
   # FLIPCAMERAYAW - useless with stick camera imo
   # TOGGLEBATTLEFIELDMINIMAP - no need to control manually
-  - command: TOGGLESHEATH
+  # TOGGLEFPS, SCREENSHOT
+  - command: CENTERCAMERA
     key: PADLSTICK
     modifiers: [CTRL, SHIFT]
-  - command: CENTERCAMERA
+  - command: MACRO gc
     key: PADRSTICK
     modifiers: [CTRL, SHIFT]
 
@@ -104,6 +118,8 @@ bindings:
   - command: SCREENSHOT
     key: PADRSTICK
     modifiers: [ALT, SHIFT]
+
+  # ALT, CTRL
 
   - command: TARGETPARTYMEMBER1
     key: PADFORWARD
@@ -122,6 +138,7 @@ bindings:
   - command: TOGGLEGAK
     key: PADFORWARD
     modifiers: [ALT, SHIFT]
+  # ALT, CTRL
 
   - command: TOGGLEGAMEMENU
     key: PADPADDLE4
@@ -137,6 +154,8 @@ bindings:
   - command: VEHICLEEXIT
     key: PADPADDLE4
     modifiers: [CTRL, SHIFT]
+  # ALT, SHIFT
+  # ALT, CTRL
 
   - command: INTERACTTARGET
     key: PADPADDLE3
@@ -152,6 +171,8 @@ bindings:
   - command: EXTRAACTIONBUTTON1
     key: PADPADDLE3
     modifiers: [CTRL, SHIFT]
+  # ALT, SHIFT
+  # ALT, CTRL
 
   - command: JUMP
     key: PADPADDLE1
@@ -167,6 +188,8 @@ bindings:
   - command: MULTIACTIONBAR4BUTTON8
     key: PADPADDLE1
     modifiers: [CTRL, SHIFT]
+  # ALT, SHIFT
+  # ALT, CTRL
 
   - command: TOGGLEWORLDMAP
     key: PADBACK

@@ -1,92 +1,112 @@
 ---
 # 2
-array:
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Flash of Light
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Holy Shock
-
-  - name: harm
-    body: |-
-      #showtooltip
-      /cast [@anyenemy] Holy Shock
-
-  - name: help
-    body: |-
-      #showtooltip
-      /cast [@anyfriend] Holy Shock
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Holy Light
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Beacon of Light
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Cleanse
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Cleanse Toxins
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Barrier of Faith
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Word of Glory
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Lay on Hands
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Blessing of Protection
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Blessing of Freedom
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Blessing of Summer
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Blessing of Sanctuary
-
-  - name: self
+by_name:
+  sfr:
     body: |-
       #showtooltip
       /cast [@player] Final Reckoning
 
-  - name: self
+  sbop:
     body: |-
       #showtooltip
-      /cast [@player] Holy Bulwark
+      /cast [@player] Blessing of Protection
 
-  - name: self
+  swog:
+    body: |-
+      #showtooltip
+      /cast [@player] Word of Glory
+
+  sloh:
+    body: |-
+      #showtooltip
+      /cast [@player] Lay on Hands
+
+  sfol:
+    body: |-
+      #showtooltip
+      /cast [@player] Flash of Light
+
+  sbos:
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Sanctuary
+
+  sbow:
     body: |-
       #showtooltip
       /cast [@player] Blessing of Spellwarding
+
+  sbof:
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Freedom
+
+  sct:
+    body: |-
+      #showtooltip
+      /cast [@player] Cleanse Toxins
+
+  rbl:
+    body: |-
+      #showtooltip
+      /cast [known:Blinding Light] Blinding Light; Repentance
+
+  shs:
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Shock
+
+  ehs:
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Holy Shock
+
+  fhs:
+    body: |-
+      #showtooltip
+      /cast [@anyfriend] Holy Shock
+
+  shp:
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Prism
+
+  ehp:
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Holy Prism
+
+  fhp:
+    body: |-
+      #showtooltip
+      /cast [@anyfriend] Holy Prism
+
+  shl:
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Light
+
+  sbol:
+    body: |-
+      #showtooltip
+      /cast [@player] Beacon of Light
+
+  sc:
+    body: |-
+      #showtooltip
+      /cast [@player] Cleanse
+
+  sboi:
+    body: |-
+      #showtooltip
+      /cast [@player] Barrier of Faith
+
+  sbom:
+    body: |-
+      #showtooltip
+      /cast [@player] Blessing of Summer
+
+  shb:
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Bulwark

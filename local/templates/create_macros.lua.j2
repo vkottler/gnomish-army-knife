@@ -1,19 +1,21 @@
 function GakCreateGlobalMacros()
-{% for macro in macros["global"]["array"] %}
-	CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
+{% for name, macro in macros["global"]["by_name"].items() %}
+	CreateMacro("{{name}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]])
 {% endfor %}
-	print("Created {{macros["global"]["array"]|length}} global macros.")
+	print("Created {{macros["global"]["by_name"]|length}} global macros.")
 end
 
 local function createFirstRacialMacro()
-		CreateMacro("1", "inv_misc_questionmark", [[
+	CreateMacro("rac1", "inv_misc_questionmark", [[
 /run print("no first racial")]], true)
 end
 
 local function createSecondRacialMacro()
-		CreateMacro("2", "inv_misc_questionmark", [[
-/run print("no second racial")]], true)
+	-- May as well assume Recuperate.
+	CreateMacro("rac2", "inv_misc_questionmark", [[
+#showtooltip
+/cast Recuperate]], true)
 end
 
 function GakCreateCharacterMacros()
@@ -27,13 +29,13 @@ function GakCreateCharacterMacros()
 		createFirstRacialMacro()
 		createSecondRacialMacro()
 {% elif abilities|length == 1 %}
-		CreateMacro("1", "inv_misc_questionmark", [[
+		CreateMacro("rac1", "inv_misc_questionmark", [[
 #showtooltip
 /cast {{abilities[0]}}]], true)
 		createSecondRacialMacro()
 {% else %}
 {% for ability in abilities %}
-		CreateMacro("{{loop.index}}", "inv_misc_questionmark", [[
+		CreateMacro("rac{{loop.index}}", "inv_misc_questionmark", [[
 #showtooltip
 /cast {{ability}}]], true)
 {% endfor %}
@@ -53,11 +55,15 @@ function GakCreateCharacterMacros()
 {% for class_str, data in macros["classes"].items()|sort(attribute='0') %}
 
 	if class_str == "{{class_str}}" then
-{% for macro in data["array"] %}
+{% for macro in data.get("array", []) %}
 		CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]], true)
 {% endfor %}
-		print("Created {{data["array"]|length}}", select(1, UnitClass("player")), "macros.")
+{% for name, macro in data.get("by_name", {}).items() %}
+		CreateMacro("{{name}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
+{{macro["body"]}}]], true)
+{% endfor %}
+		print("Created {{data.get("array", [])|length + data.get("by_name", {})|length}}", select(1, UnitClass("player")), "macros.")
 	end
 {% endfor %}
 end
