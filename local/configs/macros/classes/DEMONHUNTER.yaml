@@ -1,28 +1,27 @@
 ---
 # 12
-by_name: {}
-array:
-  - name: self
+by_name:
+  sm:
     body: |-
       #showtooltip
       /cast [@player] Metamorphosis
 
-  - name: self
+  ssom:
     body: |-
       #showtooltip
       /cast [@player] Sigil of Misery
 
-  - name: self
+  ssof:
     body: |-
       #showtooltip
       /cast [@player] Sigil of Flame
 
-  - name: self
+  ssos:
     body: |-
       #showtooltip
       /cast [@player] Sigil of Spite
 
-  - name: badge
+  eb14:
     body: |-
       #showtooltip Eye Beam
       /use 14

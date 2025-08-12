@@ -15,34 +15,21 @@ by_key:
   P2_R1: s "Tiger's Fury"
   L1_P2_R1: s "Feral Frenzy"
 
-  L2_L1_R2: ""
   L1_R2_1: s "Wrath"
   L1_R2_2: s "Wrath"
   L1_R2_B: s "Ironfur"
   L1_R2_C: s "Rip"
-  L1_R2_M: ""
   R2_1: s "Mangle"
   R2_2: s "Mangle"
   R2_B: s "Strength of the Wild"
   R2_C: s "Ferocious Bite"
-  R2_M: ""
   P2_R2: s "Maim"
   L1_P2_R2: s "Mighty Bash"
 
-  L2_L1_S: ""
   L2_S: s "Berserk"
-  L1_S_1: ""
-  L1_S_2: ""
   L1_S_C: s "Primal Wrath"
-  L1_S_M: ""
-  S_1: ""
-  S_2: ""
   S_C: s "Swipe"
-  S_M: ""
-  L2_P2_S: ""
-  L1_P2_S: ""
 
-  L2_X: ""
   L1_X_1: m srj
   L1_X_2: s "Rejuvenation"
   L1_X_B: m srj
@@ -54,7 +41,6 @@ by_key:
   X_C: m srg
   X_M: m srg
   P2_X: s "Survival Instincts"
-  L2_P2_X: ""
 
   L1_T_1: m src
   L1_T_2: s "Remove Corruption"
@@ -62,9 +48,5 @@ by_key:
   L1_T_C: m src
   L1_T_M: m src
 
-  L1_C_1: ""
-  L1_C_2: ""
   L1_C_B: s "Thrash"
   L1_C_C: s "Thrash"
-  L1_C_M: ""
-  L2_P2_C: ""

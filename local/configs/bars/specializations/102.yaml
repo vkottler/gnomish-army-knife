@@ -29,19 +29,10 @@ by_key:
   P2_R2: s "Warrior of Elune"
   L1_P2_R2: s "Mighty Bash"
 
-  L2_L1_S: ""
   L2_S: s "Celestial Alignment"
-  L1_S_1: ""
-  L1_S_2: ""
   L1_S_C: s "Rake"
-  L1_S_M: ""
-  S_1: ""
-  S_2: ""
   S_C: s "Ferocious Bite"
-  S_M: ""
   P2_S: m beam
-  L2_P2_S: ""
-  L1_P2_S: ""
 
   L2_X: s "Faerie Swarm"
   L1_X_1: m srj
@@ -54,8 +45,6 @@ by_key:
   X_B: m srg
   X_C: m srg
   X_M: m srg
-  P2_X: ""
-  L2_P2_X: ""
 
   L1_T_1: m src
   L1_T_2: s "Remove Corruption"
@@ -63,9 +52,4 @@ by_key:
   L1_T_C: m src
   L1_T_M: m src
 
-  L1_C_1: ""
-  L1_C_2: ""
   L1_C_B: s "Ironfur"
-  L1_C_C: ""
-  L1_C_M: ""
-  L2_P2_C: ""

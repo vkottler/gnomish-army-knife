@@ -1,112 +1,38 @@
 ---
 # Devastation Evoker
-array:
-  # PADRSHOULDER column
-  # - [67, ""]
-  - [61, C_Spell.PickupSpell(357208)]  # Fire Breath
+by_key:
+  L2_R2: m slf
 
-  - [7, PickupMacro(120 + 3)]  # living flame harm
-  - [19, PickupMacro(120 + 4)]  # bar 2, living flame help
+  L2_R1: s 357208  # Fire Breath
 
-  - [1, C_Spell.PickupSpell("Azure Strike")]
-  - [13, C_Spell.PickupSpell("Azure Strike")]  # bar 2
+  L1_R1_1: s "Living Flame"
+  L1_R1_2: m flf
 
-  - [55, C_Spell.PickupSpell("Shattering Star")]
-  # - [49, ""]
-  - [25, C_Spell.PickupSpell("Dragonrage")]
+  R1_1: s "Azure Strike"
+  R1_2: s "Azure Strike"
 
-  # PADRTRIGGER column
-  # - [68, ""]
-  - [62, C_Spell.PickupSpell(357210)]  # Deep Breath
+  P2_R1: s "Shattering Star"
+  L1_P2_R1: s "Dragonrage"
 
-  - [8, C_Spell.PickupSpell("Pyre")]
-  - [20, C_Spell.PickupSpell("Pyre")]  # bar 2
+  L2_P2_R2: s 357210  # Deep Breath
 
-  - [2, C_Spell.PickupSpell("Disintegrate")]
-  - [14, C_Spell.PickupSpell("Disintegrate")]  # bar 2
+  L1_R2_1: s "Pyre"
+  L1_R2_2: s "Pyre"
 
-  - [56, C_Spell.PickupSpell(359073)]  # Eternity Surge
-  # - [50, ""]
-  # - [26, ""]
+  R2_1: s "Disintegrate"
+  R2_2: s "Disintegrate"
 
-  # PAD3 column
-  # - [69, ""]
-  # - [63, ""]
+  P2_R2: s 359073  # Eternity Surge
 
-  - [9, PickupMacro(120 + 9)]
-  - [21, C_Spell.PickupSpell("Emerald Blossom")]  # bar 2
+  L2_S: s "Unravel"
 
-  - [3, PickupMacro(120 + 11)]
-  - [15, C_Spell.PickupSpell("Expunge")]  # bar 2
+  L1_S_1: m seb
+  L1_S_2: s "Emerald Blossom"
 
-  # - [57, ""]
-  # - [51, ""]
-  # - [27, ""]
+  S_1: m sx
+  S_2: s "Expunge"
 
-  # PAD1 column
-  # - [70, ""]
-  # - [64, ""]
+  X_1: m sve
+  X_2: s "Verdant Embrace"
 
-  # - [10, ""]
-  # - [22, ""]  # bar 2
-
-  - [4, PickupMacro(120 + 5)]  # living flame self
-  - [16, C_Spell.PickupSpell("Living Flame")]  # bar 2
-
-  - [58, ""]
-  # - [52, ""]
-  # - [28, ""]
-
-  # PAD4 column
-  # - [71, ""]
-  - [65, ""]
-
-  - [11, PickupMacro(120 + 8)]
-  - [23, C_Spell.PickupSpell("Verdant Embrace")]  # bar 2
-
-  # - [5, ""]
-  # - [17, ""]  # bar 2
-
-  # - [59, ""]
-  # - [53, ""]
-  # - [29, ""]
-
-  # PAD2 column
-  # - [72, ""]
-  # - [66, ""]
-
-  - [12, ""]
-  - [24, ""]  # bar 2
-
-  # - [6, ""]
-  # - [18, ""]  # bar 2
-
-  - [60, ""]
-  # - [54, ""]
-  # - [30, ""]
-
-  # paddles (left)
-  - [43, ""]
-  - [37, ""]
-  - [31, ""]
-  # paddles (right)
-  # - [44, ""]
-  # - [38, ""]
-  # - [32, ""]
-
-  # d-pad (left)
-  # - [45, ""]
-  # - [39, ""]
-  # - [33, ""]
-  # d-pad (down)
-  # - [46, ""]
-  # - [40, ""]
-  # - [34, ""]
-  # d-pad (up)
-  # - [47, ""]
-  # - [41, ""]
-  # - [35, ""]
-  # d-pad (right)
-  # - [48, ""]
-  # - [42, ""]
-  # - [36, ""]
+  P2_T: s "Firestorm"

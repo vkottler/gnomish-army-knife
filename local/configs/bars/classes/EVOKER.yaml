@@ -1,42 +1,42 @@
 ---
-array:
-  # PADRSHOULDER column
-  - [67, C_Spell.PickupSpell("Quell")]
-  - [49, C_Spell.PickupSpell("Sleep Walk")]
+by_key:
+  L2_L1_R1: s "Quell"
+  L2_P2_R1: s "Sleep Walk"
 
-  # PADRTRIGGER column
-  - [68, C_Spell.PickupSpell("Landslide")]
-  - [50, C_Spell.PickupSpell("Nullifying Shroud")]
-  - [26, C_Spell.PickupSpell("Tip the Scales")]
+  L2_L1_R2: s "Landslide"
+  L2_P2_R2: s "Deep Breath"
+  L1_P2_R2: s "Oppressing Roar"
 
-  # PAD3 column
-  - [63, PickupMacro(120 + 4)]  # living flame help
-  - [57, PickupMacro(120 + 3)]  # living flame harm
-  - [27, C_Spell.PickupSpell("Fury of the Aspects")]
+  L1_P2_X: s "Fury of the Aspects"
 
-  # PAD1 column
-  - [64, C_Spell.PickupSpell("Oppressing Roar")]
+  L1_X_1: m scf
+  L1_X_2: s "Cauterizing Flame"
 
-  - [10, PickupMacro(120 + 12)]
-  - [22, C_Spell.PickupSpell("Cauterizing Flame")]  # bar 2
+  P2_S: s "Chrono Loop"
 
-  # PAD4 column
-  - [5, C_Spell.PickupSpell("Renewing Blaze")]
-  - [17, C_Spell.PickupSpell("Renewing Blaze")]  # bar 2
-  - [59, C_Spell.PickupSpell("Tail Swipe")]
+  P2_X: s "Tip the Scales"
 
-  # PAD2 column
-  - [66, C_Spell.PickupSpell("Zephyr")]
+  L1_T_1: m sts
+  L1_T_2: s "Time Stop"
 
-  - [6, C_Spell.PickupSpell("Obsidian Scales")]
-  - [18, C_Spell.PickupSpell("Obsidian Scales")]  # bar 2
+  T_1: s "Renewing Blaze"
+  T_2: s "Renewing Blaze"
 
-  # paddles (right)
-  - [44, C_Spell.PickupSpell("Time Spiral")]
-  - [38, C_Spell.PickupSpell("Rescue")]
-  - [32, C_Spell.PickupSpell("Hover")]
+  L1_P2_T: s "Source of Magic"
 
-  # d-pad (down)
-  - [46, C_Spell.PickupSpell("Blessing of the Bronze")]
-  # d-pad (up)
-  - [47, C_Spell.PickupSpell("Return")]
+  C_1: s "Obsidian Scales"
+  C_2: s "Obsidian Scales"
+
+  P2_C: s "Tail Swipe"
+
+  L1_P2_C: s "Visage"
+
+  L2_L1_P1: s "Time Spiral"
+  L2_P1: s "Rescue"
+  L1_P1: s "Hover"
+
+  L2_P3: s "Swoop Up"
+  L1_P3: s "Zephyr"
+
+  P2_D: s "Blessing of the Bronze"
+  P2_U: s "Return"

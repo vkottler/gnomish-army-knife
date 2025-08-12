@@ -1,63 +1,67 @@
 ---
 # 13
-by_name: {}
-array:
-  - name: self
+by_name:
+  slf:
     body: |-
       #showtooltip
       /cast [@player] Living Flame
 
-  - name: harm
+  elf:
     body: |-
       #showtooltip
       /cast [@anyenemy] Living Flame
 
-  - name: help
+  flf:
     body: |-
       #showtooltip
       /cast [@anyfriend] Living Flame
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Echo
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Reversion
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Verdant Embrace
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Emerald Blossom
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Naturalize
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Expunge
-
-  - name: self
+  scf:
     body: |-
       #showtooltip
       /cast [@player] Cauterizing Flame
 
-  - name: self
+  std:
+    body: |-
+      #showtooltip
+      /cast [@player] Time Dilation
+
+  ssb:
     body: |-
       #showtooltip
       /cast [@player] Spiritbloom
 
-  - name: self
+  sn:
     body: |-
       #showtooltip
-      /cast [@player] Time Dilation
+      /cast [@player] Naturalize
+
+  seb:
+    body: |-
+      #showtooltip
+      /cast [@player] Emerald Blossom
+
+  sve:
+    body: |-
+      #showtooltip
+      /cast [@player] Verdant Embrace
+
+  sr:
+    body: |-
+      #showtooltip
+      /cast [@player] Reversion
+
+  se:
+    body: |-
+      #showtooltip
+      /cast [@player] Echo
+
+  sx:
+    body: |-
+      #showtooltip
+      /cast [@player] Expunge
+
+  sts:
+    body: |-
+      #showtooltip
+      /cast [@player] Time Stop
