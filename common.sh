@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -e
 
 # beta, classic, classic_era, retail
@@ -16,7 +18,10 @@ test "$BASE"
 
 audit_drive() {
 	if ! [ -f "$BASE/stub.txt" ]; then
-		~/scripts/mount_network_drives.sh
+		pushd ~/scripts
+		git pull
+		./mount_network_drives.sh
+		popd
 	fi
 	set -x
 	test -f "$BASE/stub.txt"

@@ -4,15 +4,14 @@ source common.sh
 
 audit_drive
 
-DEST=$BASE/rsync/wow
-SRC="$HOME/wow"
+SRC=$BASE/rsync/wow
+DEST="$HOME/wow"
 
 set -x
 
-test -L "$SRC"
+test -L "$DEST"
 
 for STUB in "$ADDONS" "$WTF"; do
-	mkdir -p "$DEST/$STUB"
 	time rsync --del -r "$SRC/$STUB/" "$DEST/$STUB/"
 done
 
