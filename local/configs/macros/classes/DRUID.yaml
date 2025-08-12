@@ -111,11 +111,13 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Ancient of Lore
+      /cast Nature's Vigil
 
   sinv:
     body: |-
       #showtooltip
       /cast [@player] Innervate
+      /cast Nature's Vigil
 
   srj:
     body: |-
@@ -141,6 +143,7 @@ by_name:
     body: |-
       #showtooltip
       /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
+      /cast Nature's Vigil
 
   ffsb:
     body: |-
