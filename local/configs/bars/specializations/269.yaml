@@ -1,112 +1,39 @@
 ---
 # Windwalker Monk
-array:
-  # PADRSHOULDER column
-  # - [67, ""]
-  - [61, C_Spell.PickupSpell("Whirling Dragon Punch")]
+by_key:
+  L2_R1: s "Whirling Dragon Punch"
+  P2_R1: s "Flying Serpent Kick"
+  L1_R1_1: s "Fists of Fury"
+  L1_R1_2: s "Fists of Fury"
+  R1_1: s "Tiger Palm"
+  R1_2: s "Tiger Palm"
+  L1_P2_R1: s "Storm, Earth, and Fire"
 
-  - [7, C_Spell.PickupSpell("Fists of Fury")]
-  - [19, C_Spell.PickupSpell("Fists of Fury")]  # bar 2
+  L2_L1_R2: s "Clash"
+  L2_R2: s "Jadefire Stomp"
+  L1_R2_1: s "Blackout Kick"
+  L1_R2_2: s "Blackout Kick"
+  R2_1: s "Rising Sun Kick"
+  R2_2: s "Rising Sun Kick"
 
-  - [1, C_Spell.PickupSpell("Tiger Palm")]
-  - [13, C_Spell.PickupSpell("Tiger Palm")]  # bar 2
+  L1_X_1: m sv
+  L1_X_2: s "Vivify"
 
-  - [55, C_Spell.PickupSpell("Flying Serpent Kick")]
-  # - [49, ""]
-  - [25, 'C_Spell.PickupSpell("Storm, Earth, and Fire")']
+  L2_S: s "Invoke Xuen, the White Tiger"
+  S_1: s "Spinning Crane Kick"
+  S_2: s "Spinning Crane Kick"
+  P2_S: s "Strike of the Windlord"
 
-  # PADRTRIGGER column
-  - [68, C_Spell.PickupSpell("Clash")]
-  - [62, C_Spell.PickupSpell("Strike of the Windlord")]
+  L1_T_1: s "Touch of Karma"
+  L1_T_2: s "Touch of Karma"
+  T_1: s "Celestial Conduit"
+  T_2: s "Celestial Conduit"
 
-  - [8, C_Spell.PickupSpell("Blackout Kick")]
-  - [20, C_Spell.PickupSpell("Blackout Kick")]  # bar 2
+  L1_C_1: m ssm
+  L1_C_2: s "Soothing Mist"
 
-  - [2, C_Spell.PickupSpell("Rising Sun Kick")]
-  - [14, C_Spell.PickupSpell("Rising Sun Kick")]  # bar 2
+  C_1: m sd
+  C_2: s "Detox"
 
-  # - [56, ""]
-  # - [50, ""]
-  # - [26, ""]
-
-  # PAD3 column
-  # - [69, ""]
-  - [63, 'C_Spell.PickupSpell("Invoke Xuen, the White Tiger")']
-
-  - [9, PickupMacro(120 + 5)]
-  - [21, C_Spell.PickupSpell("Detox")]  # bar 2
-
-  - [3, PickupMacro(120 + 6)]
-  - [15, C_Spell.PickupSpell("Vivify")]  # bar 2
-
-  - [57, ""]
-  # - [51, ""]
-  # - [27, ""]
-
-  # PAD1 column
-  # - [70, ""]
-  # - [64, ""]
-
-  # - [10, ""]
-  # - [22, ""]  # bar 2
-
-  # - [4, ""]
-  # - [16, ""]  # bar 2
-
-  # - [58, ""]
-  # - [52, ""]
-  # - [28, ""]
-
-  # PAD4 column
-  # - [71, ""]
-  # - [65, ""]
-
-  # - [11, ""]
-  # - [23, ""]  # bar 2
-
-  # - [5, ""]
-  # - [17, ""]  # bar 2
-
-  - [59, ""]
-  # - [53, ""]
-  # - [29, ""]
-
-  # PAD2 column
-  # - [72, ""]
-  - [66, ""]
-
-  - [12, C_Spell.PickupSpell("Touch of Karma")]
-  - [24, C_Spell.PickupSpell("Touch of Karma")]  # bar 2
-
-  # - [6, ""]
-  # - [18, ""]  # bar 2
-
-  - [60, ""]
-  # - [54, ""]
-  # - [30, ""]
-
-  # paddles (left)
-  - [43, ""]
-  - [37, ""]
-  - [31, ""]
-  # paddles (right)
-  - [44, ""]
-  # - [38, ""]
-  - [32, C_Spell.PickupSpell("Roll")]
-
-  # d-pad (left)
-  # - [45, ""]
-  # - [39, ""]
-  # - [33, ""]
-  # d-pad (down)
-  - [46, ""]
-  # - [40, ""]
-  # - [34, ""]
-  # d-pad (up)
-  # - [47, ""]
-  # - [41, ""]
-  # - [35, ""]
-  # d-pad (right)
-  # - [48, ""]
-  # - [42, ""]
-  # - [36, ""]
+  L2_P3: s "Tigereye Brew"
+  L1_P3: s "Grapple Weapon"

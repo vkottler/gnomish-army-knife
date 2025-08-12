@@ -38,9 +38,9 @@ function GakSetGlobalActions()
 
 {% for key, bind in bars["global"]["by_key"].items() %}
 {% if bind %}
-	-- {{key}}
 	{{pickup_action(bind)}}
 	if GetCursorInfo() then
+		-- {{key}}
 		{{place_action(key, 2)}}
 		global_bind_count = global_bind_count + 1
 	else
@@ -61,9 +61,9 @@ function GakSetClassActions()
 	if class_str == "{{class_str}}" then
 {% for bind in data.get("array", []) %}
 {% if bind[1] %}
-		-- {{bind[0]}}
 		{{pickup_action(bind[1])}}
 		if GetCursorInfo() then
+			-- {{bind[0]}}
 			{{place_action(bind[0], 3)}}
 			class_bind_count = class_bind_count + 1
 		else
@@ -74,9 +74,9 @@ function GakSetClassActions()
 {% endfor %}
 {% for key, bind in data.get("by_key", {}).items() %}
 {% if bind %}
-		-- {{key}}
 		{{pickup_action(bind)}}
 		if GetCursorInfo() then
+			-- {{key}}
 			{{place_action(key, 3)}}
 			class_bind_count = class_bind_count + 1
 		else
@@ -102,9 +102,9 @@ function GakSetSpecializationActions()
 	if id == {{id}} then
 {% for bind in data.get("array", []) %}
 {% if bind[1] %}
-		-- {{bind[0]}}
 		{{pickup_action(bind[1])}}
 		if GetCursorInfo() then
+			-- {{bind[0]}}
 			{{place_action(bind[0], 3)}}
 			spec_bind_count = spec_bind_count + 1
 		else
@@ -115,14 +115,14 @@ function GakSetSpecializationActions()
 {% endfor %}
 {% for key, bind in data.get("by_key", {}).items() %}
 {% if bind %}
-		-- {{key}}
 		{{pickup_action(bind)}}
 		if GetCursorInfo() then
+			-- {{key}}
 			{{place_action(key, 3)}}
 			spec_bind_count = spec_bind_count + 1
 		else
 			print("(spec) Couldn't bind slot {{key}}:", [[
-{{bind[1]}}]])
+{{bind}}]])
 		end
 {% endif %}
 {% endfor %}
@@ -136,9 +136,25 @@ end
 function GakSetRoleActions()
 	local spec_info = {GetSpecializationInfo(GetSpecialization())}
 	local role = spec_info[5]
+	local role_bind_count = 0
+{% for role, role_data in bars["roles"].items() %}
 
-	-- Not implemented yet.
-	print("Placed 0 " .. role .. " actions.")
+	if role == "{{role}}" then
+{% for key, bind in role_data.get("by_key", {}).items() %}
+		{{pickup_action(bind)}}
+		if GetCursorInfo() then
+			-- {{key}}
+			{{place_action(key, 3)}}
+			role_bind_count = role_bind_count + 1
+		else
+			print("(role) Couldn't bind slot {{key}}:", [[
+{{bind[1]}}]])
+		end
+{% endfor %}
+	end
+{% endfor %}
+
+	print("Placed " .. role_bind_count .. " " .. role .. " actions.")
 end
 
 function GakSetActionBars()
@@ -154,7 +170,7 @@ function GakSetActionBars()
 
 	-- Set all binds.
 	GakSetGlobalActions()
+	GakSetRoleActions()
 	GakSetClassActions()
 	GakSetSpecializationActions()
-	GakSetRoleActions()
 end

@@ -1,67 +1,82 @@
 ---
 # 10
-array:
-  - name: self
+by_name:
+  rop:
     body: |-
       #showtooltip
-      /cast [@player] Soothing Mist
+      /cast [known:Ring of Peace] Ring of Peace; Song of Chi-Ji
 
-  - name: self
+  srop:
     body: |-
       #showtooltip
-      /cast [@player] Enveloping Mist
+      /cast [@player,known:Ring of Peace] Ring of Peace; Song of Chi-Ji
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Detox
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Vivify
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Ring of Peace
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Summon Jade Serpent Statue
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Renewing Mist
-
-  - name: self
+  stl:
     body: |-
       #showtooltip
       /cast [@player] Tiger's Lust
 
-  - name: self
+  sd:
     body: |-
       #showtooltip
-      /cast [@player] Life Cocoon
+      /cast [@player] Detox
 
-  - name: self
+  sv:
+    body: |-
+      #showtooltip
+      /cast [@player] Vivify
+
+  ssm:
+    body: |-
+      #showtooltip
+      /cast [@player] Soothing Mist
+
+  szs:
     body: |-
       #showtooltip
       /cast [@player] Zen Spheres
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Sheilun's Gift
-
-  - name: harm
+  ezs:
     body: |-
       #showtooltip
       /cast [@anyenemy] Zen Spheres
 
-  - name: help
+  fzs:
     body: |-
       #showtooltip
       /cast [@anyfriend] Zen Spheres
+
+  sem:
+    body: |-
+      #showtooltip
+      /cast [@player] Enveloping Mist
+
+  srm:
+    body: |-
+      #showtooltip
+      /cast [@player] Renewing Mist
+
+  sjss:
+    body: |-
+      #showtooltip
+      /cast [@player] Summon Jade Serpent Statue
+
+  shs:
+    body: |-
+      #showtooltip
+      /cast [@player] Healing Sphere
+
+  slc:
+    body: |-
+      #showtooltip
+      /cast [@player] Life Cocoon
+
+  ssg:
+    body: |-
+      #showtooltip
+      /cast [@player] Sheilun's Gift
+
+  rev:
+    body: |-
+      #showtooltip
+      /cast [known:Revival] Revival; Restoral
