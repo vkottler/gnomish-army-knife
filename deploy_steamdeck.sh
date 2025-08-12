@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# beta, classic, classic_era, retail
-CLIENT=retail
-
-ADDONS=_${CLIENT}_/Interface/AddOns
+source common.sh
 
 DEST=steamdeck
 # DEST="192.168.1.85"
