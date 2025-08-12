@@ -36,7 +36,7 @@ end
 function GakSetGlobalActions()
 	local global_bind_count = 0
 
-{% for key, bind in bars["global"]["by_key"].items() %}
+{% for key, bind in bars["global"]["by_key"].items()|sort(attribute='0') %}
 {% if bind %}
 	{{pickup_action(bind)}}
 	if GetCursorInfo() then
@@ -72,7 +72,7 @@ function GakSetClassActions()
 		end
 {% endif %}
 {% endfor %}
-{% for key, bind in data.get("by_key", {}).items() %}
+{% for key, bind in data.get("by_key", {}).items()|sort(attribute='0') %}
 {% if bind %}
 		{{pickup_action(bind)}}
 		if GetCursorInfo() then
@@ -113,7 +113,7 @@ function GakSetSpecializationActions()
 		end
 {% endif %}
 {% endfor %}
-{% for key, bind in data.get("by_key", {}).items() %}
+{% for key, bind in data.get("by_key", {}).items()|sort(attribute='0') %}
 {% if bind %}
 		{{pickup_action(bind)}}
 		if GetCursorInfo() then
@@ -140,7 +140,7 @@ function GakSetRoleActions()
 {% for role, role_data in bars["roles"].items() %}
 
 	if role == "{{role}}" then
-{% for key, bind in role_data.get("by_key", {}).items() %}
+{% for key, bind in role_data.get("by_key", {}).items()|sort(attribute='0') %}
 		{{pickup_action(bind)}}
 		if GetCursorInfo() then
 			-- {{key}}

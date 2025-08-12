@@ -1,2 +1,62 @@
 ---
-array: []
+by_key:
+  L2_L1_R1: s "Kick"
+
+  P2_R1: s "Kidney Shot"
+
+  L1_P2_R1: s "Shiv"
+
+  L2_L1_R2: s 1725  # Distract
+
+  P2_R2: s "Cheap Shot"
+
+  L2_P2_R1: s "Gouge"
+  L2_P2_R2: s "Sap"
+  L1_P2_R2: s "Blind"
+
+  L1_P2_X: s "Death from Above"
+
+  L2_T: s "Thistle Tea"
+
+  P2_T: s "Smoke Bomb"
+
+  L2_P2_X: s "Detection"
+
+  L2_X: m s
+
+  L1_X_1: s 1784  # Stealth
+  L1_X_2: s 1784
+  L1_X_C: s "Pick Pocket"
+
+  X_1: s "Crimson Vial"
+  X_2: s "Crimson Vial"
+  X_C: s "Crimson Vial"
+
+  P2_X: s "Vanish"
+
+  L1_T_1: s "Cloak of Shadows"
+  L1_T_2: s "Cloak of Shadows"
+  L1_T_C: s "Cloak of Shadows"
+
+  T_1: s "Evasion"
+  T_2: s "Evasion"
+  T_C: s "Evasion"
+
+  L2_C: s "Cold Blood"
+
+  C_1: s "Slice and Dice"
+  C_2: s "Slice and Dice"
+  C_C: s "Slice and Dice"
+
+  P2_P3: s "Shroud of Concealment"
+
+  L1_P3: s "Dismantle"
+
+  L2_P1: s "Feint"
+  L1_P1: s "Sprint"
+
+  P2_D: s "Wound Poison"
+  P2_U: s "Crippling Poison"
+
+  L1_P2_T: s "Instant Poison"
+  L1_P2_C: m np

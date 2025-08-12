@@ -1,5 +1,5 @@
 function GakCreateGlobalMacros()
-{% for name, macro in macros["global"]["by_name"].items() %}
+{% for name, macro in macros["global"]["by_name"].items()|sort(attribute='0') %}
 	CreateMacro("{{name}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]])
 {% endfor %}
@@ -59,7 +59,7 @@ function GakCreateCharacterMacros()
 		CreateMacro("{{macro["name"]}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]], true)
 {% endfor %}
-{% for name, macro in data.get("by_name", {}).items() %}
+{% for name, macro in data.get("by_name", {}).items()|sort(attribute='0') %}
 		CreateMacro("{{name}}", "{{macro.get("icon", "inv_misc_questionmark")}}", [[
 {{macro["body"]}}]], true)
 {% endfor %}

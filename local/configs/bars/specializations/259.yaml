@@ -1,3 +1,44 @@
 ---
 # Assassination Rogue
-array: []
+by_key:
+
+  L2_R1: m ess
+
+  L1_R1_1: s "Garrote"
+  L1_R1_2: s "Garrote"
+  L1_R1_C: s "Garrote"
+
+  R1_1: s "Mutilate"
+  R1_2: s "Mutilate"
+  R1_C: s "Mutilate"
+
+  L2_R2: m fss
+
+  L1_R2_1: s "Rupture"
+  L1_R2_2: s "Rupture"
+  L1_R2_C: s "Rupture"
+
+  R2_1: s "Envenom"
+  R2_2: s "Envenom"
+  R2_C: s "Envenom"
+
+  L2_S: s "Deathmark"
+
+  L1_S_1: s "Crimson Tempest"
+  L1_S_2: s "Crimson Tempest"
+  L1_S_C: s "Crimson Tempest"
+
+  S_1: s "Fan of Knives"
+  S_2: s "Fan of Knives"
+  S_C: s "Fan of Knives"
+
+  L2_L1_P1: s "Poisoned Knife"
+
+  L1_C_1: s "Ambush"
+  L1_C_2: s "Ambush"
+  L1_C_C: s "Ambush"
+
+  P2_C: s "Kingsbane"
+
+  L2_P2_T: s "Deadly Poison"
+  L2_P2_C: s "Amplifying Poison"

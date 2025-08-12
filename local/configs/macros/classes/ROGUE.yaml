@@ -1,33 +1,32 @@
 ---
 # 4
-by_name: {}
-array:
-  - name: a1
+by_name:
+  a1:
     body: |-
       #showtooltip Shadowstep
       /cast [@arena1] Shadowstep
       /cast [@arena1] Kick
 
-  - name: a2
+  a2:
     body: |-
       #showtooltip Shadowstep
       /cast [@arena2] Shadowstep
       /cast [@arena2] Kick
 
-  - name: a3
+  a3:
     body: |-
       #showtooltip Shadowstep
       /cast [@arena3] Shadowstep
       /cast [@arena3] Kick
 
-  - name: s
+  s:
     body: |-
       #showtooltip Stealth
       /cancelaura [nocombat] Shadow Dance
       /stopattack
       /cast !Stealth
 
-  - name: ssap
+  ssap:
     body: |-
       #showtooltip Sap
       /cleartarget
@@ -35,12 +34,17 @@ array:
       /cast Sap
       /stopattack
 
-  - name: harm
+  ess:
     body: |-
       #showtooltip
       /cast [@anyenemy] Shadowstep
 
-  - name: help
+  fss:
     body: |-
       #showtooltip
       /cast [@anyfriend] Shadowstep
+
+  np:
+    body: |-
+      #showtooltip
+      /cast [known:Numbing Poison] Numbing Poison; Atrophic Poison
