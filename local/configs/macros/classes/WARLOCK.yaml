@@ -11,12 +11,6 @@ by_name:
       #showtooltip
       /cast [known:Mortal Coil] Mortal Coil; Howl of Terror
 
-  sbdg:
-    body: |-
-      #showtooltip Demonic Gateway
-      /cast Soulburn
-      /cast Demonic Gateway
-
   srof:
     body: |-
       #showtooltip

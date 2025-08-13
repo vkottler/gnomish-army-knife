@@ -48,6 +48,10 @@ by_key:
 
   L2_P2_X: s "Innervate"
 
+  S_1: s "Stellar Flare"
+  S_2: s "Stellar Flare"
+  S_M: s "Stellar Flare"
+
   L1_T_1: m src
   L1_T_2: s "Remove Corruption"
   L1_T_B: m src
