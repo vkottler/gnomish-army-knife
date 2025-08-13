@@ -26,11 +26,11 @@ by_key:
   R2_B: s "Wrath"
   R2_C: s "Wrath"
   R2_M: s "Wrath"
-  P2_R2: s "Warrior of Elune"
-  L1_P2_R2: s "Mighty Bash"
+  P2_R2: m dfnwe
+  L1_P2_R2: s "Convoke the Spirits"
 
   L2_S: s "Celestial Alignment"
-  L1_S_C: s "Rake"
+  L1_S_C: s "Rip"
   S_C: s "Ferocious Bite"
   P2_S: m beam
 
@@ -46,10 +46,13 @@ by_key:
   X_C: m srg
   X_M: m srg
 
+  L2_P2_X: s "Innervate"
+
   L1_T_1: m src
   L1_T_2: s "Remove Corruption"
   L1_T_B: m src
   L1_T_C: m src
   L1_T_M: m src
 
+  L1_C_C: s "Maim"
   L1_C_B: s "Ironfur"

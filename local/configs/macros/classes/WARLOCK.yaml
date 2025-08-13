@@ -1,6 +1,11 @@
 ---
 # 9
-by_name: {}
+by_name:
+  htmc:
+    body: |-
+      #showtooltip
+      /cast [known:Mortal Coil] Mortal Coil; Howl of Terror
+
 array:
   - name: soul
     body: |-

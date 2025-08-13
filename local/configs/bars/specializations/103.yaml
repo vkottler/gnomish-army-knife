@@ -24,7 +24,7 @@ by_key:
   R2_B: s "Strength of the Wild"
   R2_C: s "Ferocious Bite"
   P2_R2: s "Maim"
-  L1_P2_R2: s "Mighty Bash"
+  L1_P2_R2: s "Convoke the Spirits"
 
   L2_S: s "Berserk"
   L1_S_C: s "Primal Wrath"
@@ -42,11 +42,15 @@ by_key:
   X_M: m srg
   P2_X: s "Survival Instincts"
 
+  L2_P2_X: s "Innervate"
+
   L1_T_1: m src
   L1_T_2: s "Remove Corruption"
   L1_T_B: m src
   L1_T_C: m src
   L1_T_M: m src
+
+  T_B: s "Swipe"
 
   L1_C_B: s "Thrash"
   L1_C_C: s "Thrash"

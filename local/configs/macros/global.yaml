@@ -87,3 +87,13 @@ by_name:
     icon: inv_brontsaurusmountspecial
     body: |-
       /use Trader's Gilded Brutosaur
+
+  dfnwe:
+    body: |-
+      #showtooltip
+      /cast [known:Force of Nature] Force of Nature; Warrior of Elune
+
+  dirmb:
+    body: |-
+      #showtooltip
+      /cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar

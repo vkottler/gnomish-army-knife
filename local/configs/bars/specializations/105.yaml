@@ -48,10 +48,12 @@ by_key:
 
   L1_T_1: m sog
   L1_T_2: s "Overgrowth"
-  L1_T_B: m sog
-  L1_T_C: m sog
+  L1_T_B: m sog  # Thrash
+  L1_T_C: m sog  # Thrash
 
-  L1_P2_T: s "Symbiotic Relationship"
+  T_B: s "Ironfur"
+
+  L2_P2_T: s "Symbiotic Relationship"
 
   L1_C_1: m sib
   L1_C_2: s "Ironbark"
