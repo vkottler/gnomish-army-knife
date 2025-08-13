@@ -1,75 +1,54 @@
 ---
 # 9
 by_name:
+  bbds:
+    body: |-
+      #showtooltip
+      /cast [known:Demonic Strength] Demonic Strength; Bilescourge Bombers
+
   htmc:
     body: |-
       #showtooltip
       /cast [known:Mortal Coil] Mortal Coil; Howl of Terror
 
-array:
-  - name: soul
-    body: |-
-      #showtooltip Demonic Circle: Teleport
-      /cast Soulburn
-      /cast Demonic Circle: Teleport
-
-  - name: soul
-    body: |-
-      #showtooltip Demonic Healthstone
-      /cast Soulburn
-      /use Demonic Healthstone
-      /use Healthstone
-
-  - name: soul
-    body: |-
-      #showtooltip Healthstone
-      /cast Soulburn
-      /use Healthstone
-      /use Demonic Healthstone
-
-  - name: soul
+  sbdg:
     body: |-
       #showtooltip Demonic Gateway
       /cast Soulburn
       /cast Demonic Gateway
 
-  - name: crit
-    body: |-
-      #showtooltip Amplify Curse
-      /cast Amplify Curse
-      /cast Curse of Weakness
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Shadowfury
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Soulstone
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Unending Breath
-
-  - name: self
+  srof:
     body: |-
       #showtooltip
       /cast [@player] Rain of Fire
 
-  - name: self
+  scfl:
+    body: |-
+      #showtooltip
+      /cast [@player] Call Fel Lord
+
+  sca:
+    body: |-
+      #showtooltip
+      /cast [@player] Cataclysm
+
+  inc:
+    body: |-
+      #showtooltip
+      /cast Incinerate
+
+  dhs:
+    body: |-
+      #showtooltip Demonic Healthstone
+      /use Demonic Healthstone
+      /use Healthstone
+
+  ssf:
     body: |-
       #showtooltip
       /cast [@player] Shadowfury
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Bane of Havoc
-
-  - name: self
+  ssi:
     body: |-
       #showtooltip
       /cast [@player] Summon Infernal

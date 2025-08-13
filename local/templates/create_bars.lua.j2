@@ -131,6 +131,31 @@ function GakSetSpecializationActions()
 {% endfor %}
 
 	print("Placed " .. spec_bind_count .. " " .. name .. " (" .. id .. ") actions.")
+
+	id = C_ClassTalents.GetActiveHeroTalentSpec()
+	spec_bind_count = 0
+{% for id, data in bars["specializations"]["hero"].items()|sort(attribute='0') %}
+{% if id|int != 0 %}
+
+	if id == {{id}} then
+{% for key, bind in data.get("by_key", {}).items()|sort(attribute='0') %}
+{% if bind %}
+		{{pickup_action(bind)}}
+		if GetCursorInfo() then
+			-- {{key}}
+			{{place_action(key, 3)}}
+			spec_bind_count = spec_bind_count + 1
+		else
+			print("(spec) Couldn't bind slot {{key}}:", [[
+{{bind}}]])
+		end
+{% endif %}
+{% endfor %}
+	end
+{% endif %}
+{% endfor %}
+
+	print("Placed " .. spec_bind_count .. " " .. id .. " (hero) actions.")
 end
 
 function GakSetRoleActions()

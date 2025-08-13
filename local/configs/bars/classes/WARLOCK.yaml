@@ -1,11 +1,70 @@
 ---
 by_key:
+  L2_L1_R1: s 119898  # "Command Demon"
+
+  # sane default
+  L2_R1: PickupPetSpell(19505)  # felhunter devour magic
+
   P2_R2: s "Curse of Exhaustion"
 
+  L2_L1_R2: s "Curse of Tongues"
+  L2_R2: m sbdg
+
   L2_P2_R2: m htmc
+  L1_P2_R2: s "Drain Life"
 
   L2_P2_R1: s "Fear"
+  L1_P2_R1: s "Soulburn"
 
+  L1_S_1: m ssf
+  L1_S_2: s "Shadowfury"
+
+  L2_P2_S: s "Shadowflame"
+
+  L1_X_1: s "Unending Resolve"
+  L1_X_2: s "Unending Resolve"
+  X_1: s "Dark Pact"
+  X_2: s "Dark Pact"
+
+  L2_L1_X: s "Soul Rip"
+
+  L2_X: s "Nether Ward"
+
+  P2_X: s "Health Funnel"
+
+  T_1: s "Curse of Weakness"
+  T_2: s "Curse of Weakness"
+
+  L2_T: s "Amplify Curse"
+
+  P2_T: s "Fel Domination"
+
+  L2_P2_X: s "Banish"
+  L1_P2_X: s "Bonds of Fel"
+
+  L2_P2_T: s "Summon Imp"
+  L1_P2_T: s "Summon Felhunter"
+
+  L2_C: "C_SpellBook.PickupSpellBookItem(2, 1)"  # Attack
+  P2_C: "C_SpellBook.PickupSpellBookItem(6, 1)"  # Follow
+
+  L2_P2_C: s "Summon Sayaad"
+  L1_P2_C: s "Summon Voidwalker"
+
+  P2_P3: "C_SpellBook.PickupSpellBookItem(4, 1)"  # Defensive
+  L2_P3: "C_SpellBook.PickupSpellBookItem(8, 1)"  # Passive
+  L1_P3: "C_SpellBook.PickupSpellBookItem(1, 1)"  # Assist
+
+  L2_L1_P1: s "Demonic Circle"
+  L2_P1: 's "Demonic Circle: Teleport"'
   L1_P1: s "Burning Rush"
 
+  L2_D: m dhs
+
   P2_D: s "Create Healthstone"
+  P2_U: s "Create Soulwell"
+
+  L2_L: s "Shadow Rift"
+
+  L2_R: s "Soulstone"
+  L1_R: s "Eye of Kilrogg"

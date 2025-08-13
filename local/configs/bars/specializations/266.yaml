@@ -1,3 +1,42 @@
 ---
 # Demonology Warlock
-array: []
+# set these with felguard out
+by_key:
+  L2_R1: s "Call Dreadstalkers"
+
+  L1_R1_1: s "Demonbolt"
+  L1_R1_2: s "Demonbolt"
+
+  R1_1: s "Shadow Bolt"
+  R1_2: s "Shadow Bolt"
+
+  P2_R1: s "Power Siphon"
+
+  L1_R2_1: s 264119  # Summon Vilefiend
+  L1_R2_2: s 264119
+
+  L2_S: m bbds
+
+  S_1: s "Implosion"
+  S_2: s "Implosion"
+
+  P2_S: s "Corruption"
+
+  R2_1: s "Hand of Gul'dan"
+  R2_2: s "Hand of Gul'dan"
+
+  L1_T_1: m scfl
+  L1_T_2: s "Call Fel Lord"
+
+  L1_C_1: s "Summon Demonic Tyrant"
+  L1_C_2: s "Summon Demonic Tyrant"
+
+  C_1: 's "Grimoire: Felguard"'
+  C_2: 's "Grimoire: Felguard"'
+
+  L1_P2_C: s "Summon Felguard"  # no need to summon other pets
+
+  P2_C: "C_SpellBook.PickupSpellBookItem(7, 1)"  # Follow
+
+  P2_P3: "C_SpellBook.PickupSpellBookItem(5, 1)"  # Defensive
+  L2_P3: "C_SpellBook.PickupSpellBookItem(10, 1)"  # Passive
