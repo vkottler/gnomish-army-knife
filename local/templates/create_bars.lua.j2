@@ -133,6 +133,9 @@ function GakSetSpecializationActions()
 	print("Placed " .. spec_bind_count .. " " .. name .. " (" .. id .. ") actions.")
 
 	id = C_ClassTalents.GetActiveHeroTalentSpec()
+	if not id then
+		return
+	end
 	spec_bind_count = 0
 {% for id, data in bars["specializations"]["hero"].items()|sort(attribute='0') %}
 {% if id|int != 0 %}
