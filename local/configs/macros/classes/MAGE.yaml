@@ -1,44 +1,43 @@
 ---
 # 8
-by_name: {}
-array:
-  - name: canc
-    body: |-
-      #showtooltip Ice Block
-      /cancelaura Ice Block
-      /cast Ice Block
-
-  - name: spam
-    body: |-
-      #showtooltip Fire Blast
-      /castsequence reset=0.5 Fire Blast, Languages
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Blizzard
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Ring of Fire
-
-  - name: self
+by_name:
+  sai:
     body: |-
       #showtooltip
       /cast [@player] Arcane Intellect
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Ring of Frost
-
-  - name: self
+  src:
     body: |-
       #showtooltip
       /cast [@player] Remove Curse
 
-  - name: self
+  sfs:
+    body: |-
+      #showtooltip
+      /cast [@player] Flamestrike
+
+  ssf:
     body: |-
       #showtooltip
       /cast [@player] Slow Fall
+
+  sb:
+    body: |-
+      #showtooltip
+      /cast [@player] Blizzard
+
+  srof:
+    body: |-
+      #showtooltip
+      /cast [@player] Ring of Frost
+
+  cat:
+    icon: spell_mage_altertime_active
+    body: |-
+      /cancelaura Alter Time
+
+  ibc:
+    body: |-
+      #showtooltip Ice Block
+      /cancelaura Ice Block
+      /cast Ice Block

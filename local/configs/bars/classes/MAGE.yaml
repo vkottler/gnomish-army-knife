@@ -1,2 +1,44 @@
 ---
-array: []
+by_key:
+  L2_L1_R1: s "Counterspell"
+  L2_R1: s "Spellsteal"
+  P2_R1: s "Cone of Cold"
+  L2_P2_R1: s "Polymorph"
+
+  L2_L1_R2: s "Ice Wall"
+  L2_P2_R2: s "Dragon's Breath"
+  L1_P2_R2: s "Shifting Power"
+  P2_R2: s "Slow"
+
+  L2_P2_S: s "Time Warp"
+
+  L1_S_1: m srof
+  L1_S_2: s "Ring of Frost"
+
+  L2_X: m cat
+  L1_X_1: s "Alter Time"
+  L1_X_2: s "Alter Time"
+  P2_X: s "Mirror Image"
+  L1_P2_X: s "Greater Invisibility"
+
+  L1_T_1: s "Frost Nova"
+  L1_T_2: s "Frost Nova"
+  T_1: s "Blast Wave"
+  T_2: s "Blast Wave"
+
+  L2_C: m ibc
+  L1_C_1: m ssf
+  L1_C_2: s "Slow Fall"
+  C_1: m src
+  C_2: s "Remove Curse"
+
+  P2_P3: s "Mass Barrier"
+  L2_P3: s "Mass Polymorph"
+  L1_P3: s "Arcane Explosion"
+
+  L2_L1_P1: s 389713  # "Displacement"
+  L2_P1: s "Ice Floes"
+  L1_P1: s "Blink"
+
+  P2_U: s "Conjure Refreshment"
+  P2_D: m sai

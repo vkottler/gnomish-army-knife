@@ -1,3 +1,25 @@
 ---
 # Fire Mage
-array: []
+by_key:
+  L1_R1_1: s "Fire Blast"
+  L1_R1_2: s "Fire Blast"
+  R1_1: s "Fireball"
+  R1_2: s "Fireball"
+  L1_P2_R1: s "Meteor"
+
+  L2_R2: s "Phoenix Flames"
+  L1_R2_1: m sfs
+  L1_R2_2: s "Flamestrike"
+  R2_1: s "Pyroblast"
+  R2_2: s "Pyroblast"
+  P2_R1: s "Scorch"
+
+  L2_S: s "Combustion"
+  S_1: s "Greater Pyroblast"
+  S_2: s "Greater Pyroblast"
+  P2_S: s "Frostbolt"
+
+  X_1: s "Blazing Barrier"
+  X_2: s "Blazing Barrier"
+
+  L2_T: s "Cone of Cold"
