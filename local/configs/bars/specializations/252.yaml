@@ -1,3 +1,35 @@
 ---
 # Unholy Death Knight
-array: []
+by_key:
+  L1_R1_1: s "Festering Strike"
+  L1_R1_2: s "Festering Strike"
+  R1_1: s "Outbreak"
+  R1_2: s "Outbreak"
+  P2_R1: s "Scourge Strike"
+  L1_P2_R1: s "Dark Transformation"
+
+  R2_1: s "Death Coil"
+  R2_2: s "Death Coil"
+  L1_P2_R2: s "Army of the Dead"
+
+  L2_S: s "Summon Gargoyle"
+  L1_S_1: s "Unholy Assault"
+  L1_S_2: s "Unholy Assault"
+  S_1: s "Epidemic"
+  S_2: s "Epidemic"
+  P2_S: s "Reanimation"
+
+  L1_T_1: "C_SpellBook.PickupSpellBookItem(8, 1)"  # Huddle
+  L1_T_2: "C_SpellBook.PickupSpellBookItem(8, 1)"  # Huddle
+
+  L1_C_1: "C_SpellBook.PickupSpellBookItem(7, 1)"  # Gnaw
+  L1_C_2: "C_SpellBook.PickupSpellBookItem(7, 1)"  # Gnaw
+  C_1: "C_SpellBook.PickupSpellBookItem(9, 1)"  # Leap
+  C_2: "C_SpellBook.PickupSpellBookItem(9, 1)"  # Leap
+
+  L2_C: "C_SpellBook.PickupSpellBookItem(2, 1)"  # Attack
+  P2_C: "C_SpellBook.PickupSpellBookItem(6, 1)"  # Follow
+
+  P2_P3: "C_SpellBook.PickupSpellBookItem(5, 1)"  # Defensive
+  L2_P3: "C_SpellBook.PickupSpellBookItem(11, 1)"  # Passive
+  L1_P3: "C_SpellBook.PickupSpellBookItem(1, 1)"  # Assist

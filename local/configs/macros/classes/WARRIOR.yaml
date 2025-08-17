@@ -1,7 +1,27 @@
 ---
 # 1
 by_name:
-  stance:
+  dsa:
     body: |-
       #showtooltip
       /cast [stance:1] Battle Stance; [stance:2] Defensive Stance
+
+  dsf:
+    body: |-
+      #showtooltip
+      /cast [stance:1] Berserker Stance; [stance:2] Defensive Stance
+
+  wtst:
+    body: |-
+      #showtooltip
+      /cast [known:Wrecking Throw] Wrecking Throw; Shattering Throw
+
+  bsr:
+    body: |-
+      #showtooltip
+      /cast [known:Bladestorm] Bladestorm; Ravager
+
+  bsbr:
+    body: |-
+      #showtooltip
+      /cast [known:Berserker Roar] Berserker Roar; [known:Berserker Shout] Berserker Shout; Berserker Rage

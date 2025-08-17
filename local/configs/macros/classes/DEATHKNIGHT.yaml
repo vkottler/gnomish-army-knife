@@ -1,28 +1,27 @@
 ---
 # 6
-by_name: {}
-array:
-  - name: pet
-    body: |-
-      #showtooltip
-      /cast [@pet] Death Coil
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Death Coil
-
-  - name: self
+by_name:
+  sdad:
     body: |-
       #showtooltip
       /cast [@player] Death and Decay
 
-  - name: self
+  sams:
     body: |-
       #showtooltip
       /cast [@player] Anti-Magic Shell
 
-  - name: self
+  samz:
     body: |-
       #showtooltip
       /cast [@player] Anti-Magic Zone
+
+  pdc:
+    body: |-
+      #showtooltip
+      /cast [@pet] Death Coil
+
+  sdc:
+    body: |-
+      #showtooltip
+      /cast [@player] Death Coil

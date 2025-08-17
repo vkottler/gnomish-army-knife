@@ -1,3 +1,20 @@
 ---
 # Frost Death Knight
-array: []
+by_key:
+  L1_R1_1: s "Howling Blast"
+  L1_R1_2: s "Howling Blast"
+  R1_1: s "Obliterate"
+  R1_2: s "Obliterate"
+  P2_R1: s "Glacial Advance"
+  L1_P2_R1: s "Pillar of Frost"
+
+  L2_S: s "Frostwyrm's Fury"
+  L1_S_1: s "Empower Rune Weapon"
+  L1_S_2: s "Empower Rune Weapon"
+  S_1: s "Frostscythe"
+  S_2: s "Frostscythe"
+  P2_S: s "Breath of Sindragosa"
+
+  R2_1: s "Frost Strike"
+  R2_2: s "Frost Strike"
+  L1_P2_R2: s "Reaper's Mark"

@@ -1,112 +1,25 @@
 ---
 # Fury Warrior
-array:
-  # PADRSHOULDER column
-  - [67, C_Spell.PickupSpell("Pummel")]
-  - [61, C_Spell.PickupSpell("Onslaught")]
+by_key:
+  L1_R1_1: s "Bloodthirst"
+  L1_R1_2: s "Bloodthirst"
+  R1_1: s "Raging Blow"
+  R1_2: s "Raging Blow"
+  P2_R1: s "Onslaught"
+  L1_P2_R1: s "Recklessness"
 
-  - [7, C_Spell.PickupSpell("Bloodthirst")]
-  - [19, C_Spell.PickupSpell("Bloodthirst")]  # bar 2
+  R2_1: s "Rampage"
+  R2_2: s "Rampage"
+  L1_P2_R2: s "Odyn's Fury"
 
-  - [1, C_Spell.PickupSpell("Raging Blow")]
-  - [13, C_Spell.PickupSpell("Raging Blow")]  # bar 2
+  X_1: s "Enraged Regeneration"
+  X_2: s "Enraged Regeneration"
 
-  - [55, C_Spell.PickupSpell("Charge")]
-  - [49, C_Spell.PickupSpell("Storm Bolt")]
-  - [25, C_Spell.PickupSpell("Impending Victory")]
+  C_1: s "Death Wish"
+  C_2: s "Death Wish"
 
-  # PADRTRIGGER column
-  - [68, C_Spell.PickupSpell("Spell Reflection")]
-  - [62, C_Spell.PickupSpell("Heroic Leap")]
+  L2_C: m dsf
 
-  - [8, C_Spell.PickupSpell(5308)]  # Execute
-  - [20, C_Spell.PickupSpell(5308)]  # bar 2
+  P2_S: m bsr
 
-  - [2, C_Spell.PickupSpell("Rampage")]
-  - [14, C_Spell.PickupSpell("Rampage")]  # bar 2
-
-  - [56, C_Spell.PickupSpell("Intervene")]
-  - [50, C_Spell.PickupSpell("Shockwave")]
-  - [26, C_Spell.PickupSpell("Death Wish")]
-
-  # PAD3 column
-  # - [69, ""]
-  - [63, C_Spell.PickupSpell("Recklessness")]
-
-  - [9, C_Spell.PickupSpell(227847)]  # Bladestorm
-  - [21, C_Spell.PickupSpell(227847)]  # bar 2
-
-  - [3, C_Spell.PickupSpell("Thunderous Roar")]
-  - [15, C_Spell.PickupSpell("Thunderous Roar")]  # bar 2
-
-  - [57, C_Spell.PickupSpell("Avatar")]
-  # - [51, ""]
-  # - [27, ""]
-
-  # PAD1 column
-  # - [70, ""]
-  # - [64, ""]
-
-  - [10, C_Spell.PickupSpell("Enraged Regeneration")]
-  - [22, C_Spell.PickupSpell("Enraged Regeneration")]  # bar 2
-
-  - [4, C_Spell.PickupSpell("Rallying Cry")]
-  - [16, C_Spell.PickupSpell("Rallying Cry")]  # bar 2
-
-  - [58, C_Spell.PickupSpell("Intimidating Shout")]
-  # - [52, ""]
-  # - [28, ""]
-
-  # PAD4 column
-  # - [71, ""]
-  # - [65, ""]
-
-  - [11, C_Spell.PickupSpell("Bitter Immunity")]
-  - [23, C_Spell.PickupSpell("Bitter Immunity")]  # bar 2
-
-  - [5, C_Spell.PickupSpell("Berserker Rage")]
-  - [17, C_Spell.PickupSpell("Berserker Rage")]  # bar 2
-
-  # - [59, ""]
-  # - [53, ""]
-  # - [29, ""]
-
-  # PAD2 column
-  # - [72, ""]
-  # - [66, ""]
-
-  - [12, C_Spell.PickupSpell("Slam")]
-  - [24, C_Spell.PickupSpell("Slam")]  # bar 2
-
-  - [6, C_Spell.PickupSpell("Whirlwind")]
-  - [18, C_Spell.PickupSpell("Whirlwind")]  # bar 2
-
-  # - [60, ""]
-  # - [54, ""]
-  - [30, C_Spell.PickupSpell("Taunt")]
-
-  # paddles (left)
-  # - [43, ""]
-  # - [37, ""]
-  # - [31, ""]
-  # paddles (right)
-  - [44, C_Spell.PickupSpell("Heroic Throw")]
-  - [38, C_Spell.PickupSpell("Piercing Howl")]
-  - [32, C_Spell.PickupSpell("Hamstring")]
-
-  # d-pad (left)
-  # - [45, ""]
-  # - [39, ""]
-  # - [33, ""]
-  # d-pad (down)
-  - [46, C_Spell.PickupSpell("Battle Shout")]
-  # - [40, ""]
-  # - [34, ""]
-  # d-pad (up)
-  # - [47, ""]
-  # - [41, ""]
-  # - [35, ""]
-  # d-pad (right)
-  # - [48, ""]
-  # - [42, ""]
-  # - [36, ""]
+  P2_U: s "Berserker Stance"

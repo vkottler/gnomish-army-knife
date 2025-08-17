@@ -1,2 +1,38 @@
 ---
-array: []
+by_key:
+  L2_L1_R1: s "Mind Freeze"
+  L2_R1: s "Death Strike"
+  L2_P2_R1: s "Asphyxiate"
+
+  L1_R2_1: m sdad
+  L1_R2_2: s "Death and Decay"
+  L2_L1_R2: s "Dark Simulacrum"
+  L2_R2: s "Death Grip"
+  P2_R2: s "Chains of Ice"
+  L2_P2_R2: s "Blinding Sleet"
+
+  L2_X: s "Death Pact"
+  L1_X_1: m samz
+  L1_X_2: s "Anti-Magic Zone"
+  X_1: m sams
+  X_2: s "Anti-Magic Shell"
+  P2_X: s "Icebound Fortitude"
+  L1_P2_X: s "Soul Reaper"
+
+  L2_T: s "Sacrificial Pact"
+  T_1: m sdc
+  T_2: m pdc
+  P2_T: s "Lichborne"
+
+  L1_P2_C: s "Dark Command"
+
+  L2_L1_P1: s "Raise Dead"
+  L2_P1: s "Wraith Walk"
+  L1_P1: s 48265  # "Death's Advance"
+
+  P2_D: s "Path of Frost"
+  P2_U: s "Raise Ally"
+
+  L2_L: s "Control Undead"
+  L2_R: s "Runeforging"
+  L1_R: s "Death Gate"
