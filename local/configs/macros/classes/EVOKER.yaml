@@ -61,6 +61,11 @@ by_name:
       #showtooltip
       /cast [@player] Expunge
 
+  tssp:
+    body: |-
+      #showtooltip
+      /cast [known:Time Spiral] Time Spiral; Spatial Paradox
+
   sts:
     body: |-
       #showtooltip

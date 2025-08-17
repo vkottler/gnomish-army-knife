@@ -7,7 +7,7 @@ by_key:
   L2_P2_R2: s "Deep Breath"
   L1_P2_R2: s "Oppressing Roar"
 
-  L1_P2_X: s "Fury of the Aspects"
+  L2_P2_S: s "Fury of the Aspects"
 
   L1_X_1: m scf
   L1_X_2: s "Cauterizing Flame"
@@ -15,6 +15,7 @@ by_key:
   P2_S: s "Chrono Loop"
 
   P2_X: s "Tip the Scales"
+  L1_P2_X: s "Unravel"
 
   L1_T_1: m sts
   L1_T_2: s "Time Stop"
@@ -31,7 +32,7 @@ by_key:
 
   L1_P2_C: s "Visage"
 
-  L2_L1_P1: s "Time Spiral"
+  L2_L1_P1: m tssp
   L2_P1: s "Rescue"
   L1_P1: s "Hover"
 
@@ -40,3 +41,6 @@ by_key:
 
   P2_D: s "Blessing of the Bronze"
   P2_U: s "Return"
+
+  L2_R: s 360022  # "Chosen Identity"
+  L1_R: s "Visage"
