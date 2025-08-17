@@ -1,4 +1,5 @@
 ---
+# "Eye of Kilrogg"
 by_key:
   L2_L1_R1: s 119898  # "Command Demon"
 
@@ -61,10 +62,10 @@ by_key:
 
   L2_D: m dhs
 
+  L2_L: m petd
+
   P2_D: s "Create Healthstone"
   P2_U: s "Create Soulwell"
 
-  L2_L: s "Shadow Rift"
-
   L2_R: s "Soulstone"
-  L1_R: s "Eye of Kilrogg"
+  L1_R: s "Shadow Rift"

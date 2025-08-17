@@ -47,7 +47,7 @@ by_name:
       /use Conjured Mana Bun
       /use Quicksilver Sipper
 
-  pet:
+  petd:
     icon: inv_leatherworking_70_petleash
     body: |-
       /petdismiss

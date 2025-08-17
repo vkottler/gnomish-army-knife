@@ -1,16 +1,59 @@
 ---
-array:
-  # paddles (left)
-  - [43, "C_SpellBook.PickupSpellBookItem(6, 1)"]  # Defensive
-  - [37, "C_SpellBook.PickupSpellBookItem(11, 1)"]  # Passive
-  - [31, "C_SpellBook.PickupSpellBookItem(1, 1)"]  # Assist
-  # paddles (right)
-  - [44, C_Spell.PickupSpell("Dismiss Pet")]
-  - [38, C_Spell.PickupSpell("Disengage")]
-  - [32, C_Spell.PickupSpell("Feign Death")]
+by_key:
+  L2_L1_R1: s "Counter Shot"
+  L2_R1: s "Tranquilizing Shot"
+  P2_R1: m ks
 
-  # d-pad (down)
-  - [46, C_Spell.PickupSpell("Call Pet 1")]
+  L2_L1_R2: s "Chimaeral Sting"
 
-  # d-pad (up)
-  - [47, C_Spell.PickupSpell("Revive Pet")]
+  L1_R2_1: m sft
+  L1_R2_2: s "Freezing Trap"
+
+  P2_R2: s "Concussive Shot"
+
+  L2_P2_R1: s "Intimidation"
+  L2_P2_R2: m bssc
+
+  L1_S_1: m sbs
+  L1_S_2: s "Binding Shot"
+  L2_L1_S: s "Explosive Shot"
+
+  L2_L1_X: s "Aspect of the Turtle"
+  L2_X: s "Survival of the Fittest"
+  L1_X_1: m sros
+  L1_X_2: s "Roar of Sacrifice"
+  X_1: m scp
+  X_2: m cp
+  P2_X: s "Exhilaration"
+  L1_P2_X: s "Mend Pet"
+
+  L2_T: s "Hunter's Mark"
+  L1_T_1: m sf
+  L1_T_2: s "Flare"
+  T_1: m stt
+  T_2: s "Tar Trap"
+  P2_T: s "Camouflage"
+  L2_P2_T: s "Wild Kingdom"
+
+  L2_L1_C: s "Misdirection"
+  L1_C_1: m shet
+  L1_C_2: s "High Explosive Trap"
+  L2_C: C_SpellBook.PickupSpellBookItem(2, 1)  # Attack
+  P2_C: C_SpellBook.PickupSpellBookItem(7, 1)  # Follow
+  L2_P2_C: s "Scare Beast"
+
+  P2_P3: C_SpellBook.PickupSpellBookItem(6, 1)  # Defensive
+  L2_P3: C_SpellBook.PickupSpellBookItem(11, 1)  # Passive
+  L1_P3: C_SpellBook.PickupSpellBookItem(1, 1)  # Assist
+
+  L2_L1_P1: s "Aspect of the Cheetah"
+  L2_P1: s "Disengage"
+  L1_P1: s "Feign Death"
+
+  L2_L: m petd
+
+  P2_D: s "Call Pet 1"
+  P2_U: s "Revive Pet"
+
+  L2_R: s "Eyes of the Beast"
+  L1_R: s "Beast Lore"

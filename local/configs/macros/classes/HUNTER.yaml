@@ -1,58 +1,77 @@
 ---
 # 3
-by_name: {}
-array:
-  - name: 3
+by_name:
+  bssc:
     body: |-
       #showtooltip
-      /cast Kill Shot
+      /cast [known:Bursting Shot] Bursting Shot; Scatter Shot
 
-  - name: 4
+  heti:
     body: |-
       #showtooltip
-      /cast Command Pet
+      /cast [known:High Explosive Trap] High Explosive Trap; Implosive Trap
 
-  - name: self
+  bfs:
     body: |-
       #showtooltip
-      /cast [@player] Binding Shot
+      /cast [known:Butchery] Butchery; Flanking Strike
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Roar of Sacrifice
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Steel Trap
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Freezing Trap
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Tar Trap
-
-  - name: self
+  sf:
     body: |-
       #showtooltip
       /cast [@player] Flare
 
-  - name: self
+  scp:
     body: |-
       #showtooltip
       /cast [@player] Command Pet
 
-  - name: self
+  cp:
+    body: |-
+      #showtooltip
+      /cast Command Pet
+
+  stt:
+    body: |-
+      #showtooltip
+      /cast [@player] Tar Trap
+
+  sros:
+    body: |-
+      #showtooltip
+      /cast [@player] Roar of Sacrifice
+
+  sft:
+    body: |-
+      #showtooltip
+      /cast [@player] Freezing Trap
+
+  sbs:
+    body: |-
+      #showtooltip
+      /cast [@player] Binding Shot
+
+  shet:
     body: |-
       #showtooltip
       /cast [@player] High Explosive Trap
 
-  - name: self
+  smb:
+    body: |-
+      #showtooltip
+      /cast [@player] Mending Bandage
+
+  sdbh:
+    body: |-
+      #showtooltip
+      /cast [@player] Dire Beast: Hawk
+
+  sv:
     body: |-
       #showtooltip
       /cast [@player] Volley
+
+  ks:
+    body: |-
+      #showtooltip
+      /cast Kill Shot
