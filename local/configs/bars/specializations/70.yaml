@@ -20,12 +20,12 @@ by_key:
   R2_1: s 383328
   R2_2: s 383328
 
-  L1_P2_R2: s "Divine Hammer"
+  L1_P2_R2: s "Crusader Strike"
 
   L2_S: s 184662
-
   S_1: m swog  # word of glory
   S_2: s 85673
+  P2_S: s "Divine Hammer"
 
   X_1: m sfol  # flash of light
   X_2: s 19750

@@ -1,6 +1,8 @@
 ---
 # Elemental Shaman
-array:
+by_key: {}
+
+array_old:
   # PADRSHOULDER column
   # - [67, ""]
   - [61, C_Spell.PickupSpell("Primordial Wave")]

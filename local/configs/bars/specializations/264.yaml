@@ -1,6 +1,17 @@
 ---
 # Restoration Shaman
-array:
+by_key:
+  L1_R1_1: m sul
+  L1_R1_2: s "Unleash Life"
+  R1_1: m sr
+  R1_2: s "Riptide"
+
+  L1_R2_1: m shw
+  L1_R2_2: s "Healing Wave"
+  R2_1: m shs
+  R2_2: s "Healing Surge"
+
+array_old:
   # PADRSHOULDER column
   # - [67, ""]
   - [61, C_Spell.PickupSpell("Lava Burst")]

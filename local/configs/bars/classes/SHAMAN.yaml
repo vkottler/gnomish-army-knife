@@ -1,5 +1,22 @@
 ---
-array:
+by_key:
+  L2_L1_R1: s "Wind Shear"
+  L2_R1: m pgp
+  L2_P2_R1: s "Hex"
+
+  L2_L1_R2: s "Grounding Totem"
+  L2_P2_R2: s "Lightning Lasso"
+
+  L2_P2_S: s "Bloodlust"
+
+  L2_L1_P1: s "Spiritwalker's Grace"
+  L2_P1: m swgw
+  L1_P1: s "Ghost Wolf"
+
+  P2_D: m ssf
+  P2_U: s "Ancestral Spirit"
+
+array_old:
   # PADRSHOULDER column
   - [67, C_Spell.PickupSpell("Wind Shear")]
   - [49, C_Spell.PickupSpell("Hex")]

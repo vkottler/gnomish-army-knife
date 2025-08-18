@@ -1,9 +1,9 @@
 ---
 by_key:
   # Mounts (also bound to keys)
-  P2_R: m fav  # C_MountJournal.Pickup(0)
-  L2_R: m yak  # s 122708
-  L1_R: m ah  # s 465235
+  P2_R: C_MountJournal.Pickup(0)  # m fav
+  L2_R: s 122708  # m yak
+  L1_R: s 465235  # m ah
 
   # Dragon Riding
   R1_D: s 372608
