@@ -25,7 +25,7 @@ by_key:
 
   P2_R2: s "Throw Glaive"
   L2_P2_R2: s "Fel Eruption"
-  L1_P2_R2: s "Reverse Magic"
+  L1_P2_R2: s "Demon's Bite"
 
   L2_S: s "Chaos Nova"
 
@@ -42,6 +42,7 @@ by_key:
 
   X_1: m sm
   X_2: s "Metamorphosis"
+  P2_X: s "Reverse Magic"
 
   L1_T_1: s "Darkness"
   L1_T_2: s "Darkness"
