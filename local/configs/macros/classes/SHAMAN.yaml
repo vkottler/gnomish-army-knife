@@ -11,6 +11,16 @@ by_name:
       #showtooltip
       /cast [known:Purge] Purge; Greater Purge
 
+  fese:
+    body: |-
+      #showtooltip
+      /cast [known:Fire Elemental] Fire Elemental; Storm Elemental
+
+  eseb:
+    body: |-
+      #showtooltip
+      /cast [known:Earth Shock] Earth Shock; Elemental Blast
+
   ssf:
     body: |-
       #showtooltip
@@ -71,6 +81,11 @@ by_name:
       #showtooltip
       /cast [@player] Purify Spirit
 
+  scs:
+    body: |-
+      #showtooltip
+      /cast [@player] Cleanse Spirit
+
   st:
     body: |-
       #showtooltip
@@ -80,6 +95,16 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Earth Shield
+
+  slmt:
+    body: |-
+      #showtooltip
+      /cast [@player] Liquid Magma Totem
+
+  sst:
+    body: |-
+      #showtooltip
+      /cast [@player] Surging Totem
 
 array_old:
   - name: self
@@ -95,22 +120,12 @@ array_old:
   - name: self
     body: |-
       #showtooltip
-      /cast [@player] Surging Totem
-
-  - name: self
-    body: |-
-      #showtooltip
       /cast [@player] Earthgrab Totem
 
   - name: self
     body: |-
       #showtooltip
       /cast [@player] Earthquake
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Liquid Magma Totem
 
   - name: self1
     body: |-
