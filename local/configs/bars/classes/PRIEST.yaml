@@ -19,7 +19,7 @@ by_key:
   L2_X: s "Desperate Prayer"
   P2_X: s "Holy Nova"
   L2_P2_X: s "Vampiric Embrace"
-  L1_P2_X: s "Halo"
+  L1_P2_X: m hds
 
   L1_P2_T: s "Void Shift"
 

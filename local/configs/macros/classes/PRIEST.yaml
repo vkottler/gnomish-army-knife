@@ -6,6 +6,11 @@ by_name:
       #showtooltip
       /cast [known:Mind Control] Mind Control; Dominate Mind
 
+  hds:
+    body: |-
+      #showtooltip
+      /cast [known:Halo] Halo; Divine Star
+
   lbpb:
     body: |-
       #showtooltip
