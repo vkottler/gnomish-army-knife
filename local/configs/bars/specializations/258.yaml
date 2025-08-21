@@ -1,5 +1,35 @@
 ---
 # Shadow Priest
+by_key:
+  L2_L1_R1: s "Silence"
+  L1_R1_1: s "Mind Blast"
+  L1_R1_2: s "Mind Blast"
+  R1_1: s "Vampiric Touch"
+  R1_2: s "Vampiric Touch"
+  L1_P2_R1: s "Void Torrent"
+
+  L2_R2: s "Psychic Horror"
+  L1_R2_1: m pssc
+  L1_R2_2: s "Shadow Crash"
+  R2_1: s "Devouring Plague"
+  R2_2: s "Devouring Plague"
+  L1_P2_R2: s "Psyfiend"
+
+  L2_S: m pdave
+  S_1: m sfh
+  S_2: s "Flash Heal"
+  P2_S: s "Mind Flay"
+
+  L2_T: s "Dispersion"
+  L1_T_1: m spom
+  L1_T_2: s "Prayer of Mending"
+  T_1: m sr
+  T_2: s "Renew"
+
+  C_1: m ppd
+  C_2: s "Purify Disease"
+  L2_P2_C: m psf
+
 array_old:
   # PADRSHOULDER column
   - [67, C_Spell.PickupSpell("Silence")]

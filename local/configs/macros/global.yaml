@@ -97,3 +97,23 @@ by_name:
     body: |-
       #showtooltip
       /cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
+
+  psf:
+    body: |-
+      #showtooltip
+      /cast !Shadowform
+
+  pdave:
+    body: |-
+      #showtooltip
+      /cast [known:Dark Ascension] Dark Ascension; Void Eruption
+
+  pssc:
+    body: |-
+      #showtooltip
+      /cast [@player] Shadow Crash
+
+  ppd:
+    body: |-
+      #showtooltip
+      /cast [@player] Purify Disease

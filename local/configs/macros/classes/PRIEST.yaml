@@ -140,14 +140,3 @@ by_name:
     body: |-
       #showtooltip
       /cast [@anyfriend] Ultimate Penitence
-
-array_old:
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Shadow Crash
-
-  - name: form
-    body: |-
-      #showtooltip
-      /cast !Shadowform
