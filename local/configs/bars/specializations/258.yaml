@@ -1,6 +1,6 @@
 ---
 # Shadow Priest
-array:
+array_old:
   # PADRSHOULDER column
   - [67, C_Spell.PickupSpell("Silence")]
   - [61, C_Spell.PickupSpell("Psychic Horror")]

@@ -1,38 +1,42 @@
 ---
-array:
-  # PADRTRIGGER column
-  - [68, C_Spell.PickupSpell("Power Infusion")]
-  - [62, C_Spell.PickupSpell("Dispel Magic")]
-  - [56, 'C_Spell.PickupSpell("Shadow Word: Death")']
-  - [50, C_Spell.PickupSpell("Void Tendrils")]
+by_key:
+  L2_R1: s "Dispel Magic"
+  P2_R1: 's "Shadow Word: Pain"'
+  L2_P2_R1: m mcdm
 
-  # PAD3 column
+  P2_R2: 's "Shadow Word: Death"'
+  L2_L1_R2: s "Power Infusion"
+  L2_P2_R2: s "Void Tendrils"
 
-  # PAD1 column
-  - [64, C_Spell.PickupSpell("Desperate Prayer")]
+  L1_S_1: m smd
+  L1_S_2: s "Mass Dispel"
+  L2_P2_S: s "Mindgames"
 
-  - [4, PickupMacro(120 + 20)]
-  - [16, C_Spell.PickupSpell("Angelic Feather")]  # bar 2
+  L1_X_1: m spwl
+  L1_X_2: 's "Power Word: Life"'
+  X_1: m spws
+  X_2: 's "Power Word: Shield"'
+  L2_X: s "Desperate Prayer"
+  P2_X: s "Holy Nova"
+  L2_P2_X: s "Vampiric Embrace"
+  L1_P2_X: s "Halo"
 
-  - [58, C_Spell.PickupSpell("Void Shift")]
-  - [28, C_Spell.PickupSpell("Mind Vision")]
+  L1_P2_T: s "Void Shift"
 
-  # PAD4 column
-  - [29, C_Spell.PickupSpell("Mind Soothe")]
+  L1_C_1: m sl
+  L1_C_2: s "Levitate"
 
-  # PAD2 column
-  - [12, PickupMacro(120 + 21)]
-  - [24, C_Spell.PickupSpell("Levitate")]  # bar 2
-  - [6, PickupMacro(120 + 10)]
-  - [18, C_Spell.PickupSpell("Mass Dispel")]  # bar 2
+  P2_P3: m saf
+  L2_P3: m fnd
+  L1_P3: s "Leap of Faith"
 
-  # paddles (right)
-  - [44, C_Spell.PickupSpell("Leap of Faith")]
-  - [38, C_Spell.PickupSpell("Psychic Scream")]
-  - [32, C_Spell.PickupSpell("Fade")]
+  L2_L1_P1: s "Angelic Feather"
+  L2_P1: s "Psychic Scream"
+  L1_P1: s "Fade"
 
-  # d-pad (down)
-  - [46, PickupMacro(120 + 18)]
-
-  # d-pad (up)
-  - [47, C_Spell.PickupSpell("Resurrection")]
+  P2_D: m spwf
+  P2_U: s "Resurrection"
+  L2_L: s "Thoughtsteal"
+  P2_R: s "Shackle Undead"
+  L2_R: s "Mind Vision"
+  L1_R: s "Mind Soothe"

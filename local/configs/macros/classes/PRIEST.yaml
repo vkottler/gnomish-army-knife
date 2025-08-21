@@ -1,106 +1,146 @@
 ---
 # 5
-by_name: {}
-array:
-  - name: harm
+by_name:
+  mcdm:
     body: |-
       #showtooltip
-      /cast [@anyenemy] Ultimate Penitence
+      /cast [known:Mind Control] Mind Control; Dominate Mind
 
-  - name: harm
+  lbpb:
     body: |-
       #showtooltip
-      /cast [@anyenemy] Penance
+      /cast [known:Luminous Barrier] Luminous Barrier; Power Word: Barrier
 
-  - name: harm
-    body: |-
-      #showtooltip
-      /cast [@anyenemy] Shadowfiend
-
-  - name: help
-    body: |-
-      #showtooltip
-      /cast [@anyfriend] Penance
-
-  - name: help
-    body: |-
-      #showtooltip
-      /cast [@anyfriend] Ultimate Penitence
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Purify
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Penance
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Shadow Crash
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Mass Dispel
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Power Word: Barrier
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Power Word: Shield
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Flash Heal
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Renew
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Pain Suppression
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Power Word: Life
-
-  - name: self
+  spwf:
     body: |-
       #showtooltip
       /cast [@player] Power Word: Fortitude
 
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Power Word: Radiance
-
-  - name: self
+  saf:
     body: |-
       #showtooltip
       /cast [@player] Angelic Feather
 
-  - name: self
+  sl:
     body: |-
       #showtooltip
       /cast [@player] Levitate
 
+  sp:
+    body: |-
+      #showtooltip
+      /cast [@player] Purify
+
+  smd:
+    body: |-
+      #showtooltip
+      /cast [@player] Mass Dispel
+
+  spwl:
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Life
+
+  sr:
+    body: |-
+      #showtooltip
+      /cast [@player] Renew
+
+  spom:
+    body: |-
+      #showtooltip
+      /cast [@player] Prayer of Mending
+
+  shws:
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Word: Serenity
+
+  shwy:
+    body: |-
+      #showtooltip
+      /cast [@player] Holy Word: Sanctify
+
+  sgs:
+    body: |-
+      #showtooltip
+      /cast [@player] Guardian Spirit
+
+  spws:
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Shield
+
+  sroh:
+    body: |-
+      #showtooltip
+      /cast [@player] Ray of Hope
+
+  sfh:
+    body: |-
+      #showtooltip
+      /cast [@player] Flash Heal
+
+  sh:
+    body: |-
+      #showtooltip
+      /cast [@player] Heal
+
+  spoh:
+    body: |-
+      #showtooltip
+      /cast [@player] Prayer of Healing
+
+  sn:
+    body: |-
+      #showtooltip
+      /cast [@player] Penance
+
+  en:
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Penance
+
+  fn:
+    body: |-
+      #showtooltip
+      /cast [@anyfriend] Penance
+
+  fnd:
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Shadowfiend
+
+  spwr:
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Radiance
+
+  sps:
+    body: |-
+      #showtooltip
+      /cast [@player] Pain Suppression
+
+  spwb:
+    body: |-
+      #showtooltip
+      /cast [@player] Power Word: Barrier
+
+  eup:
+    body: |-
+      #showtooltip
+      /cast [@anyenemy] Ultimate Penitence
+
+  fup:
+    body: |-
+      #showtooltip
+      /cast [@anyfriend] Ultimate Penitence
+
+array_old:
   - name: self
     body: |-
       #showtooltip
-      /cast [@player] Rapture
+      /cast [@player] Shadow Crash
 
   - name: form
     body: |-
