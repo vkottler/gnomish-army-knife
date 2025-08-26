@@ -17,6 +17,7 @@ by_key:
   S_1: m sps
   S_2: s "Purify Spirit"
   P2_S: s "Lightning Bolt"
+  L2_P2_S: s "Heroism"  # could do this with a macro
   L1_P2_S: s "Chain Lightning"
 
   L1_X_1: m sewt
