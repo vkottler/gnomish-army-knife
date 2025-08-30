@@ -1,6 +1,7 @@
 ---
 by_key:
   L2_L1_R1: s "Quell"
+  L2_R1: s 357208  # Fire Breath
   L2_P2_R1: s "Sleep Walk"
 
   L2_L1_R2: s "Landslide"
