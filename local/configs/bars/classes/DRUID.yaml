@@ -52,6 +52,6 @@ by_key:
   # L2_L: ""
 
   # mount button overrides
-  P2_R: m dirmb
-  L2_R: s "Hibernate"
+  P2_R: s "Hibernate"
+  L2_R: m dirmb
   L1_R: s "Nature's Vigil"
