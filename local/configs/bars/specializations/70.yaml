@@ -9,7 +9,7 @@ by_key:
   R1_1: s 184575
   R1_2: s 184575
 
-  P2_R1: s 255937
+  P2_R1: m wa14  # 255937, Wake of Ashes
 
   L2_L1_R2: m sfr  # self final reckoning
   L2_R2: s 343721

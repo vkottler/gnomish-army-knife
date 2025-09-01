@@ -110,3 +110,9 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Holy Bulwark
+
+  wa14:
+    body: |-
+      #showtooltip Wake of Ashes
+      /use 14
+      /cast Wake of Ashes
