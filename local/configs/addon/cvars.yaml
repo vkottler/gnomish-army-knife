@@ -59,6 +59,9 @@ SoftTargetIconEnemy: 0
 NameplatePersonalShowAlways: 1
 nameplateSelfTopInset: 0.50
 nameplateSelfBottomInset: 0.29
+nameplateOtherTopInset: 0.08
+nameplateOtherBottomInset: 0.1
+nameplateLargeTopInset: 0.1
 nameplateSelfScale: 1.0
 nameplateResourceOnTarget: 0
 
@@ -110,8 +113,8 @@ Sound_EnablePingSounds: 0
 # BetterBlizzPlates does all of these
 # Gets overwritten by "use large nameplates" ?
 # nameplateSelfScale: 1.0
-# nameplateGlobalScale: 1
-# nameplateLargerScale: 1.2
+nameplateGlobalScale: 1.0
+nameplateLargerScale: 1.2
 # NamePlateHorizontalScale: 0.5
 # NamePlateVerticalScale: 1
 # nameplateSelectedScale: 1.2
