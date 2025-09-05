@@ -58,7 +58,7 @@ SoftTargetIconEnemy: 0
 
 NameplatePersonalShowAlways: 1
 nameplateSelfTopInset: 0.50
-nameplateSelfBottomInset: 0.29
+nameplateSelfBottomInset: 0.30
 nameplateOtherTopInset: 0.08
 nameplateOtherBottomInset: 0.1
 nameplateLargeTopInset: 0.1
