@@ -34,6 +34,8 @@ floatingCombatTextSpellMechanics: 0
 floatingCombatTextPetMeleeDamage: 0
 floatingCombatTextPetSpellDamage: 0
 floatingCombatTextReactives: 0
+statusText: 0
+statusTextDisplay: NONE
 
 WorldTextScale: 0
 threatWorldText: 0
