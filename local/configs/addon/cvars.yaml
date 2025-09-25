@@ -65,6 +65,7 @@ nameplateOtherTopInset: 0.08
 nameplateOtherBottomInset: 0.1
 nameplateLargeTopInset: 0.1
 nameplateSelfScale: 1.0
+nameplateSelfAlpha: 0.75
 nameplateResourceOnTarget: 0
 
 # Overwritten by role-based logic.
