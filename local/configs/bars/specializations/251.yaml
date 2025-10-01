@@ -8,7 +8,8 @@ by_key:
   P2_R1: s "Glacial Advance"
   L1_P2_R1: s "Pillar of Frost"
 
-  L2_S: s "Frostwyrm's Fury"
+  L2_L1_S: s "Frostwyrm's Fury"
+  L2_S: s "Remorseless Winter"
   L1_S_1: s "Empower Rune Weapon"
   L1_S_2: s "Empower Rune Weapon"
   S_1: s "Frostscythe"
