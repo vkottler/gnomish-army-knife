@@ -121,14 +121,15 @@ nameplateLargerScale: 1.2
 # NamePlateHorizontalScale: 0.5
 # NamePlateVerticalScale: 1
 # nameplateSelectedScale: 1.2
-# nameplateMinScale: 0.9
-# nameplateMaxScale: 0.9
+
+nameplateMinScale: 0.9
+nameplateMaxScale: 0.9
 
 showPartyPets: 1
 raidOptionDisplayPets: 1
 
 nameplateShowFriendlyBuffs: 1
-nameplateShowFriendlyTotems: 0
+nameplateShowFriendlyPlayerTotems: 0
 nameplateShowPersonalCooldowns: 1
 
 SoftTargetNameplateFriend: 0
@@ -150,3 +151,10 @@ test_cameraTargetFocusEnemyEnable: 0
 CameraKeepCharacterCentered: 0
 
 rotateMinimap: 0
+
+# midnight stuff
+damageMeterEnabled: 1
+externalDefensivesEnabled: 1
+lootUnderMouse: 0
+showTargetOfTarget: 1
+spellDiminishPVPOnlyTriggerableByMe: 1
