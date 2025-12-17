@@ -22,7 +22,7 @@ by_key:
   S_2: s "Cleanse"
   P2_S: m ehs
   L2_P2_S: ""
-  L1_P2_S: ""
+  L1_P2_S: s "Hand of Divinity"
 
   L2_L1_X: ""
   X_1: m shb
@@ -37,7 +37,6 @@ by_key:
   L2_P2_T: m sbol
 
   L2_L1_C: ""
-  L2_C: ""
   L1_C_1: m sbom
   L1_C_2: s "Blessing of Summer"
   P2_C: s "Beacon of Faith"
@@ -48,6 +47,7 @@ by_key:
   # cancel macro override (has dedicated bind)
   # L2_L: ""
 
+  # could move to hero-specific
   P2_D: s "Rite of Sanctification"
 
   # mount button overrides
