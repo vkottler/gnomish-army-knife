@@ -51,6 +51,11 @@ by_name:
       #showtooltip
       /cast [known:Blinding Light] Blinding Light; Repentance
 
+  esfr:
+    body: |-
+      #showtooltip
+      /cast [known:Final Reckoning] Final Reckoning; Execution Sentence
+
   shs:
     body: |-
       #showtooltip
