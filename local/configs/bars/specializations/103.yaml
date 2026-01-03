@@ -24,7 +24,7 @@ by_key:
   R2_B: s "Strength of the Wild"
   R2_C: s "Ferocious Bite"
   P2_R2: s "Maim"
-  L1_P2_R2: s "Convoke the Spirits"
+  L1_P2_R2: m bvoke
 
   L2_S: s "Berserk"
   L1_S_C: s "Primal Wrath"

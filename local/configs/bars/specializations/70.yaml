@@ -12,7 +12,7 @@ by_key:
   P2_R1: m wa14  # 255937, Wake of Ashes
 
   L2_L1_R2: m sfr  # self final reckoning
-  L2_R2: s 343721
+  L2_R2: m esfr  # execution sentence choice
 
   L1_R2_1: s 53385
   L1_R2_2: s 53385
