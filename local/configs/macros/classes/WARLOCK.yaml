@@ -1,20 +1,40 @@
 ---
 # 9
 by_name:
-  bbds:
+  hts:
     body: |-
       #showtooltip
-      /cast [known:Demonic Strength] Demonic Strength; Bilescourge Bombers
+      /cast [known:Howl of Terror] Howl of Terror; Shadowfury
 
-  htmc:
+  shts:
     body: |-
       #showtooltip
-      /cast [known:Mortal Coil] Mortal Coil; Howl of Terror
+      /cast [known:Howl of Terror] Howl of Terror; [@player] Shadowfury
+
+  bowt:
+    body: |-
+      #showtooltip
+      /cast [known:Blight of Weakness] Blight of Weakness; Blight of Tongues
+
+  ips:
+    body: |-
+      #showtooltip
+      /cast [known:Implosion] Implosion; Power Siphon
+
+  fril:
+    body: |-
+      #showtooltip
+      /cast [known:Grimoire: Fel Ravager] Grimoire: Fel Ravager; Grimoire: Imp Lord
 
   srof:
     body: |-
       #showtooltip
       /cast [@player] Rain of Fire
+
+  sstone:
+    body: |-
+      #showtooltip
+      /cast [@player] Soulstone
 
   scfl:
     body: |-
@@ -36,11 +56,6 @@ by_name:
       #showtooltip Demonic Healthstone
       /use Demonic Healthstone
       /use Healthstone
-
-  ssf:
-    body: |-
-      #showtooltip
-      /cast [@player] Shadowfury
 
   ssi:
     body: |-

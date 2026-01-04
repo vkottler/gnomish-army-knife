@@ -11,23 +11,24 @@ by_key:
   L1_R2_1: s "Haunt"
   L1_R2_2: s "Haunt"
 
-  R2_1: s "Malefic Rapture"
-  R2_2: s "Malefic Rapture"
+  R2_1: s "Agony"
+  R2_2: s "Agony"
 
-  L2_L1_S: s "Oblivion"
+  # L2_L1_S: s "Oblivion"
 
-  S_1: s "Agony"
-  S_2: s "Agony"
+  L2_S: s "Summon Darkglare"
 
-  P2_S: s "Soul Rot"
+  # S_1: s "Agony"
+  # S_2: s "Agony"
 
-  L2_L1_T: s "Soul Swap"
+  P2_S: s "Dark Harvest"
 
-  L1_T_1: s "Phantom Singularity"
-  L1_T_2: s "Phantom Singularity"
+  P2_X: s "Soul Swap"
 
-  L1_C_1: s "Summon Darkglare"
-  L1_C_2: s "Summon Darkglare"
+  # L2_L1_T: s "Soul Swap"
+
+  # L1_T_1: s "Phantom Singularity"
+  # L1_T_2: s "Phantom Singularity"
 
   C_1: s "Seed of Corruption"
   C_2: s "Seed of Corruption"

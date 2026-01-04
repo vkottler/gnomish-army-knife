@@ -10,29 +10,26 @@ by_key:
   R1_1: s "Shadow Bolt"
   R1_2: s "Shadow Bolt"
 
-  P2_R1: s "Power Siphon"
+  P2_R1: m ips
 
   L1_R2_1: s 264119  # Summon Vilefiend
   L1_R2_2: s 264119
 
-  L2_S: m bbds
+  L2_S: s "Summon Demonic Tyrant"
 
-  S_1: s "Implosion"
-  S_2: s "Implosion"
+  # S_1: s "Implosion"
+  # S_2: s "Implosion"
 
   P2_S: s "Corruption"
 
   R2_1: s "Hand of Gul'dan"
   R2_2: s "Hand of Gul'dan"
 
-  L1_T_1: m scfl
-  L1_T_2: s "Call Fel Lord"
+  L2_X: m fril
+  P2_X: s "Summon Doomguard"
 
-  L1_C_1: s "Summon Demonic Tyrant"
-  L1_C_2: s "Summon Demonic Tyrant"
-
-  C_1: 's "Grimoire: Felguard"'
-  C_2: 's "Grimoire: Felguard"'
+  C_1: m scfl
+  C_2: s "Call Fel Lord"
 
   L1_P2_C: s "Summon Felguard"  # no need to summon other pets
 

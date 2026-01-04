@@ -16,17 +16,12 @@ by_key:
   R2_1: s "Chaos Bolt"
   R2_2: s "Chaos Bolt"
 
-  L2_L1_S: s "Dimensional Rift"
-
-  S_1: s "Shadowburn"
-  S_2: s "Shadowburn"
+  L2_S: s "Shadowburn"
 
   P2_S: s "Havoc"
 
-  L2_L1_T: s "Soul Fire"
-
-  L1_T_1: s "Channel Demonfire"
-  L1_T_2: s "Channel Demonfire"
+  L2_X: s "Channel Demonfire"
+  P2_X: s "Soul Fire"
 
   L1_C_1: m ssi
   L1_C_2: s "Summon Infernal"
