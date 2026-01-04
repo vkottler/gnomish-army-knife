@@ -31,21 +31,6 @@ by_name:
       #showtooltip
       /cast [@player] Soothing Mist
 
-  szs:
-    body: |-
-      #showtooltip
-      /cast [@player] Zen Spheres
-
-  ezs:
-    body: |-
-      #showtooltip
-      /cast [@anyenemy] Zen Spheres
-
-  fzs:
-    body: |-
-      #showtooltip
-      /cast [@anyfriend] Zen Spheres
-
   sem:
     body: |-
       #showtooltip
@@ -61,22 +46,17 @@ by_name:
       #showtooltip
       /cast [@player] Summon Jade Serpent Statue
 
-  shs:
-    body: |-
-      #showtooltip
-      /cast [@player] Healing Sphere
-
   slc:
     body: |-
       #showtooltip
       /cast [@player] Life Cocoon
 
-  ssg:
-    body: |-
-      #showtooltip
-      /cast [@player] Sheilun's Gift
-
   rev:
     body: |-
       #showtooltip
       /cast [known:Revival] Revival; Restoral
+
+  swwdp:
+    body: |-
+      #showtooltip
+      /cast [known:Strike of the Windlord] Strike of the Windlord; Whirling Dragon Punch

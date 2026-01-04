@@ -1,6 +1,7 @@
 ---
 # Mistweaver Monk
 by_key:
+  L2_L1_R1: s "Tiger Palm"
   L2_R1: s "Blackout Kick"
   L1_R1_1: m sv
   L1_R1_2: s "Vivify"
@@ -22,33 +23,29 @@ by_key:
   R2_1: m sem
   R2_2: s "Enveloping Mist"
 
-  P2_R2: m ezs
+  # P2_R2: m ezs
 
-  L2_S: s "Expel Harm"
+  # L2_S: s "Expel Harm"
 
+  L2_S: m rev
   S_1: m sd
   S_2: s "Detox"
 
-  P2_S: s "Tiger Palm"
+  P2_S: s "Mana Tea"
 
   L1_X_1: m sjss
   L1_X_2: s "Summon Jade Serpent Statue"
 
-  L2_T: m rev
+  # L1_T_1: m shs
+  # L1_T_2: s "Healing Sphere"
 
-  L1_T_1: m shs
-  L1_T_2: s "Healing Sphere"
+  # P2_T: s "Mana Tea"
 
-  P2_T: s "Mana Tea"
+  T_1: m slc
+  T_2: s "Life Cocoon"
 
-  T_1: m szs
-  T_2: m fzs
+  # C_1: m ssg
+  # C_2: s "Sheilun's Gift"
 
-  L1_C_1: m slc
-  L1_C_2: s "Life Cocoon"
-
-  C_1: m ssg
-  C_2: s "Sheilun's Gift"
-
-  L2_P3: s "Mighty Ox Kick"
-  L1_P3: s "Grapple Weapon"
+  # L2_P3: s "Mighty Ox Kick"
+  # L1_P3: s "Grapple Weapon"

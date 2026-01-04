@@ -2,7 +2,7 @@
     =====================================
     generator=datazen
     version=3.2.3
-    hash=2fc76fc077d5f52b3a8c05c7893e0b82
+    hash=6438939f18753345338f916969b9c838
     =====================================
 -->
 
@@ -43,7 +43,7 @@ LUA source hosted [here](https://github.com/vkottler/gak-lua) for
 # Command-line Options
 
 ```
-$ ./venv3.12/bin/gak -h
+$ ./venv3.13/bin/gak -h
 
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
            {markdown,scan,noop} ...
@@ -57,7 +57,7 @@ options:
   -q, --quiet           set to reduce output
   --curses              whether or not to use curses.wrapper when starting
   --no-uvloop           whether or not to disable uvloop as event loop driver
-  -C DIR, --dir DIR     execute from a specific directory
+  -C, --dir DIR         execute from a specific directory
 
 commands:
   {markdown,scan,noop}  set of available commands
@@ -72,16 +72,15 @@ commands:
 ### `markdown`
 
 ```
-$ ./venv3.12/bin/gak markdown -h
+$ ./venv3.13/bin/gak markdown -h
 
 usage: gak markdown [-h] [-o OUTPUT] [-d DATABASE]
 
 options:
   -h, --help            show this help message and exit
-  -o OUTPUT, --output OUTPUT
-                        output directory (default: 'gnomish-army-knife-
+  -o, --output OUTPUT   output directory (default: 'gnomish-army-knife-
                         markdown')
-  -d DATABASE, --database DATABASE
+  -d, --database DATABASE
                         macro database (default:
                         'package://gnomish_army_knife/macros.yaml')
 
@@ -90,19 +89,17 @@ options:
 ### `scan`
 
 ```
-$ ./venv3.12/bin/gak scan -h
+$ ./venv3.13/bin/gak scan -h
 
 usage: gak scan [-h] [-c CONFIG] [-s STATE] [-e]
 
 options:
-  -h, --help            show this help message and exit
-  -c CONFIG, --config CONFIG
-                        path to an optional configuration file (default:
-                        'gak.yaml')
-  -s STATE, --state STATE
-                        path to the program's state directory (default:
-                        '/home/vkottler/.local/state/gak')
-  -e, --ephemeral       set to use new, temporary directories when applicable
+  -h, --help           show this help message and exit
+  -c, --config CONFIG  path to an optional configuration file (default:
+                       'gak.yaml')
+  -s, --state STATE    path to the program's state directory (default:
+                       '/home/vkottler/.local/state/gak')
+  -e, --ephemeral      set to use new, temporary directories when applicable
 
 ```
 

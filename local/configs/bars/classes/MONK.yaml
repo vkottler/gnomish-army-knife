@@ -10,11 +10,11 @@ by_key:
   L1_S_1: m srop
   L1_S_2: m rop
 
-  L2_X: s "Diffuse Magic"
+  L2_X: s "Fortifying Brew"
 
   X_1: m stl
   X_2: s "Tiger's Lust"
-  P2_X: s "Fortifying Brew"
+  # P2_X: s "Fortifying Brew"
 
   L1_P2_X: s "Provoke"
 
