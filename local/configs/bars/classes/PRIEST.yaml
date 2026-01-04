@@ -1,42 +1,43 @@
 ---
 by_key:
   L2_R1: s "Dispel Magic"
+  L1_R1_1: m saf
+  L1_R1_2: s "Angelic Feather"
   P2_R1: 's "Shadow Word: Pain"'
   L2_P2_R1: m mcdm
 
   P2_R2: 's "Shadow Word: Death"'
   L2_L1_R2: s "Power Infusion"
-  L2_P2_R2: s "Void Tendrils"
+  L2_P2_R2: s "Holy Nova"
 
   L1_S_1: m smd
   L1_S_2: s "Mass Dispel"
   L2_P2_S: s "Mindgames"
 
-  L1_X_1: m spwl
-  L1_X_2: 's "Power Word: Life"'
-  X_1: m spws
-  X_2: 's "Power Word: Shield"'
+  # L1_X_1: m spwl
+  # L1_X_2: 's "Power Word: Life"'
+  # X_1: m spws
+  # X_2: 's "Power Word: Shield"'
   L2_X: s "Desperate Prayer"
-  P2_X: s "Holy Nova"
-  L2_P2_X: s "Vampiric Embrace"
-  L1_P2_X: m hds
+  # L2_P2_X: s "Vampiric Embrace"
+  # L1_P2_X: m hds
 
-  L1_P2_T: s "Void Shift"
+  # L1_P2_T: s "Void Shift"
 
-  L1_C_1: m sl
-  L1_C_2: s "Levitate"
+  C_1: m sl
+  C_2: s "Levitate"
+  L1_P2_C: s "Shackle Horror"
 
-  P2_P3: m saf
-  L2_P3: m fnd
-  L1_P3: s "Leap of Faith"
+  # P2_P3: m saf
+  # L2_P3: m fnd
+  # L1_P3: s "Leap of Faith"
 
-  L2_L1_P1: s "Angelic Feather"
+  L2_L1_P1: s "Leap of Faith"
   L2_P1: s "Psychic Scream"
   L1_P1: s "Fade"
 
   P2_D: m spwf
   P2_U: s "Resurrection"
-  L2_L: s "Thoughtsteal"
-  P2_R: s "Shackle Undead"
+  # L2_L: s "Thoughtsteal"
   L2_R: s "Mind Vision"
   L1_R: s "Mind Soothe"

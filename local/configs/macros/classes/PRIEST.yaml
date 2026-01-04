@@ -6,11 +6,6 @@ by_name:
       #showtooltip
       /cast [known:Mind Control] Mind Control; Dominate Mind
 
-  hds:
-    body: |-
-      #showtooltip
-      /cast [known:Halo] Halo; Divine Star
-
   lbpb:
     body: |-
       #showtooltip
@@ -76,20 +71,15 @@ by_name:
       #showtooltip
       /cast [@player] Power Word: Shield
 
-  sroh:
-    body: |-
-      #showtooltip
-      /cast [@player] Ray of Hope
-
   sfh:
     body: |-
       #showtooltip
       /cast [@player] Flash Heal
 
-  sh:
+  splea:
     body: |-
       #showtooltip
-      /cast [@player] Heal
+      /cast [@player] Plea
 
   spoh:
     body: |-
