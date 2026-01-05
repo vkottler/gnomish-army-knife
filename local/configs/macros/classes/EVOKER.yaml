@@ -61,6 +61,11 @@ by_name:
       #showtooltip
       /cast [@player] Expunge
 
+  sbs:
+    body: |-
+      #showtooltip
+      /cast [@player] Blistering Scales
+
   dfs:
     body: |-
       #showtooltip

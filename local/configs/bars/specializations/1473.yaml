@@ -1,7 +1,31 @@
 ---
 # Augmentation Evoker
 by_key:
-  L2_R2: m slf
-
-  L1_R1_1: s "Living Flame"
+  L1_R1_1: m elf
   L1_R1_2: m flf
+  R1_1: s "Azure Strike"
+  R1_2: s "Azure Strike"
+  P2_R1: s "Upheaval"
+
+  L2_R2: m slf
+  L1_R2_1: m sbs
+  L1_R2_2: s "Blistering Scales"
+  R2_1: s "Eruption"
+  R2_2: s "Eruption"
+  P2_R2: s "Ebon Might"
+  L2_P2_R2: s 403631  # "Breath of Eons"
+
+  L1_S_1: m seb
+  L1_S_2: s "Emerald Blossom"
+
+  X_1: m sve
+  X_2: s "Verdant Embrace"
+
+  L2_S: s "Time Skip"
+  S_1: m sx
+  S_2: s "Expunge"
+
+  L1_P2_C: s "Timelessness"
+
+  P2_P3: s "Sense Power"
+  L1_P3: s "Bestow Weyrnstone"

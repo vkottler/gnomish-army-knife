@@ -26,8 +26,6 @@ by_key:
   L2_P2_T: s "Source of Magic"
   # L1_P2_T: s "Unravel"
 
-  L1_P2_C: s "Visage"
-
   L2_L1_P1: m tssp
   L2_P1: s "Rescue"
   L1_P1: s "Hover"
