@@ -135,6 +135,8 @@ test_cameraTargetFocusInteractEnable: 0
 test_cameraTargetFocusEnemyEnable: 0
 CameraKeepCharacterCentered: 0
 
+cameraDistanceMaxZoomFactor: 2.6
+
 rotateMinimap: 0
 
 # midnight stuff
