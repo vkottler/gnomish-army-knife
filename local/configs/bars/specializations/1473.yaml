@@ -1,3 +1,7 @@
 ---
 # Augmentation Evoker
-by_key: {}
+by_key:
+  L2_R2: m slf
+
+  L1_R1_1: s "Living Flame"
+  L1_R1_2: m flf

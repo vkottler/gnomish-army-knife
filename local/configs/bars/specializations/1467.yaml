@@ -8,9 +8,9 @@ by_key:
 
   R1_1: s "Azure Strike"
   R1_2: s "Azure Strike"
+  P2_R1: s 359073  # Eternity Surge
 
-  P2_R1: s "Shattering Star"
-  L1_P2_R1: s "Dragonrage"
+  # P2_R1: s "Shattering Star"
 
   L2_P2_R2: s 357210  # Deep Breath
 
@@ -19,17 +19,16 @@ by_key:
 
   R2_1: s "Disintegrate"
   R2_2: s "Disintegrate"
-
-  P2_R2: s 359073  # Eternity Surge
+  P2_R2: s "Dragonrage"
 
   L1_S_1: m seb
   L1_S_2: s "Emerald Blossom"
 
   S_1: m sx
   S_2: s "Expunge"
-  P2_S: s "Engulf"
+  # P2_S: s "Engulf"
 
   X_1: m sve
   X_2: s "Verdant Embrace"
 
-  P2_T: s "Firestorm"
+  # P2_T: s "Firestorm"

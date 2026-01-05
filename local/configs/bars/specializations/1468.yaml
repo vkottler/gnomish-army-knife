@@ -1,6 +1,7 @@
 ---
 # Preservation Evoker
 by_key:
+  L2_L1_R1: m dfs
   L2_R1: s "Fire Breath"
 
   L1_R1_1: m sve
@@ -9,8 +10,7 @@ by_key:
   R1_1: m slf
   R1_2: m flf
 
-  P2_R1: s "Disintegrate"
-  L1_P2_R1: s "Stasis"
+  P2_R1: m elf  # living flame harm
 
   L2_R2: s "Dream Breath"
 
@@ -25,26 +25,18 @@ by_key:
   L1_S_1: m seb
   L1_S_2: s "Emerald Blossom"
 
-  L2_S: m elf  # living flame harm
-
+  L2_S: s "Rewind"
   S_1: m sn
   S_2: s "Naturalize"
-  P2_S: s "Engulf"
+  P2_S: s "Disintegrate"
 
-  L2_X: s "Rewind"
+  L2_X: s "Temporal Anomaly"
+  X_1: m std
+  X_2: s "Time Dilation"
 
-  X_1: m ssb
-  X_2: s "Spiritbloom"
-
-  L2_T: s "Emerald Communion"
-
-  P2_T: s "Dream Projection"
-
-  L2_C: s "Dream Flight"
-
-  L1_C_1: m std
-  L1_C_2: s "Time Dilation"
+  L1_C_1: s "Emerald Communion"
+  L1_C_2: s "Emerald Communion"
+  C_1: s "Dream Projection"
+  C_2: s "Dream Projection"
 
   L1_P2_C: s "Mass Return"
-
-  P2_P3: s "Temporal Anomaly"

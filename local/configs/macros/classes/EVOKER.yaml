@@ -61,6 +61,11 @@ by_name:
       #showtooltip
       /cast [@player] Expunge
 
+  dfs:
+    body: |-
+      #showtooltip
+      /cast [known:Stasis] Stasis; Dream Flight
+
   tssp:
     body: |-
       #showtooltip
