@@ -43,7 +43,6 @@ threatWorldText: 0
 cameraSmoothStyle: 1
 countdownForCooldowns: 1
 
-hideAdventureJournalAlerts: 1
 showTutorials: 0
 showHonorAsExperience: 0
 
@@ -58,15 +57,7 @@ raidFramesDisplayPowerBars: 1
 # /console cvar_default
 SoftTargetIconEnemy: 0
 
-NameplatePersonalShowAlways: 1
-nameplateSelfTopInset: 0.50
-nameplateSelfBottomInset: 0.31
-nameplateOtherTopInset: 0.08
-nameplateOtherBottomInset: 0.1
-nameplateLargeTopInset: 0.1
-nameplateSelfScale: 1.0
 nameplateSelfAlpha: 0.75
-nameplateResourceOnTarget: 0
 
 # Overwritten by role-based logic.
 # nameplateShowFriends: 1
@@ -79,7 +70,6 @@ nameplateResourceOnTarget: 0
 nameplateShowSelf: 1
 nameplateShowAll: 1
 nameplateShowDebuffsOnFriendly: 1  # default
-nameplateHideHealthAndPower: 1
 
 occludedSilhouettePlayer: 1
 
@@ -116,7 +106,6 @@ Sound_EnablePingSounds: 0
 # BetterBlizzPlates does all of these
 # Gets overwritten by "use large nameplates" ?
 # nameplateSelfScale: 1.0
-nameplateGlobalScale: 1.0
 nameplateLargerScale: 1.2
 # NamePlateHorizontalScale: 0.5
 # NamePlateVerticalScale: 1
@@ -128,14 +117,10 @@ nameplateMaxScale: 0.9
 showPartyPets: 1
 raidOptionDisplayPets: 1
 
-nameplateShowFriendlyBuffs: 1
 nameplateShowFriendlyPlayerTotems: 0
-nameplateShowPersonalCooldowns: 1
 
 SoftTargetNameplateFriend: 0
 
-nameplateMotion: 1
-nameplateMotionSpeed: 0.05
 nameplateOverlapH: 0.6
 nameplateOverlapV: 0.6
 
@@ -158,3 +143,20 @@ externalDefensivesEnabled: 1
 lootUnderMouse: 0
 showTargetOfTarget: 1
 spellDiminishPVPOnlyTriggerableByMe: 1
+
+# graveyard
+# nameplateShowFriendlyBuffs: 1
+# nameplateSelfScale: 1.0
+# hideAdventureJournalAlerts: 1
+# NameplatePersonalShowAlways: 1
+# nameplateOtherTopInset: 0.08
+# nameplateSelfBottomInset: 0.31
+# nameplateOtherBottomInset: 0.1
+# nameplateSelfTopInset: 0.50
+# nameplateLargeTopInset: 0.1
+# nameplateResourceOnTarget: 0
+# nameplateShowPersonalCooldowns: 1
+# nameplateHideHealthAndPower: 1
+# nameplateMotionSpeed: 0.05
+# nameplateMotion: 1
+# nameplateGlobalScale: 1.0
