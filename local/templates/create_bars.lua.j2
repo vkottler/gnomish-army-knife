@@ -165,7 +165,7 @@ function GakSetRoleActions()
 	local spec_info = {GetSpecializationInfo(GetSpecialization())}
 	local role = spec_info[5]
 	local role_bind_count = 0
-{% for role, role_data in bars["roles"].items() %}
+{% for role, role_data in bars["roles"].items()|sort(attribute='0') %}
 
 	if role == "{{role}}" then
 {% for key, bind in role_data.get("by_key", {}).items()|sort(attribute='0') %}
