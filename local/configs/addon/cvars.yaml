@@ -67,7 +67,7 @@ nameplateSelfAlpha: 0.75
 # UnitNameFriendlyPlayerName: 0
 # UnitNameEnemyPlayerName: 0
 
-nameplateShowSelf: 1
+nameplateShowSelf: 0  # useless without BetterBlizzPlates aura bar
 nameplateShowAll: 1
 nameplateShowDebuffsOnFriendly: 1  # default
 
@@ -140,7 +140,7 @@ cameraDistanceMaxZoomFactor: 2.6
 rotateMinimap: 0
 
 # midnight stuff
-damageMeterEnabled: 1
+damageMeterEnabled: 0  # not many features yet, off by default
 externalDefensivesEnabled: 1
 lootUnderMouse: 0
 showTargetOfTarget: 1
