@@ -146,6 +146,9 @@ lootUnderMouse: 0
 showTargetOfTarget: 1
 spellDiminishPVPOnlyTriggerableByMe: 1
 secretPvPMatchRestrictionsForced: 1
+nameplateSize: 5
+nameplateStyle: 4
+nameplateAuraScale: 0.7
 
 # graveyard
 # nameplateShowFriendlyBuffs: 1
