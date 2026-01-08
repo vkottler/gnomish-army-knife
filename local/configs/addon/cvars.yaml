@@ -145,6 +145,7 @@ externalDefensivesEnabled: 1
 lootUnderMouse: 0
 showTargetOfTarget: 1
 spellDiminishPVPOnlyTriggerableByMe: 1
+secretPvPMatchRestrictionsForced: 1
 
 # graveyard
 # nameplateShowFriendlyBuffs: 1

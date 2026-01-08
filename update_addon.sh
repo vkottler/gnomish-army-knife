@@ -7,7 +7,7 @@ fi
 PROJECT=gnomish-army-knife
 
 # beta, classic, classic_era, retail
-for CLIENT in retail beta xptr; do
+for CLIENT in retail beta xptr ptr; do
 	ADDONS=_${CLIENT}_/Interface/AddOns
 
 	if [ -L wow ]; then
