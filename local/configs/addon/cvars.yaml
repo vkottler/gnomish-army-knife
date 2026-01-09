@@ -149,6 +149,8 @@ secretPvPMatchRestrictionsForced: 1
 nameplateSize: 5
 nameplateStyle: 4
 nameplateAuraScale: 0.7
+pvpFramesDisplayOnlyHealerPowerBars: 1
+pvpOptionDisplayPets: 1
 
 # graveyard
 # nameplateShowFriendlyBuffs: 1
