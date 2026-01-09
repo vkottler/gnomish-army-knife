@@ -130,3 +130,8 @@ by_name:
     body: |-
       #showtooltip
       /cast [@anyfriend] Ultimate Penitence
+
+  ils:
+    body: |-
+      #showtooltip
+      /cast [known:Inner Light] Inner Light; Inner Shadow
