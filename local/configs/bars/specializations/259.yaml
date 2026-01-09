@@ -14,15 +14,16 @@ by_key:
 
   L2_R2: m fss
 
-  L1_R2_1: s "Rupture"
-  L1_R2_2: s "Rupture"
-  L1_R2_C: s "Rupture"
+  # L1_R2_1: s "Rupture"
+  # L1_R2_2: s "Rupture"
+  # L1_R2_C: s "Rupture"
 
   R2_1: s "Envenom"
   R2_2: s "Envenom"
   R2_C: s "Envenom"
 
-  L2_S: s "Deathmark"
+  L2_S: m dmbf
+  P2_S: s "Rupture"
 
   L1_S_1: s "Crimson Tempest"
   L1_S_2: s "Crimson Tempest"
@@ -34,11 +35,7 @@ by_key:
 
   L2_L1_P1: s "Poisoned Knife"
 
-  L1_C_1: s "Ambush"
-  L1_C_2: s "Ambush"
-  L1_C_C: s "Ambush"
-
-  P2_C: s "Kingsbane"
+  P2_X: s "Kingsbane"
 
   L2_P2_T: s "Deadly Poison"
   L2_P2_C: s "Amplifying Poison"

@@ -6,7 +6,10 @@ by_key:
 
   L1_P2_R1: s "Shiv"
 
-  L2_L1_R2: s 1725  # Distract
+  L2_L1_R2: s "Smoke Bomb"
+  L1_R2_1: s 1725  # Distract
+  L1_R2_2: s 1725  # Distract
+  L1_R2_C: s 1725  # Distract
 
   P2_R2: s "Cheap Shot"
 
@@ -14,11 +17,13 @@ by_key:
   L2_P2_R2: s "Sap"
   L1_P2_R2: s "Blind"
 
+  L2_P2_S: s "Ambush"
+
   L1_P2_X: s "Death from Above"
 
   L2_T: s "Thistle Tea"
 
-  P2_T: s "Smoke Bomb"
+  # P2_T: s "Smoke Bomb"
 
   L2_P2_X: s "Detection"
 
@@ -32,8 +37,6 @@ by_key:
   X_2: s "Crimson Vial"
   X_C: s "Crimson Vial"
 
-  P2_X: s "Vanish"
-
   L1_T_1: s "Cloak of Shadows"
   L1_T_2: s "Cloak of Shadows"
   L1_T_C: s "Cloak of Shadows"
@@ -41,9 +44,13 @@ by_key:
   T_1: s "Evasion"
   T_2: s "Evasion"
   T_C: s "Evasion"
+  P2_T: s "Vanish"
 
-  L2_C: s "Cold Blood"
+  # L2_C: s "Cold Blood"
 
+  L1_C_1: s "Tricks of the Trade"
+  L1_C_2: s "Tricks of the Trade"
+  L1_C_C: s "Tricks of the Trade"
   C_1: s "Slice and Dice"
   C_2: s "Slice and Dice"
   C_C: s "Slice and Dice"

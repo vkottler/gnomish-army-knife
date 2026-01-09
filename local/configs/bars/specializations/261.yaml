@@ -2,24 +2,21 @@
 # Subtlety Rogue
 by_key:
   L2_R1: m ess
+  L2_R2: m fss
 
-  L1_R1_1: s "Symbols of Death"
-  L1_R1_2: s "Symbols of Death"
-  L1_R1_C: s "Symbols of Death"
+  L1_R1_1: m stec
+  L1_R1_2: m stec
+  L1_R1_C: m stec
 
   R1_1: s "Backstab"
   R1_2: s "Backstab"
   R1_C: s "Shadowstrike"
 
-  L1_R2_1: s "Rupture"
-  L1_R2_2: s "Rupture"
-  L1_R2_C: s "Rupture"
+  R2_1: s 196819  # "Eviscerate"
+  R2_2: s 196819  # "Eviscerate"
+  R2_C: s 196819  # "Eviscerate"
 
-  R2_1: s "Eviscerate"
-  R2_2: s "Eviscerate"
-  R2_C: s "Eviscerate"
-
-  L2_L1_S: s "Shuriken Tornado"
+  # L2_L1_S: s "Shuriken Tornado"
 
   L2_S: s "Shadow Blades"
 
@@ -30,19 +27,8 @@ by_key:
   S_1: s "Shuriken Storm"
   S_2: s "Shuriken Storm"
   S_C: s "Shuriken Storm"
-
-  P2_S: s "Goremaw's Bite"
-
-  L2_P2_S: s "Flagellation"
+  P2_S: s "Shadow Dance"
 
   L2_L1_P1: s "Shuriken Toss"
 
-  L2_R2: m fss
-
-  L2_P2_T: s "Ambush"
-
-  L1_C_1: s "Secret Technique"
-  L1_C_2: s "Secret Technique"
-  L1_C_C: s "Secret Technique"
-
-  P2_C: s "Shadow Dance"
+  P2_X: s "Goremaw's Bite"
