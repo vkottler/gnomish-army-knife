@@ -5,7 +5,7 @@ by_key:
   L1_R1_2: s "Lightning Bolt"
   R1_1: s "Flame Shock"
   R1_2: s "Flame Shock"
-  P2_R1: s "Primordial Wave"
+  P2_R1: s "Thunderstorm"
   L1_P2_R1: s "Stormkeeper"
 
   L2_R2: s "Earthquake"
@@ -14,19 +14,13 @@ by_key:
   L1_R2_1: m eseb
   L1_R2_2: m eseb
 
-  S_1: m slmt
-  S_2: s "Liquid Magma Totem"
-  P2_S: s "Chain Lightning"
-
-  L1_X_1: m fese
-  L1_X_2: m fese
+  L2_S: s "Ascendance"
+  S_1: m scs
+  S_2: s "Cleanse Spirit"
 
   L1_T_1: m sch
   L1_T_2: s "Chain Heal"
   T_1: m shs
   T_2: s "Healing Surge"
-
-  C_1: m scs
-  C_2: s "Cleanse Spirit"
 
   L2_P2_C: s "Thunderstrike Ward"

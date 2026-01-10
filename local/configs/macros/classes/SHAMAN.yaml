@@ -11,10 +11,15 @@ by_name:
       #showtooltip
       /cast [known:Purge] Purge; Greater Purge
 
-  fese:
+  ttpc:
     body: |-
       #showtooltip
-      /cast [known:Fire Elemental] Fire Elemental; Storm Elemental
+      /cast [known:Tremor Totem] Tremor Totem; Poison Cleansing Totem
+
+  ahtt:
+    body: |-
+      #showtooltip
+      /cast [known:Ascendance] Ascendance; Healing Tide Totem
 
   eseb:
     body: |-
@@ -61,11 +66,6 @@ by_name:
       #showtooltip
       /cast [@player] Totemic Projection
 
-  sewt:
-    body: |-
-      #showtooltip
-      /cast [@player] Earthen Wall Totem
-
   shr:
     body: |-
       #showtooltip
@@ -96,22 +96,17 @@ by_name:
       #showtooltip
       /cast [@player] Earth Shield
 
-  slmt:
-    body: |-
-      #showtooltip
-      /cast [@player] Liquid Magma Totem
-
   sst:
     body: |-
       #showtooltip
       /cast [@player] Surging Totem
 
-array_old:
-  - name: self
+  sww:
     body: |-
       #showtooltip
       /cast [@player] Water Walking
 
+array_old:
   - name: self
     body: |-
       #showtooltip

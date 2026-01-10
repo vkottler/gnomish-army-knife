@@ -1,29 +1,29 @@
 ---
 # Enhancement Shaman
 by_key:
-  P2_R1: s "Primordial Wave"
+  # P2_R1: s "Primordial Wave"
   L1_R1_1: s "Flame Shock"
   L1_R1_2: s "Flame Shock"
   R1_1: s "Stormstrike"
   R1_2: s "Stormstrike"
+  P2_R1: s "Lava Lash"
   L1_P2_R1: s "Feral Spirit"
 
   R2_1: s "Lightning Bolt"
   R2_2: s "Lightning Bolt"
-  L1_R2_1: s "Lava Burst"
-  L1_R2_2: s "Lava Burst"
+  L1_R2_1: m sst
+  L1_R2_2: s "Surging Totem"
   L2_R2: s "Feral Lunge"
 
-  L2_L1_S: s "Doom Winds"
+  L2_S: s "Doom Winds"
   S_1: s "Crash Lightning"
   S_2: s "Crash Lightning"
-  P2_S: s "Chain Lightning"
-  L1_P2_S: s "Surging Totem"
+  # L1_P2_S: s "Surging Totem"
 
-  L1_X_1: s "Lava Lash"
-  L1_X_2: s "Lava Lash"
+  # L1_X_1: s "Lava Lash"
+  # L1_X_2: s "Lava Lash"
 
-  L2_L1_T: s "Fire Nova"
+  # L2_L1_T: s "Fire Nova"
   L1_T_1: m sch
   L1_T_2: s "Chain Heal"
   T_1: m shs
@@ -33,5 +33,5 @@ by_key:
   C_2: s "Cleanse Spirit"
   L2_P2_C: s "Sundering"
 
-  L2_L: s "Ice Strike"
-  P2_R: s "Windfury Weapon"
+  # L2_L: s "Ice Strike"
+  L1_P2_T: s "Windfury Weapon"

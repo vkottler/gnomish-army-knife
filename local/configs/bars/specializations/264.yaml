@@ -6,7 +6,7 @@ by_key:
   R1_1: m sr
   R1_2: s "Riptide"
   P2_R1: s "Flame Shock"
-  L1_P2_R1: s "Healing Tide Totem"
+  L1_P2_R1: s "Lightning Bolt"
 
   L2_R2: s "Lava Burst"
   L1_R2_1: m shw
@@ -14,14 +14,14 @@ by_key:
   R2_1: m shs
   R2_2: s "Healing Surge"
 
+  L2_S: m ahtt
   S_1: m sps
   S_2: s "Purify Spirit"
-  P2_S: s "Lightning Bolt"
   L2_P2_S: s "Heroism"  # could do this with a macro
-  L1_P2_S: s "Chain Lightning"
+  # L1_P2_S: s "Chain Lightning"
 
-  L1_X_1: m sewt
-  L1_X_2: s "Earthen Wall Totem"
+  # L1_X_1: m sewt
+  # L1_X_2: s "Earthen Wall Totem"
 
   L1_T_1: m sslt
   L1_T_2: s "Spirit Link Totem"
@@ -32,4 +32,4 @@ by_key:
   C_2: s "Healing Rain"
   L2_P2_C: s "Water Shield"
 
-  L2_R: s "Earthliving Weapon"
+  L1_P2_T: s "Earthliving Weapon"
