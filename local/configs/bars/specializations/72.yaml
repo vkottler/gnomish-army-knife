@@ -5,21 +5,18 @@ by_key:
   L1_R1_2: s "Bloodthirst"
   R1_1: s "Raging Blow"
   R1_2: s "Raging Blow"
-  P2_R1: s "Onslaught"
   L1_P2_R1: s "Recklessness"
 
   R2_1: s "Rampage"
   R2_2: s "Rampage"
   L1_P2_R2: s "Odyn's Fury"
 
-  X_1: s "Enraged Regeneration"
-  X_2: s "Enraged Regeneration"
+  L1_X_1: s "Enraged Regeneration"
+  L1_X_2: s "Enraged Regeneration"
 
-  C_1: s "Death Wish"
-  C_2: s "Death Wish"
+  L2_L1_P1: m dsf
 
-  L2_C: m dsf
-
-  P2_S: m bsr
+  L2_S: m bsa
+  P2_S: s "Death Wish"
 
   P2_U: s "Berserker Stance"

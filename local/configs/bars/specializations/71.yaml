@@ -1,26 +1,28 @@
 ---
 # Arms Warrior
 by_key:
-  L1_R1_1: s "Rend"
-  L1_R1_2: s "Rend"
+  L1_R1_1: s "Slam"
+  L1_R1_2: s "Slam"
   R1_1: s "Overpower"
   R1_2: s "Overpower"
-  P2_R1: s "Skullsplitter"
+  # P2_R1: s "Skullsplitter"
   L1_P2_R1: s "Colossus Smash"
 
   R2_1: s "Mortal Strike"
   R2_2: s "Mortal Strike"
   L1_P2_R2: s "Demolish"
 
-  X_1: s "Ignore Pain"
-  X_2: s "Ignore Pain"
-
+  L2_S: s "Avatar"
   P2_S: m bsr
 
-  L2_C: m dsa
-  L1_C_1: s "Die By The Sword"
-  L1_C_2: s "Die By The Sword"
-  C_1: s "Sweeping Strikes"
-  C_2: s "Sweeping Strikes"
+  L2_T: s "Duel"
+  P2_T: s "Die By The Sword"
+
+  L1_X_1: s "Ignore Pain"
+  L1_X_2: s "Ignore Pain"
+  L1_C_1: s "Sweeping Strikes"
+  L1_C_2: s "Sweeping Strikes"
+
+  L2_L1_P1: m dsa
 
   P2_U: s "Battle Stance"
