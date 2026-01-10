@@ -96,3 +96,21 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Purify Disease
+
+  dss:
+    body: |-
+      #showtooltip Starsurge
+      /cast Berserking
+      /cast Starsurge
+
+  dtfr:
+    body: |-
+      #showtooltip Tiger's Fury
+      /cast Berserking
+      /cast Tiger's Fury
+
+  dnsr:
+    body: |-
+      #showtooltip Nature's Swiftness
+      /cast Berserking
+      /cast Nature's Swiftness

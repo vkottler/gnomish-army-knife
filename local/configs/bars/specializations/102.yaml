@@ -12,7 +12,7 @@ by_key:
   R1_B: s "Mangle"
   R1_C: s "Shred"
   R1_M: s "Moonfire"
-  P2_R1: s "Starsurge"
+  P2_R1: m dss
   L1_P2_R1: m dnmf
 
   L1_R2_1: s "Starfire"

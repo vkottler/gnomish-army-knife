@@ -11,8 +11,8 @@ by_key:
   L1_R2_1: s "Haunt"
   L1_R2_2: s "Haunt"
 
-  R2_1: s "Agony"
-  R2_2: s "Agony"
+  R2_1: m ar
+  R2_2: m ar
 
   # L2_L1_S: s "Oblivion"
 

@@ -61,3 +61,21 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Summon Infernal
+
+  cfr:
+    body: |-
+      #showtooltip Conflagrate
+      /cast Blood Fury
+      /cast Conflagrate
+
+  ar:
+    body: |-
+      #showtooltip Agony
+      /cast Blood Fury
+      /cast Agony
+
+  dtr:
+    body: |-
+      #showtooltip Summon Demonic Tyrant
+      /cast Blood Fury
+      /cast Summon Demonic Tyrant

@@ -2,8 +2,8 @@
 # Destruction Warlock
 # set these with felhunter out
 by_key:
-  L1_R1_1: s "Conflagrate"
-  L1_R1_2: s "Conflagrate"
+  L1_R1_1: m cfr
+  L1_R1_2: m cfr
 
   R1_1: s "Immolate"
   R1_2: s "Immolate"

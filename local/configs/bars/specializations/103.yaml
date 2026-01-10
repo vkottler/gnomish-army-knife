@@ -11,7 +11,7 @@ by_key:
   R1_B: s "Mangle"
   R1_C: s "Shred"
   R1_M: s "Shred"
-  P2_R1: s "Tiger's Fury"
+  P2_R1: m dtfr
   L1_P2_R1: s "Feral Frenzy"
 
   L1_R2_1: s "Wrath"
@@ -25,7 +25,7 @@ by_key:
   R2_B: s "Strength of the Wild"
   R2_C: s "Ferocious Bite"
   P2_R2: s "Maim"
-  L1_P2_R2: m bvoke
+  L1_P2_R2: s "Convoke the Spirits"
 
   L2_S: s "Berserk"
   L1_S_C: s "Primal Wrath"

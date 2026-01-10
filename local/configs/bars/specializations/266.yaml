@@ -15,7 +15,7 @@ by_key:
   L1_R2_1: s 264119  # Summon Vilefiend
   L1_R2_2: s 264119
 
-  L2_S: s "Summon Demonic Tyrant"
+  L2_S: m dtr
 
   # S_1: s "Implosion"
   # S_2: s "Implosion"
