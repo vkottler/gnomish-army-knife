@@ -1,12 +1,12 @@
 ---
 # Holy Priest
 by_key:
-  L2_L1_R1: s "Greater Heal"
+  L2_L1_R1: s "Smite"
   # L1_R1_1: m shws
   # L1_R1_2: 's "Holy Word: Serenity"'
   R1_1: m spom
   R1_2: s "Prayer of Mending"
-  L1_P2_R1: s "Holy Fire"
+  L1_P2_R1: s "Apotheosis"
 
   L1_R2_1: m shwy
   L1_R2_2: 's "Holy Word: Sanctify"'
@@ -14,22 +14,23 @@ by_key:
   R2_1: m sfh
   R2_2: s "Flash Heal"
   # L1_P2_R2: s "Divine Word"
-  L1_P2_R2: s "Smite"
+  # L1_P2_R2: s "Smite"
 
   L2_S: s "Divine Hymn"
   S_1: m sp
   S_2: s "Purify"
-  P2_S: s "Apotheosis"
+  P2_S: s 215769  # "Spirit of Redemption"
 
   # L2_L1_X: s "Symbol of Hope"
 
   # L2_L1_T: s "Lightwell"
-  L2_T: s 215769  # "Spirit of Redemption"
   L1_X_1: m sgs
   L1_X_2: s "Guardian Spirit"
   X_1: m shws
   X_2: 's "Holy Word: Serenity"'
   # L2_P2_T: s "Holy Ward"
 
+  L1_T_1: m sgh
+  L1_T_2: s "Greater Heal"
   T_1: m spoh
   T_2: s "Prayer of Healing"

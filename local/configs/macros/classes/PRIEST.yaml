@@ -116,6 +116,11 @@ by_name:
       #showtooltip
       /cast [@player] Pain Suppression
 
+  sgh:
+    body: |-
+      #showtooltip
+      /cast [@player] Greater Heal
+
   spwb:
     body: |-
       #showtooltip
