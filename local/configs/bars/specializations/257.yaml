@@ -14,12 +14,11 @@ by_key:
   R2_1: m sfh
   R2_2: s "Flash Heal"
   # L1_P2_R2: s "Divine Word"
-  # L1_P2_R2: s "Smite"
+  L1_P2_R2: s "Divine Hymn"
 
-  L2_S: s "Divine Hymn"
+  L2_S: s 215769  # "Spirit of Redemption"
   S_1: m sp
   S_2: s "Purify"
-  P2_S: s 215769  # "Spirit of Redemption"
 
   # L2_L1_X: s "Symbol of Hope"
 
