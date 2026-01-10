@@ -2,7 +2,6 @@
 # Balance Druid
 by_key:
   L2_L1_R1: s "Solar Beam"
-  L2_R1: s "Starfall"
   L1_R1_1: s "Sunfire"
   L1_R1_2: s "Sunfire"
   L1_R1_B: s "Swipe"
@@ -14,7 +13,7 @@ by_key:
   R1_C: s "Shred"
   R1_M: s "Moonfire"
   P2_R1: s "Starsurge"
-  L1_P2_R1: s "Fury of Elune"
+  L1_P2_R1: m dnmf
 
   L1_R2_1: s "Starfire"
   L1_R2_2: s "Starfire"
@@ -29,28 +28,31 @@ by_key:
   P2_R2: m dfnwe
   L1_P2_R2: s "Convoke the Spirits"
 
-  L2_S: s "Celestial Alignment"
+  L2_S: s 194223  # "Celestial Alignment"
   L1_S_C: s "Rip"
-  S_C: s "Ferocious Bite"
-  P2_S: m beam
+  L1_S_M: s 1233346  # "Lunar Eclipse"
+  S_C: s "Maim"
+  S_M: s "Wild Mushroom"
+  P2_S: s "Starfall"
 
-  L2_X: s "Faerie Swarm"
+  L2_L1_S: s "Faerie Swarm"
   L1_X_1: m srj
   L1_X_2: s "Rejuvenation"
-  L1_X_B: m srj
-  L1_X_C: m srj
+  L1_X_B: s "Ironfur"
+  L1_X_C: s "Ferocious Bite"
   L1_X_M: m srj
   X_1: m srg
   X_2: s "Regrowth"
   X_B: m srg
   X_C: m srg
   X_M: m srg
+  P2_X: m beam
 
   L2_P2_X: s "Innervate"
 
-  S_1: s "Stellar Flare"
-  S_2: s "Stellar Flare"
-  S_M: s "Stellar Flare"
+  # S_1: s "Stellar Flare"
+  # S_2: s "Stellar Flare"
+  # S_M: s "Stellar Flare"
 
   L1_T_1: m src
   L1_T_2: s "Remove Corruption"
@@ -58,5 +60,5 @@ by_key:
   L1_T_C: m src
   L1_T_M: m src
 
-  L1_C_C: s "Maim"
-  L1_C_B: s "Ironfur"
+  L1_C_B: s "Thrash"
+  L1_C_M: s "Flap"

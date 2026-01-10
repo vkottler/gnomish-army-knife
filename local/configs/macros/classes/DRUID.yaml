@@ -72,30 +72,15 @@ by_name:
       #showtooltip
       /cast [@player] Swiftmend
 
-  sog:
-    body: |-
-      #showtooltip
-      /cast [@player] Overgrowth
-
   srg:
     body: |-
       #showtoolip
       /cast [@player] Regrowth
 
-  scw:
-    body: |-
-      #showtooltip
-      /cast [@player] Cenarion Ward
-
   sib:
     body: |-
       #showtooltip
       /cast [@player] Ironbark
-
-  sngg:
-    body: |-
-      #showtooltip
-      /cast [@player,known:Nourish] Nourish; [@player] Grove Guardians
 
   suv:
     body: |-
@@ -107,46 +92,63 @@ by_name:
       #showtooltip
       /cast [@player] Efflorescence
 
-  sal:
-    body: |-
-      #showtooltip
-      /cast [@player] Ancient of Lore
-      /cast Nature's Vigil
-
   sinv:
     body: |-
       #showtooltip
       /cast [@player] Innervate
-      /cast Nature's Vigil
 
   srj:
     body: |-
       #showtooltip
       /cast [@player] Rejuvenation
 
-  sig:
-    body: |-
-      #showtooltip
-      /cast [@player] Invigorate
-
   root:
     body: |-
       #showtooltip
       /cast [known:Mass Entanglement] Mass Entanglement; Ursol's Vortex
 
-  ngg:
-    body: |-
-      #showtooltip
-      /cast [known:Nourish] Nourish; Grove Guardians
-
   ult:
     body: |-
       #showtooltip
       /cast [known:Convoke the Spirits] Convoke the Spirits; Incarnation: Tree of Life
-      /cast Nature's Vigil
 
   ffsb:
     body: |-
       #showtooltip
       /cast Skull Bash
       /changeactionbar 1
+
+  bvoke:
+    body: |-
+      #showtooltip Convoke the Spirits
+      /cast Berserking
+      /cast Convoke the Spirits
+
+  ffr:
+    # icon: ability_druid_disembowel
+    body: |-
+      #showtooltip
+      /cast Rake
+      /changeactionbar 1
+  ffm:
+    # icon: ability_druid_mangle2
+    body: |-
+      #showtooltip
+      /cast Mangle
+      /changeactionbar 1
+  ffs:
+    # icon: spell_shadow_vampiricaura
+    body: |-
+      #showtooltip
+      /cast Shred
+      /changeactionbar 1
+
+  dirmb:
+    body: |-
+      #showtooltip
+      /cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
+
+  dfnwe:
+    body: |-
+      #showtooltip
+      /cast [known:Force of Nature] Force of Nature; Warrior of Elune

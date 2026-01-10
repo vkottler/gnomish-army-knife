@@ -1,10 +1,9 @@
 ---
 # Feral Druid
 by_key:
-  L2_R1: s "Adaptive Swarm"
   L1_R1_1: s "Rake"
   L1_R1_2: s "Rake"
-  L1_R1_B: s "Shred"
+  L1_R1_B: s "Thrash"
   L1_R1_C: s "Rake"
   L1_R1_M: s "Rake"
   R1_1: s "Shred"
@@ -17,10 +16,12 @@ by_key:
 
   L1_R2_1: s "Wrath"
   L1_R2_2: s "Wrath"
+  L1_R2_M: s "Wrath"
   L1_R2_B: s "Ironfur"
   L1_R2_C: s "Rip"
   R2_1: s "Mangle"
   R2_2: s "Mangle"
+  R2_M: s "Mangle"
   R2_B: s "Strength of the Wild"
   R2_C: s "Ferocious Bite"
   P2_R2: s "Maim"
@@ -28,6 +29,12 @@ by_key:
 
   L2_S: s "Berserk"
   L1_S_C: s "Primal Wrath"
+  L1_S_1: s "Starsurge"
+  L1_S_2: s "Starsurge"
+  L1_S_M: s "Starsurge"
+  S_1: s "Sunfire"
+  S_2: s "Sunfire"
+  S_M: s "Sunfire"
   S_C: s "Swipe"
 
   L1_X_1: m srj
@@ -52,5 +59,6 @@ by_key:
 
   T_B: s "Swipe"
 
-  L1_C_B: s "Thrash"
-  L1_C_C: s "Thrash"
+  L1_C_C: s "Chomp"
+  # L1_C_B: s "Thrash"
+  # L1_C_C: s "Thrash"
