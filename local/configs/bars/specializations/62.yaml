@@ -3,26 +3,25 @@
 by_key:
   L2_R2: s "Arcane Orb"
 
-  L1_R1_1: s "Presence of Mind"
-  L1_R1_2: s "Presence of Mind"
+  L1_R1_1: m tmr
+  L1_R1_2: m tmr
   R1_1: s "Arcane Blast"
   R1_2: s "Arcane Blast"
-  L1_P2_R1: s "Touch of the Magi"
+  L1_P2_R1: s "Evocation"
 
   L1_R2_1: s "Arcane Missiles"
   L1_R2_2: s "Arcane Missiles"
   R2_1: s "Arcane Barrage"
   R2_2: s "Arcane Barrage"
+  P2_R2: s "Prismatic Barrier"
+  L1_P2_R2: s "Presence of Mind"
 
-  L2_S: s "Evocation"
   S_1: s "Arcane Surge"
   S_2: s "Arcane Surge"
   P2_S: s "Arcanosphere"
 
-  L2_P2_R2: s 157980  # "Supernova"
+  # L2_P2_R2: s 157980  # "Supernova"
 
-  X_2: s "Prismatic Barrier"
-  X_1: s "Prismatic Barrier"
-  L2_P2_X: s "Fire Blast"
+  # L2_P2_X: s "Fire Blast"
 
-  L2_T: s "Frostbolt"
+  # L2_T: s "Frostbolt"

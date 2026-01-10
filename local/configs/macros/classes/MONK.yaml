@@ -60,3 +60,20 @@ by_name:
     body: |-
       #showtooltip
       /cast [known:Strike of the Windlord] Strike of the Windlord; Whirling Dragon Punch
+
+  fofr:
+    body: |-
+      #showtooltip Fists of Fury
+      /cast Blood Fury
+      /cast Fists of Fury
+
+  tfr:
+    body: |-
+      #showtooltip Thunder Focus Tea
+      /cast Blood Fury
+      /cast Thunder Focus Tea
+
+  jscj:
+    body: |-
+      #showtooltip
+      /cast [known:322118] Invoke Yu'lon, the Jade Serpent; Invoke Chi-Ji, the Red Crane

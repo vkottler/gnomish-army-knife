@@ -9,9 +9,9 @@ by_key:
   R1_1: m ssm
   R1_2: s "Soothing Mist"
 
-  P2_R1: s "Thunder Focus Tea"
+  P2_R1: m tfr
 
-  L1_P2_R1: s "Invoke Chi-Ji, the Red Crane"
+  L1_P2_R1: m jscj
 
   L2_L1_R2: s "Spinning Crane Kick"
 
