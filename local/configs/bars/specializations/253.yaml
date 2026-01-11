@@ -5,13 +5,14 @@ by_key:
   L1_R1_2: s "Cobra Shot"
   R1_1: s "Barbed Shot"
   R1_2: s "Barbed Shot"
-  L1_P2_R1: s "Bestial Wrath"
+  P2_R1: m brr
+  L1_P2_R1: s "Black Arrow"
 
-  L2_R2: s "Multi-Shot"
+  L2_R2: s "Wild Thrash"
   R2_1: s "Kill Command"
   R2_2: s "Kill Command"
   L1_P2_R2: s "Bloodshed"
 
   S_1: m sdbh
   S_2: 's "Dire Beast: Hawk"'
-  L2_S: s "Call of the Wild"
+  # L2_S: s "Call of the Wild"
