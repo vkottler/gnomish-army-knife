@@ -15,8 +15,8 @@ by_key:
   L2_S: s "Avatar"
   P2_S: m bsr
 
-  L2_T: s "Duel"
-  P2_T: s "Die By The Sword"
+  L2_T: s "Die By The Sword"
+  L2_C: s "Duel"
 
   L1_X_1: s "Ignore Pain"
   L1_X_2: s "Ignore Pain"

@@ -1,7 +1,7 @@
 ---
 # Preservation Evoker
 by_key:
-  L2_L1_R1: s "Wing Buffet"
+  L2_L1_R1: m dfs
   L2_R1: s "Fire Breath"
 
   L1_R1_1: m sve
@@ -21,7 +21,6 @@ by_key:
   R2_2: s "Echo"
 
   P2_R2: s "Azure Strike"
-  L1_P2_R2: m dfs
 
   L1_S_1: m seb
   L1_S_2: s "Emerald Blossom"
@@ -31,9 +30,11 @@ by_key:
   S_2: s "Naturalize"
   P2_S: s "Disintegrate"
 
-  L2_X: s "Temporal Anomaly"
+  # L2_X: s "Temporal Anomaly"
   X_1: m std
   X_2: s "Time Dilation"
+
+  P2_T: s "Temporal Anomaly"
 
   L1_C_1: s "Emerald Communion"
   L1_C_2: s "Emerald Communion"

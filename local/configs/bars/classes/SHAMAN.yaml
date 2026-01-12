@@ -21,8 +21,7 @@ by_key:
   X_1: m stp
   X_2: s "Totemic Projection"
   P2_X: s "Healing Stream Totem"
-  # L1_P2_X: s "Totemic Recall"
-  #
+  L1_P2_X: m rac1
   P2_S: s "Chain Lightning"
 
   L2_T: s "Wind Rush Totem"

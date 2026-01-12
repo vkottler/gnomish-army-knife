@@ -22,6 +22,7 @@ by_key:
   # L2_P2_X: s "Vampiric Embrace"
   # L1_P2_X: m hds
 
+  P2_T: m rac1
   # L1_P2_T: s "Void Shift"
 
   C_1: m sl

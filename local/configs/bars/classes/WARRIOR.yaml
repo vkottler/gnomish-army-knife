@@ -32,6 +32,7 @@ by_key:
   L1_T_2: m bsbr
   T_1: m wtst
   T_2: m wtst
+  P2_T: m rac1
   # P2_T: s "Avatar"
   L1_P2_T: s "Shield Slam"
 

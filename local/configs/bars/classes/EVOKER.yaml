@@ -10,21 +10,23 @@ by_key:
 
   L2_P2_S: s "Fury of the Aspects"
 
+  L2_X: s "Zephyr"
   L1_X_1: m scf
   L1_X_2: s "Cauterizing Flame"
   P2_X: s "Obsidian Scales"
 
   L1_P2_R1: s "Tip the Scales"
 
-  L2_T: s "Zephyr"
+  L2_T: m rac1
   L1_T_1: s "Tail Swipe"
   L1_T_2: s "Tail Swipe"
   T_1: m sts
   T_2: s "Time Stop"
-  P2_T: s "Chrono Loop"
 
   L2_P2_T: s "Source of Magic"
   # L1_P2_T: s "Unravel"
+
+  P2_C: s "Chrono Loop"
 
   L2_L1_P1: m tssp
   L2_P1: s "Rescue"

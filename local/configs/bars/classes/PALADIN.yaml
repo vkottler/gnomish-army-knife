@@ -5,6 +5,7 @@ by_key:
   L2_P2_R1: s "Blinding Light"
   # L1_P2_R1: m dthp
 
+  L2_L1_R2: m rac1
   P2_R2: s "Hammer of Justice"
   L2_P2_R2: s "Blessing of Sacrifice"
   L1_P2_R2: s "Blessing of Freedom"
