@@ -1,7 +1,6 @@
 ---
 # Havoc Demon Hunter
 by_key:
-  L2_L1_R1: s "Disrupt"
   L2_R1: m eb14  # eye beam macro
 
   L1_R1_1: s "Immolation Aura"
@@ -10,54 +9,28 @@ by_key:
   R1_1: s "Felblade"
   R1_2: s "Felblade"
 
-  P2_R1: s "Consume Magic"
-  L2_P2_R1: s 217832  # Imprison
-  L1_P2_R1: s "The Hunt"
-
-  L2_L1_R2: m rac1
   L2_R2: s "Essence Break"
 
-  L1_R2_1: s "Blade Dance"
-  L1_R2_2: s "Blade Dance"
+  S_1: s "Blade Dance"
+  S_2: s "Blade Dance"
 
   R2_1: s "Chaos Strike"
   R2_2: s "Chaos Strike"
 
-  P2_R2: s "Throw Glaive"
-  L2_P2_R2: s "Fel Eruption"
+  # L2_P2_R2: s "Fel Eruption"
+  L2_P2_R2: s "Chaos Nova"
   L1_P2_R2: s "Demon's Bite"
 
-  L2_S: s "Chaos Nova"
+  # L2_S: s "Chaos Nova"
 
-  L1_S_1: m ssos
-  L1_S_2: s "Sigil of Spite"
+  # L1_S_1: m ssos
+  # L1_S_2: s "Sigil of Spite"
 
-  S_1: m ssof
-  S_2: s "Sigil of Flame"
+  # S_1: m ssof
+  # S_2: s "Sigil of Flame"
 
-  P2_S: s "Rain From Above"
+  L2_S: s "Rain From Above"
 
-  L1_X_1: s "Spectral Sight"
-  L1_X_2: s "Spectral Sight"
-
-  X_1: m sm
-  X_2: s "Metamorphosis"
+  L1_R2_1: m sm
+  L1_R2_2: s "Metamorphosis"
   P2_X: s "Reverse Magic"
-
-  L1_T_1: s "Darkness"
-  L1_T_2: s "Darkness"
-
-  T_1: m ssom
-  T_2: s "Sigil of Misery"
-
-  L1_C_1: s "Netherwalk"
-  L1_C_2: s "Netherwalk"
-
-  C_1: s "Blur"
-  C_2: s "Blur"
-
-  L2_L1_P1: s "Glide"
-  L2_P1: s "Vengeful Retreat"
-  L1_P1: s "Fel Rush"
-
-  L1_P3: s "Torment"
