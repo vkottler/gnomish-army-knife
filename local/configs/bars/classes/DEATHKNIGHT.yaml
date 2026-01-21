@@ -17,12 +17,11 @@ by_key:
   X_1: m sams
   X_2: s "Anti-Magic Shell"
   P2_X: s "Icebound Fortitude"
-  L1_P2_X: s "Soul Reaper"
 
-  L2_T: s "Sacrificial Pact"
+  L2_T: s "Lichborne"
   T_1: m sdc
   T_2: m pdc
-  P2_T: s "Lichborne"
+  P2_T: m rac1
 
   L1_P2_C: s "Dark Command"
 

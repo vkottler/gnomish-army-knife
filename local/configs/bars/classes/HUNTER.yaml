@@ -2,7 +2,7 @@
 by_key:
   L2_L1_R1: s "Counter Shot"
   L2_R1: s "Tranquilizing Shot"
-  P2_R1: m ks
+  # P2_R1: m ks
 
   L2_L1_R2: s "Chimaeral Sting"
 
@@ -12,13 +12,13 @@ by_key:
   P2_R2: s "Concussive Shot"
 
   L2_P2_R1: s "Intimidation"
-  L2_P2_R2: m bssc
+  L2_P2_R2: s "Hunter's Mark"
 
   L1_S_1: m sbs
   L1_S_2: s "Binding Shot"
-  L2_L1_S: s "Explosive Shot"
+  # L2_L1_S: s "Explosive Shot"
 
-  L2_L1_X: s "Aspect of the Turtle"
+  L2_T: s "Aspect of the Turtle"
   L2_X: s "Survival of the Fittest"
   L1_X_1: m sros
   L1_X_2: s "Roar of Sacrifice"
@@ -27,20 +27,18 @@ by_key:
   P2_X: s "Exhilaration"
   L1_P2_X: s "Mend Pet"
 
-  L2_T: s "Hunter's Mark"
   L1_T_1: m sf
   L1_T_2: s "Flare"
   T_1: m stt
-  T_2: s "Tar Trap"
+  T_2: m ttsb
   P2_T: s "Camouflage"
-  L2_P2_T: s "Wild Kingdom"
 
   L2_L1_C: s "Misdirection"
-  L1_C_1: m shet
-  L1_C_2: s "High Explosive Trap"
+  # L1_C_1: m shet
+  # L1_C_2: s "High Explosive Trap"
   L2_C: C_SpellBook.PickupSpellBookItem(2, 1)  # Attack
   P2_C: C_SpellBook.PickupSpellBookItem(7, 1)  # Follow
-  L2_P2_C: s "Scare Beast"
+  L2_P2_C: s "Wild Kingdom"
 
   P2_P3: C_SpellBook.PickupSpellBookItem(6, 1)  # Defensive
   L2_P3: C_SpellBook.PickupSpellBookItem(11, 1)  # Passive

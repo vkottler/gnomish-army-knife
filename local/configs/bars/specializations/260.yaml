@@ -2,7 +2,7 @@
 # Outlaw Rogue
 
 by_key:
-  L2_R1: s "Roll the Bones"
+  L2_R1: s "Between the Eyes"
 
   L1_R1_1: s "Pistol Shot"
   L1_R1_2: s "Pistol Shot"
@@ -14,29 +14,29 @@ by_key:
 
   L2_R2: s "Grappling Hook"
 
-  L1_R2_1: s "Between the Eyes"
-  L1_R2_2: s "Between the Eyes"
-  L1_R2_C: s "Between the Eyes"
+  # L1_R2_1: s "Between the Eyes"
+  # L1_R2_2: s "Between the Eyes"
+  # L1_R2_C: s "Between the Eyes"
 
   R2_1: s "Dispatch"
   R2_2: s "Dispatch"
   R2_C: s "Dispatch"
 
-  L2_L1_S: s "Keep it Rolling"
-  L2_S: s "Adrenaline Rush"
+  # L2_L1_S: s "Keep it Rolling"
+  L2_S: s "Keep it Rolling"
 
-  L1_S_1: s "Ambush"
-  L1_S_2: s "Ambush"
-  L1_S_C: s "Ambush"
+  L1_S_1: s "Roll the Bones"
+  L1_S_2: s "Roll the Bones"
+  L1_S_C: s "Roll the Bones"
 
   S_1: s "Blade Flurry"
   S_2: s "Blade Flurry"
   S_C: s "Blade Flurry"
+  P2_S: s "Adrenaline Rush"
 
-  P2_S: s "Ghostly Strike"
+  # P2_S: s "Ghostly Strike"
 
-  L1_C_1: s "Killing Spree"
-  L1_C_2: s "Killing Spree"
-  L1_C_C: s "Killing Spree"
+  L2_C: m ksbf
+  P2_C: s "Preparation"
 
-  P2_C: s "Blade Rush"
+  P2_X: s "Blade Rush"

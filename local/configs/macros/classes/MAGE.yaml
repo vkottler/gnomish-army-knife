@@ -6,6 +6,16 @@ by_name:
       #showtooltip
       /cast [@player] Arcane Intellect
 
+  rfmp:
+    body: |-
+      #showtooltip
+      /cast [known:Ring of Frost] Ring of Frost; Mass Polymorph
+
+  sndb:
+    body: |-
+      #showtooltip
+      /cast [known:Supernova] Supernova; Dragon's Breath
+
   src:
     body: |-
       #showtooltip
@@ -26,10 +36,39 @@ by_name:
       #showtooltip
       /cast [@player] Blizzard
 
+  forb:
+    body: |-
+      #showtooltip Frozen Orb
+      /cast Blood Fury
+      /cast Frozen Orb
+
+  tmr:
+    body: |-
+      #showtooltip Touch of the Magi
+      /cast Blood Fury
+      /cast Touch of the Magi
+
+  sforb:
+    body: |-
+      #showtooltip Frozen Orb
+      /cast Blood Fury
+      /cast [@player] Frozen Orb
+
+  cbr:
+    body: |-
+      #showtooltip Combustion
+      /cast Blood Fury
+      /cast Combustion
+
+  smet:
+    body: |-
+      #showtooltip
+      /cast [@player] Meteor
+
   srof:
     body: |-
       #showtooltip
-      /cast [@player] Ring of Frost
+      /cast [@player,known:Ring of Frost] Ring of Frost; Mass Polymorph
 
   cat:
     icon: spell_mage_altertime_active

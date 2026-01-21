@@ -1,39 +1,29 @@
 ---
 # Windwalker Monk
 by_key:
-  L2_R1: s "Whirling Dragon Punch"
+  L2_R1: m swwdp
   P2_R1: s "Flying Serpent Kick"
-  L1_R1_1: s "Fists of Fury"
-  L1_R1_2: s "Fists of Fury"
+  L1_R1_1: m fofr
+  L1_R1_2: m fofr
   R1_1: s "Tiger Palm"
   R1_2: s "Tiger Palm"
-  L1_P2_R1: s "Storm, Earth, and Fire"
+  L1_P2_R1: s "Zenith"
 
-  L2_L1_R2: s "Clash"
-  L2_R2: s "Jadefire Stomp"
+  L2_L1_R2: s "Grapple Weapon"
+  L2_R2: s "Spinning Crane Kick"
   L1_R2_1: s "Blackout Kick"
   L1_R2_2: s "Blackout Kick"
   R2_1: s "Rising Sun Kick"
   R2_2: s "Rising Sun Kick"
 
-  L1_X_1: m sv
-  L1_X_2: s "Vivify"
-
   L2_S: s "Invoke Xuen, the White Tiger"
-  S_1: s "Spinning Crane Kick"
-  S_2: s "Spinning Crane Kick"
-  P2_S: s "Strike of the Windlord"
+  S_1: m sd
+  S_2: s "Detox"
 
-  L1_T_1: s "Touch of Karma"
-  L1_T_2: s "Touch of Karma"
-  T_1: s "Celestial Conduit"
-  T_2: s "Celestial Conduit"
+  L1_X_1: s "Touch of Karma"
+  L1_X_2: s "Touch of Karma"
 
-  L1_C_1: m ssm
-  L1_C_2: s "Soothing Mist"
-
-  C_1: m sd
-  C_2: s "Detox"
-
-  L2_P3: s "Tigereye Brew"
-  L1_P3: s "Grapple Weapon"
+  T_1: m sv
+  T_2: s "Vivify"
+  L1_T_1: m ssm
+  L1_T_2: s "Soothing Mist"

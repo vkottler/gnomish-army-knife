@@ -1,9 +1,10 @@
 ---
 by_key:
   L2_L1_R1: m ffsb
-  L2_P2_R1: s "Cyclone"
+  L2_R1: s "Typhoon"  # self ursol's
+  L2_P2_R1: m dcs  # clone/soothe
 
-  L2_L1_R2: s "Typhoon"  # self ursol's
+  L2_L1_R2: m dirmb
   L2_R2: m root  # mass root / ursol's
   L2_P2_R2: s "Entangling Roots"
 
@@ -12,7 +13,7 @@ by_key:
   L2_P2_S: s "Starfire"
   S_B: s "Frenzied Regeneration"
 
-  L2_L1_X: s "Heart of the Wild"
+  L2_X: s "Heart of the Wild"
   L1_P2_X: m suv  # self ursol's
 
   L2_L1_T: s "Dash"
@@ -50,8 +51,9 @@ by_key:
 
   # cancel macro override (has dedicated bind)
   # L2_L: ""
+  L2_U: s "Symbiotic Relationship"
 
   # mount button overrides
-  P2_R: s "Hibernate"
-  L2_R: m dirmb
-  L1_R: s "Nature's Vigil"
+  L2_P2_C: s "Hibernate"
+  # L2_R: m dirmb
+  # L1_R: s "Nature's Vigil"

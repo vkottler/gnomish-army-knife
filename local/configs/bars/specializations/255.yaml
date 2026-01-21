@@ -2,9 +2,10 @@
 # Survival Hunter
 by_key:
   L2_L1_R1: s "Muzzle"
+  P2_R1: s "Boomstick"
 
-  L1_P2_R1: s "Flanking Strike"
-  L1_P2_R2: s "Fury of the Eagle"
+  L1_P2_R1: m tdr
+  L1_P2_R2: s "Hatchet Toss"
 
   L1_R1_1: s "Wildfire Bomb"
   L1_R1_2: s "Wildfire Bomb"
@@ -14,22 +15,21 @@ by_key:
 
   L2_R2: s "Harpoon"
 
-  R2_1: s "Mongoose Bite"
-  R2_2: s "Mongoose Bite"
+  R2_1: s "Raptor Strike"
+  R2_2: s "Raptor Strike"
 
-  L1_P2_T: s "Tracker's Net"
+  S_1: m sfp
+  S_2: s "Flamefang Pitch"
 
-  S_1: s "Aspect of the Eagle"
-  S_2: s "Aspect of the Eagle"
+  L2_S: s "Aspect of the Eagle"
+  P2_S: s "Tracker's Net"
 
-  L2_S: s "Coordinated Assault"
+  # L2_P2_S: s "Arcane Shot"
+  # L2_P2_X: s "Steady Shot"
 
-  P2_S: s "Spearhead"
-
-  L2_P2_S: s "Arcane Shot"
-  L2_P2_X: s "Steady Shot"
-
+  L1_C_1: s "Sticky Tar Bomb"
+  L1_C_2: s "Sticky Tar Bomb"
   C_1: m smb
   C_2: s "Mending Bandage"
 
-  L1_P2_C: s "Sticky Tar Bomb"
+  # L1_P2_C: s "Sticky Tar Bomb"

@@ -52,27 +52,6 @@ by_name:
     body: |-
       /petdismiss
 
-  ffr:
-    # icon: ability_druid_disembowel
-    body: |-
-      #showtooltip
-      /cast Rake
-      /changeactionbar 1
-
-  ffm:
-    # icon: ability_druid_mangle2
-    body: |-
-      #showtooltip
-      /cast Mangle
-      /changeactionbar 1
-
-  ffs:
-    # icon: spell_shadow_vampiricaura
-    body: |-
-      #showtooltip
-      /cast Shred
-      /changeactionbar 1
-
   fav:
     icon: achievement_guildperk_mountup
     body: |-
@@ -88,16 +67,6 @@ by_name:
     body: |-
       /use Trader's Gilded Brutosaur
 
-  dfnwe:
-    body: |-
-      #showtooltip
-      /cast [known:Force of Nature] Force of Nature; Warrior of Elune
-
-  dirmb:
-    body: |-
-      #showtooltip
-      /cast [known:Mighty Bash] Mighty Bash; Incapacitating Roar
-
   psf:
     body: |-
       #showtooltip
@@ -108,11 +77,15 @@ by_name:
       #showtooltip
       /cast [known:Dark Ascension] Dark Ascension; Void Eruption
 
-  bvoke:
+  dcs:
     body: |-
-      #showtooltip Convoke the Spirits
-      /cast Berserking
-      /cast Convoke the Spirits
+      #showtooltip
+      /cast [known:Cyclone] Cyclone; Soothe
+
+  dnmf:
+    body: |-
+      #showtooltip
+      /cast [known:Fury of Elune] Fury of Elune; New Moon
 
   pssc:
     body: |-
@@ -123,3 +96,21 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Purify Disease
+
+  dss:
+    body: |-
+      #showtooltip Starsurge
+      /cast Berserking
+      /cast Starsurge
+
+  dtfr:
+    body: |-
+      #showtooltip Tiger's Fury
+      /cast Berserking
+      /cast Tiger's Fury
+
+  dnsr:
+    body: |-
+      #showtooltip Nature's Swiftness
+      /cast Berserking
+      /cast Nature's Swiftness

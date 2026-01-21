@@ -12,12 +12,13 @@ by_key:
   R2_2: s "Death Coil"
   L1_P2_R2: s "Army of the Dead"
 
-  L2_S: s "Summon Gargoyle"
-  L1_S_1: s "Unholy Assault"
-  L1_S_2: s "Unholy Assault"
+  P2_S: s "Soul Reaper"
+
+  L2_S: s "Zombify"
+  L1_S_1: s "Putrefy"
+  L1_S_2: s "Putrefy"
   S_1: s "Epidemic"
   S_2: s "Epidemic"
-  P2_S: s "Reanimation"
 
   L1_T_1: "C_SpellBook.PickupSpellBookItem(8, 1)"  # Huddle
   L1_T_2: "C_SpellBook.PickupSpellBookItem(8, 1)"  # Huddle

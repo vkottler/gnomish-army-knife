@@ -1,2 +1,27 @@
 ---
-array: []
+by_key:
+  L2_L1_R1: s "Disrupt"
+  L2_P2_R1: s 217832  # Imprison
+  P2_R1: s "Consume Magic"
+  L1_P2_R1: s "The Hunt"
+
+  L2_L1_R2: m rac1
+  P2_R2: s "Throw Glaive"
+
+  L1_S_1: m ssom
+  L1_S_2: s "Sigil of Misery"
+
+  L1_X_1: s 188501  # "Spectral Sight"
+  L1_X_2: s 188501  # "Spectral Sight"
+
+  T_1: s "Darkness"
+  T_2: s "Darkness"
+
+  X_1: s "Blur"
+  X_2: s "Blur"
+
+  L2_L1_P1: s "Glide"
+  L2_P1: s "Vengeful Retreat"
+  L1_P1: s "Fel Rush"
+
+  L1_P3: s "Torment"

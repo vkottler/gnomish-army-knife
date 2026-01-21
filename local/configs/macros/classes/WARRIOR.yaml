@@ -16,6 +16,21 @@ by_name:
       #showtooltip
       /cast [known:Wrecking Throw] Wrecking Throw; Shattering Throw
 
+  isph:
+    body: |-
+      #showtooltip
+      /cast [known:Intimidating Shout] Intimidating Shout; Piercing Howl
+
+  ivip:
+    body: |-
+      #showtooltip
+      /cast [known:Intervene] Intervene; Interpose
+
+  bsa:
+    body: |-
+      #showtooltip
+      /cast [known:Bladestorm] Bladestorm; Avatar
+
   bsr:
     body: |-
       #showtooltip

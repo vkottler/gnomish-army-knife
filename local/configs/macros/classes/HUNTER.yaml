@@ -26,6 +26,11 @@ by_name:
       #showtooltip
       /cast [@player] Command Pet
 
+  sfp:
+    body: |-
+      #showtooltip
+      /cast [@player] Flamefang Pitch
+
   cp:
     body: |-
       #showtooltip
@@ -34,7 +39,12 @@ by_name:
   stt:
     body: |-
       #showtooltip
-      /cast [@player] Tar Trap
+      /cast [@player,known:Tar Trap] Tar Trap; Scare Beast
+
+  ttsb:
+    body: |-
+      #showtooltip
+      /cast [known:Tar Trap] Tar Trap; Scare Beast
 
   sros:
     body: |-
@@ -73,5 +83,18 @@ by_name:
 
   ks:
     body: |-
-      #showtooltip
+      #showtooltip Kill Shot
+      /cast Blood Fury
       /cast Kill Shot
+
+  tdr:
+    body: |-
+      #showtooltip Takedown
+      /cast Blood Fury
+      /cast Takedown
+
+  brr:
+    body: |-
+      #showtooltip Bestial Wrath
+      /cast Blood Fury
+      /cast Bestial Wrath

@@ -44,6 +44,25 @@ by_name:
       #showtooltip
       /cast [@anyfriend] Shadowstep
 
+  ksbf:
+    body: |-
+      #showtooltip Killing Spree
+      /cast Blood Fury
+      /cast Killing Spree
+
+  dmbf:
+    body: |-
+      #showtooltip Deathmark
+      /cast Blood Fury
+      /cast Deathmark
+
+  stec:
+    body: |-
+      #showtooltip Secret Technique
+      /use 14
+      /cast Blood Fury
+      /cast Secret Technique
+
   np:
     body: |-
       #showtooltip

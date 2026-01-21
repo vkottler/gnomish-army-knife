@@ -6,6 +6,7 @@ by_key:
   L1_R1_2: s "Arcane Shot"
   R1_1: s "Rapid Fire"
   R1_2: s "Rapid Fire"
+  P2_R1: m ks
 
   R2_1: s "Aimed Shot"
   R2_2: s "Aimed Shot"

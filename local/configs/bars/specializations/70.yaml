@@ -1,18 +1,19 @@
 ---
 # Retribution Paladin
 by_key:
-  L2_R1: s 24275
+  L2_R1: s "Crusader Strike"
 
   L1_R1_1: s 20271
   L1_R1_2: s 20271
+  L1_P2_R1: s "Divine Toll"
 
   R1_1: s 184575
   R1_2: s 184575
 
   P2_R1: m wa14  # 255937, Wake of Ashes
 
-  L2_L1_R2: m sfr  # self final reckoning
-  L2_R2: m esfr  # execution sentence choice
+  # L2_L1_R2: m sfr  # self final reckoning
+  L2_R2: s "Execution Sentence"  # m esfr  # execution sentence choice
 
   L1_R2_1: s 53385
   L1_R2_2: s 53385
@@ -20,12 +21,10 @@ by_key:
   R2_1: s 383328
   R2_2: s 383328
 
-  L1_P2_R2: s "Crusader Strike"
-
-  L2_S: s 184662
+  L2_S: s "Avenging Wrath"
   S_1: m swog  # word of glory
   S_2: s 85673
-  P2_S: s "Divine Hammer"
+  # P2_S: s "Divine Hammer"
 
   X_1: m sfol  # flash of light
   X_2: s 19750

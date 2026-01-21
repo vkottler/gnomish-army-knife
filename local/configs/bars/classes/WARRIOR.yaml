@@ -2,7 +2,8 @@
 by_key:
   L2_L1_R1: s "Pummel"
   L2_R1: s "Victory Rush"
-  L2_P2_R1: s "Storm Bolt"
+  P2_R1: s "Storm Bolt"
+  L2_P2_R1: m isph
 
   L2_L1_R2: s "Champion's Spear"
   L2_R2: s "Heroic Leap"
@@ -11,35 +12,38 @@ by_key:
   L1_R2_2: s 163201  # "Execute"
   L2_P2_R2: s "Shockwave"
 
-  L2_S: s "Thunderous Roar"
+  # L2_S: s "Thunderous Roar"
   L1_S_1: s "Thunder Clap"
   L1_S_2: s "Thunder Clap"
   S_1: s "Whirlwind"
   S_2: s "Whirlwind"
-  L2_P2_S: s "Slam"
+  # L2_P2_S: s "Slam"
 
   L2_X: s "Rallying Cry"
-  L1_X_1: s "Spell Reflection"
-  L1_X_2: s "Spell Reflection"
-  P2_X: s "Bitter Immunity"
+  X_1: s "Spell Reflection"
+  X_2: s "Spell Reflection"
+  P2_X: s "Disarm"
   L1_P2_X: s "Shield Block"
 
-  L2_T: s "Disarm"
-  L1_T_1: s "Intimidating Shout"
-  L1_T_2: s "Intimidating Shout"
-  T_1: m bsbr
-  T_2: m bsbr
-  P2_T: s "Avatar"
+  # L2_T: s "Disarm"
+  # L1_T_1: s "Intimidating Shout"
+  # L1_T_2: s "Intimidating Shout"
+  L1_T_1: m bsbr
+  L1_T_2: m bsbr
+  T_1: m wtst
+  T_2: m wtst
+  P2_T: m rac1
+  # P2_T: s "Avatar"
   L1_P2_T: s "Shield Slam"
 
-  P2_C: s "Duel"
+  C_1: s "Rend"
+  C_2: s "Rend"
+  # P2_C: s "Duel"
   L1_P2_C: s "Taunt"
 
-  L2_P3: m wtst
   L1_P3: s "Heroic Throw"
 
-  L2_L1_P1: s "Piercing Howl"
-  L2_P1: s "Intervene"
+  L2_P1: m ivip
   L1_P1: s "Charge"
 
   P2_D: s "Battle Shout"

@@ -6,43 +6,40 @@ by_key:
   L1_R1_2: s "Flash of Light"
   R1_1: m shs
   R1_2: m fhs
-  P2_R1: s "Crusader Strike"
+  P2_R1: m ehs
+  L1_P2_R1: s "Avenging Wrath"
 
-  L2_L1_R2: s "Shield of the Righteous"
   L2_R2: s "Light of Dawn"
   L1_R2_1: m shl
   L1_R2_2: s "Holy Light"
   R2_1: m swog
   R2_2: s "Word of Glory"
-  L1_P2_R2: s "Avenging Wrath"
 
   L2_L1_S: ""
-  L2_S: m ehp
+  L2_S: s "Aura Mastery"
   S_1: m sc
   S_2: s "Cleanse"
-  P2_S: m ehs
   L2_P2_S: ""
-  L1_P2_S: s "Hand of Divinity"
+  # L1_P2_S: s "Hand of Divinity"
 
   L2_L1_X: ""
-  X_1: m shb
-  X_2: s "Holy Bulwark"
+  X_1: m sdthp
+  X_2: m dthp
+  P2_X: m edthp
   L2_P2_X: ""
 
   L2_L1_T: ""
-  L2_T: s "Aura Mastery"
-  T_1: m shp
-  T_2: m fhp
-  P2_T: s "Beacon of Light"
-  L2_P2_T: m sbol
+  T_1: m sbol
+  T_2: s "Beacon of Light"
+  P2_T: s "Beacon of Faith"
 
   L2_L1_C: ""
-  L1_C_1: m sbom
-  L1_C_2: s "Blessing of Summer"
-  P2_C: s "Beacon of Faith"
+  # L1_C_1: m sbom
+  # L1_C_2: s "Blessing of Summer"
+  # P2_C: s "Beacon of Faith"
   L2_P2_C: s "Absolution"
 
-  L2_L1_P1: s "Consecration"
+  # L2_L1_P1: s "Consecration"
 
   # cancel macro override (has dedicated bind)
   # L2_L: ""

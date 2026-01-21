@@ -46,15 +46,23 @@ by_name:
       #showtooltip
       /cast [@player] Cleanse Toxins
 
-  rbl:
-    body: |-
-      #showtooltip
-      /cast [known:Blinding Light] Blinding Light; Repentance
-
   esfr:
     body: |-
       #showtooltip
       /cast [known:Final Reckoning] Final Reckoning; Execution Sentence
+
+  dthp:
+    body: |-
+      #showtooltip
+      /cast [@anyfriend,known:Divine Toll] Divine Toll; [@anyfriend] Holy Prism
+  sdthp:
+    body: |-
+      #showtooltip
+      /cast [@player,known:Divine Toll] Divine Toll; [@player] Holy Prism
+  edthp:
+    body: |-
+      #showtooltip
+      /cast [@anyenemy,known:Divine Toll] Divine Toll; [@anyenemy] Holy Prism
 
   shs:
     body: |-
@@ -71,21 +79,6 @@ by_name:
       #showtooltip
       /cast [@anyfriend] Holy Shock
 
-  shp:
-    body: |-
-      #showtooltip
-      /cast [@player] Holy Prism
-
-  ehp:
-    body: |-
-      #showtooltip
-      /cast [@anyenemy] Holy Prism
-
-  fhp:
-    body: |-
-      #showtooltip
-      /cast [@anyfriend] Holy Prism
-
   shl:
     body: |-
       #showtooltip
@@ -100,16 +93,6 @@ by_name:
     body: |-
       #showtooltip
       /cast [@player] Cleanse
-
-  sboi:
-    body: |-
-      #showtooltip
-      /cast [@player] Barrier of Faith
-
-  sbom:
-    body: |-
-      #showtooltip
-      /cast [@player] Blessing of Summer
 
   shb:
     body: |-

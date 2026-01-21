@@ -11,32 +11,33 @@ by_key:
 
   L1_S_1: m sct
   L1_S_2: s "Capacitor Totem"
-  L2_S: s "Ascendance"
+  # L2_S: s "Ascendance"
   L2_P2_S: s "Bloodlust"
 
-  L2_L1_X: s "Unleash Shield"
+  # L2_L1_X: s "Unleash Shield"
   L2_X: s "Static Field Totem"
+  L1_X_1: m ses
+  L1_X_2: s "Earth Shield"
   X_1: m stp
   X_2: s "Totemic Projection"
   P2_X: s "Healing Stream Totem"
-  L2_P2_X: s "Water Walking"
-  L1_P2_X: s "Totemic Recall"
+  L1_P2_X: m rac1
+  P2_S: s "Chain Lightning"
 
   L2_T: s "Wind Rush Totem"
-  P2_T: s "Tremor Totem"
-  L2_P2_T: m ses
-  L1_P2_T: s "Earth Shield"
+  P2_T: m ttpc
 
   L2_L1_C: s "Burrow"
   L2_C: s "Earthgrab Totem"
-  L1_C_1: m st
-  L1_C_2: s 51490  # "Thunderstorm"
+  L1_C_1: m sww
+  L1_C_2: s "Water Walking"
   P2_C: s "Astral Shift"
-  L1_P2_C: s "Stone Bulwark Totem"
+  L1_P2_C: s "Flametongue Weapon"
 
-  P2_P3: s "Poison Cleansing Totem"
-  L2_P3: s "Earth Elemental"
-  L1_P3: s "Counterstrike Totem"
+  # P2_P3: s "Poison Cleansing Totem"
+  P2_P3: s "Counterstrike Totem"
+  L2_P3: s "Lightning Shield"
+  L1_P3: s "Earth Elemental"
 
   L2_L1_P1: s "Spiritwalker's Grace"
   L2_P1: m swgw
@@ -44,5 +45,7 @@ by_key:
 
   P2_D: m ssf
   P2_U: s "Ancestral Spirit"
-  L2_R: s "Flametongue Weapon"
-  L1_R: s "Lightning Shield"
+  # L2_R: s "Flametongue Weapon"
+
+  L2_R: s "Far Sight"
+  L1_R: s "Astral Recall"

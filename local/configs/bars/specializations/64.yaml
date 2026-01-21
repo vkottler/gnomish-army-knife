@@ -5,23 +5,21 @@ by_key:
   L1_R1_2: s "Flurry"
   R1_1: s "Frostbolt"
   R1_2: s "Frostbolt"
-  L1_P2_R1: s "Comet Storm"
+  L1_P2_R1: s "Ray of Frost"
 
-  L2_R2: s "Frozen Orb"
+  L2_R2: m forb  # "Frozen Orb"
   L1_R2_1: m sb
   L1_R2_2: s "Blizzard"
   R2_1: s "Ice Lance"
   R2_2: s "Ice Lance"
+  P2_R2: s "Ice Barrier"
+  L1_P2_R2: s "Summon Water Elemental"
 
-  L2_S: s "Icy Veins"
-  S_1: s "Glacial Spike"
-  S_2: s "Glacial Spike"
-  P2_S: s "Ray of Frost"
-  X_1: s "Ice Barrier"
-  X_2: s "Ice Barrier"
-  L2_P2_X: s "Fire Blast"
+  S_1: s "Frost Bomb"
+  S_2: s "Frost Bomb"
+  P2_S: s "Snowdrift"
 
-  L2_T: s "Snowdrift"
-  P2_T: s "Frost Bomb"
+  L2_T: s "Cold Snap"
+  P2_T: m sforb
 
-  P2_C: s "Cold Snap"
+  # P2_C: s "Cold Snap"

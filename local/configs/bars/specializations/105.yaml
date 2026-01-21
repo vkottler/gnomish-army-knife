@@ -1,63 +1,74 @@
 ---
 # Restoration Druid
 by_key:
-  L2_R1: m ffs
+  # L2_R1: m ffs
+  L2_L1_R1: s "Wrath"
   L1_R1_1: m slb
   L1_R1_2: s 33763  # "Lifebloom" doesn't work
   L1_R1_B: s "Swipe"
   L1_R1_C: s "Rake"
+  L1_R1_M: s "Sunfire"
   R1_1: m srj
   R1_2: s "Rejuvenation"
   R1_B: s "Mangle"
   R1_C: s "Shred"
+  R1_M: s "Moonfire"
   P2_R1: s "Starsurge"
   L1_P2_R1: m ult  # tree/convoke
 
-  L1_R2_1: m sngg  # self nourish / guardians
-  L1_R2_2: m ngg  # bar 2, nourish / guardians
-  L1_R2_B: m sngg
-  L1_R2_C: m sngg
+  L1_R2_1: m seff
+  L1_R2_2: s "Efflorescence"
+  L1_R2_B: m seff
+  L1_R2_C: s "Rip"
+  L1_R2_M: s "Starfire"
+  # L1_R2_1: m sngg  # self nourish / guardians
+  # L1_R2_2: m ngg  # bar 2, nourish / guardians
+  # L1_R2_B: m sngg
+  # L1_R2_C: m sngg
   R2_1: m srg
   R2_2: s "Regrowth"
+  R2_M: m srg
   R2_B: m srg
   R2_C: m srg
-  P2_R2: s "Nature's Swiftness"
+  P2_R2: m dnsr
   L1_P2_R2: s "Tranquility"
 
-  L2_L1_S: m sig
-  L2_S: s "Invigorate"  # Starfire
-  L1_S_1: m seff
-  L1_S_2: s "Efflorescence"
-  L1_S_C: s "Rip"
+  L2_S: s "Sunfire"
+  # L2_S: s "Wrath"
   S_1: m src
   S_2: s "Nature's Cure"
+  S_M: m src
   S_C: s "Maim"
   L1_P2_S: m sinv  # self innervate
 
-  L2_X: s "Flourish"
-  L1_X_1: m ssm
-  L1_X_2: s "Swiftmend"
-  L1_X_B: m ssm
+  # L2_X: s "Flourish"
+  X_1: m ssm
+  X_2: s "Swiftmend"
+  X_B: m ssm
+  X_C: m ssm
+  X_M: m ssm
+  # X_1: m scw
+  # X_2: s "Cenarion Ward"
+  # X_B: m scw
   L1_X_C: s "Ferocious Bite"
-  X_1: m scw
-  X_2: s "Cenarion Ward"
-  X_B: m scw
-  X_C: s "Swipe"
   P2_X: m sal
-  L2_P2_X: s "Wrath"
 
-  L1_T_1: m sog
-  L1_T_2: s "Overgrowth"
-  L1_T_B: m sog  # Thrash
-  L1_T_C: m sog  # Thrash
+  L1_X_B: s "Ironfur"
+  L1_T_B: s "Thrash"
+  L1_C_B: s "Growl"
+  L1_T_C: s "Swipe"
 
-  T_B: s "Ironfur"
+  # L1_T_1: m sog
+  # L1_T_2: s "Overgrowth"
+  # L1_T_B: m sog  # Thrash
+  # L1_T_C: m sog  # Thrash
 
-  L2_P2_T: s "Symbiotic Relationship"
+  L1_S_1: m sib
+  L1_S_2: s "Ironbark"
+  L1_S_B: m sib
+  L1_S_C: m sib
+  L1_S_M: m sib
 
-  L1_C_1: m sib
-  L1_C_2: s "Ironbark"
-  L1_C_B: m sib
-  L1_C_C: m sib
+  L1_C_M: s "Flap"
 
-  L2_P2_C: s "Revitalize"
+  # L2_P2_C: s "Revitalize"

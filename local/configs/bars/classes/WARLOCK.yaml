@@ -11,43 +11,41 @@ by_key:
   L2_L1_R2: s "Curse of Tongues"
   L2_R2: s "Demonic Gateway"
 
-  L2_P2_R2: m htmc
+  L2_P2_R2: s "Mortal Coil"
   L1_P2_R2: s "Drain Life"
 
   L2_P2_R1: s "Fear"
   L1_P2_R1: s "Soulburn"
 
-  L1_S_1: m ssf
-  L1_S_2: s "Shadowfury"
-
-  L2_P2_S: s "Shadowflame"
+  L1_S_1: m shts
+  L1_S_2: m hts
+  S_1: s "Nether Ward"
+  S_2: s "Nether Ward"
 
   L1_X_1: s "Unending Resolve"
   L1_X_2: s "Unending Resolve"
   X_1: s "Dark Pact"
   X_2: s "Dark Pact"
+  L2_P2_X: s "Banish"
+  L1_P2_X: s "Shadow Rift"
 
-  L2_L1_X: s "Soul Rip"
+  L1_T_1: m bowt
+  L1_T_2: m bowt
+  T_1: s 702  # Curse of Weakness
+  T_2: s 702
 
-  L2_X: s "Nether Ward"
-
-  P2_X: s "Health Funnel"
-
-  T_1: s "Curse of Weakness"
-  T_2: s "Curse of Weakness"
-
-  L2_T: s "Amplify Curse"
+  L2_T: s "Soul Rip"
 
   P2_T: s "Fel Domination"
-
-  L2_P2_X: s "Banish"
-  L1_P2_X: s "Bonds of Fel"
 
   L2_P2_T: s "Summon Imp"
   L1_P2_T: s "Summon Felhunter"
 
   L2_C: "C_SpellBook.PickupSpellBookItem(2, 1)"  # Attack
   P2_C: "C_SpellBook.PickupSpellBookItem(6, 1)"  # Follow
+
+  L1_C_1: m sstone
+  L1_C_2: s "Soulstone"
 
   L2_P2_C: s "Summon Sayaad"
   L1_P2_C: s "Summon Voidwalker"
@@ -67,5 +65,5 @@ by_key:
   P2_D: s "Create Healthstone"
   P2_U: s "Create Soulwell"
 
-  L2_R: s "Soulstone"
-  L1_R: s "Shadow Rift"
+  L2_R: s "Unending Breath"
+  L1_R: s "Ritual of Summoning"

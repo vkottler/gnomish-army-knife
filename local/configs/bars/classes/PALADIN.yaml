@@ -2,40 +2,43 @@
 by_key:
   L2_L1_R1: s "Rebuke"
 
-  L2_P2_R1: m rbl
-  L1_P2_R1: s "Divine Toll"
+  L2_P2_R1: s "Blinding Light"
+  # L1_P2_R1: m dthp
 
+  L2_L1_R2: m rac1
   P2_R2: s "Hammer of Justice"
   L2_P2_R2: s "Blessing of Sacrifice"
+  L1_P2_R2: s "Blessing of Freedom"
 
   L1_S_1: m sbop
   L1_S_2: s "Blessing of Protection"
+  P2_S: s "Shield of the Righteous"
 
-  L2_X: s "Divine Shield"
+  L2_X: s "Divine Protection"
 
   L1_X_1: m sloh  # lay on hands
   L1_X_2: s 633  # 471195
 
-  P2_X: s "Divine Protection"
-
   L1_P2_X: s "Hand of Reckoning"
 
+  L2_T: s "Divine Shield"
   L1_T_1: m sbow
   L1_T_2: s "Blessing of Spellwarding"
 
   L1_P2_T: s "Sense Undead"
 
-  L2_C: s "Hammer of Wrath"
-  C_1: s "Blessing of Freedom"
-  C_2: s "Blessing of Freedom"
+  # L2_C: s "Hammer of Wrath"
+  # C_1: s "Blessing of Freedom"
+  # C_2: s "Blessing of Freedom"
 
   L1_P2_C: s "Intercession"
+
+  P2_C: s "Turn Evil"
 
   P2_P3: s "Concentration Aura"
   L2_P3: s "Crusader Aura"
   L1_P3: s "Devotion Aura"
 
-  L2_P1: s "Searing Glare"
   L1_P1: s "Divine Steed"
 
   P2_U: s "Redemption"

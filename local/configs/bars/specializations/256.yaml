@@ -2,29 +2,37 @@
 # Discipline Priest
 by_key:
   L2_L1_R1: s "Mind Blast"
-  L1_R1_1: m sr
-  L1_R1_2: s "Renew"
-  R1_1: m sfh
-  R1_2: s "Flash Heal"
-  L1_P2_R1: s 428924  # "Premonition of Insight"
+  # L1_R1_1: m sr
+  # L1_R1_2: s "Renew"
+  R1_1: m spws
+  R1_2: 's "Power Word: Shield"'
+  # L1_P2_R1: s 428924  # "Premonition of Insight"
 
   L2_R2: m en
   L1_R2_1: m spwr
   L1_R2_2: 's "Power Word: Radiance"'
   R2_1: m sn
   R2_2: m fn
-  L1_P2_R2: m fup
+  L1_P2_R1: m fup
+  L1_P2_R2: m eup
 
   L2_S: s "Evangelism"
   S_1: m sp
   S_2: s "Purify"
   P2_S: s "Smite"
 
-  L1_T_1: m spom
-  L1_T_2: s "Prayer of Mending"
-  T_1: m sps
-  T_2: s "Pain Suppression"
-  P2_T: m eup
+  L1_X_1: m sps
+  L1_X_2: s "Pain Suppression"
+  X_1: m splea
+  X_2: s "Plea"
 
-  C_1: m spwb
-  C_2: 's "Power Word: Barrier"'
+  T_1: m sfh
+  T_2: s "Flash Heal"
+
+  # L1_T_1: m spom
+  # L1_T_2: s "Prayer of Mending"
+
+  L2_C: m ils
+  # C_1: m spwb
+  # C_2: 's "Power Word: Barrier"'
+  L1_P2_C: s "Shackle Undead"
