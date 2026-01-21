@@ -9,8 +9,8 @@ by_key:
   L1_P2_R1: s "Lightning Bolt"
 
   L2_R2: s "Lava Burst"
-  L1_R2_1: m shw
-  L1_R2_2: s "Healing Wave"
+  L1_R2_1: m shr
+  L1_R2_2: s "Healing Rain"
   R2_1: m shs
   R2_2: s "Healing Surge"
 
@@ -28,8 +28,8 @@ by_key:
   T_1: m sch
   T_2: s "Chain Heal"
 
-  C_1: m shr
-  C_2: s "Healing Rain"
-  L2_P2_C: s "Water Shield"
+  C_1: s "Water Shield"
+  C_2: s "Water Shield"
+  # L2_P2_C: s "Water Shield"
 
   L1_P2_T: s "Earthliving Weapon"
