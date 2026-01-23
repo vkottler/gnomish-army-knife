@@ -9,7 +9,7 @@ by_key:
   L1_R2_1: m sft
   L1_R2_2: s "Freezing Trap"
 
-  P2_R2: s "Concussive Shot"
+  P2_R2: s "Wing Clip"  # "Concussive Shot"
 
   L2_P2_R1: s "Intimidation"
   L2_P2_R2: s "Hunter's Mark"
