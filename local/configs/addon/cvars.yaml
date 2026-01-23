@@ -153,6 +153,8 @@ pvpFramesDisplayOnlyHealerPowerBars: 1
 pvpOptionDisplayPets: 1
 nameplateShowOffscreen: 1
 
+synchronizeConfig: 0
+
 # graveyard
 # nameplateShowFriendlyBuffs: 1
 # nameplateSelfScale: 1.0
