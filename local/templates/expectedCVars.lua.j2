@@ -6,3 +6,8 @@ expectedCVars["{{key}}"] = {{val}}
 expectedCVars["{{key}}"] = "{{val}}"
 {% endif %}
 {% endfor %}
+
+GakLayouts = {}
+{% for key, val in addon["layouts"].items()|sort(attribute='0') %}
+GakLayouts["{{key}}"] = "{{val}}"
+{% endfor %}
