@@ -158,8 +158,6 @@ synchronizeConfig: 0
 
 # graphics
 RAIDsettingsEnabled: 0
-Outline: 3
-graphicsOutlineMode: 2
 graphicsViewDistance: 0
 graphicsSpellDensity: 2
 graphicsProjectedTextures: 1
