@@ -136,6 +136,7 @@ test_cameraTargetFocusEnemyEnable: 0
 CameraKeepCharacterCentered: 0
 
 cameraDistanceMaxZoomFactor: 2.6
+cameraFov: 90
 
 rotateMinimap: 0
 
@@ -154,6 +155,14 @@ pvpOptionDisplayPets: 1
 nameplateShowOffscreen: 1
 
 synchronizeConfig: 0
+
+# graphics
+RAIDsettingsEnabled: 0
+Outline: 3
+graphicsOutlineMode: 2
+graphicsViewDistance: 0
+graphicsSpellDensity: 2
+graphicsProjectedTextures: 1
 
 # graveyard
 # nameplateShowFriendlyBuffs: 1
