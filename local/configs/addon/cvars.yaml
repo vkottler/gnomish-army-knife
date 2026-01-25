@@ -161,6 +161,10 @@ RAIDsettingsEnabled: 0
 graphicsViewDistance: 0
 graphicsSpellDensity: 2
 graphicsProjectedTextures: 1
+useTargetFPS: 0
+useMaxFPS: 0
+useMaxFPSBk: 1
+maxFPSBk: 30
 
 # graveyard
 # nameplateShowFriendlyBuffs: 1
