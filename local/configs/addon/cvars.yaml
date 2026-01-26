@@ -143,6 +143,8 @@ rotateMinimap: 0
 ReplaceMyPlayerPortrait: 1
 ReplaceOtherPlayerPortraits: 1
 
+noBuffDebuffFilterOnTarget: 1
+
 # midnight stuff
 damageMeterEnabled: 0  # not many features yet, off by default
 externalDefensivesEnabled: 1
