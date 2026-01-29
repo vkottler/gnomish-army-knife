@@ -166,7 +166,7 @@ synchronizeConfig: 0
 
 # graphics
 RAIDsettingsEnabled: 0
-graphicsViewDistance: 0
+# graphicsViewDistance: 0
 graphicsSpellDensity: 2
 graphicsProjectedTextures: 1
 useTargetFPS: 0
