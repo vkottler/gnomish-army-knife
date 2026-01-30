@@ -29,17 +29,9 @@ SoftTargetNameplateInteract: 1
 
 scriptErrors: 1
 
-floatingCombatTextCombatDamage: 0
-floatingCombatTextCombatHealing: 0
-floatingCombatTextCombatState: 0
-floatingCombatTextSpellMechanics: 0
-floatingCombatTextPetMeleeDamage: 0
-floatingCombatTextPetSpellDamage: 0
-floatingCombatTextReactives: 0
 statusText: 0
 statusTextDisplay: NONE
 
-WorldTextScale: 0
 threatWorldText: 0
 
 cameraSmoothStyle: 1
@@ -190,3 +182,11 @@ maxFPSBk: 30
 # nameplateMotionSpeed: 0.05
 # nameplateMotion: 1
 # nameplateGlobalScale: 1.0
+# floatingCombatTextCombatDamage: 0
+# floatingCombatTextCombatHealing: 0
+# floatingCombatTextCombatState: 0
+# floatingCombatTextSpellMechanics: 0
+# floatingCombatTextPetMeleeDamage: 0
+# floatingCombatTextPetSpellDamage: 0
+# floatingCombatTextReactives: 0
+# WorldTextScale: 0
