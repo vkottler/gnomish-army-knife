@@ -11,6 +11,12 @@ by_name:
       #showtooltip
       /cast [@player] Anti-Magic Shell
 
+  pof14:
+    body: |-
+      #showtooltip Pillar of Frost
+      /use 14
+      /cast Pillar of Frost
+
   samz:
     body: |-
       #showtooltip
