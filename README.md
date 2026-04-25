@@ -1,8 +1,8 @@
 <!--
     =====================================
     generator=datazen
-    version=3.2.3
-    hash=6438939f18753345338f916969b9c838
+    version=3.2.4
+    hash=c108f62d0a08c7b182b9927dd2b6ed4e
     =====================================
 -->
 
@@ -11,21 +11,23 @@
 # gnomish-army-knife ([1.5.7](https://pypi.org/project/gnomish-army-knife/))
 
 [![python](https://img.shields.io/pypi/pyversions/gnomish-army-knife.svg)](https://pypi.org/project/gnomish-army-knife/)
-![Build Status](https://github.com/vkottler/gnomish-army-knife/workflows/Python%20Package/badge.svg)
-[![codecov](https://codecov.io/gh/vkottler/gnomish-army-knife/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/github/vkottler/gnomish-army-knife)
+![Build Status](https://github.com/libre-embedded/gnomish-army-knife/workflows/Python%20Package/badge.svg)
+[![codecov](https://codecov.io/gh/libre-embedded/gnomish-army-knife/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/github/libre-embedded/gnomish-army-knife)
 ![PyPI - Status](https://img.shields.io/pypi/status/gnomish-army-knife)
 ![Dependents (via libraries.io)](https://img.shields.io/librariesio/dependents/pypi/gnomish-army-knife)
 
 *World of Warcraft polyfills and standardization.*
 
-([interface documentation](https://vkottler.github.io/python/gnomish-army-knife))
+Consider [sponsoring development](https://github.com/sponsors/libre-embedded).
+
+([interface documentation](https://libre-embedded.github.io/python/gnomish-army-knife))
 
 ## Python Version Support
 
 This package is tested with the following Python minor versions:
 
-* [`python3.12`](https://docs.python.org/3.12/)
 * [`python3.13`](https://docs.python.org/3.13/)
+* [`python3.14`](https://docs.python.org/3.14/)
 
 ## Platform Support
 
@@ -43,7 +45,7 @@ LUA source hosted [here](https://github.com/vkottler/gak-lua) for
 # Command-line Options
 
 ```
-$ ./venv3.13/bin/gak -h
+$ ./venv3.14/bin/gak -h
 
 usage: gak [-h] [--version] [-v] [-q] [--curses] [--no-uvloop] [-C DIR]
            {markdown,scan,noop} ...
@@ -72,7 +74,7 @@ commands:
 ### `markdown`
 
 ```
-$ ./venv3.13/bin/gak markdown -h
+$ ./venv3.14/bin/gak markdown -h
 
 usage: gak markdown [-h] [-o OUTPUT] [-d DATABASE]
 
@@ -89,7 +91,7 @@ options:
 ### `scan`
 
 ```
-$ ./venv3.13/bin/gak scan -h
+$ ./venv3.14/bin/gak scan -h
 
 usage: gak scan [-h] [-c CONFIG] [-s STATE] [-e]
 
