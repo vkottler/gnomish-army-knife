@@ -22,6 +22,7 @@ by_key:
 
   L1_X_1: s "Touch of Karma"
   L1_X_2: s "Touch of Karma"
+  P2_X: m t14
 
   T_1: m sv
   T_2: s "Vivify"
