@@ -20,7 +20,8 @@ by_key:
 
   P2_S: s "Havoc"
 
-  L2_X: s "Channel Demonfire"
+  L2_L1_X: s "Channel Demonfire"
+  L2_X: m t14
   P2_X: s "Soul Fire"
 
   L1_C_1: m ssi
