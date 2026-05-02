@@ -12,7 +12,7 @@ by_key:
   L1_S_1: m sct
   L1_S_2: s "Capacitor Totem"
   # L2_S: s "Ascendance"
-  L2_P2_S: s "Bloodlust"
+  L2_P2_S: m lust
 
   # L2_L1_X: s "Unleash Shield"
   L2_X: s "Static Field Totem"

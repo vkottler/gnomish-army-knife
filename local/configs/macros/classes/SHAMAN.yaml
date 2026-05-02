@@ -86,11 +86,6 @@ by_name:
       #showtooltip
       /cast [@player] Cleanse Spirit
 
-  st:
-    body: |-
-      #showtooltip
-      /cast [@player] Thunderstorm
-
   ses:
     body: |-
       #showtooltip
@@ -106,23 +101,7 @@ by_name:
       #showtooltip
       /cast [@player] Water Walking
 
-array_old:
-  - name: self
+  lust:
     body: |-
       #showtooltip
-      /cast [@player] Primordial Wave
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Earthgrab Totem
-
-  - name: self
-    body: |-
-      #showtooltip
-      /cast [@player] Earthquake
-
-  - name: self1
-    body: |-
-      #showtooltip
-      /cast [@player] Wind Rush Totem
+      /cast Bloodlust
