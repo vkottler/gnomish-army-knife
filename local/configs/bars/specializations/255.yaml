@@ -15,8 +15,8 @@ by_key:
 
   L2_R2: s "Harpoon"
 
-  R2_1: s "Raptor Strike"
-  R2_2: s "Raptor Strike"
+  R2_1: s 186270  # "Raptor Strike"
+  R2_2: s 186270  # "Raptor Strike"
 
   S_1: m sfp
   S_2: s "Flamefang Pitch"
