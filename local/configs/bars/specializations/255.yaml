@@ -2,9 +2,9 @@
 # Survival Hunter
 by_key:
   L2_L1_R1: s "Muzzle"
-  P2_R1: s "Boomstick"
+  P2_R1: m bsr
 
-  L1_P2_R1: m tdr
+  L1_P2_R1: s 1250646  # "Takedown"
   L1_P2_R2: s "Hatchet Toss"
 
   L1_R1_1: s "Wildfire Bomb"

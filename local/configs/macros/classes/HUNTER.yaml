@@ -87,12 +87,12 @@ by_name:
       /cast Blood Fury
       /cast Kill Shot
 
-  tdr:
+  bsr:
     body: |-
-      #showtooltip Takedown
+      #showtooltip Boomstick
       /cast Blood Fury
       /use 14
-      /cast Takedown
+      /cast Boomstick
 
   brr:
     body: |-
