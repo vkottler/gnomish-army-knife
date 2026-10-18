@@ -69,7 +69,7 @@ occludedSilhouettePlayer: 1
 
 combinedBags: 1
 
-lossOfControl: 0
+lossOfControl: 1
 
 UnitNamePlayerPVPTitle: 0
 UnitNamePlayerGuild: 0
