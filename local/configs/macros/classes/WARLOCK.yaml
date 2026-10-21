@@ -62,6 +62,11 @@ by_name:
       #showtooltip
       /cast [@player] Summon Infernal
 
+  sbof:
+    body: |-
+      #showtooltip
+      /cast [@player] Bonds of Fel
+
   cfr:
     body: |-
       #showtooltip Conflagrate

@@ -22,7 +22,8 @@ by_key:
   P2_S: m sboh
 
   L2_L1_X: s "Channel Demonfire"
-  L2_X: s "Soul Fire"
+  L2_T: s "Soul Fire"
+  L2_P2_X: m sbof
 
   L1_C_1: m ssi
   L1_C_2: s "Summon Infernal"
